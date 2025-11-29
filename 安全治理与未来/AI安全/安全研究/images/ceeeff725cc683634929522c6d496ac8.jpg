@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<link rel="shortcut icon" href="https://biox.stanford.edu/themes/open_framework/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com" rel="preconnect"></link>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&amp;display=swap" rel="stylesheet"></link>
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"></link>
+<meta content="Dr. Zou works on a wide range of problems in machine learning (from proving mathematical properties to designing new probabilistic models) and is especially interested in applications in human genomics." name="description" />
+<meta content="Backdrop CMS 1 (https://backdropcms.org)" name="generator" />
+<link rel="canonical" href="https://biox.stanford.edu/people/james-zou" />
+<link rel="shortlink" href="https://biox.stanford.edu/node/5986" />
+<meta content="profile" property="og:type" />
+<meta content="Welcome to Bio-X" property="og:site_name" />
+<meta content="James Zou - Assistant Professor of Biomedical Data Science and (by courtesy) of Computer Science and of Electrical Engineering" property="og:title" />
+<meta content="https://biox.stanford.edu/people/james-zou" property="og:url" />
+<meta content="Dr. Zou works on a wide range of problems in machine learning (from proving mathematical properties to designing new probabilistic models) and is especially interested in applications in human genomics." property="og:description" />
+<meta content="2020-01-06T09:43:10-08:00" property="og:updated_time" />
+<meta content="summary_large_image" name="twitter:card" />
+<meta content="James Zou - Assistant Professor of Biomedical Data Science and (by courtesy) of Computer Science and of Electrical Engineering" name="twitter:title" />
+<meta content="Dr. Zou works on a wide range of problems in machine learning (from proving mathematical properties to designing new probabilistic models) and is especially interested in applications in human genomics." name="twitter:description" />
+<meta content="2016-10-03T10:17:10-07:00" property="article:published_time" />
+<meta content="2020-01-06T09:43:10-08:00" property="article:modified_time" />
+<link rel="shortcut icon" href="https://biox.stanford.edu/themes/open_framework/favicon.ico" type="" />
+<link rel="icon_16x16" href="https://biox.stanford.edu/themes/open_framework/images/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon_32x32" href="https://biox.stanford.edu/themes/open_framework/images/favicons/favicon-32x32.png" sizes="32x32" />
+<meta content="6tqIdjQXtvaAb8iMWtsRkOpv8sQkqBb7CsReCkTHktc" name="google-site-verification" />
+<link rel="icon_96x96" href="https://biox.stanford.edu/themes/open_framework/images/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon_192x192" href="https://biox.stanford.edu/themes/open_framework/images/favicons/favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://biox.stanford.edu/themes/open_framework/images/favicons/apple-icon-60x60.png" />
+<link rel="apple-touch-icon_72x72" href="https://biox.stanford.edu/themes/open_framework/images/favicons/apple-icon-72x72.png" sizes="72x72" />
+<link rel="apple-touch-icon_76x76" href="https://biox.stanford.edu/themes/open_framework/images/favicons/apple-icon-76x76.png" sizes="76x76" />
+<link rel="apple-touch-icon_114x114" href="https://biox.stanford.edu/themes/open_framework/images/favicons/apple-icon-114x114.png" sizes="114x114" />
+<link rel="apple-touch-icon_120x120" href="https://biox.stanford.edu/themes/open_framework/images/favicons/apple-icon-120x120.png" sizes="120x120" />
+<link rel="apple-touch-icon_144x144" href="https://biox.stanford.edu/themes/open_framework/images/favicons/apple-icon-144x144.png" sizes="144x144" />
+<link rel="apple-touch-icon_152x152" href="https://biox.stanford.edu/themes/open_framework/images/favicons/apple-icon-152x152.png" sizes="152x152" />
+<link rel="apple-touch-icon_180x180" href="https://biox.stanford.edu/themes/open_framework/images/favicons/apple-icon-180x180.png" sizes="180x180" />
+<link rel="apple-touch-icon-precomposed_180x180" href="https://biox.stanford.edu/themes/open_framework/images/favicons/apple-icon-precomposed.png" sizes="180x180" />
+    <title>James Zou - Assistant Professor of Biomedical Data Science and (by courtesy) of Computer Science and of Electrical Engineering</title>
+    <link rel="stylesheet" href="https://biox.stanford.edu/files/css/css_X6zzF1Doi3-4xL7pl0sv61SSD5bIKKmx6RMVve62XjQ.css" media="all" />
+<link rel="stylesheet" href="https://biox.stanford.edu/files/css/css_uzln8TIcofctLTd_4qwpgvIp8svO5R5GE4zWUcCbeCg.css" media="all" />
+<link rel="stylesheet" href="https://biox.stanford.edu/files/css/css_WjhLMaYeYA8VjK52AHkxjjhHw5cRWrUoAQcye7GkBYs.css" media="all" />
+<link rel="stylesheet" href="https://biox.stanford.edu/files/css/css_FUrd08l3vzo9hHd0kX639vuRbco5DmwXU60kY25Soy0.css" media="all" />
+<link rel="stylesheet" href="https://biox.stanford.edu/files/css/css_KdLncZZ60zVXTRHdVvCpWhNhgnqjPC4f75swkLplttQ.css" media="print" />
+<link rel="stylesheet" href="https://biox.stanford.edu/files/css/css_TeM6djPEz_0xzL3nrRzHAfO4x5JKhWdXOviOitTNZA4.css" media="screen" />
+<link rel="stylesheet" href="https://biox.stanford.edu/files/css/css_XiR7G_POCsnr8YgLCoNKdrajweR66gXAXBGjZJf035k.css" media="screen" />
+    <script>window.Backdrop = {settings: {"basePath":"\/","pathPrefix":"","drupalCompatibility":true,"ajaxPageState":{"theme":"open_framework","theme_token":"gg8fdPzxzNOzqgD1XCbOJoiHyXUHeqy8Tu-t9FXg20g","css":{"core\/misc\/normalize.css":1,"core\/modules\/system\/css\/system.css":1,"core\/modules\/system\/css\/system.theme.css":1,"core\/modules\/system\/css\/messages.theme.css":1,"core\/modules\/layout\/css\/grid-flexbox.css":1,"modules\/custom\/biox\/css\/biox.css":1,"core\/modules\/date\/css\/date.css":1,"core\/modules\/field\/css\/field.css":1,"modules\/contrib\/fitvids\/css\/fitvids.css":1,"modules\/contrib\/paragraphs\/css\/paragraphs.css":1,"core\/modules\/search\/search.theme.css":1,"core\/modules\/user\/css\/user.css":1,"core\/modules\/views\/css\/views.css":1,"layouts\/openframework\/css\/grid-flexbox.css":1,"layouts\/openframework\/css\/openframework.css":1,"core\/modules\/system\/css\/menu-dropdown.theme.css":1,"core\/modules\/system\/css\/menu-toggle.theme.css":1,"core\/themes\/basis\/css\/base.css":1,"core\/themes\/basis\/css\/layout.css":1,"core\/themes\/basis\/css\/component\/small-text-components.css":1,"core\/themes\/basis\/css\/component\/header.css":1,"core\/themes\/basis\/css\/component\/footer.css":1,"themes\/open_framework\/css\/component\/menu-dropdown.css":1,"core\/themes\/basis\/css\/component\/menu-toggle.css":1,"core\/themes\/basis\/css\/component\/backdrop-form.css":1,"core\/themes\/basis\/css\/component\/tabledrag.css":1,"core\/themes\/basis\/css\/component\/vertical-tabs.css":1,"core\/themes\/basis\/css\/component\/fieldset.css":1,"core\/themes\/basis\/css\/component\/dialog.css":1,"core\/themes\/basis\/css\/component\/progress.css":1,"core\/themes\/basis\/css\/component\/admin-tabs.css":1,"themes\/open_framework\/css\/component\/breadcrumb.css":1,"themes\/open_framework\/css\/component\/pager.css":1,"core\/themes\/basis\/css\/component\/hero.css":1,"core\/themes\/basis\/css\/component\/cards.css":1,"themes\/open_framework\/css\/component\/teasers.css":1,"core\/themes\/basis\/css\/component\/comment.css":1,"themes\/open_framework\/css\/component\/caption.css":1,"themes\/open_framework\/css\/skin.css":1,"core\/themes\/basis\/system.theme.css":1,"core\/themes\/basis\/menu-dropdown.theme.css":1,"core\/themes\/basis\/menu-dropdown.theme.breakpoint.css":1,"core\/themes\/basis\/menu-dropdown.theme.breakpoint-queries.css":1,"themes\/open_framework\/css\/biox-paragraphs.css":1,"themes\/open_framework\/css\/open-framework.css":1,"core\/themes\/basis\/css\/print.css":1,"core\/misc\/opensans\/opensans.css":1,"core\/misc\/smartmenus\/css\/sm-core-css.css":1},"js":{"public:\/\/google_tag\/google_tag.script.js":1,"core\/misc\/jquery.js":1,"core\/misc\/jquery.once.js":1,"core\/misc\/backdrop.js":1,"core\/modules\/layout\/js\/grid-fallback.js":1,"core\/misc\/ajax.js":1,"core\/misc\/jquery.form.js":1,"core\/misc\/smartmenus\/jquery.smartmenus.js":1,"core\/misc\/smartmenus\/addons\/keyboard\/jquery.smartmenus.keyboard.js":1,"core\/misc\/form.js":1,"modules\/contrib\/fitvids\/js\/fitvids.js":1,"modules\/contrib\/fitvids\/js\/jquery.fitvids.js":1,"modules\/contrib\/views_slideshow\/js\/views_slideshow.js":1,"modules\/contrib\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/formoptions.js":1,"modules\/contrib\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/views_slideshow_cycle.js":1,"core\/modules\/views\/js\/base.js":1,"core\/misc\/progress.js":1,"core\/modules\/views\/js\/ajax_view.js":1,"modules\/contrib\/field_group\/js\/field_group.js":1,"modules\/contrib\/field_group\/js\/field_groups.js":1,"core\/modules\/system\/js\/menus.js":1,"core\/themes\/basis\/js\/script.js":1}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:1b27180c02a30b0abb5226c435a13a8b":{"view_name":"profile","view_display_id":"story","view_args":"5986","view_path":"node\/5986","view_base_path":"about\/people\/profiles","view_dom_id":"1b27180c02a30b0abb5226c435a13a8b","pager_element":0,"exposed_form_in_block":false},"views_dom_id:b4db88e00642f5afda01f64607cf7d00":{"view_name":"profile","view_display_id":"fellows","view_args":"5986","view_path":"node\/5986","view_base_path":"about\/people\/profiles","view_dom_id":"b4db88e00642f5afda01f64607cf7d00","pager_element":0,"exposed_form_in_block":false},"views_dom_id:631b606d5729570ae943d73735fdc020":{"view_name":"profile","view_display_id":"undergrad","view_args":"5986","view_path":"node\/5986","view_base_path":"about\/people\/profiles","view_dom_id":"631b606d5729570ae943d73735fdc020","pager_element":0,"exposed_form_in_block":false},"views_dom_id:9ba63a4039e557fd7d0ef5bd21a181c1":{"view_name":"profile","view_display_id":"mentors","view_args":"5986","view_path":"node\/5986","view_base_path":"about\/people\/profiles","view_dom_id":"9ba63a4039e557fd7d0ef5bd21a181c1","pager_element":0,"exposed_form_in_block":false},"views_dom_id:4750bed739a959af6ba3e1a7a3b062c1":{"view_name":"profile","view_display_id":"seedgrants","view_args":"5986","view_path":"node\/5986","view_base_path":"about\/people\/profiles","view_dom_id":"4750bed739a959af6ba3e1a7a3b062c1","pager_element":0,"exposed_form_in_block":false},"views_dom_id:73c9c86720e1a64fd72bcbef515deaeb":{"view_name":"profile","view_display_id":"research","view_args":"5986","view_path":"node\/5986","view_base_path":"about\/people\/profiles","view_dom_id":"73c9c86720e1a64fd72bcbef515deaeb","pager_element":0,"exposed_form_in_block":false},"views_dom_id:8551acc04306f7231ad7e28dde6d0835":{"view_name":"profile","view_display_id":"videos","view_args":"5986","view_path":"node\/5986","view_base_path":"about\/people\/profiles","view_dom_id":"8551acc04306f7231ad7e28dde6d0835","pager_element":0,"exposed_form_in_block":false},"views_dom_id:277d1318f80527e49d93dfa9aa3f0ed1":{"view_name":"profile","view_display_id":"news","view_args":"5986","view_path":"node\/5986","view_base_path":"about\/people\/profiles","view_dom_id":"277d1318f80527e49d93dfa9aa3f0ed1","pager_element":0,"exposed_form_in_block":false}}},"better_exposed_filters":{"views":{"profile":{"displays":{"story":{"filters":[]},"fellows":{"filters":[]},"undergrad":{"filters":[]},"mentors":{"filters":[]},"seedgrants":{"filters":[]},"research":{"filters":[]},"videos":{"filters":[]},"news":{"filters":[]}}}}},"field_group":{"div":"full"},"urlIsAjaxTrusted":{"\/content\/search\/all\/":true},"fitvids":{"custom_domains":["iframe[src^=\u0027https:\/\/biox.stanford.edu\/modules\/contrib\/pdfjs\u0027]","iframe[src^=\u0027https:\/\/dev-bio-x-backdrop.pantheonsite.io\/modules\/contrib\/pdfjs\u0027]","iframe[src^=\u0027https:\/\/test-bio-x-backdrop.pantheonsite.io\/modules\/contrib\/pdfjs\u0027]","iframe[src^=\u0027https:\/\/live-bio-x-backdrop.pantheonsite.io\/modules\/contrib\/pdfjs\u0027]","iframe[src^=\u0027https:\/\/biox-backdrop.ddev.site\/modules\/contrib\/pdfjs\u0027]"],"selectors":["body"],"simplifymarkup":0}}};</script>
+<script defer="defer" src="https://biox.stanford.edu/files/google_tag/google_tag.script.js?t697jx"></script>
+<script src="https://biox.stanford.edu/files/js/js_qcuQasNlfIq7236oVf0NRWYeUUrasWXW4qABbJzWJEo.js"></script>
+<script src="https://biox.stanford.edu/files/js/js_2769LUMU_6jgEW4PM7F4JIK61umFTNt2UN7SzJNCvbM.js"></script>
+<script src="https://biox.stanford.edu/files/js/js_Nk4Oc3FJNxUZzYymyMMeeXCKrSPVCmHtYUmyXxH1T64.js"></script>
+<script src="https://biox.stanford.edu/files/js/js_9GuRM9-g2RMPRfC2HRlSUZ_Cn3mDyfyZ80Kpg_4gXOQ.js"></script>
+<script src="https://biox.stanford.edu/files/js/js__m_E87HVAkZX2YE7oOWSgK-QMfK-PtY209iqcX2wsRE.js"></script>
+  </head>
+  <body class="page node-type-profile page-node-5986 page-node-5986">
+    <div class="layout--open-framework-layout layout layout-instance-profiles has-sidebar-second">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+
+          <div class="l-header-region">
+      <div class="l-header-region-inner container container-fluid">
+        <div class="row">
+          <header class="l-header col col-xs-12 col-md-8" role="banner" aria-label="Site header">
+            <div class="l-header-inner">
+              <div class="block block-copy-blocks-region-copy">
+
+
+  <div class="block-content">
+    <div class="block block-biox-biox-logo">
+
+
+  <div class="block-content">
+    <div> <a href="/" title="Home" rel="home"><img id="logo" class="site-logo" src="/modules/custom/biox/images/biox-logo.png" alt="Welcome to Bio-X" role="presentation" /><div id="name-and-slogan"><h1 id="site-name" class="site-name">Welcome to Bio-X</h1></div><!-- /#name-and-slogan --></a></div>  </div>
+</div>
+  </div>
+</div>
+            </div>
+          </header>
+                      <div class="l-search-box col-xs-12 col-md-4" aria-label="Search box">
+              <div class="l-search-box-inner">
+                <div class="block block-copy-blocks-region-copy">
+
+
+  <div class="block-content">
+    <div class="block block-menu-menu-utility" role="navigation">
+
+
+  <div class="block-content">
+    <ul class="menu-top-only menu" data-menu-style="top_only" data-clickdown="0" data-collapse="default"><li class="first leaf menu-mlid-787"><a href="/get-involved/support" title="">Support</a></li>
+<li class="last leaf menu-mlid-783"><a href="/about/contact" title="">Contact</a></li>
+</ul>  </div>
+</div>
+<div class="block block-search-form" role="search">
+
+
+  <div class="block-content">
+    <form class="search-block-form search-box" action="/content/search/all/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="form-item form-type-search form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the keywords you wish to search for." placeholder="Search this site..." type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-search" />
+</div>
+<input type="hidden" name="form_build_id" value="form-S3fTYA5WRqTFFEr-Ddy466eSHBE2vtwU9Hcpr6D_xrs" />
+<input type="hidden" name="form_id" value="search_block_form" />
+<div class="form-actions" id="edit-actions"><input class="button-primary form-submit" type="submit" id="edit-submit" name="op" value="Search" /></div></div></form>  </div>
+</div>
+  </div>
+</div>
+              </div>
+            </div>
+                  </div>
+      </div>
+    </div>
+        <header class="l-navigation" role="banner" aria-label="Navigation">
+      <div class="l-navigation-inner container">
+        <div class="block block-copy-blocks-region-copy">
+
+
+  <div class="block-content">
+    <div class="block block-system-main-menu block-menu" role="navigation">
+
+
+  <div class="block-content">
+    <input id="menu-toggle-state" class="menu-toggle-state element-invisible" type="checkbox" aria-controls="menu-toggle-state" /><label class="menu-toggle-button" for="menu-toggle-state"><span class="menu-toggle-button-icon"></span><span class="menu-toggle-button-text">Menu</span><span class="menu-toggle-assistive-text element-invisible">Toggle menu visibility</span></label><ul class="menu-dropdown menu" data-menu-style="dropdown" data-clickdown="0" data-collapse="link" data-menu-toggle-id="menu-toggle-state"><li class="first expanded has-children menu-mlid-815"><a href="/about">About</a><ul><li class="first leaf menu-mlid-817"><a href="/about/biox-history">Bio-X History</a></li>
+<li class="leaf menu-mlid-819"><a href="/about/contact">Contact Us</a></li>
+<li class="expanded has-children menu-mlid-821"><a href="/about/clark-center">Clark Center</a><ul><li class="first leaf menu-mlid-823"><a href="/about/clark-center/map-directions">Map &amp; Directions</a></li>
+<li class="leaf menu-mlid-825"><a href="/about/clark-center/tours">Tours</a></li>
+<li class="last leaf menu-mlid-827"><a href="/about/clark-center/dining">Dining Options</a></li>
+</ul></li>
+<li class="expanded has-children menu-mlid-829"><a href="/about/building-services">Building Services</a><ul><li class="first collapsed menu-mlid-1055"><a href="/about/building-services/room-scheduling">Room Scheduling</a></li>
+<li class="collapsed menu-mlid-831"><a href="/about/building-services/it">IT</a></li>
+<li class="leaf menu-mlid-1717"><a href="https://biox.stanford.edu/about/building-services#General Facilities Issues" title="">General Facilities Issues</a></li>
+<li class="leaf menu-mlid-1726"><a href="https://biox.stanford.edu/about/building-services#Urgent%20Facilities%20Issues" title="">Urgent Facilities Issues</a></li>
+<li class="leaf menu-mlid-1719"><a href="https://biox.stanford.edu/about/building-services#Non-Emergency Requests" title="">Non-Emergency Facilities Requests </a></li>
+<li class="leaf menu-mlid-1721"><a href="https://biox.stanford.edu/about/building-services#Building Access" title="">Building Access Request</a></li>
+<li class="leaf menu-mlid-1723"><a href="https://biox.stanford.edu/about/building-services#Lab Safety" title="">Lab Safety</a></li>
+<li class="last leaf menu-mlid-1725"><a href="https://biox.stanford.edu/about/building-services#Shared Equipment" title="">Shared Equipment</a></li>
+</ul></li>
+<li class="last leaf menu-mlid-1071"><a href="/about/faq">FAQ</a></li>
+</ul></li>
+<li class="leaf menu-mlid-3461"><a href="/people">People</a></li>
+<li class="expanded has-children menu-mlid-1148"><a href="/research">Research</a><ul><li class="first expanded has-children menu-mlid-795"><a href="/research/seed-grants">Seed Grants</a><ul><li class="first last leaf menu-mlid-3811"><a href="https://biox.stanford.edu/research/research-projects/seed-grants" title="">Browse Seed Grants</a></li>
+</ul></li>
+<li class="leaf menu-mlid-1155"><a href="/research/postdoctoral-fellows-visiting-scholars">Visiting Scholars/Visiting Postdocs</a></li>
+<li class="leaf menu-mlid-797"><a href="/research/phd-fellows">PhD Fellows</a></li>
+<li class="leaf menu-mlid-801"><a href="/research/undergraduate-research">Undergraduate Research</a></li>
+<li class="expanded has-children menu-mlid-1149"><a href="/research/ventures" title="">Ventures</a><ul><li class="first leaf menu-mlid-4451"><a href="https://biox.stanford.edu/research/foodstanford" title="">Food@Stanford</a></li>
+<li class="last leaf menu-mlid-1075"><a href="/research/venture/neuroventures">NeuroVentures</a></li>
+</ul></li>
+<li class="leaf menu-mlid-799"><a href="/research/travel-awards">Travel Awards</a></li>
+<li class="leaf menu-mlid-803"><a href="/research/partners">Research Partners</a></li>
+<li class="leaf menu-mlid-1423"><a href="/videos" title="">Browse Videos</a></li>
+<li class="last leaf menu-mlid-1151"><a href="/research/research-projects" title="">Browse All Research</a></li>
+</ul></li>
+<li class="expanded has-children menu-mlid-1111"><a href="/highlights">Highlights</a><ul><li class="first expanded has-children menu-mlid-1191"><a href="/videos" title="">Videos</a><ul><li class="first last leaf menu-mlid-1213"><a href="/video/clark-center-10x">Clark Center @ 10x Video</a></li>
+</ul></li>
+<li class="last leaf menu-mlid-1192"><a href="/in-the-news" title="">Bio-X in the News</a></li>
+</ul></li>
+<li class="expanded has-children menu-mlid-1193"><a href="/videos">Videos</a><ul><li class="first leaf menu-mlid-2234"><a href="/tags/usrp-faculty-talks" title="">USRP Faculty Talks</a></li>
+<li class="leaf menu-mlid-2236"><a href="/tags/symposium-lectures" title="">Symposium Lectures</a></li>
+<li class="last leaf menu-mlid-2238"><a href="/tags/additional-videos" title="">Additional Videos</a></li>
+</ul></li>
+<li class="expanded has-children menu-mlid-833"><a href="/events">Events</a><ul><li class="first leaf menu-mlid-1165"><a href="/events" title="">Upcoming Events</a></li>
+<li class="leaf menu-mlid-1194"><a href="/events/archive">Archive</a></li>
+<li class="last leaf menu-mlid-3801"><a href="https://biox.stanford.edu/videos" title="">Talk Videos</a></li>
+</ul></li>
+<li class="last expanded has-children menu-mlid-805"><a href="/get-involved">Get Involved</a><ul><li class="first leaf menu-mlid-807"><a href="/get-involved/faculty">Faculty</a></li>
+<li class="expanded has-children menu-mlid-809"><a href="/get-involved/students">Students</a><ul><li class="first last leaf menu-mlid-1015"><a href="/get-involved/students/courses-workshops">Courses &amp; Workshops</a></li>
+</ul></li>
+<li class="leaf menu-mlid-811"><a href="/get-involved/alumni-friends">Alumni &amp; Friends</a></li>
+<li class="expanded has-children menu-mlid-939"><a href="/get-involved/corporations">Corporations</a><ul><li class="first collapsed menu-mlid-1079"><a href="/get-involved/corporations/partnership-model">Partnership Models</a></li>
+<li class="leaf menu-mlid-1154"><a href="/get-involved/corporations/benefits-partnership">Benefits of Partnership</a></li>
+<li class="leaf menu-mlid-1188"><a href="/get-involved/corporations/corporate-affiliate-projects" title="">Corporate Member Projects</a></li>
+<li class="last leaf menu-mlid-1121"><a href="/get-involved/corporations/corporate-forum-newsletter-archive">Corporate Forum Newsletter Archive</a></li>
+</ul></li>
+<li class="leaf menu-mlid-1424"><a href="/videos" title="">Browse Videos</a></li>
+<li class="expanded has-children menu-mlid-1017"><a href="/get-involved/seminar-series">Seminar Series</a><ul><li class="first last leaf menu-mlid-1715"><a href="/stanford-bio-x-frontiers-interdisciplinary-biosciences">Stanford Bio-X Frontiers in Interdisciplinary Biosciences: 2019/2020</a></li>
+</ul></li>
+<li class="last expanded has-children menu-mlid-813"><a href="/get-involved/support">Support Bio-X</a><ul><li class="first last leaf menu-mlid-1435"><a href="/files/basic-page-files/stanford_bio-x_white_paper.pdf" title="">Stanford Bio-X White Paper</a></li>
+</ul></li>
+</ul></li>
+</ul>  </div>
+</div>
+  </div>
+</div>
+      </div>
+    </header>
+        <header class="l-fullwidth-top" role="banner" aria-label="Full Width Top">
+      <div class="l-fullwidth-top-inner">
+        <div class="block block-copy-blocks-region-copy">
+
+
+  <div class="block-content">
+    <div class="block block-system-breadcrumb container greybg">
+
+
+  <div class="block-content">
+    <nav class="breadcrumb" aria-label="Website Orientation"><ol><li><a href="/">Home</a></li></ol></nav>  </div>
+</div>
+  </div>
+</div>
+      </div>
+    </header>
+  
+  <div class="l-wrapper">
+    <div class="l-wrapper-inner container container-fluid">
+
+            
+      
+      
+      <div class="l-middle">
+        <div class="l-middle-inner row">
+                    <div class="l-content col-med-auto" aria-description="Main content">
+            
+              <div class="l-page-title">
+              <a id="main-content"></a>
+                                                      </div>
+
+                        <a id="page-title"></a>
+                          <div class="l-content-top">
+                <div class="block block-system-title-combo">
+
+
+  <div class="block-content">
+    
+  <h1 class="page-title">James Zou - Assistant Professor of Biomedical Data Science and (by courtesy) of Computer Science and of Electrical Engineering</h1>
+
+
+  </div>
+</div>
+              </div>
+                                    <main class="l-content-inner" role="main">
+              <article id="node-5986" class="node node-profile view-mode-full clearfix">
+
+      
+  
+  <div class="content clearfix">
+      <div class="field field-name-field-profile-photo field-type-image field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item even">
+              <img class="align-left" src="https://biox.stanford.edu/files/styles/profile_thumbnail/public/james_zou.webp?orig=png" width="150" height="150" alt="Headshot portrait of James Zou - Assistant Professor of Biomedical Data Science and (by courtesy) of Computer Science and of Electrical Engineering" />              </div>
+            </div>
+  </div>
+<div class="group-details field-group-div">  <div class="field field-name-field-persons-title field-type-text field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item even">
+              Bio-X Affiliated Faculty              </div>
+            </div>
+  </div>
+  <div class="field field-name-field-profile-website field-type-link-field field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item even">
+              <a href="https://med.stanford.edu/profiles/james-zou" target="_blank">CAP Profile</a>              </div>
+                        <div class="field-item odd">
+              <a href="https://www.james-zou.com/" target="_blank">Dr. Zou's Homepage</a>              </div>
+            </div>
+  </div>
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item even">
+              <p>Dr. Zou works on a wide range of problems in machine learning (from proving mathematical properties to designing new probabilistic models) and is especially interested in applications in human genomics.</p>              </div>
+            </div>
+  </div>
+</div>  </div>
+
+  
+  
+</article>
+            </main>
+                                                                                                          </div>
+                      <div class="l-sidebar l-sidebar-second col-md-3">
+              <div class="block block-block-people-groups">
+
+  <h2 class="block-title">People</h2>
+
+  <div class="block-content">
+    <ul>
+	<li><a href="https://biox.stanford.edu/person-group/executive-committee">Executive Committee</a></li>
+	<li><a href="https://biox.stanford.edu/person-group/advisory-council">Stanford Interdisciplinary Life Sciences Council</a></li>
+	<li><a href="https://biox.stanford.edu/person-group/scientific-leadership-council">Scientific Leadership Council</a></li>
+	<li><a href="https://biox.stanford.edu/person-group/seed-grant-committee">Seed Grant Committee</a></li>
+	<li><a href="https://biox.stanford.edu/person-group/clark-center-working-group">Clark Center Working Group</a></li>
+	<li><a href="https://biox.stanford.edu/person-group/affiliated-faculty">Affiliated Faculty</a></li>
+	<li><a href="https://biox.stanford.edu/person-group/clark-center-faculty">Clark Center Faculty</a></li>
+	<li><a href="https://biox.stanford.edu/person-group/bio-xclark-center-team">Bio-X/Clark Center Team</a></li>
+	<li><a href="https://biox.stanford.edu/person-group/bio-x-phd-fellows">PhD Fellows</a></li>
+	<li><a href="https://biox.stanford.edu/person-group/bio-x-postdoctoral-fellows">Postdoctoral Fellows</a></li>
+	<li><a href="https://biox.stanford.edu/person-group/bio-x-undergraduate-fellows">Undergraduate Fellows</a></li>
+	<li><a href="https://biox.stanford.edu/person-group/bio-x-travel-award-recipients">Travel Award Recipients</a></li>
+</ul>  </div>
+</div>
+            </div>
+                  </div><!-- /.l-middle-inner -->
+      </div><!-- /.l-middle -->
+
+              <div class="l-main-lower">
+          <div class="block block-views-profile-fellows">
+
+  <h2 class="block-title">Stanford Bio-X Fellows Mentored by James Zou</h2>
+
+  <div class="block-content">
+    <div class="view view-profile view-id-profile view-display-id-fellows flexy view-dom-id-b4db88e00642f5afda01f64607cf7d00">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 odd first col-md-2">
+      
+  <div class="views-field views-field-field-profile-photo">        <div class="field-content rounded"><a href="/people/kyle-swanson"><img src="https://biox.stanford.edu/files/styles/profile_thumbnail/public/swanson_kyle_sq.webp?orig=png" width="150" height="150" alt="Headshot portrait of Kyle Swanson - Paul Berg Interdisciplinary Biomedical Graduate Fellow" /></a></div>  </div>  
+  <div class="views-field views-field-field-last-name">        <div class="field-content"><h3><a href="/people/kyle-swanson">Kyle  Swanson </a></h3></div>  </div>  
+  <div class="views-field views-field-field-persons-title">        <div class="field-content">Bio-X SIGF Graduate Student Fellow</div>  </div>  </div>
+  <div class="views-row views-row-2 even col-md-2">
+      
+  <div class="views-field views-field-field-profile-photo">        <div class="field-content rounded"><a href="/people/eric-wu"><img src="https://biox.stanford.edu/files/styles/profile_thumbnail/public/wu_eric_ps_sq.webp?orig=png" width="150" height="150" alt="Headshot portrait of Eric Wu - Stanford Interdisciplinary Graduate Fellow (Anonymous Donor)" /></a></div>  </div>  
+  <div class="views-field views-field-field-last-name">        <div class="field-content"><h3><a href="/people/eric-wu">Eric Wu</a></h3></div>  </div>  
+  <div class="views-field views-field-field-persons-title">        <div class="field-content">Bio-X SIGF Graduate Student Fellow</div>  </div>  </div>
+  <div class="views-row views-row-3 odd last col-md-2">
+      
+  <div class="views-field views-field-field-profile-photo">        <div class="field-content rounded"><a href="/people/tony-ginart"><img src="https://biox.stanford.edu/files/styles/profile_thumbnail/public/ginart_tony_website.webp?orig=png" width="150" height="150" alt="Headshot portrait of Tony Ginart - Stanford Interdisciplinary Graduate Fellow (Anonymous Donor) " /></a></div>  </div>  
+  <div class="views-field views-field-field-last-name">        <div class="field-content"><h3><a href="/people/tony-ginart">Tony Ginart</a></h3></div>  </div>  
+  <div class="views-field views-field-field-persons-title">        <div class="field-content">Bio-X SIGF Graduate Student Fellow</div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+        </div>
+                    <div class="l-main-bottom">
+          <div class="block block-views-profile-seedgrants">
+
+  <h2 class="block-title">Stanford Bio-X Seed Grants</h2>
+
+  <div class="block-content">
+    <div class="view view-profile view-id-profile view-display-id-seedgrants flexy view-dom-id-4750bed739a959af6ba3e1a7a3b062c1">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 odd first last col-md-4">
+      
+  <div class="views-field views-field-rendered-entity">        <span class="field-content"><article id="node-14421" class="node node-research-article view-mode-teaser-expanded clearfix">
+
+      
+  
+  <div class="content clearfix">
+      <div class="field field-name-field-research-preview-image field-type-image field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item even">
+              <a href="/research/seed-grants/interdisciplinary-initiatives-program-seed-grant-spatial-genetic-effects"><img src="https://biox.stanford.edu/files/styles/teaser_expanded/public/kasowski_montine_zou_r11.webp?orig=png" alt="" /></a>              </div>
+            </div>
+  </div>
+<h3 class="field-name-title"><a href="/research/seed-grants/interdisciplinary-initiatives-program-seed-grant-spatial-genetic-effects">Interdisciplinary Initiatives Program Seed Grant: Spatial Genetic Effects in the Microstructures of the Hippocampus</a></h3>  <div class="field field-name-field-research-project-summary field-type-text-long field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item even">
+              Interdisciplinary Initiatives Program Round 11 - 2022
+              </div>
+            </div>
+  </div>
+  </div>
+
+  
+  
+</article>
+</span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div class="block block-views-profile-news">
+
+  <h2 class="block-title">Research News</h2>
+
+  <div class="block-content">
+    <div class="view view-profile view-id-profile view-display-id-news flexy view-dom-id-277d1318f80527e49d93dfa9aa3f0ed1">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 odd first col-md-4">
+      
+  <div class="views-field views-field-rendered-entity">        <span class="field-content"><article id="node-15450" class="node node-highlight view-mode-teaser-expanded clearfix">
+
+      
+  
+  <div class="content clearfix">
+      <div class="field field-name-field-highlight-preview-image field-type-image field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item even">
+              <img src="https://biox.stanford.edu/files/styles/teaser_expanded/public/1729008029196.webp?orig=jpg" alt="Image of cells in a shape of a loop with different colors." />              </div>
+            </div>
+  </div>
+<h3 class="field-name-title"><a href="/highlight/liver-cancer-stem-cells-shown-use-immune-system-shield-spark-disease-recurrence">Liver cancer stem cells shown to use immune system as shield to spark disease recurrence</a></h3>  <div class="field field-name-field-highlight-summary field-type-text-long field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item even">
+              <p><em>October 9, 2024 - Stanford Medicine News Center</em><br />&#13;
+A Stanford Medicine-led study from Stanford Bio-X faculty members Dean Felsher, James Zou, Nishita...</p>              </div>
+            </div>
+  </div>
+  </div>
+
+  
+  
+</article>
+</span>  </div>  </div>
+  <div class="views-row views-row-2 even col-md-4">
+      
+  <div class="views-field views-field-rendered-entity">        <span class="field-content"><article id="node-8531" class="node node-highlight view-mode-teaser-expanded clearfix">
+
+      
+  
+  <div class="content clearfix">
+      <div class="field field-name-field-highlight-preview-image field-type-image field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item even">
+              <img src="https://biox.stanford.edu/files/styles/teaser_expanded/public/dart_board_banner.webp?orig=png" alt="Photo of a dart board with several darts in it." />              </div>
+            </div>
+  </div>
+<h3 class="field-name-title"><a href="/highlight/new-antibiotics-are-desperately-needed-machine-learning-could-help">New antibiotics are desperately needed: Machine learning could help</a></h3>  <div class="field field-name-field-highlight-summary field-type-text-long field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item even">
+              <p><em>February 13, 2019 - Stanford Medicine Scope</em><br />&#13;
+	Scientists including Stanford Bio-X affiliated faculty member James Zou have created an algorithm that...</p>              </div>
+            </div>
+  </div>
+  </div>
+
+  
+  
+</article>
+</span>  </div>  </div>
+  <div class="views-row views-row-3 odd last col-md-4">
+      
+  <div class="views-field views-field-rendered-entity">        <span class="field-content"><article id="node-7736" class="node node-highlight view-mode-teaser-expanded clearfix">
+
+      
+  
+  <div class="content clearfix">
+      <div class="field field-name-field-highlight-preview-image field-type-image field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item even">
+              <img src="https://biox.stanford.edu/files/styles/teaser_expanded/public/language_stereotypes.webp?orig=png" alt="Graphic image of a silhouetted human head with binary code through it, in front of a world map of lit up data points." />              </div>
+            </div>
+  </div>
+<h3 class="field-name-title"><a href="/highlight/machine-learning-algorithm-measures-changes-gender-ethnic-bias">Machine-learning algorithm measures changes in gender, ethnic bias</a></h3>  <div class="field field-name-field-highlight-summary field-type-text-long field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item even">
+              <p><em>April 3, 2018 - Stanford News</em><br />&#13;
+	Stanford Bio-X affiliated faculty members James Zou and Dan Jurafsky show that, over the past century, linguistic...</p>              </div>
+            </div>
+  </div>
+  </div>
+
+  
+  
+</article>
+</span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+        </div>
+      
+    </div><!-- /.l-wrapper-inner -->
+  </div><!-- /.l-wrapper -->
+      <footer class="l-fullwidth-bottom">
+      <div class="l-fullwidth-bottom-inner">
+        <div class="block block-copy-blocks-region-copy container">
+
+
+  <div class="block-content">
+    <div class="block block-block-bio-x-contact-information col-sm-7 col-md-9">
+
+  <h2 class="block-title">Stanford Bio-X</h2>
+
+  <div class="block-content">
+    <p><span class="contact-place">James H. Clark Center, Stanford University</span> <span class="contact-address">318 Campus Drive Stanford, CA 94305</span> <span class="contact-phone"><a href="mailto:contact-biox@stanford.edu">contact-biox@stanford.edu</a></span><br />
+<a href="https://twitter.com/StanfordBioX?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @StanfordBioX</a></p>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  </div>
+</div>
+<div class="block block-menu-menu-footer col-sm-5 col-md-3" role="navigation">
+
+
+  <div class="block-content">
+    <ul class="menu-top-only menu" data-menu-style="top_only" data-clickdown="0" data-collapse="default"><li class="first leaf menu-mlid-789"><a href="/about/contact" title="">Contact</a></li>
+<li class="leaf menu-mlid-1081"><a href="/about/faq" title="">FAQ</a></li>
+<li class="last leaf menu-mlid-793"><a href="/about/building-services/room-scheduling" title="">Room Reservations</a></li>
+</ul>  </div>
+</div>
+  </div>
+</div>
+      </div>
+    </footer>
+        <footer class="l-footer">
+      <div class="l-footer-inner container container-fluid">
+        <div class="block block-copy-blocks-region-copy">
+
+
+  <div class="block-content">
+    <div class="block block-block-7">
+
+
+  <div class="block-content">
+    <div id="global-footer" role="contentinfo">
+<div class="logo" id="bottom-logo"><a href="http://www.stanford.edu"><img alt="Stanford University" src="https://biox.stanford.edu/modules/custom/biox/images/footer-stanford-logo%402x.png" /></a></div>
+
+<div class="menu-copyright">
+<div id="bottom-menu">
+<ul>
+	<li><a href="https://www.stanford.edu">Stanford Home</a></li>
+	<li><a href="https://visit.stanford.edu/plan/">Maps &amp; Directions</a></li>
+	<li><a href="https://www.stanford.edu/search/">Search Stanford</a></li>
+	<li><a href="https://emergency.stanford.edu">Emergency Info</a></li>
+</ul>
+
+<ul>
+	<li><a href="https://www.stanford.edu/site/terms/" title="Terms of use for sites">Terms of Use</a></li>
+	<li><a href="https://www.stanford.edu/site/privacy/" title="Privacy and cookie policy">Privacy</a></li>
+	<li><a href="https://uit.stanford.edu/security/copyright-infringement" title="Report alleged copyright infringement">Copyright</a></li>
+	<li><a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" title="Ownership and use of Stanford trademarks and images">Trademark</a></li>
+	<li><a href="http://exploredegrees.stanford.edu/nonacademicregulations/nondiscrimination/" title="Non-discrimination policy">Non-Discrimination</a></li>
+	<li><a href="https://www.stanford.edu/site/accessibility" title="Report web accessibility issues">Accessibility</a></li>
+</ul>
+</div>
+
+<div id="copyright">
+<p class="vcard">© Stanford University, Stanford, California 94305</p>
+</div>
+</div>
+</div>  </div>
+</div>
+  </div>
+</div>
+      </div>
+    </footer>
+  </div><!-- /.layout--open-framework-layout -->
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB7H4QP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>      </body>
+</html>

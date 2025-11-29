@@ -114,3 +114,28 @@ Andrej Karpathy 提出，工业级 LLM 应用的核心是"将恰到好处的信�
 
 **编译者**: Manus AI  
 **项目地址**: https://github.com/[username]/ai-leaders-insights
+
+---
+
+## 📅 2024-2025 年度更新
+
+### [AI 领军人物 2024-2025 年度观察报告](./AI_Leaders_2024_2025_Updates.md)
+
+系统性搜集了 20 位从 OpenAI 离职创业的顶级 AI 人才在 2024-2025 年的最新动态：
+
+- **Ilya Sutskever** (Safe Superintelligence) - 从 Scaling 到 Research 的转向
+- **Mira Murati** (Thinking Machines Lab) - AGI 2-3 年内可实现
+- **John Schulman** (Thinking Machines Lab) - PPO 算法发明者的新征程
+- **Dario & Daniela Amodei** (Anthropic) - Claude 3.7 与 AI 安全
+- **Andrej Karpathy** (Eureka Labs) - AI 教育民主化
+- **Pieter Abbeel** (Covariant) - 机器人基础模型 RFM-1
+- **Aravind Srinivas** (Perplexity) - AI 搜索引擎革命
+- 以及更多...
+
+**涵盖内容**：
+- 📢 重要言论与观点
+- 📄 学术论文（arXiv、顶会）
+- 📝 公司博客文章
+- 🎤 访谈与演讲
+- 📊 影响力指标（融资、引用、社交媒体）
+

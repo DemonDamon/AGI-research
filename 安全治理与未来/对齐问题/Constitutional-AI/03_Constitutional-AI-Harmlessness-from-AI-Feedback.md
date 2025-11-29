@@ -2,16 +2,42 @@
 
 **来源**: [https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback)
 
-**类型**: doc
+---
 
-## 简介
+# Constitutional AI: Harmlessness from AI Feedback \ Anthropic
 
-Anthropic's official research page providing an overview and link to the original paper on Constitutional AI, a method for aligning AI systems using a set of written principles.
+原文链接: https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback
 
-## 原文内容
+AlignmentResearch
 
-由于内容较长，请访问原始链接查看完整内容：[https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback)
+# Constitutional AI: Harmlessness from AI Feedback
+
+Dec 15, 2022
+
+[Read Paper](https://arxiv.org/abs/2212.08073)
+
+## Abstract
+
+As AI systems become more capable, we would like to enlist their help to supervise other AIs. We experiment with methods for training a harmless AI assistant through self-improvement, without any human labels identifying harmful outputs. The only human oversight is provided through a list of rules or principles, and so we refer to the method as 'Constitutional AI'. The process involves both a supervised learning and a reinforcement learning phase. In the supervised phase we sample from an initial model, then generate self-critiques and revisions, and then finetune the original model on revised responses. In the RL phase, we sample from the finetuned model, use a model to evaluate which of the two samples is better, and then train a preference model from this dataset of AI preferences. We then train with RL using the preference model as the reward signal, i.e. we use 'RL from AI Feedback' (RLAIF). As a result we are able to train a harmless but non-evasive AI assistant that engages with harmful queries by explaining its objections to them. Both the SL and RL methods can leverage chain-of-thought style reasoning to improve the human-judged performance and transparency of AI decision making. These methods make it possible to control AI behavior more precisely and with far fewer human labels.
+
+## Policy Memo
+
+[Constitutional AI Policy Memo](https://www-cdn.anthropic.com/7512771452629584566b6303311496c262da1006/Anthropic_ConstitutionalAI_v2.pdf)
+
+## Related content
+
+### Estimating AI productivity gains from Claude conversations
+
+[Read more](/research/estimating-productivity-gains)
+
+### Mitigating the risk of prompt injections in browser use
+
+[Read more](/research/prompt-injection-defenses)
+
+### From shortcuts to sabotage: natural emergent misalignment from reward hacking
+
+[Read more](/research/emergent-misalignment-reward-hacking)
 
 ---
 
-*注：本文档为自动生成的资料索引*
+*爬取时间: 2025-11-28 21:57:37*

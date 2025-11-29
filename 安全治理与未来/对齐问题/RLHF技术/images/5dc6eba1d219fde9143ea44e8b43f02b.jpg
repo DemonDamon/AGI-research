@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<!-- [if startif]
+/*! 
+* @author: Machine Learning Department, Carnegie Mellon University
+* @feedback: mariya@cmu.edu, mldweb@cs.cmu.edu
+* @copyright: Carnegie Mellon University | All Rights Reserved
+* @description: Blog capable website for Research Scientists with the Machine Learning Department at Carnegie Mellon University.
+*/
+[endif] -->
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="referrer" content="origin">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114918459-2"></script>
+    <script>'use strict';window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-114918459-2');</script>     
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://blog.ml.cmu.edu/xmlrpc.php">
+    <meta property="og:image" content="https://blog.ml.cmu.edu/wp-content/uploads/2021/11/G2d_pdf_10_-30_v2-970x572.png" />
+    <title>Analyzing and Improving the Optimization Landscape of Noise-Contrastive Estimation &#8211; Machine Learning Blog | ML@CMU | Carnegie Mellon University</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Machine Learning Blog | ML@CMU | Carnegie Mellon University &raquo; Feed" href="https://blog.ml.cmu.edu/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Machine Learning Blog | ML@CMU | Carnegie Mellon University &raquo; Comments Feed" href="https://blog.ml.cmu.edu/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Machine Learning Blog | ML@CMU | Carnegie Mellon University &raquo; Analyzing and Improving the Optimization Landscape of Noise-Contrastive Estimation Comments Feed" href="https://blog.ml.cmu.edu/2021/11/05/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blog.ml.cmu.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.16"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://blog.ml.cmu.edu/wp-includes/css/dist/block-library/style.min.css?ver=5.6.16' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='email-subscribers-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/email-subscribers/lite/public/css/email-subscribers-public.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='modern_footnotes-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/modern-footnotes/styles.min.css?ver=1.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wpt-twitter-feed-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/wp-to-twitter/css/twitter-feed.css?ver=5.6.16' type='text/css' media='all' />
+<link rel='stylesheet' id='mc4wp-form-themes-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/mailchimp-for-wp/assets/css/form-themes.min.css?ver=4.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mint-fonts-css'  href='https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic%7CLora:400,400italic,700,700italic&#038;subset=latin' type='text/css' media='all' />
+<link rel='stylesheet' id='plugins-styles-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/plugins-styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/woocommerce.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mint-main-styles-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/style.css' type='text/css' media='all' />
+<style id='mint-main-styles-inline-css' type='text/css'>
+ 
+ .header-top{ height: 60px; } 
+ .header-logo{ width: 250px!important;} 
+ .header-logo{ height: 60px!important; } 
+ 
+ 
+ 
+ .header-navigation li a, .header-socials li a, .top-cart-wrapper a, .header-menu-panel .menu-tumbl{ color:#111;}
+	body{font-family:'Lato',Arial,serif;font-size:px;color:;}input::-webkit-input-placeholder{font-family: 'Lato', Arial, serif;}input:-moz-placeholder{font-family: 'Lato', Arial, serif;}
+	input::-moz-placeholder{font-family: 'Lato', Arial, serif;}
+	input:-ms-input-placeholder{font-family: 'Lato', Arial, serif;}
+	
+	.slide .category-post-title a, .post-author-name span, span.date, .single-post .post-tags a, .post-related-title h4, .thecomment .comment-text span.date, #respond h3, #cancel-comment-reply-link, .widget-title, .widget-slide-info .date a, .woocommerce .woocommerce-message,.woocommerce .woocommerce-error,.woocommerce .woocommerce-info, .woocommerce span.onsale, span.price, .woocommerce ul.cart_list .amount, .woocommerce ul.product_list_widget .amount, .woocommerce.widget_shopping_cart .total > strong, .woocommerce div.product div.summary p.price,.woocommerce div.product div.summary span.price,.woocommerce #content div.product div.summary p.price, .woocommerce #content div.product div.summary span.price,.woocommerce .related.products > h2, .quantity.mkd-quantity-buttons .mkd-quantity-input{font-family: 'Lato'!important;}
+	h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.navigation li{ font-family: 'Lora', Arial, serif!important; font-weight:;letter-spacing:em;color:; }
+	blockquote, .author-post-name a, .page .page-title-wrapper h3, .instagram-footer #sbi_load a, .woocommerce-page .page-title-wrapper h3, .woocommerce-page .woocommerce-result-count, .woocommerce ul.cart_list li a,
+.woocommerce ul.product_list_widget li a, .woocommerce div.product .woocommerce-review-link,
+.woocommerce #content div.product .woocommerce-review-link, .woocommerce-cart table.cart .product-name > a  {font-family: 'Lora'!important;}
+ 	.post-entry a {
+  font-weight: 400;
+  text-decoration: underline;
+} 
+</style>
+<link rel='stylesheet' id='resposive-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/media.css' type='text/css' media='all' />
+<link rel='stylesheet' id='enlighterjs-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=BaUKYlr1JydyEx/' type='text/css' media='all' />
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/enable-jquery-migrate-helper/js/jquery/jquery-1.12.4-wp.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/enable-jquery-migrate-helper/js/jquery-migrate/jquery-migrate-1.4.1-wp.js?ver=1.4.1-wp' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='email-subscribers-js-extra'>
+/* <![CDATA[ */
+var es_data = {"messages":{"es_empty_email_notice":"Please enter email address","es_rate_limit_notice":"You need to wait for sometime before subscribing again","es_single_optin_success_message":"Successfully Subscribed.","es_email_exists_notice":"Email Address already exists!","es_unexpected_error_notice":"Oops.. Unexpected error occurred.","es_invalid_email_notice":"Invalid email address","es_try_later_notice":"Please try after some time"},"es_ajax_url":"https:\/\/blog.ml.cmu.edu\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/email-subscribers/lite/public/js/email-subscribers-public.js?ver=4.7.0' id='email-subscribers-js'></script>
+<script type='text/javascript' id='simple-likes-public-js-js-extra'>
+/* <![CDATA[ */
+var simpleLikes = {"ajaxurl":"https:\/\/blog.ml.cmu.edu\/wp-admin\/admin-ajax.php","like":"Like","unlike":"Unlike"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/simple-likes-public.js?ver=0.5' id='simple-likes-public-js-js'></script>
+<link rel="https://api.w.org/" href="https://blog.ml.cmu.edu/wp-json/" /><link rel="alternate" type="application/json" href="https://blog.ml.cmu.edu/wp-json/wp/v2/posts/13228" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.ml.cmu.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.ml.cmu.edu/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6.16" />
+<link rel="canonical" href="https://blog.ml.cmu.edu/2021/11/05/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation/" />
+<link rel='shortlink' href='https://blog.ml.cmu.edu/?p=13228' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.ml.cmu.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.ml.cmu.edu%2F2021%2F11%2F05%2Fanalyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.ml.cmu.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.ml.cmu.edu%2F2021%2F11%2F05%2Fanalyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation%2F&#038;format=xml" />
+
+
+<!-- This site is optimized with the Schema plugin v1.7.9.0 - https://schema.press -->
+<script type="application/ld+json">[{"@context":"http:\/\/schema.org\/","@type":"WPHeader","url":"https:\/\/blog.ml.cmu.edu\/2021\/11\/05\/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation\/","headline":"Analyzing and Improving the Optimization Landscape of Noise-Contrastive Estimation","description":"Example of an extremely flat loss landscape on Gaussian mean estimation: starting from the noise Q (orange), the..."},{"@context":"http:\/\/schema.org\/","@type":"WPFooter","url":"https:\/\/blog.ml.cmu.edu\/2021\/11\/05\/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation\/","headline":"Analyzing and Improving the Optimization Landscape of Noise-Contrastive Estimation","description":"Example of an extremely flat loss landscape on Gaussian mean estimation: starting from the noise Q (orange), the...","copyrightYear":"2021"}]</script>
+
+
+
+<!-- This site is optimized with the Schema plugin v1.7.9.0 - https://schema.press -->
+<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"ScholarlyArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/blog.ml.cmu.edu\/2021\/11\/05\/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation\/"},"url":"https:\/\/blog.ml.cmu.edu\/2021\/11\/05\/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation\/","headline":"Analyzing and Improving the Optimization Landscape of Noise-Contrastive Estimation","datePublished":"2021-11-05T11:36:50-04:00","dateModified":"2021-11-05T17:55:05-04:00","publisher":{"@type":"Organization","@id":"https:\/\/blog.ml.cmu.edu\/#organization","name":"ML@CMU | Machine Learning | Carnegie Mellon University","logo":{"@type":"ImageObject","url":"https:\/\/blog.ml.cmu.edu\/wp-content\/uploads\/2018\/11\/mlcmu-logo.png","width":600,"height":60}},"image":{"@type":"ImageObject","url":"https:\/\/blog.ml.cmu.edu\/wp-content\/uploads\/2021\/11\/G2d_pdf_10_-30_v2.png","width":3204,"height":1890},"articleSection":"machine learning","description":"Example of an extremely flat loss landscape on Gaussian mean estimation: starting from the noise Q (orange), the NCE loss (blue) flattens out quickly before reaching the ground truth distribution P* (green). Introduction Density estimation is the task of estimating the probability density function (pdf) of an unknown distribution.","author":{"@type":"Person","name":"Bingbin Liu","url":"https:\/\/blog.ml.cmu.edu\/author\/bingbinl\/","image":{"@type":"ImageObject","url":"https:\/\/secure.gravatar.com\/avatar\/9dc5e78729b6cded7c3a0a86e86378ab?s=96&d=identicon&r=g","height":96,"width":96}},"sameAs":["https:\/\/arxiv.org\/abs\/2110.11271"]}</script>
+
+
+<style></style>
+    
+    <link rel="icon" href="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon-80x80.png" sizes="32x32" />
+<link rel="icon" href="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon.png" />
+<meta name="msapplication-TileImage" content="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon.png" />
+
+<!-- START - Open Graph and Twitter Card Tags 3.1.1 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/>
+  <meta property="og:title" content="Analyzing and Improving the Optimization Landscape of Noise-Contrastive Estimation"/>
+  <meta property="og:url" content="https://blog.ml.cmu.edu/2021/11/05/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Example of an extremely flat loss landscape on Gaussian mean estimation: starting from the noise Q (orange), the NCE loss (blue) flattens out quickly before reaching the ground truth distribution P* (green).
+
+
+
+Introduction
+
+
+
+Density estimation is the task of estimating the probability density func"/>
+  <meta property="og:image" content="https://blog.ml.cmu.edu/wp-content/uploads/2021/11/G2d_pdf_10_-30_v2.png"/>
+  <meta property="og:image:url" content="https://blog.ml.cmu.edu/wp-content/uploads/2021/11/G2d_pdf_10_-30_v2.png"/>
+  <meta property="og:image:secure_url" content="https://blog.ml.cmu.edu/wp-content/uploads/2021/11/G2d_pdf_10_-30_v2.png"/>
+  <meta property="article:published_time" content="2021-11-05T11:36:50-04:00"/>
+  <meta property="article:modified_time" content="2021-11-05T17:55:05-04:00" />
+  <meta property="og:updated_time" content="2021-11-05T17:55:05-04:00" />
+  <meta property="article:section" content="machine learning"/>
+  <meta property="article:section" content="Research"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Analyzing and Improving the Optimization Landscape of Noise-Contrastive Estimation"/>
+  <meta itemprop="headline" content="Analyzing and Improving the Optimization Landscape of Noise-Contrastive Estimation"/>
+  <meta itemprop="description" content="Example of an extremely flat loss landscape on Gaussian mean estimation: starting from the noise Q (orange), the NCE loss (blue) flattens out quickly before reaching the ground truth distribution P* (green).
+
+
+
+Introduction
+
+
+
+Density estimation is the task of estimating the probability density func"/>
+  <meta itemprop="image" content="https://blog.ml.cmu.edu/wp-content/uploads/2021/11/G2d_pdf_10_-30_v2.png"/>
+  <meta itemprop="datePublished" content="2021-11-05"/>
+  <meta itemprop="dateModified" content="2021-11-05T17:55:05-04:00" />
+  <meta itemprop="author" content="Bingbin Liu"/>
+  <!--<meta itemprop="publisher" content="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/>--> <!-- To solve: The attribute publisher.itemtype has an invalid value -->
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="Analyzing and Improving the Optimization Landscape of Noise-Contrastive Estimation"/>
+  <meta name="twitter:url" content="https://blog.ml.cmu.edu/2021/11/05/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation/"/>
+  <meta name="twitter:description" content="Example of an extremely flat loss landscape on Gaussian mean estimation: starting from the noise Q (orange), the NCE loss (blue) flattens out quickly before reaching the ground truth distribution P* (green).
+
+
+
+Introduction
+
+
+
+Density estimation is the task of estimating the probability density func"/>
+  <meta name="twitter:image" content="https://blog.ml.cmu.edu/wp-content/uploads/2021/11/G2d_pdf_10_-30_v2.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+ <!-- is_singular -->
+<!-- END - Open Graph and Twitter Card Tags 3.1.1 -->
+	
+    <!-- Meta -->
+    <meta content="Machine learning, artificial intelligence, deep learning, natural language processing, automated machine learning, big data, data science, neural networks, ethics and ai, computer science, ml, ai, research" name="Keywords"/>
+    <meta content="The latest news and publications regarding machine learning, artificial intelligence or related, brought to you by the Machine Learning Blog, a spinoff of the Machine Learning Department at Carnegie Mellon University." name="Description"/>
+    <meta content="Machine Learning Department, Carnegie Mellon University" name="author"/>
+    <!-- OG:Graph  
+    <meta name="title" property="og:title" content="Blog | Machine Learning | Carnegie Mellon University"/>
+    <meta property="og:site_name" content="Blog | Machine Learning | Carnegie Mellon University"/>
+    <meta property="og:description" content="The latest news and publications regarding machine learning, artificial intelligence or related, brought to you by the Machine Learning Blog, a spinoff of the Machine Learning Department at Carnegie Mellon University."/> 
+    <meta property="og:image:alt" content="Blog | Machine Learning | Carnegie Mellon University - Cover Picture"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:url" content="https://blog.ml.cmu.edu"/>
+    <meta property="og:type" content="article"/>
+    <meta property="fb:app_id" content=""/>
+    <meta property="fb:pages" content=""/>
+    <meta property="fb:admins" content="654417927"/>
+    <meta property="fb:profile_id" content="654417927"/>
+    <meta name="twitter:site" content="@mldcmu"/>
+    <meta name="twitter:creator" concent="@mldcmu"/>
+    <meta name="twitter:title" content="Blog | Machine Learning | Carnegie Mellon University"/>
+    <meta name="twitter:description" content="The latest news and publications regarding machine learning, artificial intelligence or related, brought to you by the Machine Learning Blog, a spinoff of the Machine Learning Department at Carnegie Mellon University."/>
+    <meta name="twitter:image" content="http://blog.ml.cmu.edu/wp-content/themes/mint/mint/img/cover-introduction-mlblog-2.jpg"/>
+    <meta name="twitter:image:alt" content="Blog | Machine Learning | Carnegie Mellon University - Cover Picture"/>
+    <meta name="twitter:card" content="summary"/>
+    <!-- /OG:Graph -->
+    <!-- Robots -->
+    <meta name="robots" content="noarchive"/>
+    <meta name="googlebot" content="noarchive"/>
+    <!-- /Robots -->
+    <!-- /Meta -->
+</head>
+
+<body class="post-template-default single single-post postid-13228 single-format-standard">
+
+<!-- Preloader // Preloader affects how pages are read if javascript is removed.
+<div id="preloader"></div>
+<!-- /Preloader -->
+
+<!-- Uncomment /** inside <php if you'd like to restore glide-navigation to original version -->
+<!--  -->
+
+<header>
+    <div class="header-top">
+        <div class="top-header-content">
+            <div class="container">
+                <h1 class="hidden">Machine Learning Blog | ML@CMU | Carnegie Mellon University</h1>
+                <div class="col-lg-10 col-lg-offset-1">
+                                            <div class="menu-tumbl"><i class="fa fa-navicon"></i></div>
+                        <div class="header-soc-icon"><i class="fa fa-search"></i></div>
+                                        <div class="header-logo">
+                                                    <a href="https://blog.ml.cmu.edu/" class="logo-img"><img
+                                    src="https://blog.ml.cmu.edu/wp-content/uploads/2018/11/mlcmu-logo.png"
+                                    alt="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/></a>
+                        
+                                                    <a href="https://blog.ml.cmu.edu/" class="retina-logo-img"><img
+                                    src=""
+                                    alt="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/></a>
+                                            </div>
+                    <!-- Statistics -->
+                    <div id="blog-stats">
+                        <h4 class="widget-title">Statistics:</h4>
+                        <span class="sbs-count-posts"><span class="sbs-count-posts">123</span> publications.</span>
+                        <span class="sbs-count-cats"><span class="sbs-count-cats">14</span> categories.</span>
+                        <span class="sbs-count-tags"><span class="sbs-count-tags">72</span> tags.</span>
+                    </div>
+                    <!-- /Statistics -->
+                    <!-- Desktop Navigation -->
+                    <div id="desktop-nav">
+                      <ul class="desktop-nav-ul">
+                        <li id="menu-item-19"><a title="Homepage" href="https://blog.ml.cmu.edu/#">[ Home ]</a></li>
+                        <li id="menu-item-121"><a title="Submissions" href="https://blog.ml.cmu.edu/submissions/">[ Submissions ]</a></li>
+                        <li id="menu-item-88"><a title="About us" href="https://blog.ml.cmu.edu/about/">[ About ]</a></li>
+                      </ul>
+                    </div
+                    <!-- /Desktop Navigation -->
+                    <!-- Moved Glide Navigation here // If needs restored you can restore it at wp-content/header.php-->
+                    <div class="glide-navigation">
+    <div class="sidebar-scroll scrollbar-macosx">
+
+        <!-- close-glide-button -->
+        <div class="close-glide-button">
+            <a href="#" class="close-btn"></a>
+        </div>
+
+        <!-- navbar -->
+        <ul id="menu-top-menu" class="navbar"><li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-19"><a title="Homepage" href="https://blog.ml.cmu.edu/#">Home</a></li>
+<li id="menu-item-121" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121"><a title="Our Team" href="https://blog.ml.cmu.edu/submissions/">Submissions</a></li>
+<li id="menu-item-88" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a title="Contact us" href="https://blog.ml.cmu.edu/about/">About</a></li>
+</ul>    </div>
+</div>                    <!-- /Glide Navigation -->
+                </div>
+            </div>
+        </div>
+        <div class="background-block"></div>
+        <div class="background-opacity"></div>
+    </div>
+    <div class="header-menu-panel">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="menu-tumbl"><i class="fa fa-navicon"></i></div>
+                <ul id="menu-top-menu-1" class="header-navigation"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-19"><a title="Homepage" href="https://blog.ml.cmu.edu/#">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121"><a title="Our Team" href="https://blog.ml.cmu.edu/submissions/">Submissions</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a title="Contact us" href="https://blog.ml.cmu.edu/about/">About</a></li>
+</ul>
+                <div class="header-menu-buttons">
+                                    </div>
+                <ul class="header-socials socials"><li><a href="https://blog.ml.cmu.edu/feed/" target="_blank"><i class="fa fa-rss"></i></a></li></ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="search-wrapper">
+    <form role="search" method="get" class="search-form" action="https://blog.ml.cmu.edu/">
+        <input type="search" placeholder="Search Keyword" name="s" id="s"
+               class="searchbox-input" autocomplete="off" required />
+        <span>Input your search keywords and press Enter.</span>
+    </form>
+    <div class="search-wrapper-close"></div>
+</div>
+<!-- Categories Picker 
+<div class="categories-picker">
+  <ul>
+      <li><h2>Categories:</h2></li> 
+      <li class="category-research"><a href="https://blog.ml.cmu.edu/category/research">Research</a></li>
+      <li class="category-educational"><a href="https://blog.ml.cmu.edu/category/educational/">Educational</a></li> 
+  </ul>
+</div>
+<!-- /Categories Picker-->
+
+<!-- Sidebar -->
+<div class="toggle-sidebar">
+  <a class="display-sidebar">
+    <i class="fa fa-angle-left"></i>
+  </a>
+</div>
+<div class="blog-sidebar categories-picker">
+      <h2>Categories:</h2> 
+  <ul>
+      <li class="category-research"><a href="https://blog.ml.cmu.edu/category/research">Research</a></li>
+      <li class="category-educational"><a href="https://blog.ml.cmu.edu/category/educational/">Educational</a></li> 
+  </ul>
+</div>
+<!-- /Sidebar -->
+
+<div class="main-panel">    <!-- mfunc setPostViews(get_the_ID()); --><!-- /mfunc -->
+
+    <div class="main">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div id="main-column"
+                                            class="full-page-post"
+                                    >
+
+                    <div class="fl-grid">
+                        
+                                                                                        
+                            
+<aside data="primary-post" id="post-13228" >
+
+    
+        <div class="post-header">
+                            <span class="category-post"><a href="https://blog.ml.cmu.edu/category/machine-learning/" title="View all posts in machine learning" >machine learning</a> <a href="https://blog.ml.cmu.edu/category/research/" title="View all posts in Research" >Research</a></span>
+
+                <h1><a>Analyzing and Improving the Optimization Landscape of Noise-Contrastive Estimation</a></h1>
+
+                <div class="post-info">
+                    <div class="post-authors">
+                    <h4>Authors</h4>
+                    <a href="https://blog.ml.cmu.edu/author/bingbinl/" title="Posts by Bingbin Liu" class="author url fn" rel="author">Bingbin Liu</a>                    </div>
+            <!--    <span class="post-author-name">by                        <a href="">Bingbin Liu</a>
+                    </span> -->
+                    <div class="affiliations">
+                    <h4>Affiliations</h4>                        
+                                            
+                    </div>
+                    <div class="date">
+                    <h4>Published</h4>
+                        November 5, 2021                    </div>                    
+                    <div class="doi">
+                    <h4>DOI</h4>
+                    </div>
+                </div>
+                    </div>
+            <div class="post-img">
+                                <img class="lazy" src="https://blog.ml.cmu.edu/wp-content/themes/mint/mint/img/layzyload.jpg"
+                 data-original="https://blog.ml.cmu.edu/wp-content/uploads/2021/11/G2d_pdf_10_-30_v2-970x572.png"
+                 data-lazy="https://blog.ml.cmu.edu/wp-content/uploads/2021/11/G2d_pdf_10_-30_v2-970x572.png"
+                 alt="Example of an extremely flat loss landscape on Gaussian mean estimation: starting from the noise Q (orange), the NCE loss (blue) flattens out quickly before reaching the ground truth distribution P* (green)."/>
+                    </div>
+
+        <div class="post-entry">
+            
+<script>
+jQuery('.post-authors').width(0.33 * jQuery('.post-authors').parent().width());
+jQuery('.post-authors').empty();
+jQuery('.post-authors').append('<h4>Authors</h4>');
+jQuery('.post-authors').append('<a href="https://clarabing.github.io/" target="_blank" rel="noopener noreferrer">Bingbin Liu</a>, <a href="https://www.cs.cmu.edu/~elan/" target="_blank" rel="noopener noreferrer">Elan Rosenfeld</a>,<br> <a href="https://www.cs.cmu.edu/~pradeepr/" target="_blank" rel="noopener noreferrer">Pradeep Ravikumar</a>, <a href="https://www.andrew.cmu.edu/user/aristesk/" target="_blank" rel="noopener noreferrer">Andrej Risteski</a>');
+jQuery('.affiliations').width(0.42 * jQuery('.affiliations').parent().width());
+jQuery('.affiliations').append('<a href="https://www.ml.cmu.edu/" target="_blank" rel="noopener noreferrer">MLD, CMU</a><br>');
+jQuery('.date').width(0.25 * jQuery('.date').parent().width());
+jQuery('.doi').remove();
+</script>
+
+<p class="has-text-color has-small-font-size" style="color: #555d66;text-align: center">
+Example of an extremely flat loss landscape on Gaussian mean estimation: starting from the noise Q (orange), the NCE loss (blue) flattens out quickly before reaching the ground truth distribution P* (green).</p>
+
+
+
+<h3>Introduction</h3>
+
+
+
+<p>Density estimation is the task of estimating the probability density function (pdf) of an unknown distribution. It has been extensively studied in statistics and machine learning, and lies at the core of many real-world applications including language/image generation, anomaly detection, and clinical risk prediction.</p>
+
+
+
+<p>A crucial bottleneck to using flexible parametric models, such as large neural networks, is that a density function needs to be normalized, i.e. integrate to one. Thus, if we use \(f\) to denote the unnormalized parameterized density, we have to grapple with the normalization constant, also known as the partition function, which is the integral \(\int_x f(x)\). Such an integral rarely has an analytical form, and is frequently difficult to even approximate using either Markov Chain Monte Carlo or variational techniques on complex high-dimensional data. Thus, classical approaches to learn parameterized densities from data, such as the Maximum Likelihood Estimator (MLE) are often infeasible.</p>
+
+
+
+<p>One way to avoid computing the partition function is to perform <em>Noise Contrastive Estimation (NCE)</em> (Gutmann &amp; Hyvarinen <a href="https://proceedings.mlr.press/v9/gutmann10a/gutmann10a.pdf">2010</a>, <a href="https://www.jmlr.org/papers/volume13/gutmann12a/gutmann12a.pdf">2012</a>). The key idea of NCE is to turn the unsupervised learning problem of density estimation into a supervised learning problem of classification, and treat the partition function as an additional parameter of the model that gets updated together with other parameters during the learning process. To estimate a distribution \(P_*\) (with pdf \(p_*\)), NCE makes use of known distribution \(Q\) (with pdf \(q\)) of our choice, often referred to as the “noise” distribution, and trains a parametric discriminant model to <em>distinguish</em> between samples of the target \(P_*\) (which we have access to through the training data) and noise \(Q\) (which we can generate ourselves).&nbsp; Typically, the proportion of samples from \(P_*\) and \(Q\) is equal, and the loss of the trained distinguisher is cross entropy. Denoting the distinguisher as \(\psi\), we have:&nbsp;</p>
+
+
+
+<p><strong>Definition (NCE loss)</strong>: For data distribution \(P_*\), noise \(Q\) and estimate \(P\), let \(\varphi(x) := \log\frac{p}{q}\), then the NCE loss is defined as:<br>$$L(P)<br>= -\frac{1}{2}\mathbb{E}_{P_*} \log\frac{1}{1+\exp(-\psi(x))} -\frac{1}{2} \mathbb{E}_{Q} \log\frac{1}{1+\exp(\psi(x))}<br>$$<br>or equivalently<br>$$L(P) = -\frac{1}{2}\mathbb{E}_{P_*} l(x, 1) &#8211; \frac{1}{2} \mathbb{E}_{Q} l(x, -1)$$<br>where \(l(x,y) := \frac{1}{1 + \exp(-y\psi(x))}\) is the log sigmoid function.</p>
+
+
+
+<p>Given a classifier \(\psi\), the implied density estimate for \(P\) is \(p = q \exp(\psi)\). Why should this yield a good density estimate for \(P\)? The reason is that the optimal discriminant function which minimizes the population NCE loss is given by \(\psi^* = \log p_*/q\), from which we can extract the density \(p_*\) since \(q\) is known (<a href="http://proceedings.mlr.press/v48/menon16.pdf">Menon &amp; Ong 16</a>, <a href="https://www.cambridge.org/core/books/density-ratio-estimation-in-machine-learning/BCBEA6AEAADD66569B1E85DDDEAA7648">Sugiyama et. al. 12</a>). Moreover, NCE is <em>consistent</em> as long as the function class is rich enough to contain the true density ratio function, meaning that given sufficient data, NCE is guaranteed to recover the correct density ratio. Moreover, consistency holds <em>regardless </em>of the choice of \(Q\),</p>
+
+
+
+<p>In practice though, the choice of \(Q\) has a big effect on how well NCE can estimate the underlying density \(P_*\). A large distance between \(P_*\) and \(Q\) has come to be termed a “<em>density chasm</em>” (<a href="https://arxiv.org/abs/2006.12204">Rhodes et. al. 20</a>).&nbsp; Prior work has shown that when there is such a density chasm, NCE tends to yield density estimates that are far away from the ground truth under a reasonable computational budget.&nbsp; In other words, the closer \(Q\) is to \(P_*\), the better &#8212; though this is a kind of chicken-and-egg problem, since estimating \(P_*\) is what we are trying to do. One intuitive reason why the density chasm results in poor NCE density estimates is that the model does not need to get a good estimate of the density ratio in order to do well in the distinguishing task, especially given a finite number of samples. Figure 1 shows an example of this phenomenon when \(P_*\), \(Q\) are univariate Gaussians with standard variance and far away means: the NCE loss can be seen to flatten out even when very far away from \(P_*\), so that the NCE discriminant function does not need to get close to \(P_*\) in order for the loss to be very small.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" src="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/losses_G1d_p16_q0-1-1024x569.png" alt="density chasm in 1d Gaussian" class="wp-image-13267" width="521" height="290" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/losses_G1d_p16_q0-1-1024x569.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/losses_G1d_p16_q0-1-300x167.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/losses_G1d_p16_q0-1-1536x853.png 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/losses_G1d_p16_q0-1-2048x1138.png 2048w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/losses_G1d_p16_q0-1-970x539.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/losses_G1d_p16_q0-1-320x178.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/losses_G1d_p16_q0-1-80x44.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/losses_G1d_p16_q0-1-300x167@2x.png 600w" sizes="(max-width: 521px) 100vw, 521px" /><figcaption>Example of density chasm for 1d Gaussian mean estimation: starting from Q (mean 0, gray line), the NCE loss (blue curve) flattens out quickly before reaching the ground truth mean at R = 16 (orange line). The pdfs for Q and P* are shown in red and green.</figcaption></figure></div>
+
+
+
+<p>Multiple prior works have proposed empirical solutions to mitigate the challenges posed by a poorly chosen \(Q\) (<a href="https://arxiv.org/abs/2006.12204">Rhodes et. al. 20</a>, <a href="https://arxiv.org/abs/1912.00589">Gao et. al. 20</a>, <a href="https://arxiv.org/abs/1406.2661">Goodfellow et. al. 14</a>). However, these works offered little guidance on when and where they might succeed. The first contribution of this work is to show that the challenges with the density chasm exist even with <em>infinite</em> amounts of data, demonstrating that the problem is not merely a statistical artifact. We then propose a solution, slight modifications to the optimization algorithm and the NCE objective, which provide a simple and provably efficient fix to the problem.</p>
+
+
+
+<h3>Setup: Exponential family distributions</h3>
+
+
+
+<p>In this work, we focus on learning distributions from the exponential family. The main reason being that the resulting NCE loss is convex in the exponential family parameters (<a href="http://proceedings.mlr.press/v108/uehara20a.html">Uehara et. al. 20</a>): denoting the parameter by \(\tau := [\theta, \alpha]\), where \(\alpha\) corresponds to the (estimated) log partition function, we have the following result:</p>
+
+
+
+<p><strong>Lemma (NCE convexity)</strong> For exponential family \(p_{\theta, \alpha}(x) = h(x) \exp(\theta^\top \tilde{T}(x) &#8211; \alpha)\), the NCE loss is convex in parameter \(\tau\).</p>
+
+
+
+<h3>Flatness of the NCE loss</h3>
+
+
+
+<p>We first examine the challenges posed to NCE when using a poorly chosen \(Q\). The main result of this section is that the difficulty comes from an ill-behaved loss landscape, causing gradient descent and Newton’s method with standard choices of step sizes to fail to find a solution efficiently.</p>
+
+
+
+<p>We will prove that such difficulties manifest even in the exceedingly simple special case of Gaussian mean estimation. Namely,&nbsp; we consider the 1d case where \(Q = N(0, 1)\) and \(P_* = N(R,1)\) for some \(R \gg 1\) &#8212; the choice of \(0\) and \(R\) is without loss of generality. Note that since we are providing lower bounds, the simplicity of the setting works in our favor. It is reasonable to expect that the behavior we show can only get worse for more complex or higher dimensional problems.</p>
+
+
+
+<p>Let \(\tau_*, \tau_q\) denote the parameters of \(P_*, Q\), where the log partition function is included as the last coordinate. Let \(\tau_t\) denote the parameter of \(P\) after \(t\) steps of gradient descent. We show that starting from \(\tau_0 = \tau_q\), running gradient descent on the NCE objective requires an exponential number of steps to find a good estimate:</p>
+
+
+
+<blockquote class="wp-block-quote"><p><strong>Theorem 1 (Lower bound for gradient-based methods)</strong><br>Let \(Q = \mathcal{N}(0, 1)\), \(P_* = \mathcal{N}(R, 1)\) with \(R \gg 1\). Let \(P\) also be 1d Gaussian with variance 1. Then, gradient descent with a step size \(\eta = O(R^{-2})\) from an initialization \(\tau = \tau_q\) will need an exponential number of steps to reach some \(\tau&#8217;\) that is \(O(1)\) close to \(\tau_*\).</p></blockquote>
+
+
+
+<p>Note that the theorem is stated with standard choices of step size \(\eta\), that is, \(\eta \leq 1 / \sigma_{M}\) where \(\sigma_{M}\) is&nbsp; smoothness of the loss function. It is possible that clever choices of \(\eta\), such as an adaptive schedule, can avoid the exponential lower bound. (Stay tuned!)</p>
+
+
+
+<p>The proof&nbsp;idea is to show that there is an annulus surrounding \(\tau_*\), of width \(\Theta(R)\), but where the gradient norms are roughly \(O(\exp(-R^2/8))\). Thus, even with constant step sizes, it would take gradient descent an exponential number of steps to cross the annulus. Moreover, the optimization path has to cross this region since the starting point \(\tau_q\) and the target \(\tau_*\) lie on different sides of the annulus (see Figure 2 for an illustration), hence the total number of optimization steps has to be exponential.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" src="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/proof_aid-1024x601.png" alt="" class="wp-image-13238" width="467" height="274" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/proof_aid-1024x601.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/proof_aid-300x176.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/proof_aid-1536x902.png 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/proof_aid-2048x1203.png 2048w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/proof_aid-970x570.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/proof_aid-320x188.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/proof_aid-80x47.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/proof_aid-300x176@2x.png 600w" sizes="(max-width: 467px) 100vw, 467px" /><figcaption><em>Figure 2: The initial \(\tau_q\) and target parameter \(\tau_*\) lie on different sides of the red annulus, hence the optimization path has to pass through the annulus. However, the gradient norm is exponentially small in the annulus, which means it takes an exponential number of steps to cross the annulus, hence the entire optimization process requires an exponential number of steps.</em></figcaption></figure></div>
+
+
+
+<p>The lower bound in Theorem 1 arises due to drastically changing norms of the gradients. A natural remedy for this is to use methods that can precondition the gradient, which motivates the use of second order methods. Unfortunately, we show using a similar argument as the gradient descent analysis that standard second-order approaches are again of no help, and the number of steps required to converge remains exponential:</p>
+
+
+
+<blockquote class="wp-block-quote"><p><strong>Theorem 2 (Lower bound for Newton&#8217;s method)</strong> Let \(P_*, Q, P\) satisfy the same conditions as in Theorem 1. Let \(\sigma_{\rho}, \sigma_M\) denote the <em>global</em> strong convexity and smoothness constants.<br>Then, running the Newton&#8217;s method with a step size \(\eta = O(\frac{\sigma_{\rho}}{\sigma_{M}})\) from an initialization \(\tau = \tau_q\) needs an exponential number of steps to reach some \(\tau&#8217;\) that is \(O(1)\) close to \(\tau_*\).</p></blockquote>
+
+
+
+<p>Here the choice of step size \(\eta\) again follows the standard choice, that is, it should be upper bounded by the ratio between the global strong convexity and smoothness constants. Note also that the analyses are on the population level, implying that the hardness comes from the landscape itself regardless of the statistical estimators used.</p>
+
+
+
+<h3>Solution: Normalized Gradient Descent (NGD) with the eNCE objective</h3>
+
+
+
+<p>We have seen that due to an ill-behaved landscape, optimizing the NCE objective with standard gradient descent or Newton&#8217;s method will fail to reach a good parameter estimate efficiently.</p>
+
+
+
+<p>In this section, we propose a solution that guarantees a provably polynomial rate. Our approach combines two key ideas: the well-studied <em>Normalized Gradient Descent (</em><strong><em>NGD</em></strong><em>)</em> and a new loss function we call the <em><strong>eNCE</strong></em>.</p>
+
+
+
+<p>Recall that a NGD step is similar to a standard gradient descent step except that the gradient is now normalized:<br>$$\tau_{t+1} = \tau_t &#8211; \eta \frac{\nabla L(\tau_t)}{|\nabla L(\tau_t)|_2}.$$</p>
+
+
+
+<p>Returning to the 1d Gaussian mean estimation task as an example, the effectiveness of NGD comes from the crucial observation that even though the magnitude for the loss and its gradients can be exponentially small, they are exponentially small to the same order (i.e., they share the same exponential factor). This exponential factor cancels out during normalization, hence eliminating the convergence difficulties faced by standard GD.</p>
+
+
+
+<p>For exponential families in general, we can show that when the singular values of the Hessian around the target parameter \(\tau_*\) change moderately, NGD can find a parameter with target error \(\delta\) in \(O(1/\delta^2)\) steps:</p>
+
+
+
+<blockquote class="wp-block-quote"><p><strong>Theorem 3 (Guarantee on NGD, informal)</strong> Let \(P_*, Q\) be exponential family distributions with parameters \(\tau_, \tau_q\). Initialize the parameter estimate at \(\tau_0\). Assuming the log partition function is \(\beta_Z\) Lipschitz, and that the Hessian \(\mathbf{H}\) are such that \(\frac{\sigma_{\max}(\mathbf{H}(\tau))}{\sigma_{\max}(\mathbf{H}(\tau_*))} \leq \beta_u\), \(\frac{\sigma_{\min}(\mathbf{H}(\tau))}{\sigma_{\min}(\mathbf{H}(\tau_*)} \geq \beta_l\), \(\forall \tau\) where \( \|\tau &#8211; \tau_*\|_2 \leq \frac{1}{\beta_Z}\), then for any \(\delta \leq \frac{1}{\beta_Z}\), NGD finds an estimate \(\tau\) such that \(\|\tau &#8211; \tau_*\|_2 \leq \delta\) within \(\frac{\beta_u \kappa_*}{\beta_l} \frac{\|\tau_0 &#8211; \tau_*\|_2^2}{\delta^2}\) steps, where \(\kappa_*\) is the condition number of the NCE Hessian at the optimum.</p></blockquote>
+
+
+
+<p><em>Remarks</em>: Theorem 3 subsumes Gaussian mean estimation as a special case, hence NGD provides a solution that avoids the exponential lower bound in Theorem 1.</p>
+
+
+
+<p>One the positive side, Theorem 3 says that under some assumptions, NGD gives a rate polynomial in the parameter distance and condition number \(\kappa_*\). The remaining question though is that it is not yet clear how \(\kappa_*\) behaves. For example, if \(\kappa_*\) itself were to grow exponentially in the parameter distance between \(\tau_*\) and \(\tau_q\), then the rate from NGD would still be exponential and the problem would remain.</p>
+
+
+
+<p>Fortunately, we will show that for a slight modification to the NCE loss, which we call the <em>eNCE</em> objective, \(\kappa_*\) indeed grows polynomially in the parameter distance and class-related constants. This means though eNCE may still suffer from the flatness problem when using gradient descent, <strong>eNCE and NGD together provide a solution that guarantees a polynomial convergence rate</strong>.</p>
+
+
+
+<p>Formally, the eNCE loss is defined as:</p>
+
+
+
+<p><strong>Definition (eNCE loss)</strong> Let \(\varphi(x) := \log\sqrt{\frac{p(x)}{q(x)}}\). The NCE loss of \(P_\tau\) w.r.t. data distribution \(P_*\) and noise \(Q\) is: <br>$$<br>L_{\text{exp}}(P_{\tau})<br>= \frac{1}{2} \mathbb{E}_{x\sim P_*} [l\left(x, 1\right)] + \frac{1}{2}\mathbb{E}_{x\sim Q} [l\left(x, -1\right)] = \frac{1}{2}\int_x p_*\sqrt{\frac{q(x)}{p(x)}} + \frac{1}{2}\int_x q\sqrt{\frac{p(x)}{q(x)}}<br>$$<br>where \(l(x, y) = \exp(-y \varphi(x))\) is the exponential loss and \(y \in {\pm 1}\).</p>
+
+
+
+<p>Just as with the original NCE loss, the eNCE loss is constructed in two steps. Given a density estimate \(P\), we use it to construct a classifier estimate \(\varphi = \log \sqrt{p/q}\); or alternatively, we could start with a classifier estimate \(\varphi\), which represents the density estimate \(p = q \exp(2\varphi )\). The eNCE loss is then simply the exponential classification loss of using \(\varphi(x)\) to distinguish between samples of \(P_*\) and samples of \(Q\). The use of the exponential loss, rather than the cross-entropy loss in the original NCE, is why we term this loss the eNCE loss. Note that we also have a different parameterization of the discriminant \(\varphi\) in terms of the densities \(p,q\). It’s also easy to check that the minimizing \(\varphi\) learns the log density ratio, i.e. \(\varphi(x) = \frac{1}{2}\log\frac{p_*}{q}\), hence eNCE can recover \(p_*\) given \(q\) as NCE does.</p>
+
+
+
+<p>The main advantage of using the eNCE loss is that the condition number \(\kappa_*\) is now provably polynomial in certain class-dependent constants. The intuition of the proof is that the Hessian of the eNCE objective has a nice algebraic form, hence the choice of \(P_*, Q\) doesn’t affect the condition number except via a class-dependent constant. As a result, we show that:</p>
+
+
+
+<blockquote class="wp-block-quote"><p><strong>Theorem (eNCE convergence with NGD, informal)</strong> Let \(P_*, Q\) be exponential family distributions with parameters \(\tau_*, \tau_q\). Assuming the log partition function is \(\beta_Z\)-Lipschitz, then for any given \(\delta \leq \frac{1}{\beta_Z}\) and parameter initialization \(\tau_0\), performing NGD on the eNCE objective finds an estimate \(\tau\) such that \(|\tau &#8211; \tau_*|_2 \leq \delta\) within \(T = O\left(\frac{|\tau_0 &#8211; \tau_*|^2}{\delta^2}\right)\) steps, where the \(O(\cdot)\) notation hides class-dependent constants.</p></blockquote>
+
+
+
+<p>This means <em><strong>combining NGD with the eNCE objective guarantees a polynomial convergence rate</strong></em>.</p>
+
+
+
+<h3>Experiments</h3>
+
+
+
+<p>The goal of this work is to understand and improve the “density chasm” problem, which says that NCE can suffer from a poor performance in practice when the noise distribution \(Q\) is far from \(P\). In the previous sections, we have identified one source of the problem to be an ill-behaved landscape, and proposed a combination of NGD and eNCE as a fix for a provably polynomial guarantee. Our analysis suggests that in theory, NGD should be more robust to the choice of noise distribution Q. We would now like to verify these results empirically on Gaussian data and MNIST.</p>
+
+
+
+<p>For Gaussian, we experiment with 1d and 16d data, and plot the parameter distance against the number of update steps in Figure 3. We can see that under a fixed computation budget, 1) normalized gradient descent (NGD) indeed outperforms gradient descent (GD), and that 2) the proposed eNCE loss performs comparatively, and in many cases, even decays faster compared to NCE while additionally enjoys provable polynomial convergence guarantees.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="222" src="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/G1d_G16d_v2-1024x222.png" alt="" class="wp-image-13249" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/G1d_G16d_v2-1024x222.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/G1d_G16d_v2-300x65.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/G1d_G16d_v2-1536x333.png 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/G1d_G16d_v2-2048x445.png 2048w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/G1d_G16d_v2-970x211.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/G1d_G16d_v2-320x69.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/G1d_G16d_v2-80x17.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/G1d_G16d_v2-300x65@2x.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><em>Figure 3: Results for estimating 1d (left) and 16d (right) Gaussian, plotting the best parameter distance so far (y-axis) against the number of optimization iterations (x-axis). In both cases, when using NCE, normalized gradient descent (</em>&#8220;NCE, NGD&#8221;<em>, yellow curve) significantly outperforms gradient descent (</em>&#8220;NCE, GD&#8221;<em>, red curve). When using NGD, the proposed eNCE (</em>&#8220;eNCE , NGD&#8221;<em>, blue curve) also decays faster than the original NCE loss. The results are averaged over 5 runs, with the shaded area showing the standard deviation.</em></figcaption></figure>
+
+
+
+<p>For MNIST, we can no longer compare parameter distance since the ground truth parameter \(\tau_*\) is unknown. We instead compare the loss curves directly, and Figure 4 shows that NGD outperforms GD for both the NCE and eNCE loss.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="230" src="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/MNIST-1024x230.png" alt="" class="wp-image-13250" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/MNIST-1024x230.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/MNIST-300x67.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/MNIST-1536x345.png 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/MNIST-2048x459.png 2048w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/MNIST-970x218.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/MNIST-320x72.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/MNIST-80x18.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/MNIST-300x67@2x.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><em>Figure 4: Results on MNIST, plotting the loss values (y-axis, log scale) against the number of updates (x-axis). The left plot shows NCE optimized by GD (black) and NGD (yellow), and the right shows eNCE optimized by GD (black) and NGD (blue). NGD outperforms GD in both cases.</em></figcaption></figure>
+
+
+
+<h3>Conclusion</h3>
+
+
+
+<p>In this blog post we identified an ill-behaved loss landscape as a key reason for the “density chasm” difficulties when optimizing the NCE objective with a far away noise distribution. A consequence of this is that these “density chasm” issues are not mere statistical artifacts: they arise even given access to infinite data. We saw that even on the simple task of Gaussian mean estimation, and even assuming access to the population gradients, gradient descent and Newton&#8217;s method with standard step size choices still require an exponential number of steps to reach a good solution.</p>
+
+
+
+<p>To address these issues caused by a flat landscape, we propose a combination of changing the loss and the optimization algorithm. The loss we introduce, eNCE, can be efficiently optimized using normalized gradient descent. There is lots of room for future exploration, including formalizing the finite-sample behavior of NGD and eNCE.&nbsp;</p>
+
+
+
+<h3>Refereneces</h3>
+
+
+
+<ol><li>Ruiqi Gao, Erik Nijkamp, Diederik P Kingma, Zhen Xu, Andrew M Dai, and Ying Nian Wu. Flow contrastive estimation of energy-based models. In CVPR 2020.</li><li>Ian J Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial networks. In NeurIPS 2014.</li><li>Michael Gutmann and Aapo Hyvärinen. Noise-contrastive estimation: A new estimation principle for unnormalized statistical models. In AISTATS 2010.</li><li>Michael U Gutmann and Aapo Hyvärinen. Noise-contrastive estimation of unnormalized statistical models, with applications to natural image statistics. Journal of Machine Learning Research, 13(2), 2012.</li><li>Aditya Menon and Cheng Soon Ong. Linking losses for density ratio and class-probability estimation. In ICML 2016.</li><li>Benjamin Rhodes, Kai Xu, and Michael U Gutmann. Telescoping density-ratio estimation. NeurIPS 2020.</li><li>Masashi Sugiyama, Taiji Suzuki, and Takafumi Kanamori. Density Ratio Estimation in Machine Learning. Cambridge University Press, 1st edition, 2012.</li><li>Masatoshi Uehara, Takafumi Kanamori, Takashi Takenouchi, and Takeru Matsuda. A unified statistically efficient estimation framework for unnormalized models. In AISTATS 2020.</li></ol>
+
+                    </div>
+
+                            
+        
+<!-- //Default, restore if needed -->
+
+
+<ul class="post-meta">
+    <li>
+<div class="list-meta">
+    <span class="likes-counter"><span class="sl-wrapper"><a href="https://blog.ml.cmu.edu/wp-admin/admin-ajax.php?action=process_simple_like&post_id=13228&nonce=fc8e41b9c0&is_comment=0&disabled=true" class="sl-button sl-button-13228" data-nonce="fc8e41b9c0" data-post-id="13228" data-iscomment="0" title="Like"><span class="sl-icon"><svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve"><path class="heart" d="M64 127.5C17.1 79.9 3.9 62.3 1 44.4c-3.5-22 12.2-43.9 36.7-43.9 10.5 0 20 4.2 26.4 11.2 6.3-7 15.9-11.2 26.4-11.2 24.3 0 40.2 21.8 36.7 43.9C124.2 62 111.9 78.9 64 127.5zM37.6 13.4c-9.9 0-18.2 5.2-22.3 13.8C5 49.5 28.4 72 64 109.2c35.7-37.3 59-59.8 48.6-82 -4.1-8.7-12.4-13.8-22.3-13.8 -15.9 0-22.7 13-26.4 19.2C60.6 26.8 54.4 13.4 37.6 13.4z"/>&#9829;</svg></span><span class="sl-count">471</span></a><span class="sl-loader"></span></span></span>
+
+            <span class="views-counter"><i class="fa fa-eye"></i> <a>9039</a></span>
+    
+    </div>
+</li>
+    <li><a href="https://blog.ml.cmu.edu/2021/11/05/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation/"
+           class="post-meta-permalink">Read More</a></li>
+    <li><ul class="socials">
+    <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.ml.cmu.edu/2021/11/05/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation/" target="_blank">
+            <i class="fa fa-facebook"></i></a>
+    </li>
+    <li><a href="https://twitter.com/home?status=Check%20out%20this%20article:%20Analyzing%20and%20Improving%20the%20Optimization%20Landscape%20of%20Noise-Contrastive%20Estimation%20-%20https://blog.ml.cmu.edu/2021/11/05/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation/" target="_blank">
+            <i class="fa fa-twitter"></i></a>
+    </li>
+        <!-- <li><a data-pin-do="skipLink" target="_blank"
+           href="https://pinterest.com/pin/create/button/?url=https://blog.ml.cmu.edu/2021/11/05/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation/&media=https://blog.ml.cmu.edu/wp-content/uploads/2021/11/G2d_pdf_10_-30_v2.png&description=Analyzing%20and%20Improving%20the%20Optimization%20Landscape%20of%20Noise-Contrastive%20Estimation">
+        <i class="fa fa-pinterest"></i></a>
+    </li> -->
+    <li><a target="_blank" href="https://plus.google.com/share?url=https://blog.ml.cmu.edu/2021/11/05/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation/">
+        <i class="fa fa-google-plus"></i></a>
+    </li>
+    <li><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.ml.cmu.edu/2021/11/05/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation/">
+        <i class="fa fa-linkedin"></i></a>
+    </li>
+    <li><a href="mailto:?subject=I'd like to share a link with you&body=https://blog.ml.cmu.edu/2021/11/05/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation/">
+            <i class="fa fa-envelope"></i></a>
+    </li>     
+</ul></li>
+</ul> 
+ 
+                            
+        <ul class="post-switch">
+
+                <li class="prev-post-link">
+                <img width="320" height="151" src="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-320x151.png" class="attachment-mint-grid-post size-mint-grid-post wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-320x151.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-300x142.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-1024x484.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-1536x726.png 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-970x459.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-80x38.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005.png 1942w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-300x142@2x.png 600w" sizes="(max-width: 320px) 100vw, 320px" />                <a href="https://blog.ml.cmu.edu/2021/10/29/compression-transduction-and-creation-a-unified-framework-for-evaluating-natural-language-generation/">Compression, Transduction, and Creation: A Unified Framework for Evaluating Natural Language Generation</a></li>
+                        <li class="next-post-link">
+                <img width="320" height="206" src="https://blog.ml.cmu.edu/wp-content/uploads/2021/11/smaller-featured-image.gif" class="attachment-mint-grid-post size-mint-grid-post wp-post-image" alt="" loading="lazy" />                <a href="https://blog.ml.cmu.edu/2021/11/19/active-safety-envelopes-using-light-curtains-with-probabilistic-guarantees/">Safety Envelopes using Light Curtains with Probabilistic Guarantees</a></li>
+            
+</ul>
+                    		<div class="post-related-title"><h4>You Might Also Like</h4></div>
+		<div class="post-related">
+							
+					
+				<div class="item-related">
+					
+										<a href="https://blog.ml.cmu.edu/2020/07/17/in-defense-of-weight-sharing-for-nas/"><img width="1200" height="900" src="https://blog.ml.cmu.edu/wp-content/uploads/2020/07/animation-3.gif" class="attachment-mint-post-grid size-mint-post-grid wp-post-image" alt="" loading="lazy" /></a>
+										
+					<h6><a href="https://blog.ml.cmu.edu/2020/07/17/in-defense-of-weight-sharing-for-nas/">In defense of weight-sharing for neural architecture search: an optimization perspective</a></h6>
+					<span class="date">July 17, 2020</span>
+					
+				</div>
+							
+					
+				<div class="item-related">
+					
+										<a href="https://blog.ml.cmu.edu/2021/08/27/strategic-instrumental-variable-regression-recovering-causal-relationships-from-strategic-responses/"><img width="1920" height="1080" src="https://blog.ml.cmu.edu/wp-content/uploads/2021/08/thumbnail.jpg" class="attachment-mint-post-grid size-mint-post-grid wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2021/08/thumbnail.jpg 1920w, https://blog.ml.cmu.edu/wp-content/uploads/2021/08/thumbnail-300x169.jpg 300w, https://blog.ml.cmu.edu/wp-content/uploads/2021/08/thumbnail-1024x576.jpg 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2021/08/thumbnail-1536x864.jpg 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2021/08/thumbnail-970x546.jpg 970w, https://blog.ml.cmu.edu/wp-content/uploads/2021/08/thumbnail-320x180.jpg 320w, https://blog.ml.cmu.edu/wp-content/uploads/2021/08/thumbnail-80x45.jpg 80w, https://blog.ml.cmu.edu/wp-content/uploads/2021/08/thumbnail-300x169@2x.jpg 600w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
+										
+					<h6><a href="https://blog.ml.cmu.edu/2021/08/27/strategic-instrumental-variable-regression-recovering-causal-relationships-from-strategic-responses/">Strategic Instrumental Variable Regression: Recovering Causal Relationships from Strategic Responses</a></h6>
+					<span class="date">August 27, 2021</span>
+					
+				</div>
+							
+					
+				<div class="item-related">
+					
+										<a href="https://blog.ml.cmu.edu/2023/09/15/test-time-adaptation-with-slot-centric-models/"><img width="1920" height="1080" src="https://blog.ml.cmu.edu/wp-content/uploads/2023/07/Slot-TTA-teaser.gif" class="attachment-mint-post-grid size-mint-post-grid wp-post-image" alt="" loading="lazy" /></a>
+										
+					<h6><a href="https://blog.ml.cmu.edu/2023/09/15/test-time-adaptation-with-slot-centric-models/">Test-time Adaptation with Slot-Centric Models</a></h6>
+					<span class="date">September 15, 2023</span>
+					
+				</div>
+		</div>        
+                    
+<div class="post-comments" id="comments">
+
+    <div class="post-box"><div class="post-related-title comment-block-title"><h4>No Comments</h4></div><div class='comments'></div><div id='comments_pagination'></div>	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2021/11/05/analyzing-and-improving-the-optimization-landscape-of-noise-contrastive-estimation/#respond" style="display:none;">Cancel Reply</a></small></h3><form action="https://blog.ml.cmu.edu/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='13228' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="0869c60a46" /></p><input type="hidden" id="ak_js" name="ak_js" value="152"/><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea></form>	</div><!-- #respond -->
+	</div>
+        
+        <hr class="post-separator">
+</aside>                                                                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+<div class="instagram-footer">
+    <div class="instagram-widget">
+        <div id="text-7" class="widget footer-insta widget_text">			<div class="textwidget"><p>[instagram-feed num=6 cols=6 imagepadding=0 disablemobile=true showbutton=false showheader=false followtext=&#8221;Follow @Mint_Theme&#8221;]</p>
+</div>
+		</div>    </div>
+</div>
+</div>
+<footer>
+    <!-- <div class="container footers">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="footer-parts footer-part-1"></div>
+            <div class="footer-parts footer-part-2"></div>
+            <div class="footer-parts footer-part-3"></div>
+        </div>
+    </div> -->
+
+    <div class="copy-wrapper">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+                                    <ul class="socials pt-10"><li><a href="https://blog.ml.cmu.edu/feed/" target="_blank"><i class="fa fa-rss"></i></a></li></ul>
+                                <p class="copyright">
+                    <!-- 2018 &copy; Carnegie Mellon University -->
+                    <!-- Legal Info -->
+                    <a href="//www.cmu.edu/legal/" target="_blank" rel="noopener">Legal Info</a> | <a href="//www.cmu.edu/" target="_blank" rel="noopener">www.cmu.edu</a><br>
+                    <!-- /Legal Info -->
+                    <span id="js-current-year">2018</span> &copy; <a title="Machine Learning | Carnegie Mellon University" href="https://www.ml.cmu.edu" target="_blank" rel="noopener">Machine Learning</a> | <a title="Carnegie Mellon University" href="https://www.cmu.edu" target="_blank" rel="noopener">Carnegie Mellon University</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="back-to-top">
+    <a title="Back to top button" aria-label="Back to top button" role="button" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/i18n.min.js?ver=9e36b5da09c96c657b0297fd6f7cb1fd' id='wp-i18n-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.21' id='lodash-js'></script>
+<script type='text/javascript' id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/url.min.js?ver=1b4bb2b3f526a1db366ca3147ac39562' id='wp-url-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/hooks.min.js?ver=d0d9f43e03080e6ace9a3dabbd5f9eee' id='wp-hooks-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/api-fetch.min.js?ver=c207d2d188ba8bf763f7acd50b7fd5a9' id='wp-api-fetch-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-after'>
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://blog.ml.cmu.edu/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "37cdd657bc" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "https://blog.ml.cmu.edu/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/modern-footnotes/modern-footnotes.min.js?ver=1.4.4' id='modern_footnotes-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/owl.carousel.min.js?ver=5.6.16' id='owl-carousel-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/plugins.js?ver=5.6.16' id='plugins-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/main.js?ver=5.6.16' id='mint-main-scripts-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/comment-reply.min.js?ver=5.6.16' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/enlighter/cache/enlighterjs.min.js?ver=BaUKYlr1JydyEx/' id='enlighterjs-js'></script>
+<script type='text/javascript' id='enlighterjs-js-after'>
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"enlighter","language":"enlighter","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/wp-embed.min.js?ver=5.6.16' id='wp-embed-js'></script>
+<script async="async" type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9' id='akismet-form-js'></script>
+<!-- Scripts -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<script id="custom-javascript">
+    var $ = jQuery;
+    $('.author').prop('target','_blank');
+    document.getElementById("js-current-year").textContent=(new Date().getFullYear());
+    /* Sidebar */
+    var $ = jQuery;
+    $(document).ready(function() {
+      $('.display-sidebar').toggle(
+        function() {
+            $('.blog-sidebar').css('right', '0');
+            $('.toggle-sidebar').css('right', '280px');
+            $('.display-sidebar i').addClass('fa-angle-right').removeClass('fa-angle-left');
+        }, function() {
+            $('.blog-sidebar').css('right', '-300px');
+            $('.toggle-sidebar').css('right', '10px');
+            $('.display-sidebar i').addClass('fa-angle-left').removeClass('fa-angle-right');
+      });
+    });
+    /* /Sidebar */
+</script>
+<!-- /Scripts -->
+</body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+
+Served from: blog.ml.cmu.edu @ 2025-11-28 21:57:46 by W3 Total Cache
+-->

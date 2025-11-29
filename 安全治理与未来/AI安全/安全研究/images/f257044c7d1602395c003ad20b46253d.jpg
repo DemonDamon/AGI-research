@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Madeleine Udell</title>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]UA-18940040-2UA-18940040-2[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N6JPXGZX');</script>
+<!-- End Google Tag Manager -->
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">madeleine udell</div>
+<div class="menu-item"><a href="index.html" class="current">basics</a></div>
+<div class="menu-item"><a href="bio.html">bio</a></div>
+<div class="menu-item"><a href="doc/udell_cv.pdf">cv</a></div>
+<div class="menu-category">research</div>
+<div class="menu-item"><a href="papers.html">papers</a></div>
+<div class="menu-item"><a href="projects.html">projects</a></div>
+<div class="menu-item"><a href="talks.html">talks</a></div>
+<div class="menu-item"><a href="software.html">software</a></div>
+<div class="menu-item"><a href="students.html">students</a></div>
+<div class="menu-category">teaching</div>
+<div class="menu-item"><a href="https://stanford-mse-125.github.io/website-2023/">applied&nbsp;stats</a></div>
+<div class="menu-item"><a href="https://stanford-cme-307.github.io/web/">optimization</a></div>
+<div class="menu-item"><a href="orie4741">big&nbsp;messy&nbsp;data</a></div>
+<div class="menu-item"><a href="https://github.com/udellgroup/orie7191">opt&nbsp;for&nbsp;ml</a></div>
+<div class="menu-item"><a href="https://github.com/udellgroup/orie7391">faster&nbsp;opt</a></div>
+<div class="menu-item"><a href="orie6326">convex&nbsp;opt</a></div>
+<div class="menu-item"><a href="orie3120">practical&nbsp;tools</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Madeleine Udell</h1>
+</div>
+<table class="imgtable"><tr><td>
+<img src="img/2023-Madeleine-Udell-1.jpg" alt="Photo of Madeleine Udell" width="350px" />&nbsp;</td>
+<td align="left"><p>Assistant Professor, <a href="https://msande.stanford.edu/" target=&ldquo;blank&rdquo;>Management Science and Engineering</a>
+and (by courtesy) <a href="https://ee.stanford.edu/" target=&ldquo;blank&rdquo;>Electrical Engineering</a><br />
+Gabilan Faculty Fellow<br />
+Affiliations: <a href="https://icme.stanford.edu/" target=&ldquo;blank&rdquo;>ICME</a>,
+<a href="https://or.stanford.edu/" target=&ldquo;blank&rdquo;>Operations Research</a>,
+<a href="https://datascience.stanford.edu/" target=&ldquo;blank&rdquo;>Data Science</a>,
+<a href="https://hai.stanford.edu/" target=&ldquo;blank&rdquo;>HAI</a>,
+and <a href="biox.stanford.edu" target=&ldquo;blank&rdquo;>BioX</a><br />
+<a href="https://www.stanford.edu/" target=&ldquo;blank&rdquo;>Stanford University</a>
+</p>
+<h2>contact</h2>
+<p><b>office:</b> <a href="Jen-Hsun" target=&ldquo;blank&rdquo;>Huang Engineering Center, room 251</a>
+</p>
+<p><b>email:</b> <a href="mailto:udell@stanford.edu" target=&ldquo;blank&rdquo;>udell@stanford.edu</a>
+</p>
+<p><b>office hours:</b> <a href="https://calendar.app.google/faaHW4YqjivkfDNK7" target=&ldquo;blank&rdquo;>book a slot</a>
+
+
+or <a href="https://stanford-cme-307.github.io/web/" target=&ldquo;blank&rdquo;>CME 307: generally 3-4pm Monday</a>
+</p>
+<p><b>google:</b> madeleine.udell
+</p>
+<p><b>github:</b> <a href="http://www.github.com/madeleineudell" target=&ldquo;blank&rdquo;>madeleineudell</a>
+</p>
+<p><b>twitter:</b> <a href="https://twitter.com/madeleineudell" target=&ldquo;blank&rdquo;>@madeleineudell</a>
+</p>
+<p><b>linkedin:</b> <a href="https://www.linkedin.com/in/madeleine-udell/" target=&ldquo;blank&rdquo;>@madeleineudell</a>
+</p>
+</td></tr></table>
+<h2>news and links</h2>
+<p><b>September 2025.</b> Our preprint <a href="https://arxiv.org/pdf/2509.16402" target=&ldquo;blank&rdquo;>“It Was a Magical Box”: Understanding Practitioner Workflows and Needs in Optimization</a> is out! We interviewed 15 optimization practitioners across industries and found that successful projects depend not just on better solvers, but on data, decisions, and dialogue - the messy, iterative, and human parts of the workflow. This paper was also our first foray into qualitative research, and it gave us fresh perspective on how to build the next generation of human-centered optimization tools.
+</p>
+<p><b> August 2025.</b> Our KDD 2025 research‑track paper, “<a href="https://dl.acm.org/doi/10.1145/3690624.3709245" target=&ldquo;blank&rdquo;>Interpretable Prediction and Feature Selection for Survival Analysis</a>” (with Mike Van Ness), introduces <b></b>DyS<b></b>, a feature‑sparse GAM that pairs strong accuracy with built‑in feature selection; code in our package on an improved method, <b></b>DNAMite<b></b>, follows scikit-learn syntax so it's easy to use. Try it out and let us know if structurally interpretable methods work (or don't) for your problems! <a href="https://dl.acm.org/doi/10.1145/3690624.3709245" target=&ldquo;blank&rdquo;>DOI</a> • <a href="https://arxiv.org/abs/2404.14689" target=&ldquo;blank&rdquo;>Preprint</a> • <a href="https://github.com/udellgroup/dnamite" target=&ldquo;blank&rdquo;>Code</a>
+</p>
+<p><b> July 2025.</b> Two results on learning stepsizes online by PhD students Wenzhi Gao &amp; Ya‑Chi Chu (with Yinyu Ye and me): 
+<a href="https://arxiv.org/abs/2411.01803" target=&ldquo;blank&rdquo;>Gradient Methods with Online Scaling (OSGM)</a> (COLT 2025) learns a per‑step scaling via online learning and guarantees convergence relative to the optimal stepsize along the trajectory.
+<a href="https://arxiv.org/abs/2502.11229" target=&ldquo;blank&rdquo;>Provable and Practical Online Learning Rate Adaptation with Hypergradient Descent</a> (ICML 2025) gives the first rigorous analysis of HDM, plus variants with momentum that often match L‑BFGS with less memory. (<a href="https://icml.cc/virtual/2025/poster/45486" target=&ldquo;blank&rdquo;>ICML page</a>)
+</p>
+<p><b> June 2025.</b> A huge congratulations to my recently graduated Stanford PhD students, Dr. Mike Van Ness and Dr. Zachary Frangella, who both finished in June 2025! Mike's thesis explored interpretable machine learning with applications in healthcare, and Zach's work advanced randomized numerical linear algebra for large-scale optimization. It was tremendous fun working together and I'm so grateful for all I learned from them. I look forward to seeing what they accomplish next!
+</p>
+<p><b> May 2025.</b> It was fun to learn and share perspectives on AI in Operations Research at MS&amp;E's 25 anniversary celebration. Watch our panel <a href="https://www.youtube.com/watch?v=ZbkdSIq8cKQ" target=&ldquo;blank&rdquo;>here</a>.
+</p>
+<p><b> April 2025.</b> My <a href="https://tilos.ai/video/hot-ai-hunting-the-hessian/" target=&ldquo;blank&rdquo;>talk on Hunting the Hessian</a> at HOT‑AI (UC San Diego TILOS) highlights tools our group uses to investigate Hessian spectra and build scalable preconditioners.
+</p>
+<p><b> February 2025.</b> It was awesome to see the progress in deep learning optimization on display at the AlgoPerf workshop hosted by Meta. 
+Here are my slides on how (and why) to hunt for Hessian eigenvalues in deep learning optimization: <a href="doc/udell25_algoperf.pdf" target=&ldquo;blank&rdquo;>slides</a>.
+</p>
+<p><b> December 2024.</b> We integrated a <a href="https://arxiv.org/abs/2402.01868" target=&ldquo;blank&rdquo;>new second-order optimizer developed in our group, NysNewton-CG (NNCG)</a>, into <a href="https://github.com/lululxvi/deepxde" target=&ldquo;blank&rdquo;>deepxde</a>, a popular library for scientific and physics-informed machine learning.
+Researchers and practitioners using physics-informed neural networks (PINNs) to solve partial differential equations (PDEs) may find NNCG particularly useful, since our work has shown that it can <a href="https://icml.cc/virtual/2024/poster/33180" target=&ldquo;blank&rdquo;>reduce errors in PINN solutions by 2-4 times</a> when solving convection and wave PDEs.
+NNCG works best as a fine-tuning step after running both Adam and L-BFGS.
+<a href="https://deepxde.readthedocs.io/en/latest/demos/pinn_forward/burgers.html" target=&ldquo;blank&rdquo;>This tutorial</a> 
+provides an example demonstrating how to use NNCG to train PINNs.
+</p>
+<p><b> October 2024.</b> Have you ever built an optimization model to solve a real-world problem? 
+Consider participating in our <a href="https://docs.google.com/document/d/1sKJwBaMZS2SPZMN1we4WavAevH3T1eqnV8piQdTyKKI/edit?tab=t.0" target=&ldquo;blank&rdquo;>study</a> on optimization modeling!
+</p>
+<p><b> October 2024.</b> My group at Stanford is recruiting a <a href="https://docs.google.com/document/d/11l2cPzMJisg3KP2q0-VC5JJat676h1njWoU8WF4GAPw/edit?usp=sharing" target=&ldquo;blank&rdquo;>postdoc for 2025-2026</a>.
+Please apply if you've got ideas with the potential for big impact in optimization, deep learning, and data science!
+Edit March 2025: the position is closed.
+</p>
+<p><b> October 2024.</b> It was a pleasure to speak to a packed room on optimization modeling with LLMs at INFORMS!
+For more information on what my group is up to, and open problems for optimizers,
+see <a href="https://optimus-solver.com" target=&ldquo;blank&rdquo;>our webapp for interactive optimization modeling</a>,
+<a href="https://arxiv.org/abs/2407.19633" target=&ldquo;blank&rdquo;>our paper</a>, and
+<a href="https://github.com/OptiMUS-optimization-modeling/Optimus-Solver-WebApp/tree/main" target=&ldquo;blank&rdquo;>our codebase</a>,
+which we hope will be easy for other researchers to build on.
+Here are <a href="doc/udell24_optimus_informs_slides.pdf" target=&ldquo;blank&rdquo;>slides from my INFORMS talk</a>, and <a href="doc/udell24_optimus_mopta_slides.pdf" target=&ldquo;blank&rdquo;>a longer version</a>.
+</p>
+<p><b> July 2024.</b> Congratulations to PhD students <a href="https://pratikrathore8.github.io/" target=&ldquo;blank&rdquo;>Pratik Rathore</a> and Zach Frangella on their 
+oral presentation at ICML 2024 on <a href="https://icml.cc/virtual/2024/poster/33180" target=&ldquo;blank&rdquo;>challenges in training PINNs</a> (and some solutions)!
+</p>
+<p><b> July 2024.</b> Welcome to new postdoc <a href="https://conlaw.github.io/" target=&ldquo;blank&rdquo;>Connor Lawless</a>! 
+Connor will work jointly with my group and <a href="https://vitercik.github.io/" target=&ldquo;blank&rdquo;>Ellen Vitercik</a>'s group on using (and assessing the performance of) large language models for optimization.
+</p>
+<p><b>December 2023.</b> My proposal on Randomized Numerical Linear Algebra for Optimization was selected for funding by the Office of Naval Research. 
+We described many of the <a href="doc/udell2022_randnla4opt.pdf" target=&ldquo;blank&rdquo;>ideas powering the proposal</a> in a <a href="doc/udell2022_randnla4opt.pdf" target=&ldquo;blank&rdquo;>newsletter for SIAM Activity Group on Optimization</a>.
+</p>
+<p><b>November 2023.</b> MS&amp;E released a <a href="https://msande.stanford.edu/news/innovating-ai-four-stories-mse-faculty" target=&ldquo;blank&rdquo;>news article</a> 
+showcasing faculty work in AI (including my work on <a href="https://arxiv.org/abs/2310.06116" target=&ldquo;blank&rdquo;>OptiMUS for automated optimization modeling</a>).
+</p>
+<p><b>November 2023.</b> It's been a delight to collaborate with Iddo Drori and team on <a href="https://www.openreviewer.com/" target=&ldquo;blank&rdquo;>OpenReviewer</a>,
+an LLM-based project intended to serve the academic community 
+by pre-reviewing academic papers and helping improve manuscripts 
+before submission to conferences or journals. 
+</p>
+<p><b>October 2023.</b> An amazing team of students, led by PhD student Ali Teshnizi, 
+built the next generation of optimization modeling language: 
+<a href="https://arxiv.org/abs/2310.06116" target=&ldquo;blank&rdquo;>OptiMUS</a> can formulate and solve optimization problems expressed in natural language. 
+
+</p>
+<p><b>October 2023.</b> Our new paper on <a href="https://arxiv.org/abs/2310.15472" target=&ldquo;blank&rdquo;>Interpretable Survival Analysis for Heart Failure Risk Prediction</a>,
+led by PhD student Mike Van Ness, 
+was accepted to the ML4H conference. 
+We developed interpretable methods to identify important clinically-relevant risk factors for heart failure.
+I'm very excited to continue our collaboration with doctors at the VHA and Kaiser
+to see these methods make a real impact on clinical practice.
+</p>
+<p><b>September 2023.</b> Our new paper <a href="https://arxiv.org/abs/2309.02014" target=&ldquo;blank&rdquo;>PROMISE</a>,
+led by PhD student Zach Frangella, shows how to use new efficient preconditioners 
+in (convex) stochastic optimization. These techniques yield linear convergence at 
+fast rates, independent of the condition number, improving on methods like 
+SGD, SVRG, SAGA, and Katyusha. 
+</p>
+<p><b>August 2023.</b> What fun to discuss <a href="https://kdd.org/kdd2023/kdd-panels/" target=&ldquo;blank&rdquo;>the future of LLMs in education</a> at KKD 2023,
+and to meet fellow panelists Eric Horvitz, Ed Chi, and Shawn Jansepar!
+</p>
+<p><b>April 2023.</b> I'm excited to be teaching two classes at Stanford this spring: 
+<a href="https://stanford-mse-125.github.io/website-2023/" target=&ldquo;blank&rdquo;>MS&amp;E 125, Introduction to Applied Statistics</a>,
+and <a href="https://stanford-cme-307.github.io/website-2023/" target=&ldquo;blank&rdquo;>CME 307: Optimization</a>.
+</p>
+<p><b>February 2023.</b> Congratulations to Cornell PhD student Shipu Zhao on a successful defense of 
+his thesis, on <a href="doc/zhao23_shipu_thesis.pdf" target=&ldquo;blank&rdquo;>new methods and analysis techniques in continuous optimization</a>. 
+Shipu is headed to a research role at Amazon.
+</p>
+<p><b>July 2022.</b> I have joined Stanford Management Science and Engineering
+(and the Institute for Computational and Mathematical Engineering)
+as Assistant Professor,
+with a courtesy appointment in Electrical Engineering.
+I've had a lovely time at Cornell:
+I have been so grateful to learn how to be a professor and make it through the tenure track
+in such a supportive department.
+I'm looking forward to new collaborations and adventures at Stanford!
+News article <a href="https://msande.stanford.edu/news/madeleine-udell-joins-mse-assistant-professor" target=&ldquo;blank&rdquo;>here</a>.
+</p>
+<p><b>May 2022.</b> Congratulations to students Yuxuan Zhao and Chengrun Yang
+on successfully defending their PhDs! It's been an honor and pleasure to
+work with you both.
+Yuxuan, whose thesis is on missing value imputation with the Gaussian copula,
+will be joining Two Sigma.
+Chengrun, whose thesis is on automated machine learning under resource constraints,
+will be continuing to pursue his research (at ever larger scale) at Google Brain.
+</p>
+<p><b>January 2022.</b> I'm teaching a new class at Cornell that surveys
+<a href="https://github.com/udellgroup/orie7391" target=&ldquo;blank&rdquo;>algorithmic ideas for speeding up optimization</a>.
+We will survey ideas from (and for) numerical linear algebra, continuous optimization, combinatorial optimization, zero-order optimization, automated machine learning, and deep learning. We will cover powerful techniques for speeding up computation, including ideas from (randomized) low rank approximation and preconditioning, stochastic and subsampling methods, automatic differentiation, lagrangian methods, hyperparameter selection methods, and more.
+I hope it will surface new connections and research directions!
+</p>
+<p><b>October 2021.</b> New paper accepted at NeurIPS this year,
+joint with collaborators Will Stephenson and Tamara Broderick, and my student Zach Frangella: <a href="https://arxiv.org/pdf/2107.09194.pdf" target=&ldquo;blank&rdquo;>Can we globally optimize cross-validation loss?</a>
+We seek to understand when the loss landscape of logistic regression is easy to optimize,
+and when local minima might be lurking. Most importantly, the figures are psychedelic!
+</p>
+<p><b>September 2021.</b> Want to solve large scale linear systems faster?
+Take a look at our new paper, with student Zach Frangella and collaborator Joel Tropp: <a href="https://arxiv.org/pdf/2110.02820.pdf" target=&ldquo;blank&rdquo;>Randomized Nystrom Preconditioning</a>.
+We show how to form a randomized preconditioner that accelerates the convergence of CG.
+It works for any linear system, square (directly) or rectangular (by operating on the normal equations),
+using spectral decay at the top of the spectrum to accelerate convergence.
+It's most useful for dense linear systems and ones with fast spectral decay,
+and provides a provable speedup for regularized systems.
+</p>
+<p><b>June 2021.</b> Thanks to Microsoft Research for hosting an awesome series on automated machine learning.
+Here is my talk on <a href="https://www.youtube.com/watch?v=zDx_jgb2eBk" target=&ldquo;blank&rdquo;>Structured Models for Automated Machine Learning</a>.
+</p>
+<p><b>June 2021.</b> Thanks to the Fields institute for hosting a great session on Low Rank Models and Applications!
+Here's my contrarian talk about when low rank models don't work, and what to use instead: <a href="https://www.youtube.com/watch?v=jZrrY_08DFc" target=&ldquo;blank&rdquo;>imputing missing data with the Gaussian copula</a>,
+based on several papers led by student Yuxuan Zhao.
+</p>
+<p><b>March 2021.</b> What a pleasure to return to the <a href="https://www.widsconference.org/" target=&ldquo;blank&rdquo;>Women in Data Science (WIDS) conference</a>!
+Here are the slides for my workshop on <a href="doc/wids2021-udell-automl-slides.pdf" target=&ldquo;blank&rdquo;>Automating machine learning</a>.
+</p>
+<p><b>February 2021.</b> I'm honored to be selected as one of the <a href="https://sloan.org/fellowships/2021-Fellows" target=&ldquo;blank&rdquo;>2021 Sloan Research Fellows</a>.
+</p>
+<p><b>August 2020.</b> I had a delightful time talking with researchers in Melbourne about
+<a href="https://www.youtube.com/watch?v=OjXPskXO8No&amp;feature=youtu.be" target=&ldquo;blank&rdquo;>dimensionality reduction</a>.
+What a pleasure to give a talk in Melbourne without getting on an airplane!
+</p>
+<p><b>May 2020.</b> Two student papers accepted at KDD 2020!
+Chengrun Yang led the work on
+<a href="https://www.kdd.org/kdd2020/accepted-papers/view/automl-pipeline-selection-efficiently-navigating-the-combinatorial-space" target=&ldquo;blank&rdquo;>a tensor method for automated machine learning</a>,
+and Yuxuan Zhao developed a
+<a href="http://www.arxiv.org/abs/1910.12845" target=&ldquo;blank&rdquo;>parameter-free semiparametric method for missing value imputation
+using the Gaussian copula</a>.
+</p>
+<p><b>April 2020.</b> My ONR YIP proposal, DREAMI: Dimension Reduction for Efficient Automated Machine Intelligence,
+was funded for $529K. Thanks to the ONR for their support!
+</p>
+<p><b> March 2020.</b> I've posted my <a href="mailto:https://medium.com/@madeleine.udell/coronavirus-facts-figures-analysis-d08dbedf1476" target=&ldquo;blank&rdquo;>thoughts on the coronavirus outbreak</a>,
+with links to the most reputable (informative) sources I can find. Summary: if business-as-usual continues in the US I would not be surprised to see US hospitals overwhelmed by coronavirus cases in April.
+I'm encouraging students not to come to class sick and providing all my students with means to complete all their course assignments remotely
+(including videolinks for lectures) and encourage all faculty to do the same.
+</p>
+<p><b>February 2020.</b> My NSF CAREER proposal, Accelerating Machine Learning with Low Dimensional Structure, was funded for $550K. Thanks to the NSF for their support!
+</p>
+<p><b>January 2020.</b> My paper <a href="https://epubs.siam.org/doi/pdf/10.1137/18M1183480" target=&ldquo;blank&rdquo;>Why are big data matrices approximately low rank?</a>
+with Alex Townsend is currently <a href="https://epubs.siam.org/journal/sjmdaq" target=&ldquo;blank&rdquo;>the most read article in the SIMODS journal</a>.
+</p>
+<p><b>Summer 2019.</b> Congratulations to postdoc <a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;>Jicong Fan</a> for his oral presentation at CVPR on <a href="online" target=&ldquo;blank&rdquo;>high-rank matrix completion</a>,
+and to PhD student Chengrun Yang for his <a href="https://www.youtube.com/watch?v=LUKFUbXFYuU" target=&ldquo;blank&rdquo;>oral presentation</a> at KDD on <a href="http://www.arxiv.org/abs/1808.03233" target=&ldquo;blank&rdquo;>OBOE: a recommender systems approach to automated machine learning</a>.
+</p>
+<p><b>March 2019.</b> I gave a plenary talk at the
+<a href="https://www.widsconference.org/" target=&ldquo;blank&rdquo;>Women in Data Science (WiDS) Global Conference</a>,
+reaching a worldwide audience of 100,000 participants.
+It was fantastic to see the depth of female talent in data science.
+Here's my talk on <a href="http://ow.ly/EzB330o5XxA" target=&ldquo;blank&rdquo;>filling in missing data with low rank models</a>.
+My <a href="https://www.youtube.com/watch?time_continue=21&amp;v=ObX38qQo2J4" target=&ldquo;blank&rdquo;>interview</a> with The Cube
+resulted in a nice news article about my research and teaching
+<a href="https://siliconangle.com/2019/03/08/this-professor-is-cleaning-up-techs-messy-data-problem-through-multidisciplinary-education-wids2019-womenintech/" target=&ldquo;blank&rdquo;>cleaning up big messy data.</a>
+</p>
+<p><b>February 2019.</b> <a href="https://epubs.siam.org/doi/pdf/10.1137/18M1183480" target=&ldquo;blank&rdquo;>Why are big data matrices approximately low rank?</a>
+Alex Townsend and I provide one answer in the first issue (!) of the new
+<a href="https://www.siam.org/Publications/Journals/SIAM-Journal-on-Mathematics-of-Data-Science-SIMODS" target=&ldquo;blank&rdquo;>SIAM journal on the Mathematics of Data Science (SIMODS)</a>.
+Also covered in an <a href="https://sinews.siam.org/Details-Page/qa-with-simods-author-madeleine-udell" target=&ldquo;blank&rdquo;>interview</a> in SIAM news.
+</p>
+<p><b>February 2019.</b> Can an algorithm racially discriminate if it doesn't know peoples&rsquo; race?
+(Hint: yes.)
+Student author Xiaojie Mao presented <a href="http://arxiv.org/abs/1811.11154" target=&ldquo;blank&rdquo;>our work</a> on
+fair decision making when the protected class is unobserved at the <a href="https://fatconference.org/2019/" target=&ldquo;blank&rdquo;>FAT* conference</a>.
+The work was also covered by the <a href="http://news.cornell.edu/stories/2019/01/study-ai-may-mask-racial-disparities-credit-lending" target=&ldquo;blank&rdquo;>Cornell Chronicle</a>.
+I was interviewed for a <a href="https://www.theverge.com/2019/2/7/18211890/social-media-life-insurance-new-york-algorithms-big-data-discrimination-online-records" target=&ldquo;blank&rdquo;>related article</a> about using social media to
+price life insurance.
+</p>
+<p><b> January 2019.</b>
+I'm teaching a new PhD level topics class on
+<a href="https://github.com/udellgroup/orie7191" target=&ldquo;blank&rdquo;>Optimization for Machine Learning (ORIE 7191).</a>
+We'll read classic and cutting-edge papers
+at the interface of optimization and machine learning,
+guided by two questions:
+1) Can we use classical ideas in optimization to better understand
+(and improve) algorithms for challenging problems in machine learning?
+2) How can modern insights in machine learning guide the design of
+new and improved methods for optimization?
+</p>
+<p><b> September 2018.</b>
+Congratulations to NIPS student authors Xiaojie Mao
+(<a href="https://arxiv.org/abs/1806.00811" target=&ldquo;blank&rdquo;>Causal Inference with Noisy and Missing Covariates via Matrix Factorization</a> - poster)
+and Sam Zhou
+(<a href="https://arxiv.org/abs/1807.07531" target=&ldquo;blank&rdquo;>Limited Memory Kelley's Method Converges for Composite Convex and Submodular Objectives</a> - spotlight).
+</p>
+<p><b> January 2017.</b> I'm co-teaching
+<a href="https://classes.cornell.edu/browse/roster/SP18/class/ORIE/1380" target=&ldquo;blank&rdquo;>ORIE/CS 1380, Data Science for All</a>,
+in Spring 2018 with <a href="http://www.cs.cornell.edu/~clarkson/" target=&ldquo;blank&rdquo;>Michael Clarkson</a>.
+Data science has become a fundamental skill for understanding the world
+and making decisions, and we're excited to teach these skills to students
+from any discipline &#8201;&mdash;&#8201; without any prerequisite skills &#8201;&mdash;&#8201; who may
+go on to do important data-driven work in their own disciplines.
+</p>
+<p><b>October 2017.</b> My paper on <a href="doc/udell17_pvopt.pdf" target=&ldquo;blank&rdquo;>Optimal Design of Efficient Rooftop Photovoltaic Arrays</a>
+with Oliver Toole at Aurora Solar won second place in INFORMS&rsquo;
+<a href="https://www.informs.org/Recognizing-Excellence/INFORMS-Prizes/Doing-Good-with-Good-OR-Student-Paper-Competition" target=&ldquo;blank&rdquo;>Doing Good with Good OR (DGWGOR)</a> Prize!
+It uses OR techniques to design cheaper, safer, more energy efficient solar arrays than human experts.
+</p>
+<p><b>June 2017.</b> I had a great time at <a href="http://juliacon.org/2017/" target=&ldquo;blank&rdquo;>JuliaCon</a>; every year I'm amazed to see
+new (and awesome) functionality and packages. Absurd pedant that I am,
+I talked about <a href="https://github.com/madeleineudell/JuliaCon17" target=&ldquo;blank&rdquo;>how to describe a mathematical function</a>.
+Here's a <a href="https://www.youtube.com/watch?v=skLGTYs5kAk&amp;list=PLP8iPy9hna6QpP6vqZs408etJVECPKIev&amp;index=11" target=&ldquo;blank&rdquo;>video</a> of the talk.
+</p>
+<p><b>May 2017.</b> We had a great workshop at <a href="http://acc2017.a2c2.org/" target=&ldquo;blank&rdquo;>ACC</a> on <a href="http://people.kth.se/~crro/workshop.html" target=&ldquo;blank&rdquo;>Control Engineering in Julia</a>.
+You can find slides and demos on the <a href="https://github.com/JuliaSystems/ACC-2017" target=&ldquo;blank&rdquo;>workshop's GitHub repo</a>.
+Thanks to my co-organizers <a href="http://people.kth.se/~crro" target=&ldquo;blank&rdquo;>Cristian Rojas</a> and <a href="https://people.kth.se/~mikaelj/" target=&ldquo;blank&rdquo;>Mikael Johansson</a>!
+</p>
+<p><b>April 2017.</b> We're running a workshop at <a href="http://icdm2017.bigke.org/" target=&ldquo;blank&rdquo;>ICDM</a> on <a href="http://dml.cs.byu.edu/icdm17ws/d3m-cfp.html" target=&ldquo;blank&rdquo;>Data-driven Discovery of Models (D3M)</a>,
+together with <a href="http://dml.cs.byu.edu/" target=&ldquo;blank&rdquo;>Christophe Giraud-Carrier</a> and <a href="http://home.uchicago.edu/~ishanu/" target=&ldquo;blank&rdquo;>Ishanu Chattopadhyay</a>.
+<a href="http://dml.cs.byu.edu/icdm17ws/d3m-cfp.html" target=&ldquo;blank&rdquo;>Please submit your papers!</a> Deadline is August 7.
+</p>
+<p><b>March 2017.</b> My grant proposal for research on
+Composable Robust Structured Data Inference
+was selected for funding under DARPA's program on
+<a href="http://www.darpa.mil/program/data-driven-discovery-of-models" target=&ldquo;blank&rdquo;>Data Driven Discovery of Models (D3m)</a>.
+Looking forward to automatically constructing models for data with the other performers!
+</p>
+<p><b>March 2017.</b> My paper <a href="https://arxiv.org/abs/1702.06838" target=&ldquo;blank&rdquo;>Sketchy Decisions: Convex Low-Rank Matrix Optimization with Optimal Storage</a> with Alp Yurtsever, Joel Tropp, and Volkan Cevher was selected for
+an oral presentation at AISTATS 2017.
+</p>
+<p><b>January 2017.</b> I'll be teaching a class on <a href="https://people.orie.cornell.edu/mru8/orie6326/index.html" target=&ldquo;blank&rdquo;>Convex Optimization</a> at Cornell in
+Spring of 2017. We'll be roughly following Stanford's
+<a href="http://www.stanford.edu/class/ee364a/" target=&ldquo;blank&rdquo;>EE364a</a>
+(and some of <a href="http://www.stanford.edu/class/ee364b/" target=&ldquo;blank&rdquo;>EE364b</a>),
+using the excellent
+<a href="http://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf" target=&ldquo;blank&rdquo;>textbook by Boyd and Vandenberghe</a>,
+with an additional emphasis on first order methods.
+</p>
+<p><b>November 2016.</b> (Most) data scientists did a terrible job predicting the results of
+the 2016 election. Did that matter for the outcome?
+I analyze the data <a href="orie4741/lectures/limits.pdf" target=&ldquo;blank&rdquo;>in a lecture on the limits &#8201;&mdash;&#8201; and dangers &#8201;&mdash;&#8201; of predictive modeling</a>.
+</p>
+<p><b>October 2016.</b> Thanks to Cornell's
+<a href="http://www.cs.cornell.edu/~bindel//blurbs/cussw.html" target=&ldquo;blank&rdquo;>Scientific Software Club</a>
+for inviting me to give an introduction to Julia, and asking great questions!
+Here are my <a href="https://github.com/madeleineudell/intro-to-julia" target=&ldquo;blank&rdquo;>slides + demos</a>,
+which start with basic syntax and proceed to show off advanced capabilities like
+multi-language integration, shared memory parallelism,
+and mathematical optimization packages.
+</p>
+<p><b>September 2016.</b> I'm teaching a new class at Cornell on <a href="orie4741" target=&ldquo;blank&rdquo;>Learning with Big Messy Data</a>.
+Interestingly, the course itself is generating a bunch of big messy data,
+from <a href="orie4741/lectures.html" target=&ldquo;blank&rdquo;>lecture slides</a> to
+<a href="https://github.com/ORIE4741/demos" target=&ldquo;blank&rdquo;>demos</a> to
+<a href="https://piazza.com/cornell/fall2016/orie4741/home" target=&ldquo;blank&rdquo;>Piazza posts</a> to
+<a href="https://github.com/ORIE4741/projects" target=&ldquo;blank&rdquo;>project repos</a>.
+Next step:
+<a href="http://www.news.gatech.edu/2016/05/09/artificial-intelligence-course-creates-ai-teaching-assistant" target=&ldquo;blank&rdquo;>train an AI</a>
+to learn how to learn with big messy data from this big messy data?
+</p>
+<p><b>June 2016.</b> Damek Davis, Brent Edmunds and I just posted a paper on a (provably convergent)
+stochastic asynchronous optimization method called <a href="http://arxiv.org/abs/1606.02338" target=&ldquo;blank&rdquo;>SAPALM</a>
+for fitting <a href="http://arxiv.org/abs/1410.0342" target=&ldquo;blank&rdquo;>generalized low rank models</a>.
+It turns out asynchrony barely affects the rate of convergence (per flop),
+while providing a linear speedup in the number of flops per second.
+In other words: it's fast!
+</p>
+<p><b>May 2016.</b> Congratulations to <a href="http://ramcha24.github.io/" target=&ldquo;blank&rdquo;>Ramchandran Muthukumar</a>
+and <a href="http://ayush-iitkgp.rhcloud.com/" target=&ldquo;blank&rdquo;>Ayush Pandey</a> for their fantastic
+proposals to work with me on <a href="http://convexjl.readthedocs.io/en/latest/" target=&ldquo;blank&rdquo;>Convex.jl</a> this summer through <a href="https://developers.google.com/open-source/gsoc/" target=&ldquo;blank&rdquo;>Google Summer of Code</a>.
+Ayush will be adding support for complex numbers, while Ramchandran develops a fast
+presolve routine.
+</p>
+<p><b>March 2016.</b> It was great meeting incoming PhD students at the <a href="http://www.orie.cornell.edu/" target=&ldquo;blank&rdquo;>ORIE</a> visiting student days! <a href="doc/udell16_orie_visit_days.pdf" target=&ldquo;blank&rdquo;>Here are the slides</a> I presented to introduce students to some of my research.
+</p>
+<p><b>November 2015.</b> <a href="http://www.h2o.ai" target=&ldquo;blank&rdquo;>H2O</a> is a new framework for large scale machine learning, and has just released a great <a href="https://github.com/h2oai/h2o-world-2015-training/blob/master/tutorials/glrm/glrm-tutorial.md" target=&ldquo;blank&rdquo;>implementation</a> of generalized low rank models (engineered by <a href="http://h2o.ai/team/anqi-fu/" target=&ldquo;blank&rdquo;>Anqi Fu</a>).
+Here are the <a href="doc/udell15_h2oworld.pdf" target=&ldquo;blank&rdquo;>slides</a> and the <a href="http://bcove.me/7vhm6o4f" target=&ldquo;blank&rdquo;>video</a> from my talk at H2O World.
+
+</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2025-09-25 13:41:39 PDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>

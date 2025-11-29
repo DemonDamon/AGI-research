@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="keywords" content="Stanford University, Amazon CV, Duncan Eddy, San Francisco CA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="/./libs/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="/./libs/script.js"></script>
+    
+    
+    <link rel="stylesheet" href="/./css/franklin.css">
+<link rel="stylesheet" href="/./css/tufte.css">
+<link rel="stylesheet" href="/./css/latex.css">
+<link rel="stylesheet" href="/./css/adjust.css"> <!-- sheet to overwrite some clashing styles -->
+<link rel="icon" href="/./assets/favicon.ico">
+
+     <title>Duncan Eddy</title>  
+    
+    <script src="/./libs/plotly/plotly.min.js"></script> 
+    <script>
+      // This function is used when calling `\fig{...}` See # Using \fig{...} below
+      const PlotlyJS_json = async (div, url) => {
+        response = await fetch(url); // get file
+        fig = await response.json(); // convert it to json
+        // Make the plot fit the screen responsively. See the documentation of plotly.js. https://plotly.com/javascript/responsive-fluid-layout/
+        if (typeof fig.config === 'undefined') { fig["config"]={} }
+        delete fig.layout.width
+        delete fig.layout.height
+        fig["layout"]["autosize"] = true
+        fig["config"]["autosizable"] = true
+        fig["config"]["responsive"] = true
+  
+        // make it easier to scroll throught the website rather than being blocked by a figure.
+        fig.config["scrollZoom"] = false
+  
+        // PlotlyJS.savefig by default add the some more attribute to make a static plot.
+        // Disable them to make the website fancier.
+        delete fig.config.staticPlot
+        delete fig.config.displayModeBar
+        delete fig.config.doubleClick
+        delete fig.config.showTips
+  
+        Plotly.newPlot(div, fig);
+      };
+    </script>
+    
+</head>
+
+<body>
+<div id="layout">
+  <div id="menu">
+    <div id="top_row">
+      <div id="links">
+        <a href="https://github.com/duncaneddy" target="_blank">GitHub</a> | 
+        <a href="https://www.linkedin.com/in/duncan-eddy" target="_blank">LinkedIn</a> | 
+        <a href="https://scholar.google.com/citations?hl=en&user=a7s2SW4AAAAJ" target="_blank">Scholar</a>
+        <!-- <a href="/./pdf/robert_moss_resume.pdf" target="_blank">Resume</a> | 
+        <a href="/./pdf/robert_moss_cv.pdf" target="_blank">CV</a>  -->
+      </div>
+      
+      <h1 class="h-title">Duncan Eddy, PhD</h1>
+      <h3 class="h-title">Center for AI Safety & HAI Research Fellow<div class="hide-on-mobile"> – </div><br class="show-on-mobile">Stanford University</h3>
+      <hr class="hr-title">
+    </div>
+  </div>
+</div>
+
+<header>
+  <ul>
+    <li><a href="/./">Home</a></li>
+    <!-- <li><a href="/./research/">Research</a></li> -->
+    <li><a href="/./publications/">Publications</a></li>
+    <li><a href="/./code/">Code</a></li>
+    <li><a href="/./talks/">Talks</a></li>
+    <li><a href="/./writing/writing/">Writing</a></li>
+    <!-- <li><a href="/./consulting/">Consulting</a></li> -->
+  </ul>
+</header>
+
+<div class="combined">
+  <!-- <div id="margin">
+  <ol>
+    <li> List item one </li>
+    <li> List item two </li>
+    <li> List item three </li>
+    <li> List item four </li>
+  </div> -->
+  <div id="main">
+
+
+<!-- Content appended here -->
+<!-- <base target="_blank"> -->
+<div class="franklin-content"><div class="row"><div class="container cover"><p><img src="/./images/duncan_2025.jpg" alt="" /></p>
+<div class="justified cover-text">I&#39;m currently a research fellow at <a href="https://hai.stanford.edu/">HAI</a>  with joint appointments in the Department of Computer Science and Department of Aeronautics and Astronautics at Stanford University. Prior to this I built fun things at Amazon and Capella Space. I completed my PhD in Aerospace Engineering at Stanford, funded by the National Defense Science and Engineering Graduate Fellowship. My work focuses on building safe, reliable automated decision-making into operational systems. I love solving hard problems with good people. </div>
+<div class="justified cover-text indent">My current research focuses on automated red-teaming for failure discovery and safety validation of of AI systems in safety-critical applications in cybersecurity, mental health, and autonomous vehicle domains. I also hold a post-doctoral fellowship appointment in the <a href="https://sisl.stanford.edu">Stanford Intelligent Systems Laboratory &#40;SISL&#41;</a> funded by the <a href="https://www.schmidtsciences.org/">Schmidt Sciences Foundation</a> and <a href="https://www.torc.ai/">Torc Robotics</a>. My work combines classical optimization for foundational analysis, failure detection techniques to find weaknesses in complex systems, and reinforcement learning to address these failures. This approach is currently being applied to autonomous vehicles and generative AI models to automate and improve robustness of these systems.</div>
+<div class="justified cover-text indent">Prior to this, I started and led the Spacecraft Operations Group at <a href="https://www.capellaspace.com/">Capella Space</a>, the first US commercial synthetic aperture radar satellite imaging constellation. There I developed the first <a href="https://www.youtube.com/watch?v&#61;LeqhTBFteug">fully-automated constellation operations system</a> capable of delivering global high-resolution imagery on-demand without any human involvement. I subsequently started and led the Constellation Operations and Space Safety Groups at Project Kuiper. Most recently, I was a Principal Applied Scientist at Amazon Web Services, where I worked on building software services for large-scale distributed edge compute applications. I have also served as the Executive Director of the <a href="https://aisafety.stanford.edu/">Stanford Center for AI Safety</a>. 
+<br><br>
+ If you&#39;re looking to get in touch, please reach out to <strong>&#91;first name&#93;@argoinnovations.com</strong>. 
+<div style="clear: both"></div>
+</div></div></div>
+<h1 id="selected_talks"><a href="#selected_talks" class="header-anchor">Selected Talks</a></h1>
+<div class="showcase-item"><div class="wrapper"><a href="https://www.youtube.com/watch?v&#61;12Ee3kQw1WE"><img src="/./images/aot_2.png" alt="" /></a></div>
+<p><strong>Agents of Tech: Can we Trust AI</strong><a href='https://www.youtube.com/watch?v=12Ee3kQw1WE' class='icon' target='_blank'><img src='/./images/youtube.svg'></a></p>
+<p>In this episode of Agents of Tech, Stephen Horn and Autria Godfrey explore the rapidly evolving world of Artificial Intelligence and ask the pressing questions: Can we trust AI? Is it safe?</p></div>
+<div class="showcase-item"><div class="wrapper"><a href="https://www.youtube.com/watch?v&#61;tl7aeuV34BU"><img src="/./images/hyp.png" alt="" /></a></div>
+<p><strong>Hundred Year Podcast: Improving AI Safety</strong><a href='https://www.youtube.com/watch?v=tl7aeuV34BU' class='icon' target='_blank'><img src='/./images/youtube.svg'></a></p>
+<p>In this episode, I spoke with Adario Strange to explain why the commercialization of space will continue to fuel our explorations into the Moon and Mars, and how AI-powered robots may be the primary method for deep space exploration in the future.</p></div>
+<div class="showcase-item"><div class="wrapper"><a href="https://www.youtube.com/watch?v&#61;EotQ0CvxDVQ"><img src="/./images/thesis_defense.png" alt="" /></a></div>
+<p><strong>Thesis Defense: Task Planning for Earth Observing Satellite Systems</strong><a href='https://www.youtube.com/watch?v=EotQ0CvxDVQ' class='icon' target='_blank'><img src='/./images/youtube.svg'></a></p>
+<p>This is the video of my PhD thesis defense at Stanford University. I discuss the task planning for Earth observing satellite systems, past approaches, the use of Markov decision processes, and the development of a new algorithm based on the maximum independent set problem.</p></div>
+<h1 id="selected_code"><a href="#selected_code" class="header-anchor">Selected Code</a></h1>
+
+<div class="clickable blank-table top-align-table">
+  <table>
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td>
+              <a href="https://github.com/duncaneddy/brahe"><img src="https://github-readme-stats.vercel.app/api/pin/?username=duncaneddy&amp;repo=brahe" alt="README"></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://github.com/duncaneddy/brahe"><img src="https://raw.githubusercontent.com/duncaneddy/brahe/main/docs/pages/assets/logo-gold.png" alt="" style="max-height: 150px; width: auto;"></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://github.com/duncaneddy/ground-station-optimizer"><img src="https://github-readme-stats.vercel.app/api/pin/?username=duncaneddy&amp;repo=ground-station-optimizer" alt="README"></a>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <td>
+              <a href="https://github.com/sisl/SatelliteDynamics.jl"><img src="https://github-readme-stats.vercel.app/api/pin/?username=sisl&amp;repo=SatelliteDynamics.jl" alt="README"></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://github.com/sisl/SatelliteDynamics.jl"><img src="https://sisl.github.io/SatelliteDynamics.jl/latest/assets/logo.png" alt="" style="max-height: 150px; width: auto;"></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://github.com/Fchaubard/gradient_agreement_filtering"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Fchaubard&amp;repo=gradient_agreement_filtering" alt="README"></a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h1 id="selected_publications"><a href="#selected_publications" class="header-anchor">Selected Publications</a></h1>
+<div class="showcase-item"><div class="wrapper"><a href="https://arxiv.org/abs/2407.09447"><img src="images/ast_prompter.png" alt="" /></a></div>
+<p><strong>ASTPrompter: Weakly Supervised Automated Language Model Red-Teaming to Identify Low-Perplexity Toxic Prompts</strong><a href='https://arxiv.org/abs/2407.09447' class='icon' target='_blank'><img src='/./images/paper.svg'></a> <a href='https://github.com/sisl/ASTPrompterPlus/' class='icon'><img style='padding-left: 0 !important; display: inline;' src='/./images/github.svg'></a></p>
+<p>Amelia F. Hardy, Houjun Liu, Bernard Lange, Duncan Eddy, Mykel J. Kochenderfer</p>
+<p><em>EMNLP, 2025</em></p></div>
+<div class="showcase-item"><div class="wrapper"><a href="https://arxiv.org/pdf/2410.16282"><img src="/./images/ground_stations.png" alt="" /></a></div>
+<p><strong>Optimal Ground Station Selection for Low-Earth Orbiting Satellites</strong><a href='https://arxiv.org/pdf/2410.16282' class='icon' target='_blank'><img src='/./images/paper.svg'></a> <a href='https://github.com/duncaneddy/ground-station-optimizer/' class='icon'><img style='padding-left: 0 !important; display: inline;' src='/./images/github.svg'></a></p>
+<p>Duncan Eddy, Michelle Ho, and Mykel Kochenderfer</p>
+<p><em>IEEE Aerospace Conference, 2025</em></p></div>
+<div class="showcase-item"><div class="wrapper"><a href="https://arxiv.org/abs/2008.08446"><img src="/./images/aiaa_mis_scheduling.svg" alt="" /></a></div>
+<p><strong>A Maximum Independent Set Method for Scheduling Earth-Observing Satellite Constellations</strong><a href='https://arxiv.org/abs/2008.08446' class='icon' target='_blank'><img src='/./images/paper.svg'></a></p>
+<p>Duncan Eddy and Mykel Kochenderfer</p>
+<p><em>AIAA Journal of Spacecraft and Rockets, 2021</em></p></div>
+<div class="showcase-item"><div class="wrapper"><a href="https://arxiv.org/abs/1910.08419"><img src="/./images/markov_decision_process.svg" alt="" /></a></div>
+<p><strong>Markov Decision Processes for Multi-Objective Satellite Task Planning</strong><a href='https://arxiv.org/abs/1910.08419' class='icon' target='_blank'><img src='/./images/paper.svg'></a></p>
+<p>Duncan Eddy and Mykel Kochenderfer</p>
+<p><em>IEEE Aerospace Conference, 2020</em></p></div>
+<div class="showcase-item"><div class="wrapper"><a href="./docs/stringham_capella_constellation_2019.pdf"><img src="/./images/capella_sequoia.jpeg" alt="" /></a></div>
+<p><strong>The Capella X-Band SAR Constellation for Rapid Imaging</strong><a href='https://ieeexplore.ieee.org/abstract/document/8900410' class='icon' target='_blank'><img src='/./images/paper.svg'></a></p>
+<p>Craig Stringham, Gordon Farquharson, Davide Castelletti, Eric Quist, Lucas Riggi, Duncan Eddy, and Scott Soenen</p>
+<p><em>IGARSS - International Geoscience and Remote Sensing Symposium, 2019</em></p></div>
+<div class="page-foot">
+    <div id="copyright">
+        © Duncan Eddy (<a href="/./bio/">Bio</a>). Last modified: September 23, 2025. <br> Built with 
+        <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>, inspired by  <a href="https://robert-moss.com/">https://robert-moss.com/</a> 
+    </div>
+</div>
+<button onclick="back_to_top()" id="back_to_top" title="Back to top">↑</button>
+</div><!-- CONTENT ENDS HERE -->
+            </div> <!-- end of id=main -->
+        </div> <!-- end of id=combined -->
+    </div> <!-- end of id=layout -->
+    
+    
+  </body>
+</html>

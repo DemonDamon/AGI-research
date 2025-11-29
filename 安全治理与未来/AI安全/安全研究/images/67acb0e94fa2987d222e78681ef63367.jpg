@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///Users/azalia/Desktop/old-website/Azalia%20Mirhoseini.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>
+   Azalia Mirhoseini
+  </title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+
+    <script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="http://www.google-analytics.com/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26237419-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+ </head>
+ <body data-spy="scroll" data-target=".navbar-fixed-top" id="top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     <button class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+      <span class="sr-only">
+       Toggle navigation
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+     </button>
+     <a class="navbar-brand" href="http://azaliamirhoseini.com/">
+      Azalia Mirhoseini
+     </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <ul class="nav navbar-nav navbar-right">
+      <li class="active">
+       <a href="http://azaliamirhoseini.com/index.html#top">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="http://azaliamirhoseini.com/index.html#Research">
+        Research
+       </a>
+      </li>
+      <li>
+       <a href="http://azaliamirhoseini.com/index.html#Teaching">
+        Teaching
+       </a>
+      </li>
+      <li>
+       <a href="http://azaliamirhoseini.com/index.html#Speaking">
+        Speaking
+       </a>
+      </li>
+      <li>
+       <a href="http://azaliamirhoseini.com/index.html#Awards">
+        Awards
+       </a>
+      </li>
+      <li>
+       <a href="http://azaliamirhoseini.com/index.html#Misc">
+        Media
+       </a>
+      </li>
+      <li>
+       <a href="http://azaliamirhoseini.com/index.html#Contact">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- end navbar-collapse -->
+   </div>
+   <!-- end container -->
+  </nav>
+	
+-------------------&gt;
+<section id="top">
+<div class="container">
+    <div class="row">
+<div class="col-lg-12 text-center">
+
+     </div>
+    </div> 
+    <div id="research-overview">
+     <div class="row">
+<div class="col-lg-12 text-center">
+      <h1 style="font-family:Sans-serif;"class="section-heading">
+       Azalia Mirhoseini
+      </h1>
+<hr>
+     </div>
+     <div class="col-lg-12 text-right">
+     </div>
+    </div> 
+    <div id="research-overview">
+     <div class="row">
+      <div class="col-md-12 col text-justify research-statement">
+        
+
+<br><br>
+                                        <img src="images/azalia2.jpg" alt="" style="float:left; margin: 0px 75px 15px 20px;" width="450">
+                                        <div style="float:left">
+                                        </div><br>Azalia Mirhoseini is an Assistant Professor of Computer Science and founder of <a href="https://scalingintelligence.stanford.edu/" style="color: blue;">Scaling Intelligence Lab</a>
+at Stanford University. Her lab develops scalable and self-improving AI systems and methodologies towards the goal of advancing artificial general intelligence. She also spends time at Google DeepMind as a Senior Staff Scientist. Prior to Stanford, she spent several years in industry AI labs, including Google Brain and Anthropic. Her past work includes <a href="https://arxiv.org/pdf/1701.06538" style="color: blue;">Mixture-of-Experts (MoE)</a> neural architectures, now commonly used in leading generative AI models; <a href="https://deepmind.google/discover/blog/how-alphachip-transformed-computer-chip-design/" style="color: blue;">AlphaChip</a>, a pioneering work on deep reinforcement learning for layout optimization used in the design of advanced chips like Google AI accelerators (TPUs) and data center CPUs; as well as pioneering research on <a href="https://arxiv.org/pdf/2407.21787" style="color: blue;">test-time scaling</a>. Her research has been recognized through the MIT Technology Review's 35 Under 35 Award, the Best ECE Thesis Award at Rice University, publications in flagship venues such as Nature, and coverage by various media outlets, including MIT Technology Review, IEEE Spectrum, The Verge, The Times, ZDNet, VentureBeat, and WIRED.</br><!--<a href="http://azaliamirhoseini.com/cv.pdf" target="_blank" style="color:blue">CV</a>, 
+<a href="https://twitter.com/azaliamirh?lang=en" target="_blank" style="color:blue">Twitter</a>, <a href="https://www.linkedin.com/pub/azalia-mirhoseini/22/85/a53" target="_blank" style="color:blue">LinkedIn</a>-->
+      </div>
+     </div>
+    </div>
+  </div>
+<!-------->
+<!-------------------
+    </div>
+   </div>
+  </header>>
+    <!-- Research Section -->
+  <section id="Research">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-12 text-center">
+      <h2 class="section-heading">
+       Research
+      </h2>
+     </div>
+    </div>
+    <div class="container research-statement" id="research-overview">
+     <div class="row">
+      <div class="col-md-12 col text-justify research-statement">
+
+<p>
+I'm generally interested in enabling self-improving AI, including AI for model, software, and hardware design. I believe that recursive self-improvement is the path to general intelligence.
+I highlight some of our projects below, but please visit Scaling Intelligence's  <a href="https://scalingintelligence.stanford.edu/pubs/" style="color: blue;">publications</a>, <a href="https://scalingintelligence.stanford.edu/blogs/" style="color: blue;">blogposts</a>, and <a href="https://github.com/ScalingIntelligence" style="color: blue;">GitHub</a> pages for a comprehensive list of projects, including test-time scaling methodologies, multi-model AI systems, inference optimization, AI-based verification, AI for software, long-context optimization, and more.
+<p>
+<font size="+2"><b> Highlights:</b></font>
+<li>KernelBench is a benchmark and evaluation framework for AI based kernel generation. KernelBench continues to drive progress on AI for AI performance optimization and has been adopted by industry leaders, including Meta, METR, Nvidia, Prime Intellect,  Cognition AI, and SakanaAI 
+<a href="https://scalingintelligence.stanford.edu/pubs/kernelbench/" style="color: blue;">(ICML’25)</a>.</li><br>
+ <li> SWiRL is a recursive self-improvement technique enabled by a new multi-step deep RL approach. We leverage LLMs to synthetically generate new  reasoning, planning, and tool use traces that can then be used for training LLMs to advance their multi-step and long-horizon problem-solving capability. Importantly, SWiRL exhibits generalization across tasks: for example, training only on multi-hop question-answering improves zero-shot performance on math and vice versa (<a href="https://scalingintelligence.stanford.edu/pubs/sdgrl/" target="_blank" style="color:blue">COLM'25</a>).</li><br>
+
+<li> Large Language Monkeys is a pioneering work in tets-time scaling that introduces inference-time scaling laws. While the impact of scaling training compute is well understood, when it comes to inference, we often limit the amount of compute to only one or a few limited attempts per problem. Here, we explore inference compute as another axis for scaling by increasing the number of generated samples. We show that the relationship between coverage and the number of samples is often log-linear and can be modeled with an exponentiated power law, suggesting the existence of inference-time scaling laws. In domains with automated verifiers like coding and formal proofs, these increases in coverage directly translate into improved performance. For example, on SWE-bench Lite, we showed that coverage increases from 15.9% with one sample to a new state-of-the-art performance of 56% with 250 samples (<a href="https://scalingintelligence.stanford.edu/pubs/large_language_monkeys/" style="color: blue;">paper’24</a>, <a href="https://scalingintelligence.stanford.edu/pubs/monkeyspower/" style="color: blue;">ICML Oral’25</a>).
+</li><br>
+<li> Constitutional AI (CAI) is a novel approach to train Large Language Models (LLMs) that are helpful, harmless, and honest. CAI introduces a new strategy that relies on AI feedback for self-improvement. In CAI, the LLM criticizes its own outputs based on a set of principles (the constitution) and revises its outputs to follow the constitution. This technique is used to finetune the LLM with supervised training first and later with reinforcement learning (based on the preference model trained on AI feedback). CAI reduces reliance on human supervision for training, improves transparency, and enables a faster approach to new domain adaptation
+(<a href="https://arxiv.org/pdf/2212.08073.pdf" target="_blank" style="color:blue">Anthropic'22</a>).
+</li><br>
+
+<li>FAST is a full-stack accelerator search framework with a broad design
+search space, including hardware datapath, software scheduling, and compiler passes
+such as operation fusion. When evaluated on vision and NLP benchmarks, custom designs
+generated by FAST show up to 6x improvement in
+Perf/TDP vs. TPU-v3. We also demonstrated that accelerators with 2x higher Perf/TCO can become ROI-positive at moderate datacenter deployments (<a href="https://dl.acm.org/doi/abs/10.1145/3503222.3507767" target="_blank" style="color:blue">ASPLOS'22</a>).</li><br>
+
+<li>Developed lossless accelerators using approximate multipliers for fast and energy-efficient inference on vision benchmarks (<a href="https://ieeexplore.ieee.org/abstract/document/9774607" target="_blank" style="color:blue">DATE'22</a>).</li><br>
+
+
+<li>Developed AlphaChip, one of the first deep reinforcement learning approaches used to solve a real-world engineering problem. It generates superhuman or comparable chip layouts in hours, rather than taking weeks or months of human effort, and its layouts are used in advanced chips, from data centers to mobile phones. I cofounded/led this project, a cross-functional effort with 20+ engineers and researchers
+across different organizations, including Google Research and (Hardware) Platforms (<a href="https://www.nature.com/articles/s41586-021-03544-w.epdf" target="_blank" style="color:blue">Nature'21</a>, <a href="https://deepmind.google/discover/blog/how-alphachip-transformed-computer-chip-design" target="_blank" style="color:blue">AlphaChip'24</a>).</li><br>
+
+<li>Developed deep reinforcement learning algorithms to do model parallelism that
+speed up deep network training by more than 60% over top-performing baselines
+(<a href="http://proceedings.mlr.press/v70/mirhoseini17a/mirhoseini17a.pdf" target="_blank" style="color:blue">ICML’17</a>, <a href="https://openreview.net/pdf?id=Hkc-TeZ0W" target="_blank" style="color:blue">ICLR’18</a>, and <a href="https://arxiv.org/pdf/2010.12438.pdf" target="_blank" style="color:blue">NeurIPS’20</a>).</li><br>
+
+<li>Introduced  Mixture-of-Experts (MoE) architectures for language models and showed efficient training of LLMs with over 130 billion parameters, yielding state-of-the-art results on
+established language modeling and translations tasks (<a href="https://arxiv.org/pdf/1701.06538.pdf" target="_blank" style="color:blue">ICLR’17</a>).</li><br>
+</p>
+<p>
+<p>
+<font size="+2"><b>Publications:</b></font>
+<p>
+For a full list of recent papers, blogposts, code, and dataset pointers, visit my <a href="https://scalingintelligence.stanford.edu/" style="color: blue;">lab webpage</a>. For a comprehensive list of publications, please visit my  <a href="https://scholar.google.com/citations?user=I1nZzWsAAAAJ&hl=en&oi=ao" target="_blank" style="color:blue">Google Scholar</a> page.
+</p>
+</p>
+</p>						
+        </div>
+       </div>
+      </div>
+     </div>
+
+   
+  </section>
+<!--Teaching-------------------------------------------------->
+    </div>
+   </div>
+  </header>>
+  <section class="bg-white" id="Teaching">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-12 text-center">
+      <h2 class="section-heading">
+       Teaching
+      </h2>
+     </div>
+    </div>
+    <div class="container research-statement" id="research-overview">
+     <div class="row">
+      <div class="col-md-12 col text-justify research-statement">
+<li>Fall 2023, Fall 2024 - CS229s: <a href="https://cs229s.stanford.edu/fall2024/" target="_blank" style="color:blue">Systems for Machine Learning</a></li>
+<li>Winter 2024, Fall 2025 - CS329a: <a href="https://cs329a.stanford.edu/" target="_blank" style="color:blue">Self-Improving AI Agent</a></li>
+        </div>
+       </div>
+      </div>
+     </div>
+<!-Speaking--------------------->
+    </div>
+   </div>
+  </header>>
+    <!-- Research Section -->
+  <section id="Speaking">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-12 text-center">
+      <h2 class="section-heading">
+       Recent Talks and Interviews
+      </h2>
+     </div>
+    </div>
+    <div class="container research-statement" id="research-overview">
+     <div class="row">
+      <div class="col-md-12 col text-justify research-statement">
+<li>Distinguished Speaker Series, IBM’s Watson Research Center, 2025</li>
+<li>Invited Speaker at Stanford HAI Congressional Boot Camp on AI, 2025</li>
+<li>Invited speaker at Simon’s Institute Workshop on Future of LLMs and Transformers,
+2025</li>
+<li>Invited speaker at NeurIPS Fine-Tuning in Modern Machine Learning Workshop, 2024</li>
+<li>Invited speaker at NeurIPS ML with New Compute Paradigms (MLNCP), 2024</li>
+<li>Keynote speaker at Netflix Machine Learning Summit, 2024</li>
+<li>Invited speaker at Center for AI Safety Annual Meeting, 2024</li>
+<li>Invited speaker at ICML ES-FoMo Workshop, 2024</li>
+<li>Invited speaker at LLM Aided Design Workshop, 2024</li>  
+<li>Invited speaker at ISCA Workshop on Cognitive Architectures, 2024</li>  
+<li>Panelist at ML and Systems Rising Stars Workshop, 2024</li>
+<li>Panelist at VLSI Symposium, 2024</li>
+<li>Keynote speaker at ASPLOS, 2023</li>
+<li>Keynote speaker at the 32nd Microelectronics Design and Test Symposium, 2023</li>
+<li>Keynote speaker at NeurIPS workshop on New Frontiers in Graph Learning, 2022</li>
+<li>Invited speaker at AICoM workshop on AI-Enhanced Co-Design for Next-gen Microelectronics, 2022</li>
+<li>Keynote speaker at CVPR workshop on Dynamic Neural Networks meets Computer
+Vision, 2021 (<a href="https://drive.google.com/file/d/15x58wbHbuAthTBkw7Z9laLVuc74z7cPU/view?usp=sharing" target="_blank" style="color:blue">Slides</a>, <a href="https://drive.google.com/file/d/1Wy4QQjtFHGBLBc2U4aTZDdGX6ICfVdKN/view" target="_blank" style="color:blue">Video</a>)</li>
+
+<li>Keynote speaker at MLSys  workshop on Graph Neural Networks and Systems,
+2021</li>
+
+<li>Invited speaker at IPAM 2021 Workshop on Deep Learning and Combinatorial
+Optimization
+
+<li>Invited speaker at NVIDIA GTC, 2021 (<a href="https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32252/" target="_blank" style="color:blue">Video</a>)</li>
+
+<li>Panelist at IEEE Custom Integrated Circuits Conference ML for Chip Design Forum,
+2021</li>
+
+<li>Keynote Speaker at MIT EmTech China, 2020</li>
+
+<li>Keynote Speaker at Ray summit, 2020 (<a href="https://ray2020.sched.com/event/aW3X/keynote-ml-for-systems-and-chip-design-azalia-mirhoseini-senior-research-scientist-google-brain" target="_blank" style="color:blue">Video</a>)</li>
+
+<li>Keynote Speaker at Open Data Science Conference, 2020</li>
+<li>Keynote Speaker at International Supercomputing ML day, 2019</li>
+<li>Keynote Speaker at ML in HPC Workshop at Supercomputing, 2018</li>
+<li>Interviewed by MIT Technology Review, 2020</li>
+<li>Interviewed by IEEE Spectrum, 2020</li>
+<li>Interviewed by ACM Learning Center, 2020 (<a href="http://stephenibaraki.com/acm/interviews/v0620/a_mirhoeseini_a_goldie_acm.html" target="_blank" style="color:blue">Interview</a>)</li>
+<li>Interviewed by Towards Data Science, 2019 (<a href="https://towardsdatascience.com/this-google-scientist-teaches-ai-to-build-better-ai-8a8fcf6ea6b8" target="_blank" style="color:blue">Interview</a>, <a href="https://youtu.be/Aj1SZSCPcRE" target="_blank" style="color:blue">Video</a>)</li>
+        </div>
+       </div>
+      </div>
+     </div>  
+  </section>
+
+<!--Awards section-------------------------------------------------->
+
+    </div>
+   </div>
+  </header>>
+  <section class="bg-white" id="Awards">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-12 text-center">
+      <h2 class="section-heading">
+       Awards and Honors
+      </h2>
+     </div>
+    </div>
+    <div class="container research-statement" id="research-overview">
+     <div class="row">
+      <div class="col-md-12 col text-justify research-statement">  
+
+<li>Okawa Research Grant Award for Self-Improving AI Systems, 2025 (<a href="http://www.okawa-foundation.or.jp/en/activities/research_grant/list.html" target="_blank" style="color:blue">Link)</a></li>
+<li>Google ML and Systems Junior Faculty Award, 2025 (<a href="https://blog.google/products/google-cloud/ml-systems-junior-faculty-awards/" target="_blank" style="color:blue">Link)</a></li>
+<li>Google DeepMind's Flagship AlphaChip Title, 2024 (<a href="https://deepmind.google/discover/blog/how-alphachip-transformed-computer-chip-design/" target="_blank" style="color:blue">Blogpost)</a></li>
+<li>Published in Nature Flagship Journal, 2021 (<a href="https://www.nature.com/articles/s41586-021-03544-w" target="_blank" style="color:blue">Article)</a></li>
+<li>MIT Technology Review 35 Innovators Under 35, 2019 (<a href="https://www.technologyreview.com/innovator/azalia-mirhoseini/" target="_blank" style="color:blue">Article</a>)</li>
+<li>Best Thesis Award at Rice University, ECE Department, 2015</li>
+<li>Fellowships and Scholarships from Microsoft Research, IBM Research and Schlumberger,
+2010-2015</li>
+<li>Gold Medal in National Math Olympiad, Iran, 2004</li>
+        </div>
+       </div>
+      </div>
+     </div>  
+  </section>
+   
+
+<!--Misc section-------------------------------------------------->
+    </div>
+   </div>
+  </header>>
+  <section class="bg-white" id="Misc">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-12 text-center">
+      <h2 class="section-heading">
+       Media
+      </h2>
+     </div>
+    </div>
+    <div class="container research-statement" id="research-overview">
+<iframe width="300" height="210" src="https://www.youtube.com/embed/-pi4lI6FnT4?si=47ua3Q-eqBBMtg2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="300" height="210" src="https://www.youtube.com/embed/Aj1SZSCPcRE?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="300" height="210" src="https://www.youtube.com/embed/LQoFQ2AL9z4?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a width="300" height="410" class="twitter-timeline" href="https://twitter.com/Azaliamirh?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+     </div>  
+  </section>
+
+
+<!--Contact section-------------------------------------------------->
+    </div>
+   </div>
+  </header>>
+  <section class="bg-white" id="Contact">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-12 text-center">
+      <h2 class="section-heading">
+       Contact
+      </h2>
+     </div>
+    </div>
+    <div class="container research-statement" id="research-overview">
+     <div class="row">
+      <div class="col-md-12 col text-justify research-statement">
+If you are interested in working with me at Stanford, please visit <a href="https://scalingintelligence.stanford.edu/" style="color: blue;">Scaling Intelligence Lab</a>
+for more information.
+        </div>
+       </div>
+      </div>
+     </div>  
+  </section>
+<!------------------------------------------------------------------------------ footprint section-->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="css/jquery.min.js">
+  </script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="css/bootstrap.min.js">
+  </script>
+   <script type="text/javascript">
+
+  // Changing navbar
+  function updateNavbar() {
+  	var inverse = false;
+	// Disable changing navbar on mobile device
+	if( $( window ).width() < 1000 ) {
+		inverse = true;
+	} else {
+  	var scroll_start = 0;
+		var startchange = $('header .intro-heading');
+		var offset = startchange.offset();
+		scroll_start = $(this).scrollTop();
+		if(scroll_start > (offset.top - 50)) {
+			inverse = true;
+		}
+	}
+
+	if(inverse) {
+		$('.navbar').addClass('navbar-inverse').removeClass('navbar-clear');
+    } else {
+		$('.navbar').removeClass('navbar-inverse').addClass('navbar-clear');
+    }
+  }
+
+  // Registere events and initialize navbar
+  $(document).scroll(updateNavbar);
+  $(window).resize(updateNavbar);
+  updateNavbar();
+
+  // Highlight the top nav as scrolling occurs
+  $('body').scrollspy({target: '.navbar-fixed-top'});
+
+  // Close the Responsive Menu on Menu Item Click
+  $('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+	});
+
+	$('a[href*=#]').on('click', function(event){
+    event.preventDefault();
+    var pos = 0;
+    if(this.hash){
+    	pos = $(this.hash).offset().top;
+    	$('html,body').animate({scrollTop:pos}, 600);
+    }
+});
+
+
+  </script>
+  
+
+</body></html>

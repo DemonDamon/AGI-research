@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<!-- [if startif]
+/*! 
+* @author: Machine Learning Department, Carnegie Mellon University
+* @feedback: mariya@cmu.edu, mldweb@cs.cmu.edu
+* @copyright: Carnegie Mellon University | All Rights Reserved
+* @description: Blog capable website for Research Scientists with the Machine Learning Department at Carnegie Mellon University.
+*/
+[endif] -->
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="referrer" content="origin">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114918459-2"></script>
+    <script>'use strict';window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-114918459-2');</script>     
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://blog.ml.cmu.edu/xmlrpc.php">
+    <meta property="og:image" content="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/teaser-1.png" />
+    <title>Inductive biases of neural network modularity in spatial navigation &#8211; Machine Learning Blog | ML@CMU | Carnegie Mellon University</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Machine Learning Blog | ML@CMU | Carnegie Mellon University &raquo; Feed" href="https://blog.ml.cmu.edu/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Machine Learning Blog | ML@CMU | Carnegie Mellon University &raquo; Comments Feed" href="https://blog.ml.cmu.edu/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Machine Learning Blog | ML@CMU | Carnegie Mellon University &raquo; Inductive biases of neural network modularity in spatial navigation Comments Feed" href="https://blog.ml.cmu.edu/2025/01/02/inductive-biases-of-neural-network-modularity-in-spatial-navigation/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blog.ml.cmu.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.16"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://blog.ml.cmu.edu/wp-includes/css/dist/block-library/style.min.css?ver=5.6.16' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='email-subscribers-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/email-subscribers/lite/public/css/email-subscribers-public.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='modern_footnotes-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/modern-footnotes/styles.min.css?ver=1.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wpt-twitter-feed-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/wp-to-twitter/css/twitter-feed.css?ver=5.6.16' type='text/css' media='all' />
+<link rel='stylesheet' id='mc4wp-form-themes-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/mailchimp-for-wp/assets/css/form-themes.min.css?ver=4.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mint-fonts-css'  href='https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic%7CLora:400,400italic,700,700italic&#038;subset=latin' type='text/css' media='all' />
+<link rel='stylesheet' id='plugins-styles-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/plugins-styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/woocommerce.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mint-main-styles-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/style.css' type='text/css' media='all' />
+<style id='mint-main-styles-inline-css' type='text/css'>
+ 
+ .header-top{ height: 60px; } 
+ .header-logo{ width: 250px!important;} 
+ .header-logo{ height: 60px!important; } 
+ 
+ 
+ 
+ .header-navigation li a, .header-socials li a, .top-cart-wrapper a, .header-menu-panel .menu-tumbl{ color:#111;}
+	body{font-family:'Lato',Arial,serif;font-size:px;color:;}input::-webkit-input-placeholder{font-family: 'Lato', Arial, serif;}input:-moz-placeholder{font-family: 'Lato', Arial, serif;}
+	input::-moz-placeholder{font-family: 'Lato', Arial, serif;}
+	input:-ms-input-placeholder{font-family: 'Lato', Arial, serif;}
+	
+	.slide .category-post-title a, .post-author-name span, span.date, .single-post .post-tags a, .post-related-title h4, .thecomment .comment-text span.date, #respond h3, #cancel-comment-reply-link, .widget-title, .widget-slide-info .date a, .woocommerce .woocommerce-message,.woocommerce .woocommerce-error,.woocommerce .woocommerce-info, .woocommerce span.onsale, span.price, .woocommerce ul.cart_list .amount, .woocommerce ul.product_list_widget .amount, .woocommerce.widget_shopping_cart .total > strong, .woocommerce div.product div.summary p.price,.woocommerce div.product div.summary span.price,.woocommerce #content div.product div.summary p.price, .woocommerce #content div.product div.summary span.price,.woocommerce .related.products > h2, .quantity.mkd-quantity-buttons .mkd-quantity-input{font-family: 'Lato'!important;}
+	h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.navigation li{ font-family: 'Lora', Arial, serif!important; font-weight:;letter-spacing:em;color:; }
+	blockquote, .author-post-name a, .page .page-title-wrapper h3, .instagram-footer #sbi_load a, .woocommerce-page .page-title-wrapper h3, .woocommerce-page .woocommerce-result-count, .woocommerce ul.cart_list li a,
+.woocommerce ul.product_list_widget li a, .woocommerce div.product .woocommerce-review-link,
+.woocommerce #content div.product .woocommerce-review-link, .woocommerce-cart table.cart .product-name > a  {font-family: 'Lora'!important;}
+ 	.post-entry a {
+  font-weight: 400;
+  text-decoration: underline;
+} 
+</style>
+<link rel='stylesheet' id='resposive-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/media.css' type='text/css' media='all' />
+<link rel='stylesheet' id='enlighterjs-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=BaUKYlr1JydyEx/' type='text/css' media='all' />
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/enable-jquery-migrate-helper/js/jquery/jquery-1.12.4-wp.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/enable-jquery-migrate-helper/js/jquery-migrate/jquery-migrate-1.4.1-wp.js?ver=1.4.1-wp' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='email-subscribers-js-extra'>
+/* <![CDATA[ */
+var es_data = {"messages":{"es_empty_email_notice":"Please enter email address","es_rate_limit_notice":"You need to wait for sometime before subscribing again","es_single_optin_success_message":"Successfully Subscribed.","es_email_exists_notice":"Email Address already exists!","es_unexpected_error_notice":"Oops.. Unexpected error occurred.","es_invalid_email_notice":"Invalid email address","es_try_later_notice":"Please try after some time"},"es_ajax_url":"https:\/\/blog.ml.cmu.edu\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/email-subscribers/lite/public/js/email-subscribers-public.js?ver=4.7.0' id='email-subscribers-js'></script>
+<script type='text/javascript' id='simple-likes-public-js-js-extra'>
+/* <![CDATA[ */
+var simpleLikes = {"ajaxurl":"https:\/\/blog.ml.cmu.edu\/wp-admin\/admin-ajax.php","like":"Like","unlike":"Unlike"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/simple-likes-public.js?ver=0.5' id='simple-likes-public-js-js'></script>
+<link rel="https://api.w.org/" href="https://blog.ml.cmu.edu/wp-json/" /><link rel="alternate" type="application/json" href="https://blog.ml.cmu.edu/wp-json/wp/v2/posts/20549" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.ml.cmu.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.ml.cmu.edu/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6.16" />
+<link rel="canonical" href="https://blog.ml.cmu.edu/2025/01/02/inductive-biases-of-neural-network-modularity-in-spatial-navigation/" />
+<link rel='shortlink' href='https://blog.ml.cmu.edu/?p=20549' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.ml.cmu.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.ml.cmu.edu%2F2025%2F01%2F02%2Finductive-biases-of-neural-network-modularity-in-spatial-navigation%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.ml.cmu.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.ml.cmu.edu%2F2025%2F01%2F02%2Finductive-biases-of-neural-network-modularity-in-spatial-navigation%2F&#038;format=xml" />
+
+
+<!-- This site is optimized with the Schema plugin v1.7.9.0 - https://schema.press -->
+<script type="application/ld+json">[{"@context":"http:\/\/schema.org\/","@type":"WPHeader","url":"https:\/\/blog.ml.cmu.edu\/2025\/01\/02\/inductive-biases-of-neural-network-modularity-in-spatial-navigation\/","headline":"Inductive biases of neural network modularity in spatial navigation","description":"TL;DR:&nbsp;The brain may have evolved a modular architecture for daily tasks, with circuits featuring functionally specialized modules that..."},{"@context":"http:\/\/schema.org\/","@type":"WPFooter","url":"https:\/\/blog.ml.cmu.edu\/2025\/01\/02\/inductive-biases-of-neural-network-modularity-in-spatial-navigation\/","headline":"Inductive biases of neural network modularity in spatial navigation","description":"TL;DR:&nbsp;The brain may have evolved a modular architecture for daily tasks, with circuits featuring functionally specialized modules that...","copyrightYear":"2025"}]</script>
+
+
+
+<!-- This site is optimized with the Schema plugin v1.7.9.0 - https://schema.press -->
+<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"ScholarlyArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/blog.ml.cmu.edu\/2025\/01\/02\/inductive-biases-of-neural-network-modularity-in-spatial-navigation\/"},"url":"https:\/\/blog.ml.cmu.edu\/2025\/01\/02\/inductive-biases-of-neural-network-modularity-in-spatial-navigation\/","headline":"Inductive biases of neural network modularity in spatial navigation","datePublished":"2025-01-02T11:38:56-05:00","dateModified":"2025-01-02T11:38:58-05:00","publisher":{"@type":"Organization","@id":"https:\/\/blog.ml.cmu.edu\/#organization","name":"ML@CMU | Machine Learning | Carnegie Mellon University","logo":{"@type":"ImageObject","url":"https:\/\/blog.ml.cmu.edu\/wp-content\/uploads\/2018\/11\/mlcmu-logo.png","width":600,"height":60}},"image":{"@type":"ImageObject","url":"https:\/\/blog.ml.cmu.edu\/wp-content\/uploads\/2024\/12\/teaser-1.png","width":696,"height":461},"articleSection":"artificial intelligence","description":"TL;DR:&nbsp;The brain may have evolved a modular architecture for daily tasks, with circuits featuring functionally specialized modules that match the task structure. We hypothesize that this architecture enables better learning and generalization than architectures with less specialized modules. To test this, we trained reinforcement learning agents with various neural","author":{"@type":"Person","name":"Ruiyi Zhang","url":"https:\/\/blog.ml.cmu.edu\/author\/ruiyiz\/","description":"Ruiyi Zhang is a postdoctoral researcher at the Neuroscience Institute and Machine Learning Department at Carnegie Mellon University. His research focuses on the intersection of neuroscience and artificial intelligence, aiming to draw inspiration from brain mechanisms to advance AI and leverage AI models to deepen our understanding of the brain. Prior to joining CMU, he earned his PhD from New York University in 2024.","image":{"@type":"ImageObject","url":"https:\/\/secure.gravatar.com\/avatar\/aaef12cab8ca0c0f234d179707dbf33b?s=96&d=identicon&r=g","height":96,"width":96}}}</script>
+
+
+<style></style>
+    
+    <link rel="icon" href="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon-80x80.png" sizes="32x32" />
+<link rel="icon" href="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon.png" />
+<meta name="msapplication-TileImage" content="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon.png" />
+
+<!-- START - Open Graph and Twitter Card Tags 3.1.1 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/>
+  <meta property="og:title" content="Inductive biases of neural network modularity in spatial navigation"/>
+  <meta property="og:url" content="https://blog.ml.cmu.edu/2025/01/02/inductive-biases-of-neural-network-modularity-in-spatial-navigation/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="TL;DR: The brain may have evolved a modular architecture for daily tasks, with circuits featuring functionally specialized modules that match the task structure. We hypothesize that this architecture enables better learning and generalization than architectures with less specialized modules. To test"/>
+  <meta property="og:image" content="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/teaser-1.png"/>
+  <meta property="og:image:url" content="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/teaser-1.png"/>
+  <meta property="og:image:secure_url" content="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/teaser-1.png"/>
+  <meta property="article:published_time" content="2025-01-02T11:38:56-05:00"/>
+  <meta property="article:modified_time" content="2025-01-02T11:38:58-05:00" />
+  <meta property="og:updated_time" content="2025-01-02T11:38:58-05:00" />
+  <meta property="article:section" content="artificial intelligence"/>
+  <meta property="article:section" content="deep learning"/>
+  <meta property="article:section" content="machine learning"/>
+  <meta property="article:section" content="reinforcement learning"/>
+  <meta property="article:section" content="Research"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Inductive biases of neural network modularity in spatial navigation"/>
+  <meta itemprop="headline" content="Inductive biases of neural network modularity in spatial navigation"/>
+  <meta itemprop="description" content="TL;DR: The brain may have evolved a modular architecture for daily tasks, with circuits featuring functionally specialized modules that match the task structure. We hypothesize that this architecture enables better learning and generalization than architectures with less specialized modules. To test"/>
+  <meta itemprop="image" content="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/teaser-1.png"/>
+  <meta itemprop="datePublished" content="2025-01-02"/>
+  <meta itemprop="dateModified" content="2025-01-02T11:38:58-05:00" />
+  <meta itemprop="author" content="Ruiyi Zhang"/>
+  <!--<meta itemprop="publisher" content="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/>--> <!-- To solve: The attribute publisher.itemtype has an invalid value -->
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="Inductive biases of neural network modularity in spatial navigation"/>
+  <meta name="twitter:url" content="https://blog.ml.cmu.edu/2025/01/02/inductive-biases-of-neural-network-modularity-in-spatial-navigation/"/>
+  <meta name="twitter:description" content="TL;DR: The brain may have evolved a modular architecture for daily tasks, with circuits featuring functionally specialized modules that match the task structure. We hypothesize that this architecture enables better learning and generalization than architectures with less specialized modules. To test"/>
+  <meta name="twitter:image" content="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/teaser-1.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+ <!-- is_singular -->
+<!-- END - Open Graph and Twitter Card Tags 3.1.1 -->
+	
+    <!-- Meta -->
+    <meta content="Machine learning, artificial intelligence, deep learning, natural language processing, automated machine learning, big data, data science, neural networks, ethics and ai, computer science, ml, ai, research" name="Keywords"/>
+    <meta content="The latest news and publications regarding machine learning, artificial intelligence or related, brought to you by the Machine Learning Blog, a spinoff of the Machine Learning Department at Carnegie Mellon University." name="Description"/>
+    <meta content="Machine Learning Department, Carnegie Mellon University" name="author"/>
+    <!-- OG:Graph  
+    <meta name="title" property="og:title" content="Blog | Machine Learning | Carnegie Mellon University"/>
+    <meta property="og:site_name" content="Blog | Machine Learning | Carnegie Mellon University"/>
+    <meta property="og:description" content="The latest news and publications regarding machine learning, artificial intelligence or related, brought to you by the Machine Learning Blog, a spinoff of the Machine Learning Department at Carnegie Mellon University."/> 
+    <meta property="og:image:alt" content="Blog | Machine Learning | Carnegie Mellon University - Cover Picture"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:url" content="https://blog.ml.cmu.edu"/>
+    <meta property="og:type" content="article"/>
+    <meta property="fb:app_id" content=""/>
+    <meta property="fb:pages" content=""/>
+    <meta property="fb:admins" content="654417927"/>
+    <meta property="fb:profile_id" content="654417927"/>
+    <meta name="twitter:site" content="@mldcmu"/>
+    <meta name="twitter:creator" concent="@mldcmu"/>
+    <meta name="twitter:title" content="Blog | Machine Learning | Carnegie Mellon University"/>
+    <meta name="twitter:description" content="The latest news and publications regarding machine learning, artificial intelligence or related, brought to you by the Machine Learning Blog, a spinoff of the Machine Learning Department at Carnegie Mellon University."/>
+    <meta name="twitter:image" content="http://blog.ml.cmu.edu/wp-content/themes/mint/mint/img/cover-introduction-mlblog-2.jpg"/>
+    <meta name="twitter:image:alt" content="Blog | Machine Learning | Carnegie Mellon University - Cover Picture"/>
+    <meta name="twitter:card" content="summary"/>
+    <!-- /OG:Graph -->
+    <!-- Robots -->
+    <meta name="robots" content="noarchive"/>
+    <meta name="googlebot" content="noarchive"/>
+    <!-- /Robots -->
+    <!-- /Meta -->
+</head>
+
+<body class="post-template-default single single-post postid-20549 single-format-standard">
+
+<!-- Preloader // Preloader affects how pages are read if javascript is removed.
+<div id="preloader"></div>
+<!-- /Preloader -->
+
+<!-- Uncomment /** inside <php if you'd like to restore glide-navigation to original version -->
+<!--  -->
+
+<header>
+    <div class="header-top">
+        <div class="top-header-content">
+            <div class="container">
+                <h1 class="hidden">Machine Learning Blog | ML@CMU | Carnegie Mellon University</h1>
+                <div class="col-lg-10 col-lg-offset-1">
+                                            <div class="menu-tumbl"><i class="fa fa-navicon"></i></div>
+                        <div class="header-soc-icon"><i class="fa fa-search"></i></div>
+                                        <div class="header-logo">
+                                                    <a href="https://blog.ml.cmu.edu/" class="logo-img"><img
+                                    src="https://blog.ml.cmu.edu/wp-content/uploads/2018/11/mlcmu-logo.png"
+                                    alt="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/></a>
+                        
+                                                    <a href="https://blog.ml.cmu.edu/" class="retina-logo-img"><img
+                                    src=""
+                                    alt="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/></a>
+                                            </div>
+                    <!-- Statistics -->
+                    <div id="blog-stats">
+                        <h4 class="widget-title">Statistics:</h4>
+                        <span class="sbs-count-posts"><span class="sbs-count-posts">123</span> publications.</span>
+                        <span class="sbs-count-cats"><span class="sbs-count-cats">14</span> categories.</span>
+                        <span class="sbs-count-tags"><span class="sbs-count-tags">72</span> tags.</span>
+                    </div>
+                    <!-- /Statistics -->
+                    <!-- Desktop Navigation -->
+                    <div id="desktop-nav">
+                      <ul class="desktop-nav-ul">
+                        <li id="menu-item-19"><a title="Homepage" href="https://blog.ml.cmu.edu/#">[ Home ]</a></li>
+                        <li id="menu-item-121"><a title="Submissions" href="https://blog.ml.cmu.edu/submissions/">[ Submissions ]</a></li>
+                        <li id="menu-item-88"><a title="About us" href="https://blog.ml.cmu.edu/about/">[ About ]</a></li>
+                      </ul>
+                    </div
+                    <!-- /Desktop Navigation -->
+                    <!-- Moved Glide Navigation here // If needs restored you can restore it at wp-content/header.php-->
+                    <div class="glide-navigation">
+    <div class="sidebar-scroll scrollbar-macosx">
+
+        <!-- close-glide-button -->
+        <div class="close-glide-button">
+            <a href="#" class="close-btn"></a>
+        </div>
+
+        <!-- navbar -->
+        <ul id="menu-top-menu" class="navbar"><li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-19"><a title="Homepage" href="https://blog.ml.cmu.edu/#">Home</a></li>
+<li id="menu-item-121" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121"><a title="Our Team" href="https://blog.ml.cmu.edu/submissions/">Submissions</a></li>
+<li id="menu-item-88" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a title="Contact us" href="https://blog.ml.cmu.edu/about/">About</a></li>
+</ul>    </div>
+</div>                    <!-- /Glide Navigation -->
+                </div>
+            </div>
+        </div>
+        <div class="background-block"></div>
+        <div class="background-opacity"></div>
+    </div>
+    <div class="header-menu-panel">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="menu-tumbl"><i class="fa fa-navicon"></i></div>
+                <ul id="menu-top-menu-1" class="header-navigation"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-19"><a title="Homepage" href="https://blog.ml.cmu.edu/#">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121"><a title="Our Team" href="https://blog.ml.cmu.edu/submissions/">Submissions</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a title="Contact us" href="https://blog.ml.cmu.edu/about/">About</a></li>
+</ul>
+                <div class="header-menu-buttons">
+                                    </div>
+                <ul class="header-socials socials"><li><a href="https://blog.ml.cmu.edu/feed/" target="_blank"><i class="fa fa-rss"></i></a></li></ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="search-wrapper">
+    <form role="search" method="get" class="search-form" action="https://blog.ml.cmu.edu/">
+        <input type="search" placeholder="Search Keyword" name="s" id="s"
+               class="searchbox-input" autocomplete="off" required />
+        <span>Input your search keywords and press Enter.</span>
+    </form>
+    <div class="search-wrapper-close"></div>
+</div>
+<!-- Categories Picker 
+<div class="categories-picker">
+  <ul>
+      <li><h2>Categories:</h2></li> 
+      <li class="category-research"><a href="https://blog.ml.cmu.edu/category/research">Research</a></li>
+      <li class="category-educational"><a href="https://blog.ml.cmu.edu/category/educational/">Educational</a></li> 
+  </ul>
+</div>
+<!-- /Categories Picker-->
+
+<!-- Sidebar -->
+<div class="toggle-sidebar">
+  <a class="display-sidebar">
+    <i class="fa fa-angle-left"></i>
+  </a>
+</div>
+<div class="blog-sidebar categories-picker">
+      <h2>Categories:</h2> 
+  <ul>
+      <li class="category-research"><a href="https://blog.ml.cmu.edu/category/research">Research</a></li>
+      <li class="category-educational"><a href="https://blog.ml.cmu.edu/category/educational/">Educational</a></li> 
+  </ul>
+</div>
+<!-- /Sidebar -->
+
+<div class="main-panel">    <!-- mfunc setPostViews(get_the_ID()); --><!-- /mfunc -->
+
+    <div class="main">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div id="main-column"
+                                            class="full-page-post"
+                                    >
+
+                    <div class="fl-grid">
+                        
+                                                                                        
+                            
+<aside data="primary-post" id="post-20549" >
+
+    
+        <div class="post-header">
+                            <span class="category-post"><a href="https://blog.ml.cmu.edu/category/artificial-intelligence/" title="View all posts in artificial intelligence" >artificial intelligence</a> <a href="https://blog.ml.cmu.edu/category/deep-learning/" title="View all posts in deep learning" >deep learning</a> <a href="https://blog.ml.cmu.edu/category/machine-learning/" title="View all posts in machine learning" >machine learning</a> <a href="https://blog.ml.cmu.edu/category/reinforcement-learning/" title="View all posts in reinforcement learning" >reinforcement learning</a> <a href="https://blog.ml.cmu.edu/category/research/" title="View all posts in Research" >Research</a></span>
+
+                <h1><a>Inductive biases of neural network modularity in spatial navigation</a></h1>
+
+                <div class="post-info">
+                    <div class="post-authors">
+                    <h4>Authors</h4>
+                    <a href="https://blog.ml.cmu.edu/author/ruiyiz/" title="Posts by Ruiyi Zhang" class="author url fn" rel="author">Ruiyi Zhang</a>                    </div>
+            <!--    <span class="post-author-name">by                        <a href="">Ruiyi Zhang</a>
+                    </span> -->
+                    <div class="affiliations">
+                    <h4>Affiliations</h4>                        
+                                            
+                    </div>
+                    <div class="date">
+                    <h4>Published</h4>
+                        January 2, 2025                    </div>                    
+                    <div class="doi">
+                    <h4>DOI</h4>
+                    </div>
+                </div>
+                    </div>
+            <div class="post-img">
+                                <img class="lazy" src="https://blog.ml.cmu.edu/wp-content/themes/mint/mint/img/layzyload.jpg"
+                 data-original="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/teaser-1.png"
+                 data-lazy="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/teaser-1.png"
+                 alt=""/>
+                    </div>
+
+        <div class="post-entry">
+            
+<script>
+jQuery('.post-authors').width(0.33 * jQuery('.post-authors').parent().width());
+jQuery('.post-authors').empty();
+jQuery('.post-authors').append('<h4>Authors</h4>');
+jQuery('.post-authors').append('<a href="https://www.cmu.edu/ni/people/postdoctorates/ruiyiz.html" target="_blank" rel="noopener noreferrer">Ruiyi Zhang</a><br>');
+jQuery('.affiliations').width(0.42 * jQuery('.affiliations').parent().width());
+jQuery('.affiliations').append('<a href="https://www.cmu.edu/ni/index.html" target="_blank" rel="noopener noreferrer">Neuroscience Institute, CMU</a><br>');
+jQuery('.date').width(0.25 * jQuery('.date').parent().width());
+jQuery('.doi').remove();
+</script>
+
+
+
+<p><strong>TL;DR:</strong>&nbsp;The brain may have evolved a modular architecture for daily tasks, with circuits featuring functionally specialized modules that match the task structure. We hypothesize that this architecture enables better learning and generalization than architectures with less specialized modules. To test this, we trained reinforcement learning agents with various neural architectures on a naturalistic navigation task. We found that the modular agent, with an architecture that segregates computations of state representation, value, and action into specialized modules, achieved better learning and generalization. Our results shed light on the possible rationale for the brain’s modularity and suggest that artificial systems can use this insight from neuroscience to improve learning and generalization in natural tasks.</p>
+
+
+
+<h2>Motivation</h2>
+
+
+
+<p>Despite the tremendous success of AI in recent years, it remains true that even when trained on the same data, the brain outperforms AI in many tasks, particularly in terms of fast in-distribution learning and zero-shot generalization to unseen data. In the emerging field of neuroAI (<a rel="noreferrer noopener" href="https://www.nature.com/articles/s41467-023-37180-x" target="_blank">Zador et al., 2023</a>), we are particularly interested in uncovering the principles underlying the brain&#8217;s extraordinary capabilities so that these principles can be leveraged to develop more versatile and general-purpose AI systems.</p>
+
+
+
+<p>Given the same training data, the differing abilities of learning systems&#8212;biological or artificial&#8212;stem from their distinct assumptions about the data, known as <em>inductive biases</em>. For instance, if the underlying data distribution is linear, a linear model that assumes linearity can learn very quickly&#8212;by observing only a few points without needing to fit the entire dataset&#8212;and generalize effectively to unseen data. In contrast, another model with a different assumption, such as quadratic, cannot achieve the same performance. Even if it were a powerful universal function approximator, it would not achieve the same efficiency. The brain may have evolved inductive biases that align with the underlying structure of natural tasks, which explains its high efficiency and generalization abilities in such tasks.</p>
+
+
+
+<p>What are the brain&#8217;s useful inductive biases? One perspective suggests that the brain may have evolved an inductive bias for a <em>modular</em> architecture featuring functionally specialized modules (<a rel="noreferrer noopener" href="https://www.pnas.org/doi/10.1073/pnas.1510619112" target="_blank">Bertolero et al., 2015</a>). Each module specializes in a specific aspect or a subset of task variables, collectively covering all demanding computations of the task. We hypothesize that this architecture enables higher efficiency in learning the structure of natural tasks and better generalization in tasks with a similar structure than those with less specialized modules.</p>
+
+
+
+<p>Previous works (<a rel="noreferrer noopener" href="https://royalsocietypublishing.org/doi/full/10.1098/rspa.2021.0068" target="_blank">Goyal et al., 2022</a>; <a rel="noreferrer noopener" href="https://proceedings.neurips.cc/paper_files/paper/2022/file/b8d1d741f137d9b6ac4f3c1683791e4a-Paper-Conference.pdf" target="_blank">Mittal et al., 2022</a>) have outlined the potential rationale for this architecture: Data generated from natural tasks typically stem from the latent distribution of multiple task variables. Decomposing the task and learning these variables in distinct modules allow a better understanding of the relationships among these variables and therefore the data generation process. This modularization also promotes hierarchical computation, where independent variables are initially computed and then forwarded to other modules specialized in computing dependent variables. Note that “modular” may take on different meanings in different contexts. Here, it specifically refers to architectures with multiple modules, each specializing in one or a subset of the desired task variables. Architectures with multiple modules lacking enforced specialization in computing variables do not meet the criteria for modular in our context.</p>
+
+
+
+<p>To test our hypothesis, it is essential to select a natural task and compare a modular architecture designed for the task with alternative architectures.</p>
+
+
+
+<h2>Task</h2>
+
+
+
+<p>We chose a naturalistic virtual navigation task (Figure 1) previously used to investigate the neural computations underlying animals’ flexible behaviors (<a rel="noreferrer noopener" href="https://www.cell.com/neuron/fulltext/S0896-6273(20)30146-X" target="_blank">Lakshminarasimhan et al., 2020</a>). At the beginning of each trial, the subject is situated at the center of the ground plane facing forward; a target is presented at a random location within the field of view (distance: \(100\) to \(400\) cm, angle: \(-35\) to \(+35^{\circ}\)) on the ground plane and disappears after \(300\) ms. The subject can freely control its linear and angular velocities with a joystick (maximum: \(200\) cm/s and \(90^{\circ}\)/s, referred to as the joystick gain) to move along its heading in the virtual environment. The objective is to navigate toward the memorized target location, then stop inside the reward zone, a circular region centered at the target location with a radius of \(65\) cm. A reward is given only if the subject stops inside the reward zone.</p>
+
+
+
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-large"><img loading="lazy" width="419" height="436" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig1.png" alt="" class="wp-image-20592" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig1.png 419w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig1-288x300.png 288w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig1-221x230.png 221w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig1-211x220.png 211w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig1-77x80.png 77w" sizes="(max-width: 419px) 100vw, 419px" /><figcaption>Figure 1</figcaption></figure></div>
+
+
+
+<p>The subject&#8217;s self-location is not directly observable because there are no stable landmarks; instead, the subject needs to use optic flow cues on the ground plane to perceive self-motion and perform path integration. Each textural element of the optic flow, an isosceles triangle, appears at random locations and orientations, disappearing after only a short lifetime (\(\sim 250\) ms), making it impossible to use as a stable landmark. A new trial starts after the subject stops moving.</p>
+
+
+
+<h2>Task modeling</h2>
+
+
+
+<p>We formulate this task as a Partially Observable Markov Decision Process (POMDP; <a rel="noreferrer noopener" href="https://www.sciencedirect.com/science/article/pii/S000437029800023X" target="_blank">Kaelbling et al., 1998</a>) in discrete time, with continuous state and action spaces (Figure 2). At each time step \(t\), the environment is in the state \(\boldsymbol{s}_t\) (including the agent&#8217;s position and velocity, and the target&#8217;s position). The agent takes an action \(\boldsymbol{a}_t\) (controlling its linear and angular velocities) to update \(\boldsymbol{s}_t\) to the next state \(\boldsymbol{s}_{t+1}\) following the environmental dynamics given by the transition probability \(T(\boldsymbol{s}_{t+1}|\boldsymbol{s}_{t},\boldsymbol{a}_{t})\), and receives a reward \(r_t\) from the environment following the reward function \(R(\boldsymbol{s}_t,\boldsymbol{a}_t)\) (\(1\) if the agent stops inside the reward zone otherwise \(0\)).</p>
+
+
+
+<p>We use a model-free actor-critic approach to learning, with the actor and critic implemented using distinct neural networks. At each \(t\), the actor receives two sources of inputs \(\boldsymbol{i}_t\) about the state: observation \(\boldsymbol{o}_t\) and last action \(\boldsymbol{a}_{t-1}\). It then outputs an action \(\boldsymbol{a}_t\), aiming to maximize the state-action value \(Q_t\). This value is a function of the state and action, representing the expected discounted rewards when an action is taken at a state, and future rewards are then accumulated from \(t\) until the trial&#8217;s last step. Since the ground truth value is unknown, the critic is used to approximate the value. In addition to receiving the same inputs \(\boldsymbol{i}_t\) as the actor to infer the state, the critic also takes as inputs the action \(\boldsymbol{a}_t\) taken by the actor in this state. It then outputs the estimated \(Q_t\) for this action, trained through the temporal-difference error (TD error) after receiving the reward \(r_t\) (\(|r_t+\gamma Q_{t+1}-Q_{t}|\), where \(\gamma\) denotes the temporal discount factor). In practice, our algorithm is off-policy and incorporates mechanisms such as two critic networks and target networks as in TD3 (<a rel="noreferrer noopener" href="https://proceedings.mlr.press/v80/fujimoto18a.html" target="_blank">fujimoto et al., 2018</a>) to enhance training (see Materials and Methods in <a rel="noreferrer noopener" href="https://www.science.org/doi/full/10.1126/sciadv.adk1256" target="_blank">Zhang et al., 2024</a>).</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="648" height="440" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig2.png" alt="" class="wp-image-20593" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig2.png 648w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig2-300x204.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig2-320x217.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig2-80x54.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig2-300x204@2x.png 600w" sizes="(max-width: 648px) 100vw, 648px" /><figcaption>Figure 2</figcaption></figure></div>
+
+
+
+<p>The state \(\boldsymbol{s}_t\) is not fully observable, so the agent must maintain an internal state representation (belief \(b_t\)) for deciding \(\boldsymbol{a}_t\) and \(Q_t\). Both actor and critic undergo end-to-end training through back-propagation without explicit objectives for shaping \(b_t\). Consequently, networks are free to learn diverse forms of \(b_t\) encoded in their neural activities that aid them in achieving their learning objectives. Ideally, networks may develop an effective belief update rule, e.g., recursive Bayesian estimation, using the two sources of evidence in the inputs \(\boldsymbol{i}_t=\{\boldsymbol{o}_t, \boldsymbol{a}_{t-1}\}\). They may predict the state \(\boldsymbol{s}_t\) based on its internal model of the dynamics, its previous belief \(b_{t-1}\), and the last self-action \(\boldsymbol{a}_{t-1}\). The second source is a partial and noisy observation \(\boldsymbol{o}_t\) of \(\boldsymbol{s}_t\) drawn from the observation probability \(O(\boldsymbol{o}_t|\boldsymbol{s}_t)\). Note that the actual \(O\) in the brain for this task is unknown. For simplicity, we model \(\boldsymbol{o}_t\) as a low-dimensional vector, including the target&#8217;s location when visible (the first \(300\) ms, \(\Delta t=0.1\) s), and the agent&#8217;s observation of its velocities through optic flow, with velocities subject to Gaussian additive noise.</p>
+
+
+
+<h2>Actor-critic RL agent</h2>
+
+
+
+<p>Each RL agent requires an actor and a critic network, and actor and critic networks can have a variety of architectures. Our goal here is to investigate whether functionally specialized modules provide advantages for our task. Therefore, we designed architectures incorporating modules with distinct levels of specialization for comparison. The first architecture is a <em>holistic</em> actor/critic, comprising a single module where all neurons jointly compute the belief \(b_t\) and the action \(\boldsymbol{a}_t\)/value \(Q_t\). In contrast, the second architecture is a <em>modular</em> actor/critic, featuring modules specialized in computing different variables (Figure 3).</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="426" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig3-1024x426.png" alt="" class="wp-image-20595" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig3-1024x426.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig3-300x125.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig3-970x403.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig3-320x133.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig3-80x33.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig3.png 1239w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig3-300x125@2x.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Figure 3</figcaption></figure>
+
+
+
+<p>The specialization of each module is determined as follows.</p>
+
+
+
+<p>First, we can confine the computation of beliefs. Since computing beliefs about the evolving state requires integrating evidence over time, a network capable of computing belief must possess some form of memory. Recurrent neural networks (RNNs) satisfy this requirement by using a hidden state that evolves over time. In contrast, computations of value and action do not need additional memory when the belief is provided, making memoryless multi-layer perceptrons (MLPs) sufficient. Consequently, adopting an architecture with an RNN followed by a memoryless MLP (modular actor/critic in Figure 3) ensures that the computation of belief is exclusively confined to the RNN.</p>
+
+
+
+<p>Second, we can confine the computation of the state-action value \(Q_t\) for the critic. Since a critic is trained end-to-end to compute \(Q_t\), stacking two modules between all inputs and outputs does not limit the computation of \(Q_t\) to a specific module. However, since \(Q_t\) is a function of the action \(\boldsymbol{a}_t\), we can confine the computation of \(Q_t\) to the second module of the modular critic in Figure 3 by supplying \(\boldsymbol{a}_t\) only to the second module. This ensures that the first module, lacking access to the action, cannot accurately compute \(Q_t\). Therefore, the modular critic&#8217;s RNN is dedicated to computing \(b_t\) and sends it to the MLP dedicated to computing \(Q_t\). This architecture enforces modularity.</p>
+
+
+
+<p>Besides the critic, the modular actor has higher specialization than the holistic actor, which lacks confined \(b_t\) computation. Thought bubbles in Figure 3 denote the variables that can be <em>computed</em> within each module enforced through architecture rather than indicating they are <em>encoded</em> in each module. For example, \(b_t\) in modular architectures is passed to the second module, but an accurate \(b_t\) computation can only be completed in the first RNN module.</p>
+
+
+
+<h2>Behavioral accuracy</h2>
+
+
+
+<p>We trained agents using all four combinations of these two actor and critic architectures. We refer to an agent whose actor and critic are both holistic or both modular as a holistic agent or a modular agent, respectively. Agents with modular critics demonstrated greater consistency across various random seeds and achieved near-perfect accuracy more efficiently than agents with holistic critics (Figure 4).</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="652" height="536" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig4.png" alt="" class="wp-image-20596" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig4.png 652w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig4-300x247.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig4-280x230.png 280w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig4-268x220.png 268w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig4-80x66.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig4-300x247@2x.png 600w" sizes="(max-width: 652px) 100vw, 652px" /><figcaption>Figure 4</figcaption></figure></div>
+
+
+
+<p>Agents&#8217; behavior was compared with that of two monkeys (Figure 5 left) for a representative set of targets uniformly sampled on the ground plane (Figure 5 right).</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="985" height="523" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig5.png" alt="" class="wp-image-20597" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig5.png 985w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig5-300x159.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig5-970x515.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig5-320x170.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig5-80x42.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig5-300x159@2x.png 600w" sizes="(max-width: 985px) 100vw, 985px" /><figcaption>Figure 5</figcaption></figure></div>
+
+
+
+<p>We used a Receiver Operating Characteristic (ROC) analysis (<a rel="noreferrer noopener" href="https://www.cell.com/neuron/fulltext/S0896-6273(20)30146-X" target="_blank">Lakshminarasimhan et al., 2020</a>) to systematically quantify behavioral accuracy. A psychometric curve for stopping accuracy is constructed from a large representative dataset by counting the fraction of rewarded trials as a function of a hypothetical reward boundary size (Figure 6 left, solid; radius \(65\) cm is the true size; infinitely small/large reward boundary leads to no/all rewarded trials). A shuffled curve is constructed similarly after shuffling targets across trials (Figure 6 left, dashed). Then, an ROC curve is obtained by plotting the psychometric curve against the shuffled curve (Figure 6 right). An ROC curve with a slope of \(1\) denotes a chance level (true\(=\)shuffled) with the area under the curve (AUC) equal to \(0.5\). High AUC values indicate that all agents reached good accuracy after training (Figure 6 right, inset).</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="475" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig6-1-1024x475.png" alt="" class="wp-image-20611" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig6-1-1024x475.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig6-1-300x139.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig6-1-970x450.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig6-1-320x148.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig6-1-80x37.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig6-1.png 1083w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig6-1-300x139@2x.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Figure 6</figcaption></figure>
+
+
+
+<p>Although all agents exhibited high stop location accuracy, we have noticed distinct characteristics in their trajectories (Figure 5 left). To quantify these differences, we examined two crucial trajectory properties: curvature and length. When tested on the same series of targets as the monkeys experienced, the difference between trajectories generated by agents with modular critics and those of monkey B was comparable to the variation between trajectories of two monkeys (Figure 7). In contrast, when agents used holistic critics, the difference in trajectories from monkey B was much larger, suggesting that modular critics facilitated more animal-like behaviors.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="1024" height="390" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig7-1024x390.png" alt="" class="wp-image-20600" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig7-1024x390.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig7-300x114.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig7-970x370.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig7-320x122.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig7-80x30.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig7.png 1406w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig7-300x114@2x.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Figure 7</figcaption></figure></div>
+
+
+
+<h2>Behavioral efficiency</h2>
+
+
+
+<p>Agents are expected to develop efficient behaviors, as the value of their actions gets discounted over time. Therefore, we assess their efficiency throughout the training process by measuring the reward rate, which refers to the number of rewarded trials per second. We found that agents with modular critics achieved much higher reward rates, which explains their more animal-like efficient trajectories (Figure 8).</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="656" height="532" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig8.png" alt="" class="wp-image-20601" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig8.png 656w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig8-300x243.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig8-284x230.png 284w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig8-271x220.png 271w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig8-80x65.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig8-300x243@2x.png 600w" sizes="(max-width: 656px) 100vw, 656px" /><figcaption>Figure 8</figcaption></figure></div>
+
+
+
+<p>Together, these results suggest that modular critics provide a superior training signal compared to holistic critics, allowing actors to learn more optimal beliefs and actions. With a poor training signal from the holistic critic, the modularization of actors may not enhance performance. Next, we will evaluate the generalization capabilities of the trained agents.</p>
+
+
+
+<h2>An unseen task</h2>
+
+
+
+<p>One crucial aspect of sensorimotor mapping is the joystick gain, which linearly maps motor actions on the joystick (dimensionless, bounded in \([-1,1])\) to corresponding velocities in the environment. During training, the gain remains fixed at \(200\) cm/s and \(90^{\circ}\)/s for linear and angular components, referred to as the \(1\times\) gain. By increasing the gain to values that were not previously experienced, we create a <em>gain task</em> manipulation.</p>
+
+
+
+<p>To assess generalization abilities, monkeys and agents were tested with novel gains of \(1.5\times\) and \(2\times\) (Figure 9).</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="618" height="526" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig9.png" alt="" class="wp-image-20602" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig9.png 618w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig9-300x255.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig9-270x230.png 270w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig9-258x220.png 258w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig9-80x68.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig9-300x255@2x.png 600w" sizes="(max-width: 618px) 100vw, 618px" /><figcaption>Figure 9</figcaption></figure></div>
+
+
+
+<p>Blindly following the same action sequence as in the training task would cause the agents to overshoot (no-generalization hypothesis: Figure 10 dashed lines). Instead, the agents displayed varying degrees of adaptive behavior (Figure 10 solid lines).</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="526" height="830" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig10.png" alt="" class="wp-image-20603" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig10.png 526w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig10-190x300.png 190w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig10-396x625.png 396w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig10-146x230.png 146w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig10-139x220.png 139w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig10-51x80.png 51w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig10-190x300@2x.png 380w" sizes="(max-width: 526px) 100vw, 526px" /><figcaption>Figure 10</figcaption></figure></div>
+
+
+
+<p>To quantitatively evaluate behavioral accuracy while also considering over-/under-shooting effects, we defined radial error as the Euclidean distance between the stop and target locations in each trial, with positive/negative sign denoting over-/under-shooting. Under the novel gains, agents with modular critics consistently exhibited smaller radial errors than agents with holistic critics (Figure 11), with the modular agent demonstrating the smallest errors, comparable to those observed in monkeys.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="1024" height="435" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig11-1024x435.png" alt="" class="wp-image-20604" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig11-1024x435.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig11-300x127.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig11-970x412.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig11-320x136.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig11-80x34.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig11.png 1239w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig11-300x127@2x.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Figure 11</figcaption></figure></div>
+
+
+
+<h2>Neural analysis</h2>
+
+
+
+<p>Although we have confirmed that agents with distinct neural architectures exhibit varying levels of generalization in the gain task, the underlying mechanism remains unclear. We hypothesized that agents with superior generalization abilities should generate actions based on more accurate internal beliefs within their actor networks. Therefore, the goal next is to quantify the accuracy of beliefs across agents tested on novel gains, and to examine the impact of this accuracy on their generalization performance.</p>
+
+
+
+<p>During the gain task, we recorded the activities of RNN neurons in the agents&#8217; actors, as these neurons are responsible for computing the beliefs that underlie actions. To systematically quantify the accuracy of these beliefs, we used linear regression (with \(\ell_2\) regularization) to decode agents&#8217; locations from the recorded RNN activities for each gain condition (Figure 12).</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="726" height="432" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig12.png" alt="" class="wp-image-20605" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig12.png 726w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig12-300x179.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig12-320x190.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig12-80x48.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig12-300x179@2x.png 600w" sizes="(max-width: 726px) 100vw, 726px" /><figcaption>Figure 12</figcaption></figure></div>
+
+
+
+<p>We defined the decoding error, which represents the Euclidean distance between the true and decoded locations, as an indicator of belief accuracy. While all agents demonstrated small decoding errors under the training gain, we found that more holistic agents struggling with generalization under increased gains also displayed reduced accuracy in determining their own location (Figure 13 left). In fact, agents&#8217; behavioral performance correlates with their belief accuracy (Figure 13 right).</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="1024" height="376" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig13-1024x376.png" alt="" class="wp-image-20606" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig13-1024x376.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig13-300x110.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig13-970x356.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig13-320x118.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig13-80x29.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig13.png 1506w, https://blog.ml.cmu.edu/wp-content/uploads/2024/12/ruiyiz_fig13-300x110@2x.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Figure 13</figcaption></figure></div>
+
+
+
+<h2>Conclusion</h2>
+
+
+
+<p>The brain has evolved advantageous modular architectures for mastering daily tasks. Here, we investigated the impact of architectural inductive biases on learning and generalization using deep RL agents. We posited that an architecture with functionally specialized modules would allow agents to more efficiently learn essential task variables and their dependencies during training, and then use this knowledge to support generalization in novel tasks with a similar structure. To test this, we trained agents with architectures featuring distinct module specializations on a partially observable navigation task. We found that the agent using a modular architecture exhibited superior learning of belief and control actions compared to agents with weaker modular specialization.</p>
+
+
+
+<p>Furthermore, for readers interested in the <a rel="noreferrer noopener" href="https://www.science.org/doi/full/10.1126/sciadv.adk1256" target="_blank">full paper</a>, we also demonstrated that the modular agent&#8217;s beliefs closely resemble an Extended Kalman Filter, appropriately weighting information sources based on their relative reliability. Additionally, we presented several more architectures with varying levels of modularity and confirmed that greater modularity leads to better performance.</p>
+
+                    </div>
+
+                            
+        
+<!-- //Default, restore if needed -->
+
+
+<ul class="post-meta">
+    <li>
+<div class="list-meta">
+    <span class="likes-counter"><span class="sl-wrapper"><a href="https://blog.ml.cmu.edu/wp-admin/admin-ajax.php?action=process_simple_like&post_id=20549&nonce=fc8e41b9c0&is_comment=0&disabled=true" class="sl-button sl-button-20549" data-nonce="fc8e41b9c0" data-post-id="20549" data-iscomment="0" title="Like"><span class="sl-icon"><svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve"><path class="heart" d="M64 127.5C17.1 79.9 3.9 62.3 1 44.4c-3.5-22 12.2-43.9 36.7-43.9 10.5 0 20 4.2 26.4 11.2 6.3-7 15.9-11.2 26.4-11.2 24.3 0 40.2 21.8 36.7 43.9C124.2 62 111.9 78.9 64 127.5zM37.6 13.4c-9.9 0-18.2 5.2-22.3 13.8C5 49.5 28.4 72 64 109.2c35.7-37.3 59-59.8 48.6-82 -4.1-8.7-12.4-13.8-22.3-13.8 -15.9 0-22.7 13-26.4 19.2C60.6 26.8 54.4 13.4 37.6 13.4z"/>&#9829;</svg></span><span class="sl-count">787</span></a><span class="sl-loader"></span></span></span>
+
+            <span class="views-counter"><i class="fa fa-eye"></i> <a>11213</a></span>
+    
+    </div>
+</li>
+    <li><a href="https://blog.ml.cmu.edu/2025/01/02/inductive-biases-of-neural-network-modularity-in-spatial-navigation/"
+           class="post-meta-permalink">Read More</a></li>
+    <li><ul class="socials">
+    <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.ml.cmu.edu/2025/01/02/inductive-biases-of-neural-network-modularity-in-spatial-navigation/" target="_blank">
+            <i class="fa fa-facebook"></i></a>
+    </li>
+    <li><a href="https://twitter.com/home?status=Check%20out%20this%20article:%20Inductive%20biases%20of%20neural%20network%20modularity%20in%20spatial%20navigation%20-%20https://blog.ml.cmu.edu/2025/01/02/inductive-biases-of-neural-network-modularity-in-spatial-navigation/" target="_blank">
+            <i class="fa fa-twitter"></i></a>
+    </li>
+        <!-- <li><a data-pin-do="skipLink" target="_blank"
+           href="https://pinterest.com/pin/create/button/?url=https://blog.ml.cmu.edu/2025/01/02/inductive-biases-of-neural-network-modularity-in-spatial-navigation/&media=https://blog.ml.cmu.edu/wp-content/uploads/2024/12/teaser-1.png&description=Inductive%20biases%20of%20neural%20network%20modularity%20in%20spatial%20navigation">
+        <i class="fa fa-pinterest"></i></a>
+    </li> -->
+    <li><a target="_blank" href="https://plus.google.com/share?url=https://blog.ml.cmu.edu/2025/01/02/inductive-biases-of-neural-network-modularity-in-spatial-navigation/">
+        <i class="fa fa-google-plus"></i></a>
+    </li>
+    <li><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.ml.cmu.edu/2025/01/02/inductive-biases-of-neural-network-modularity-in-spatial-navigation/">
+        <i class="fa fa-linkedin"></i></a>
+    </li>
+    <li><a href="mailto:?subject=I'd like to share a link with you&body=https://blog.ml.cmu.edu/2025/01/02/inductive-biases-of-neural-network-modularity-in-spatial-navigation/">
+            <i class="fa fa-envelope"></i></a>
+    </li>     
+</ul></li>
+</ul> 
+ 
+                    
+    <div class="author-post">
+        <img alt='' src='https://secure.gravatar.com/avatar/aaef12cab8ca0c0f234d179707dbf33b?s=100&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/aaef12cab8ca0c0f234d179707dbf33b?s=200&#038;d=identicon&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' loading='lazy'/>
+        <div class="author-content">
+            <div class="author-post-name"><a href="https://blog.ml.cmu.edu/author/ruiyiz/" title="Posts by Ruiyi Zhang" rel="author">Ruiyi Zhang</a></div>
+            <div class="author-post-text">Ruiyi Zhang is a postdoctoral researcher at the Neuroscience Institute and Machine Learning Department at Carnegie Mellon University. His research focuses on the intersection of neuroscience and artificial intelligence, aiming to draw inspiration from brain mechanisms to advance AI and leverage AI models to deepen our understanding of the brain. Prior to joining CMU, he earned his PhD from New York University in 2024.</div>
+            <ul class="socials author-socials">
+                                                                                                            </ul>
+        </div>
+
+    </div>
+
+        
+        <ul class="post-switch">
+
+                <li class="prev-post-link">
+                <img width="320" height="153" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/11/image-3-1024x490-1-320x153.png" class="attachment-mint-grid-post size-mint-grid-post wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/11/image-3-1024x490-1-320x153.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2024/11/image-3-1024x490-1-300x144.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2024/11/image-3-1024x490-1-970x464.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2024/11/image-3-1024x490-1-80x38.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2024/11/image-3-1024x490-1.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2024/11/image-3-1024x490-1-300x144@2x.png 600w" sizes="(max-width: 320px) 100vw, 320px" />                <a href="https://blog.ml.cmu.edu/2024/12/12/human-ai-collaboration-in-physical-tasks/">Human-AI Collaboration in Physical Tasks</a></li>
+                        <li class="next-post-link">
+                <img width="320" height="164" src="https://blog.ml.cmu.edu/wp-content/uploads/2025/01/image-3-320x164.png" class="attachment-mint-grid-post size-mint-grid-post wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2025/01/image-3-320x164.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2025/01/image-3-300x154.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2025/01/image-3-1024x525.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2025/01/image-3-1536x787.png 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2025/01/image-3-970x497.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2025/01/image-3-80x41.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2025/01/image-3.png 2048w, https://blog.ml.cmu.edu/wp-content/uploads/2025/01/image-3-300x154@2x.png 600w" sizes="(max-width: 320px) 100vw, 320px" />                <a href="https://blog.ml.cmu.edu/2025/01/08/optimizing-llm-test-time-compute-involves-solving-a-meta-rl-problem/">Optimizing LLM Test-Time Compute Involves Solving a Meta-RL Problem</a></li>
+            
+</ul>
+                    		<div class="post-related-title"><h4>You Might Also Like</h4></div>
+		<div class="post-related">
+							
+					
+				<div class="item-related">
+					
+										<a href="https://blog.ml.cmu.edu/2024/10/29/jailbreaking-llm-controlled-robots/"><img width="2000" height="1052" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/10/robots4.png" class="attachment-mint-post-grid size-mint-post-grid wp-post-image" alt="Jailbreaking LLM-controlled robots" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2024/10/robots4.png 2000w, https://blog.ml.cmu.edu/wp-content/uploads/2024/10/robots4-300x158.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2024/10/robots4-1024x539.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2024/10/robots4-1536x808.png 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2024/10/robots4-970x510.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2024/10/robots4-320x168.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2024/10/robots4-80x42.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2024/10/robots4-300x158@2x.png 600w" sizes="(max-width: 2000px) 100vw, 2000px" /></a>
+										
+					<h6><a href="https://blog.ml.cmu.edu/2024/10/29/jailbreaking-llm-controlled-robots/">Jailbreaking LLM-Controlled Robots</a></h6>
+					<span class="date">October 29, 2024</span>
+					
+				</div>
+							
+					
+				<div class="item-related">
+					
+										<a href="https://blog.ml.cmu.edu/2025/07/08/carnegie-mellon-university-at-icml-2025/"><img width="1500" height="1057" src="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium.jpg" class="attachment-mint-post-grid size-mint-post-grid wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium.jpg 1500w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium-300x211.jpg 300w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium-1024x722.jpg 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium-887x625.jpg 887w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium-320x225.jpg 320w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium-80x56.jpg 80w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium-300x211@2x.jpg 600w" sizes="(max-width: 1500px) 100vw, 1500px" /></a>
+										
+					<h6><a href="https://blog.ml.cmu.edu/2025/07/08/carnegie-mellon-university-at-icml-2025/">Carnegie Mellon University at ICML 2025</a></h6>
+					<span class="date">July 8, 2025</span>
+					
+				</div>
+							
+					
+				<div class="item-related">
+					
+										<a href="https://blog.ml.cmu.edu/2021/10/29/compression-transduction-and-creation-a-unified-framework-for-evaluating-natural-language-generation/"><img width="1942" height="918" src="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005.png" class="attachment-mint-post-grid size-mint-post-grid wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005.png 1942w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-300x142.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-1024x484.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-1536x726.png 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-970x459.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-320x151.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-80x38.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-300x142@2x.png 600w" sizes="(max-width: 1942px) 100vw, 1942px" /></a>
+										
+					<h6><a href="https://blog.ml.cmu.edu/2021/10/29/compression-transduction-and-creation-a-unified-framework-for-evaluating-natural-language-generation/">Compression, Transduction, and Creation: A Unified Framework for Evaluating Natural Language Generation</a></h6>
+					<span class="date">October 29, 2021</span>
+					
+				</div>
+		</div>        
+                    
+<div class="post-comments" id="comments">
+
+    <div class="post-box"><div class="post-related-title comment-block-title"><h4>No Comments</h4></div><div class='comments'></div><div id='comments_pagination'></div>	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2025/01/02/inductive-biases-of-neural-network-modularity-in-spatial-navigation/#respond" style="display:none;">Cancel Reply</a></small></h3><form action="https://blog.ml.cmu.edu/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='20549' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="12ede179b8" /></p><input type="hidden" id="ak_js" name="ak_js" value="76"/><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea></form>	</div><!-- #respond -->
+	</div>
+        
+        <hr class="post-separator">
+</aside>                                                                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+<div class="instagram-footer">
+    <div class="instagram-widget">
+        <div id="text-7" class="widget footer-insta widget_text">			<div class="textwidget"><p>[instagram-feed num=6 cols=6 imagepadding=0 disablemobile=true showbutton=false showheader=false followtext=&#8221;Follow @Mint_Theme&#8221;]</p>
+</div>
+		</div>    </div>
+</div>
+</div>
+<footer>
+    <!-- <div class="container footers">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="footer-parts footer-part-1"></div>
+            <div class="footer-parts footer-part-2"></div>
+            <div class="footer-parts footer-part-3"></div>
+        </div>
+    </div> -->
+
+    <div class="copy-wrapper">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+                                    <ul class="socials pt-10"><li><a href="https://blog.ml.cmu.edu/feed/" target="_blank"><i class="fa fa-rss"></i></a></li></ul>
+                                <p class="copyright">
+                    <!-- 2018 &copy; Carnegie Mellon University -->
+                    <!-- Legal Info -->
+                    <a href="//www.cmu.edu/legal/" target="_blank" rel="noopener">Legal Info</a> | <a href="//www.cmu.edu/" target="_blank" rel="noopener">www.cmu.edu</a><br>
+                    <!-- /Legal Info -->
+                    <span id="js-current-year">2018</span> &copy; <a title="Machine Learning | Carnegie Mellon University" href="https://www.ml.cmu.edu" target="_blank" rel="noopener">Machine Learning</a> | <a title="Carnegie Mellon University" href="https://www.cmu.edu" target="_blank" rel="noopener">Carnegie Mellon University</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="back-to-top">
+    <a title="Back to top button" aria-label="Back to top button" role="button" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/i18n.min.js?ver=9e36b5da09c96c657b0297fd6f7cb1fd' id='wp-i18n-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.21' id='lodash-js'></script>
+<script type='text/javascript' id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/url.min.js?ver=1b4bb2b3f526a1db366ca3147ac39562' id='wp-url-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/hooks.min.js?ver=d0d9f43e03080e6ace9a3dabbd5f9eee' id='wp-hooks-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/api-fetch.min.js?ver=c207d2d188ba8bf763f7acd50b7fd5a9' id='wp-api-fetch-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-after'>
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://blog.ml.cmu.edu/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "37cdd657bc" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "https://blog.ml.cmu.edu/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/modern-footnotes/modern-footnotes.min.js?ver=1.4.4' id='modern_footnotes-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/owl.carousel.min.js?ver=5.6.16' id='owl-carousel-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/plugins.js?ver=5.6.16' id='plugins-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/main.js?ver=5.6.16' id='mint-main-scripts-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/comment-reply.min.js?ver=5.6.16' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/enlighter/cache/enlighterjs.min.js?ver=BaUKYlr1JydyEx/' id='enlighterjs-js'></script>
+<script type='text/javascript' id='enlighterjs-js-after'>
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"enlighter","language":"enlighter","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/wp-embed.min.js?ver=5.6.16' id='wp-embed-js'></script>
+<script async="async" type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9' id='akismet-form-js'></script>
+<!-- Scripts -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<script id="custom-javascript">
+    var $ = jQuery;
+    $('.author').prop('target','_blank');
+    document.getElementById("js-current-year").textContent=(new Date().getFullYear());
+    /* Sidebar */
+    var $ = jQuery;
+    $(document).ready(function() {
+      $('.display-sidebar').toggle(
+        function() {
+            $('.blog-sidebar').css('right', '0');
+            $('.toggle-sidebar').css('right', '280px');
+            $('.display-sidebar i').addClass('fa-angle-right').removeClass('fa-angle-left');
+        }, function() {
+            $('.blog-sidebar').css('right', '-300px');
+            $('.toggle-sidebar').css('right', '10px');
+            $('.display-sidebar i').addClass('fa-angle-left').removeClass('fa-angle-right');
+      });
+    });
+    /* /Sidebar */
+</script>
+<!-- /Scripts -->
+</body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+
+Served from: blog.ml.cmu.edu @ 2025-11-28 21:57:45 by W3 Total Cache
+-->

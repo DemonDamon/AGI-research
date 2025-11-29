@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+  <meta charset="utf-8" />
+<meta name="description" content="Paul N. Edwards is the director of the Program in Science, Technology &amp; Science (STS) and Senior Research Scholar at CISAC, as well as Professor of Information and History at the University of Michigan. At Stanford, his teaching includes courses in the Ford Dorsey Program in International Policy Studies and the Program in Science, Technology &amp; Society. His research focuses on the history, politics, and culture of knowledge and information infrastructures. He focuses especially on environmental security (e.g. climate change, Anthropocene risks, and nuclear winter). Edwards’s book A Vast Machine" />
+<link rel="shortlink" href="https://cisac.fsi.stanford.edu/node/4249" />
+<link rel="canonical" href="https://cisac.fsi.stanford.edu/people/paul-n-edwards" />
+<meta name="Last-Modified" content="2025-04-22T09:20:48Z" />
+<meta property="og:type" content="people" />
+<meta property="og:url" content="https://cisac.fsi.stanford.edu/people/paul-n-edwards" />
+<meta property="og:title" content="Paul N. Edwards" />
+<meta property="og:image" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/2025-04/pn_edwards_headshot_2025.png?itok=WIhpyoH8" />
+<meta property="og:image:url" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/2025-04/pn_edwards_headshot_2025.png?itok=WIhpyoH8" />
+<meta property="og:image:secure_url" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/2025-04/pn_edwards_headshot_2025.png?itok=WIhpyoH8" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Paul N. Edwards" />
+<meta name="twitter:creator" content="@FSIStanford" />
+<meta name="twitter:image" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/2025-04/pn_edwards_headshot_2025.png?itok=WIhpyoH8" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://cisac.fsi.stanford.edu/people/paul-n-edwards" />
+<link rel="apple-touch-icon" href="/themes/custom/stanford_fsi/apple-touch-icon.png" sizes="180x180" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon-16x16.png" type="image/png" sizes="16x16" />
+
+    <title>Paul N. Edwards | FSI</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_KdLcgwZF6U18u42tOs6C3wLZ_IV0mZyBcb0zpFi3KCM.css?delta=0&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxVjksOwjAMBS8UNcdhGTmJG0zduLJTWm5PaEHA5mneSP5EbA014L6IYQ4jca_mC1ZUYJeuXVefdV2Ah7O9ZWCK_sQhmbk0YaYmGqhmrC2ypMn_sEui-NkEN9hdESmMIRn6EztdoN-fQSdnDeoomkMEo-SP_MrRyBeW2H_8c7bRgursYQ3n1xC6O-Fm_shhlrwyPgE9sWAF" />
+<link rel="stylesheet" media="all" href="//use.fontawesome.com/releases/v5.15.4/css/all.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_cPfYb1l72cjN27HNqoRwPPpMg2F7QRoVhXy0BFRpSAE.css?delta=2&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxVjksOwjAMBS8UNcdhGTmJG0zduLJTWm5PaEHA5mneSP5EbA014L6IYQ4jca_mC1ZUYJeuXVefdV2Ah7O9ZWCK_sQhmbk0YaYmGqhmrC2ypMn_sEui-NkEN9hdESmMIRn6EztdoN-fQSdnDeoomkMEo-SP_MrRyBeW2H_8c7bRgursYQ3n1xC6O-Fm_shhlrwyPgE9sWAF" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_HXUE8ml8YFCbKrDPEPfV-8kbZDTh7dA5szx8PIVeCNM.css?delta=3&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxVjksOwjAMBS8UNcdhGTmJG0zduLJTWm5PaEHA5mneSP5EbA014L6IYQ4jca_mC1ZUYJeuXVefdV2Ah7O9ZWCK_sQhmbk0YaYmGqhmrC2ypMn_sEui-NkEN9hdESmMIRn6EztdoN-fQSdnDeoomkMEo-SP_MrRyBeW2H_8c7bRgursYQ3n1xC6O-Fm_shhlrwyPgE9sWAF" />
+<link rel="stylesheet" media="all" href="/themes/custom/stanford_fsi/fonts/fonts-drupal.css?t5xzip" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_v71bFzxMtY19EnLUf97C6NrxOy3FCize__po8Rtn9h4.css?delta=5&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxVjksOwjAMBS8UNcdhGTmJG0zduLJTWm5PaEHA5mneSP5EbA014L6IYQ4jca_mC1ZUYJeuXVefdV2Ah7O9ZWCK_sQhmbk0YaYmGqhmrC2ypMn_sEui-NkEN9hdESmMIRn6EztdoN-fQSdnDeoomkMEo-SP_MrRyBeW2H_8c7bRgursYQ3n1xC6O-Fm_shhlrwyPgE9sWAF" />
+<link rel="stylesheet" media="all" href="/themes/custom/stanford_fsi/no-aggregation/no-aggregation.css?t5xzip" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_BoTt74Pf1xuIxSuFGtZOMvJzgsGcY_knmprbx0sWtzI.css?delta=7&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxVjksOwjAMBS8UNcdhGTmJG0zduLJTWm5PaEHA5mneSP5EbA014L6IYQ4jca_mC1ZUYJeuXVefdV2Ah7O9ZWCK_sQhmbk0YaYmGqhmrC2ypMn_sEui-NkEN9hdESmMIRn6EztdoN-fQSdnDeoomkMEo-SP_MrRyBeW2H_8c7bRgursYQ3n1xC6O-Fm_shhlrwyPgE9sWAF" />
+
+      <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/4249","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"G-S82RDPFHSE","consentMode":false,"otherIds":["G-XNZW311XMN",""],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx1kVtywyAMRTdkh-X0kxEgY9W8BkGa7L6K7bQh0_7oca4GrsBga1g13kpmdHqhIC0r6C1r7iZSm8zfIx4TVgj_yYHSxrozaviE22RXUZM60sXg8iSu9gLhcnQn1IHMc9QyT3ZDRy1XTclhaiZku6mXevI5-4DaMqqjlOoDxEeE-qM28MpLeO8vu8EBxokbpCVXpw0wWbXHX7gwKUjisM4NDI-CD9nIuwxsRXAow9nLJaMUMfU5AqURF8wl4FzRypajxBuVBNc3WCo1OfrODePDL05Xwi9Wezx2fAUxux7Omf2L9Eosb3xXZ_4G-bzTOA","theme":"stanford_fsi","theme_token":null},"ajaxTrustedUrl":{"\/people\/paul-n-edwards":true,"\/search\/google":true},"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-5PWBZTH"]},"stanford_basic":{"nav_dropdown_enabled":false},"viewsAjaxHistory":{"renderPageItem":0,"initialExposedInput":{"views_dom_id:388c5768a66d74d7db6b9bcacf957cc2d5a866df463b34c35276f72e3bd50055":null}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:388c5768a66d74d7db6b9bcacf957cc2d5a866df463b34c35276f72e3bd50055":{"view_name":"fsi_people_embed","view_display_id":"people_recent_news","view_args":"4249","view_path":"\/node\/4249","view_base_path":null,"view_dom_id":"388c5768a66d74d7db6b9bcacf957cc2d5a866df463b34c35276f72e3bd50055","pager_element":0}}},"chosen":{"selector":"select:not(.custom-card-select--select)","minimum_single":0,"minimum_multiple":0,"minimum_width":200,"use_relative_width":false,"options":{"disable_search":false,"disable_search_threshold":0,"allow_single_deselect":false,"add_helper_buttons":false,"search_contains":false,"placeholder_text_multiple":"Choose some options","placeholder_text_single":"Choose an option","no_results_text":"No results match","max_shown_results":null,"inherit_select_classes":true}},"googlePSE":{"language":"en","displayWatermark":false},"user":{"uid":0,"permissionsHash":"58f3918736902e1f25dee65773479335ea4e61909876f725666d621ccd690500"}}</script>
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+<script src="/sites/default/files/js/js_mdHU6LxnYl2MkQe_Mmt7yCxvC6KZI1YoYrx9OkGRWrk.js?scope=header&amp;delta=1&amp;language=en&amp;theme=stanford_fsi&amp;include=eJx1UFuOwyAMvBAJx9lPZBKHuOElbLrt7YvIRiuq9mc8D4uRsSiCxeAjJ8bVbOSbZA1VkuFqA4myn1ccRizgv8We4sGmMhq4wUMte0ujPsdscbuctdQMfj6Vcik5j2Zh1Cdt7AfagwHKcaUCTrsG73ruTYMZFAvELZXVWGBadMd_c2PSEFt5mQQsj4HzybYDB29HWLEtJ9dKxihgrFMAiqOdMWWPU8EFo4wRH5Qj3N_MXEhQ3Ql_WXc87-q0f6bZiSWVp_6bL5EssaE"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?t5xzip"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?t5xzip"></script>
+
+        </head>
+<body class="page-people-paul-n-edwards section-people path-node page-node-type-people subdomain domain--cisac page-body">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PWBZTH"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+<nav id="skipnav" class="skipnav">
+  <div class="container">
+    <ul>
+              <li><a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a></li>
+              <li><a href="#main-nav" class="visually-hidden focusable skip-link">Skip to main navigation</a></li>
+          </ul>
+  </div>
+</nav>
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+
+
+
+
+<div  class="layout-container">
+  <header  class="header">
+                  <div  class="header-top header-top--cisac region region-top-header-left bg-red z-[10]">
+    <div class="container">
+              <div  id="block-header-top" class="block block-content ced1bdcf-a613-4da6-ae1e-cd14a7af31d2">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><p><span><a href="http://www.stanford.edu/">Stanford University</a></span></p></div>
+      
+  </div>
+
+          </div>
+  </div>
+
+    
+                      <div  class="header-main header-main--cisac region region-header relative z-[11] bg-white">
+    <div class="container relative flex z-1">
+      <div class="
+        flex flex-col w-full
+        1024:flex-row 1024:items-center
+      ">
+                  <div  id="block-fsi-domain-logo" class="block fsi-domain-logo">
+  
+    
+      <div class="subdomain-logo__left py-5">
+      
+              <a href="/" title="Home" rel="home" class="hidden 1024:block">
+          <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2022-09/cisac_fsi_compliant_logo.png" alt="CISAC Logo"/>
+        </a>
+      
+              <a href="/" title="Home" rel="home" class="1024:hidden">
+          <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2022-09/cisac_fsi_compliant_logo.png" alt="CISAC Logo"/>
+        </a>
+          </div>
+</div>
+<div  id="block-fsi-subdomain-logo" class="block fsi-subdomain-logo">
+  
+    
+        <div class="subdomain-logo__right">
+      <p>The <a href="http://cisac.fsi.stanford.edu/">Center for International Security and Cooperation</a> is part of the <a href="http://fsi.stanford.edu/">Freeman Spogli Institute for International Studies</a>.</p>
+    </div>
+  </div>
+
+              </div>
+    </div>
+  </div>
+
+          
+            
+<button class="toggle-expand" arial-live="polite">
+  <span class="toggle-expand__open">
+    
+
+
+<svg  class="toggle-expand__icon"
+
+  
+  
+  >
+      <use xlink:href="/themes/custom/stanford_fsi/dist/icons.svg#menu"></use>
+</svg>
+    <span
+      class="toggle-expand__text"
+      aria-label="Open menu"
+    >Menu</span>
+  </span>
+  <span class="toggle-expand__close">
+    <span
+      class="toggle-expand__text"
+      aria-label="Close menu"
+    >Close</span>
+  </span>
+</button>
+    <div  class="header-navigation region region-navigation bg-red nav-collapsible">
+    <div class="container relative">
+              
+<div class="search-block-form google-cse search-form-block block block-search container-inline" data-drupal-selector="search-block-form" id="block-stanford-fsi-search-header" role="search">
+  
+      <span class="visually-hidden">Search</span>
+    
+      <form action="/search/google" method="get" id="search-block-form" accept-charset="UTF-8">
+  
+    
+<div class="js-form-item form-item form-item-edit-keys">
+              <input title="Enter the terms you wish to search for." placeholder="Search CISAC" data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="40" maxlength="128" class="form-search form-item__textfield" />
+        </div>
+<div id="edit-actions-search-block-form" data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit form-item__textfield" />
+</div>
+
+</form>
+
+  </div>
+<div  id="block-fsi-main-menu" class="block fsi-main-menu main-menu-9379935">
+  
+    
+      
+<nav id="main-nav" class="main-nav bg-red">
+  
+
+
+    
+                          
+    
+<ul  class="main-menu hidden">
+            
+<li  class="main-menu__item">
+                <a href="/about-cisac" class="main-menu__link" data-drupal-link-system-path="node/29450">About</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/cisac-research" class="main-menu__link" data-drupal-link-system-path="node/29433">Research</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/cisac-teaching" class="main-menu__link" data-drupal-link-system-path="node/29399">Education</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/people" class="main-menu__link" data-drupal-link-system-path="node/30779">People</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/news" class="main-menu__link" data-drupal-link-system-path="node/29757">News</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/cisac-events" class="main-menu__link" data-drupal-link-system-path="node/29197">Events</a>
+          </li>
+      </ul>
+  
+</nav>
+
+  </div>
+
+          </div>
+  </div>
+
+    
+          <div  id="block-views-block-alert-block-alert" class="block views-element-container views-block alert-block-alert">
+  
+    
+      <div><div class="view alert block-alert js-view-dom-id-127f8dacda14903d1af3ded78d42295e92e9e49d6a835573b0e80ac9f8ed8ff9">
+  
+  
+  
+
+  
+  
+  
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+
+    
+        </header>
+      
+    
+    
+    
+    <div  class="main">
+    <a id="main-content" tabindex="-1"></a>        
+      <main role="main"  class="main-content">
+        
+
+  <div class="region region--content grid-full layout--pass--content-medium ie11-autorow" id="content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+<div  id="block-stanford-fsi-content" class="block system-main-block">
+  
+    
+      
+
+  
+
+<article about="/people/paul-n-edwards" class="node node--type-people node--view-mode-full">
+  <div class="node__content">
+    
+
+<h1
+   about="/people/paul-n-edwards" class="h visually-hidden h1 node node--type-people node--view-mode-full"
+><div class="node people title string label-hidden">Paul N. Edwards</div>
+</h1>
+
+
+    
+<div  class="header-people pt-5 768:pt-7.5 1024:pt-16">
+  <div class="container container--smaller">
+          
+  <nav  class="breadcrumb border-b-1 border-b-gray-e3 pb-2" role='navigation' aria-labelledby='system-breadcrumb'>
+    <h2  class="visually-hidden" id='system-breadcrumb'>Breadcrumb</h2>
+    <ol  class="breadcrumb__list mb-[11px]">
+                                          <li  class="breadcrumb__item font-bold">
+                  <a  class="breadcrumb__link" href="http://cisac.fsi.stanford.edu/people">All CISAC People</a>
+              </li>
+                                          <li  class="breadcrumb__item text-red">
+                  All Faculty
+              </li>
+        </ol>
+  </nav>
+    
+    <div class="
+      768:flex 768:flex-wrap
+      border-b-[6px] border-b-red
+      pt-6 mb-6
+    ">
+              <div  class="header-people__img w-[250px] mb-5 768:pt-4 768:mb-1.5">
+              <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/250x250/public/2025-04/pn_edwards_headshot_2025.png?h=6aa5078b&amp;itok=jL2WoW-B" width="250" height="250" alt="Paul Edwards 2025" typeof="foaf:Image" />
+
+
+
+        </div>
+      
+      <div class="768:w-[calc(100%_-_250px)] 768:pl-[52px]">
+                  
+
+<h2
+   class="h h2"
+>Paul N. Edwards, PhD</h2>
+                          <div class="text-formatted">
+            
+<ul  class="ul">
+            
+<li  class="list-item">
+          Director, Program in Science, Technology &amp; Society (STS), Stanford University
+  </li>
+          
+<li  class="list-item">
+          Senior Research Scholar
+  </li>
+          
+<li  class="list-item">
+          Professor of Information and History, University of Michigan
+  </li>
+      </ul>
+          </div>
+        
+        <div class="mb-4"><p>CISAC<br>
+	Stanford University<br>
+	Encina Hall, C226<br>
+	Stanford, CA 94305-6165</p></div>                  <div>
+<a class="link"
+href="mailto:pedwards@stanford.edu">
+
+  pedwards@stanford.edu
+</a>
+</div>
+                <div>(650) 725-2707 (voice)</div>                
+              </div>
+    </div>
+  </div>
+</div>
+
+                
+    
+    
+                          
+          
+
+<div  class="anchor-tabs pt-7 pb-3.5 text-center" id="">
+  <div class="container">
+                      
+<a class="link link--btn link--secondary-black js-scroll-animate mx-7.5 my-4"
+href="#recent_news">
+
+  In The News
+</a>
+      </div>
+</div>
+    
+
+          <div class="bio_wrapper link--in-article">
+        
+<div  class="bio-block py-7.5 text-20">
+  <div class="container container--small">
+          
+
+<h2
+   class="h h--gleam-title text-center h2"
+>Biography</h2>
+        <div><p>Paul N. Edwards is the director of the Program in Science, Technology &amp; Science (STS) and Senior Research Scholar at CISAC, as well as Professor of Information and History at the University of Michigan. At Stanford, his teaching includes courses in the Ford Dorsey Program in International Policy Studies and the Program in Science, Technology &amp; Society. His research focuses on the history, politics, and culture of knowledge and information infrastructures. He focuses especially on environmental security (e.g. climate change, Anthropocene risks, and nuclear winter).&nbsp;</p><p>Edwards’s book&nbsp;<em>A Vast Machine: Computer Models, Climate Data, and the Politics of Global Warming</em>&nbsp;(MIT Press, 2010), a history of the meteorological information infrastructure, received the Computer Museum History Prize from the Society for the History of Technology, the Louis J. Battan Award from the American Meteorological Society, and other prizes.&nbsp;The Economist&nbsp;magazine named&nbsp;<em>A Vast Machine</em>&nbsp;a Book of the Year in 2010. Edwards’s book&nbsp;<em>The Closed World: Computers and the Politics of Discourse in Cold War America</em>&nbsp;(MIT Press, 1996) — a study of the mutual shaping of computers, military strategy, and the cognitive sciences from 1945-1990 — won honorable mention for the Rachel Carson Prize of the Society for Social Studies of Science. It has been translated into French and Japanese. Edwards is also co-editor of&nbsp;<em>Changing the Atmosphere: Expert Knowledge and Environmental Governance</em>&nbsp;(MIT Press, 2001) and&nbsp;<em>Changing Life: Genomes, Ecologies, Bodies, Commodities</em>&nbsp;(University of Minnesota Press, 1997), as well as numerous articles.</p><p>From 1992, Edwards taught in the Program in Science, Technology, and Society and (for two years) the Dept. of Computer Science at Stanford. In 1999 he moved to the University of Michigan School of Information, where he founded and directed the UM Science, Technology &amp; Society Program. He returned to Stanford in 2017 as a long-term William J. Perry Fellow and Senior Research Scholar, though he retains a full professorship in Information and History at Michigan. Edwards has advised PhD students at universities in France, Norway, Finland, Canada, and South Africa as well as the United States.</p><p>Edwards holds a PhD in History of Consciousness from the University of California, Santa Cruz (1988) and a bachelor’s degree in Language and Mind from Wesleyan University (1980). His work has been funded by the US National Science Foundation, the W. K. Kellogg Foundation, and the Sloan Foundation. He has been a Carnegie Scholar, a Guggenheim Fellow, a Senior Fellow of the Michigan Society of Fellows, and Distinguished Faculty in Sustainability at the Graham Sustainability Institute. Edwards has held visiting positions at the Paris Institute of Political Sciences (SciencesPo), France; the Oslo Summer School in Comparative Social Sciences, Norway; Technische Universiteit Eindhoven, Netherlands; the University of Kwazulu-Natal, South Africa; the University of Melbourne, Australia; and Cornell University. &nbsp;</p><p>With Geoffrey C. Bowker, Edwards edits the MIT Press&nbsp;Infrastructures&nbsp;book series. He currently serves on the editorial boards of the journals<em>&nbsp;Big Data &amp; Society</em>, <em>Information &amp; Culture</em>,&nbsp;and&nbsp;<em>Internet Histories: Digital Technology, Culture and Society</em>,&nbsp;and was previously a deputy editor of&nbsp;<em>Climatic Change</em>.</p><p>Edwards' current research concerns the history and future of knowledge infrastructures, as well as further work on the history of climate science and other large-scale environmental data systems.</p><p>To access Dr. Edwards' CV, please <a href="http://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/pn_edwards_cv_-_april_2021.pdf">click here</a>.&nbsp;</p></div>  </div>
+</div>
+      </div>
+    
+    
+
+    
+
+            <div id="recent_news">
+          <div class="views-element-container"><div class="view fsi-people-embed people-recent-news js-view-dom-id-388c5768a66d74d7db6b9bcacf957cc2d5a866df463b34c35276f72e3bd50055">
+  
+
+<div  class="people-recent pt-7.5">
+      
+
+<h2
+   class="h h--gleam-title text-center h2"
+>In The News</h2>
+    <div class="container">
+    <div  class="people-recent__header">
+      <form class="views-exposed-form bef-exposed-form" data-drupal-target-view="388c5768a66d74d7db6b9bcacf957cc2d5a866df463b34c35276f72e3bd50055" data-bef-auto-submit-full-form="" data-bef-auto-submit="" data-bef-auto-submit-delay="500" data-drupal-selector="views-exposed-form-fsi-people-embed-people-recent-news-2" action="/people/paul-n-edwards" method="get" id="views-exposed-form-fsi-people-embed-people-recent-news--2" accept-charset="UTF-8">
+  
+    
+<div class="js-form-item form-item form-item-edit-by-news-type--2">
+      <label for="edit-by-news-type--2" class="form-item__label">News Type</label>        
+
+<input type="hidden" name="by_news_type" value="All"/>
+<div class="bef-links-use-ajax form-select bef-links swiper" data-drupal-selector="edit-by-news-type" id="edit-by-news-type--2" name="by_news_type">
+  
+    
+      
+            
+            
+        
+          
+            <ul class="swiper-wrapper"><li class="swiper-slide" aria-live="polite"><a href="https://cisac.fsi.stanford.edu/people/paul-n-edwards" id="edit-by-news-type-all" name="by_news_type[All]" class="bef-link bef-link--selected">All</a></li>                
+            
+            
+        
+          
+            <li class="swiper-slide" aria-live="polite"><a href="https://cisac.fsi.stanford.edu/people/paul-n-edwards?by_news_type=news" id="edit-by-news-type-news" name="by_news_type[news]" class="bef-link">News</a></li>                
+            
+            
+        
+          
+            <li class="swiper-slide" aria-live="polite"><a href="https://cisac.fsi.stanford.edu/people/paul-n-edwards?by_news_type=q_a" id="edit-by-news-type-q-a" name="by_news_type[q_a]" class="bef-link">Q&amp;As</a></li></ul>            </div>
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions--4"><input data-bef-auto-submit-click="" class="js-hide button js-form-submit form-submit form-item__textfield" data-drupal-selector="edit-submit-fsi-people-embed-4" type="submit" id="edit-submit-fsi-people-embed--4" value="Apply" />
+</div>
+
+
+</form>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  
+
+<div  class="read-more read-more--people-recent py-2.5 768:py-6.5 1024:py-12 border-t-1 border-black" >
+  <div class="container">
+    
+    <div  class="read-more__items read-more__items--people-recent read-more__items--3-items 768:flex 768:justify-center" >
+                                    
+
+<div  about="/news/dr-paul-edwards-awarded-2025-jd-bernal-prize" class="news-teaser news-teaser--card px-7.5 pb-4.5 relative bg-white" >
+      <div  class="news-teaser__img news-teaser__img--card -mx-7.5 mb-5" >
+        
+            <div class="node news field-hero-image entity-reference label-hidden">
+  
+              
+
+  
+<picture
+   loading="eager" width="727" height="409" class="image"
+>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211/public/2025-04/paul_edwards_headshot_2025.png?h=e51c9b69&amp;itok=VnsvUAXe 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211_x2/public/2025-04/paul_edwards_headshot_2025.png?h=e51c9b69&amp;itok=NHX68CRw 2x" media="all and (min-width: 768px)" type="image/png" width="375" height="211"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/2025-04/paul_edwards_headshot_2025.png?h=e51c9b69&amp;itok=6znELRLt 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409_x2/public/2025-04/paul_edwards_headshot_2025.png?h=e51c9b69&amp;itok=Vjv2ee60 2x" media="all and (max-width: 767px)" type="image/png" width="727" height="409"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245/public/2025-04/paul_edwards_headshot_2025.png?h=e51c9b69&amp;itok=BwDxt9zz 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245_x2/public/2025-04/paul_edwards_headshot_2025.png?h=e51c9b69&amp;itok=C8yYIcyO 2x" media="all and (max-width: 480px)" type="image/png" width="440" height="245"/>
+        <!--[if IE 9]></video><![endif]-->
+      
+<img
+   class="image"
+      src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/2025-04/paul_edwards_headshot_2025.png?h=e51c9b69&amp;itok=6znELRLt"
+      alt="Paul Edwards Headshot 2025"
+    />
+</picture>
+
+
+      
+</div>
+      
+    </div>
+        <div  class="news-teaser__type mb-6 text-20 text-red" >
+      News
+    </div>
+        
+
+<h2
+   class="h h--small h2"
+>Dr. Paul Edwards Awarded 2025 J.D. Bernal Prize</h2>
+        <div  class="news-teaser__description mb-4 480m:text-16" >
+      Through critical studies of scientific infrastructures and large-scale data systems, Dr. Paul N. Edwards has transformed our understanding of climate science and the Anthropocene
+    </div>
+                  
+<a class="link link--cover"
+href="/news/dr-paul-edwards-awarded-2025-jd-bernal-prize">
+
+  Dr. Paul Edwards Awarded 2025 J.D. Bernal Prize
+</a>
+  </div>
+
+                                        
+
+<div  about="/news/navigating-complexities-existential-risk-insights-2023-stanford-existential-risks-conference" class="news-teaser news-teaser--card px-7.5 pb-4.5 relative bg-white" >
+      <div  class="news-teaser__img news-teaser__img--card -mx-7.5 mb-5" >
+        
+            <div class="node news field-hero-image entity-reference label-hidden">
+  
+              
+
+  
+<picture
+   loading="eager" width="727" height="409" class="image"
+>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211/public/2024-04/kilian-karger-ctklczb9hea-unsplash.jpg?h=54d7370f&amp;itok=64_Ft-pZ 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211_x2/public/2024-04/kilian-karger-ctklczb9hea-unsplash.jpg?h=54d7370f&amp;itok=_75_n-QX 2x" media="all and (min-width: 768px)" type="image/jpeg" width="375" height="211"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/2024-04/kilian-karger-ctklczb9hea-unsplash.jpg?h=54d7370f&amp;itok=elZFVLG7 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409_x2/public/2024-04/kilian-karger-ctklczb9hea-unsplash.jpg?h=54d7370f&amp;itok=aKGSuHQQ 2x" media="all and (max-width: 767px)" type="image/jpeg" width="727" height="409"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245/public/2024-04/kilian-karger-ctklczb9hea-unsplash.jpg?h=54d7370f&amp;itok=dRmJW4Bk 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245_x2/public/2024-04/kilian-karger-ctklczb9hea-unsplash.jpg?h=54d7370f&amp;itok=Gge9_I4l 2x" media="all and (max-width: 480px)" type="image/jpeg" width="440" height="245"/>
+        <!--[if IE 9]></video><![endif]-->
+      
+<img
+   class="image"
+      src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/2024-04/kilian-karger-ctklczb9hea-unsplash.jpg?h=54d7370f&amp;itok=elZFVLG7"
+      alt="SERI"
+    />
+</picture>
+
+
+      
+</div>
+      
+    </div>
+        <div  class="news-teaser__type mb-6 text-20 text-red" >
+      Q&amp;As
+    </div>
+        
+
+<h2
+   class="h h--small h2"
+>Navigating the Complexities of Existential Risk: Insights from the 2023 Stanford Existential Risks Conference</h2>
+                    
+<a class="link link--cover"
+href="/news/navigating-complexities-existential-risk-insights-2023-stanford-existential-risks-conference">
+
+  Navigating the Complexities of Existential Risk: Insights from the 2023 Stanford Existential Risks Conference
+</a>
+  </div>
+
+                                        
+
+<div  about="/news/nine-named-aaas-fellows-stanford-and-slac" class="news-teaser news-teaser--card px-7.5 pb-4.5 relative bg-white" >
+      <div  class="news-teaser__img news-teaser__img--card -mx-7.5 mb-5" >
+        
+            <div class="node news field-hero-image entity-reference label-hidden">
+  
+              
+
+  
+<picture
+   loading="eager" width="727" height="409" class="image"
+>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211/public/block-text-media/paul_n._edwards.jpeg?h=0fcf224c&amp;itok=pziZH9s7 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211_x2/public/block-text-media/paul_n._edwards.jpeg?h=0fcf224c&amp;itok=4mKtMI6Y 2x" media="all and (min-width: 768px)" type="image/jpeg" width="375" height="211"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/block-text-media/paul_n._edwards.jpeg?h=0fcf224c&amp;itok=heYT4Yd5 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409_x2/public/block-text-media/paul_n._edwards.jpeg?h=0fcf224c&amp;itok=rIjNXxRz 2x" media="all and (max-width: 767px)" type="image/jpeg" width="727" height="409"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245/public/block-text-media/paul_n._edwards.jpeg?h=0fcf224c&amp;itok=DW37C-TC 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245_x2/public/block-text-media/paul_n._edwards.jpeg?h=0fcf224c&amp;itok=YIv_3mSf 2x" media="all and (max-width: 480px)" type="image/jpeg" width="440" height="245"/>
+        <!--[if IE 9]></video><![endif]-->
+      
+<img
+   class="image"
+      src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/block-text-media/paul_n._edwards.jpeg?h=0fcf224c&amp;itok=heYT4Yd5"
+      alt="Paul N. Edwards"
+    />
+</picture>
+
+
+      
+</div>
+      
+    </div>
+        <div  class="news-teaser__type mb-6 text-20 text-red" >
+      News
+    </div>
+        
+
+<h2
+   class="h h--small h2"
+>Nine named AAAS Fellows from Stanford and SLAC</h2>
+        <div  class="news-teaser__description mb-4 480m:text-16" >
+      Paul Edwards and eight other faculty from Stanford and SLAC are among the 564 new Fellows of the American Association for the Advancement of Science.
+    </div>
+                  
+<a class="link link--cover"
+href="/news/nine-named-aaas-fellows-stanford-and-slac">
+
+  Nine named AAAS Fellows from Stanford and SLAC
+</a>
+  </div>
+
+                            </div>
+  </div>
+</div>
+
+  
+  <div  class="people-recent__more-links text-center mt-2.5 mb-2.5 768:mt-4 1024:mt-14">
+          
+  
+<a class="link link--btn mx-1 mb-2.5 more-link"
+href="/news?keyword=&quot;Paul N. Edwards&quot;">
+
+  More News
+</a>
+  
+<a class="link link--btn back-to-page-top"
+href="#">
+
+  Back to top
+</a>
+
+      </div>
+</div>
+</div>
+</div>
+
+        </div>
+      
+
+    
+  </div>
+</article>
+
+  </div>
+
+  </div>
+
+    </main>
+  </div>
+      <footer>
+              <div  class="footer__social region region-footer-social">
+  <div class="container flex items-center justify-center 768:justify-between py-4">
+          <div  id="block-fsi-center-logo" class="block fsi-center-logo">
+  
+    
+        <a href="/" rel="home">
+      <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2022-09/cisac_fsi_compliant_logo.png" alt="CISAC Logo"/>
+    </a>
+  </div>
+<div  id="block-fsi-social-network" class="block fsi-social-network">
+  
+    
+      
+  
+  <ul  class="social-menu social-menu--big">
+          <li  class="social-menu__item">
+        <a             href="https://www.facebook.com/StanfordCISAC"  class="social-menu__link social-menu__link--facebook">
+                      facebook
+                  </a>
+      </li>
+          <li  class="social-menu__item">
+        <a             href="https://twitter.com/StanfordCISAC"  class="social-menu__link social-menu__link--twitter">
+                      twitter
+                  </a>
+      </li>
+          <li  class="social-menu__item">
+        <a             href="http://visitor.r20.constantcontact.com/d.jsp?llr=fspp8kqab&amp;p=oi&amp;m=1117055860293&amp;sit=lcopgkvib&amp;f=de41aeea-aab2-45ac-abe2-685c49e3a49f"  class="social-menu__link social-menu__link--newsletter">
+                      newsletter
+                  </a>
+      </li>
+      </ul>
+
+
+
+  </div>
+
+      </div>
+</div>
+
+      
+              
+<section  class="footer__center region region-footer-center">
+  <div class="
+    container
+    flex flex-wrap 768:flex-nowrap
+    pt-9 pb-7.5
+  ">
+          <div  id="block-footer-contact-us" class="block block-content _0723fba-76bd-4764-8856-dabdde04e703">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Our Address</h3>
+
+<div class="logo-footer"><a href="https://fsi.stanford.edu"><img alt="Stanford University" height="52" src="/themes/custom/stanford_fsi/images/logo-white.png" width="517" loading="lazy"> </a></div>
+
+<div class="footer-panel__body">Encina Hall<br>
+616 Jane Stanford Way<br>
+Stanford University<br>
+Stanford, CA 94305-6055</div>
+</div>
+      
+  </div>
+<div  id="block-footer-menu" class="menu-block footer block block-menu navigation menu--footer">
+      
+  <h2 id="menu-blockfooter-menu">Navigate</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/research" class="menu__link">Research</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/education" class="menu__link">Education</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/policy" class="menu__link">Policy</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/people/institute-faculty" class="menu__link">People</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/centers" class="menu__link">Centers</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/news" aria-current="true" class="menu__link">News</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/events" class="menu__link">Events</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/about" class="menu__link">About</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-footer-follow-us" class="block block-content _c2785de-22f2-473e-bc20-d8b2d9c45b38">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Follow Us</h3><p><strong>General inquiries</strong><br>650-723-4581</p><ul class="social-menu"><li class="social-menu__item"><a class="social-menu__link social-menu__link--mail" href="https://fsi.stanford.edu/content/get-connected" target="_blank">Mail</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--bluesky" href="https://bsky.app/profile/fsi.stanford.edu" target="_blank">Bluesky</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--youtube" href="https://www.youtube.com/channel/UCB2X9yR4GZLfrCe4jChIEwg" target="_blank">Youtube</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--instagram" href="https://www.instagram.com/fsi_stanford" target="_blank">Instagram</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--linkedin" href="https://www.linkedin.com/company/freeman-spogli-institute-for-international-studies" target="_blank">LinkedIn</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--threads" href="https://www.threads.net/@fsi_stanford" target="_blank">Threads</a></li></ul></div>
+      
+  </div>
+<div  id="block-footer-support-us" class="block block-content f442c8ab-1101-42e7-960d-79b4d0701c1c">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Support Us</h3>
+
+<div class="support-us">
+<p>Learn more about how your support makes a difference or make a gift now</p>
+<a class="link link--btn link--yellow" href="https://fsi.stanford.edu/supporting-fsi">Make a gift</a></div>
+</div>
+      
+  </div>
+
+      </div>
+</section>
+
+      
+      
+              <div class="back-top 768:hidden text-center py-5">
+  <span class="back-top__icon"></span>
+  <a href="#main-content" class="back-top__link">Top</a>
+</div>
+
+<div
+   class="footer__copyright region region-footer-copyrights"
+  role="contentinfo"
+>
+  <div class="container flex flex-wrap py-5 justify-center relative 768:pt-7 768:pb-8.5">
+    <div  class="footer__copyright-logo mb-4.5 w-full">
+      <img src="/themes/custom/stanford_fsi/images/footer-stanford-logo.png" class="w-[112px] m-auto 768:w-[120px]" alt="Footer logo">
+    </div>
+          <div  id="block-footer-stanford-menu" class="menu-block footer-stanford block block-menu navigation menu--footer-stanford">
+            
+  <h2 class="visually-hidden" id="menu-blockfooter-stanford-menu">Footer Stanford Menu</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/" class="menu__link">Stanford Home</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://visit.stanford.edu/plan/" class="menu__link">Maps &amp; Directions</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/search/" class="menu__link">Search Stanford</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://emergency.stanford.edu/" class="menu__link">Emergency Info</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-footer-terms-menu" class="menu-block footer-terms block block-menu navigation menu--footer-terms">
+            
+  <h2 class="visually-hidden" id="menu-blockfooter-terms-menu">Footer Terms Menu</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/terms/" class="menu__link">Terms of Use</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/privacy/" class="menu__link">Privacy</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://uit.stanford.edu/security/copyright-infringement" class="menu__link">Copyright</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="menu__link">Trademarks</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="http://exploredegrees.stanford.edu/nonacademicregulations/nondiscrimination/" class="menu__link">Non-Discrimination</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/accessibility/" class="menu__link">Accessibility</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://uit.stanford.edu/security/copyright-infringement" class="menu__link">Copyright Complaints</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-copyright-content" class="block block-content e1315f88-6342-4fdd-98de-4aed8bcf8e4b">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><div class="footer-global__copyright">
+<p class="vcard">© <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>.</p>
+</div>
+</div>
+      
+  </div>
+
+      </div>
+</div>
+
+          </footer>
+  </div>
+
+  </div>
+
+
+<script src="/sites/default/files/js/js_52IGDlsmEt22HsEVWjZCgVVKBp_aFjsYK2nnEYR6518.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=stanford_fsi&amp;include=eJx1UFuOwyAMvBAJx9lPZBKHuOElbLrt7YvIRiuq9mc8D4uRsSiCxeAjJ8bVbOSbZA1VkuFqA4myn1ccRizgv8We4sGmMhq4wUMte0ujPsdscbuctdQMfj6Vcik5j2Zh1Cdt7AfagwHKcaUCTrsG73ruTYMZFAvELZXVWGBadMd_c2PSEFt5mQQsj4HzybYDB29HWLEtJ9dKxihgrFMAiqOdMWWPU8EFo4wRH5Qj3N_MXEhQ3Ql_WXc87-q0f6bZiSWVp_6bL5EssaE"></script>
+<script src="/themes/custom/stanford_fsi/components/01-atoms/images/icons/svgxuse.min.js?t5xzip" defer></script>
+<script src="/sites/default/files/js/js_tNradgv36aOLnsSOI5GoV0Ko8lVPEINDVVuNsv5eZWA.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=stanford_fsi&amp;include=eJx1UFuOwyAMvBAJx9lPZBKHuOElbLrt7YvIRiuq9mc8D4uRsSiCxeAjJ8bVbOSbZA1VkuFqA4myn1ccRizgv8We4sGmMhq4wUMte0ujPsdscbuctdQMfj6Vcik5j2Zh1Cdt7AfagwHKcaUCTrsG73ruTYMZFAvELZXVWGBadMd_c2PSEFt5mQQsj4HzybYDB29HWLEtJ9dKxihgrFMAiqOdMWWPU8EFo4wRH5Qj3N_MXEhQ3Ql_WXc87-q0f6bZiSWVp_6bL5EssaE"></script>
+
+</body>
+</html>

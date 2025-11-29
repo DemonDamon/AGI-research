@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<!-- [if startif]
+/*! 
+* @author: Machine Learning Department, Carnegie Mellon University
+* @feedback: mariya@cmu.edu, mldweb@cs.cmu.edu
+* @copyright: Carnegie Mellon University | All Rights Reserved
+* @description: Blog capable website for Research Scientists with the Machine Learning Department at Carnegie Mellon University.
+*/
+[endif] -->
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="referrer" content="origin">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114918459-2"></script>
+    <script>'use strict';window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-114918459-2');</script>     
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://blog.ml.cmu.edu/xmlrpc.php">
+    <meta property="og:image" content="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/Image-from-iOS-2-2-1024x512-1-970x485.jpeg" />
+    <title>When Curation Becomes Creation: Algorithms, microcontent, and the vanishing distinction between platforms and creators &#8211; Machine Learning Blog | ML@CMU | Carnegie Mellon University</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Machine Learning Blog | ML@CMU | Carnegie Mellon University &raquo; Feed" href="https://blog.ml.cmu.edu/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Machine Learning Blog | ML@CMU | Carnegie Mellon University &raquo; Comments Feed" href="https://blog.ml.cmu.edu/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Machine Learning Blog | ML@CMU | Carnegie Mellon University &raquo; When Curation Becomes Creation: Algorithms, microcontent, and the vanishing distinction between platforms and creators Comments Feed" href="https://blog.ml.cmu.edu/2021/10/01/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blog.ml.cmu.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.16"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://blog.ml.cmu.edu/wp-includes/css/dist/block-library/style.min.css?ver=5.6.16' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='email-subscribers-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/email-subscribers/lite/public/css/email-subscribers-public.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='modern_footnotes-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/modern-footnotes/styles.min.css?ver=1.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wpt-twitter-feed-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/wp-to-twitter/css/twitter-feed.css?ver=5.6.16' type='text/css' media='all' />
+<link rel='stylesheet' id='mc4wp-form-themes-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/mailchimp-for-wp/assets/css/form-themes.min.css?ver=4.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mint-fonts-css'  href='https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic%7CLora:400,400italic,700,700italic&#038;subset=latin' type='text/css' media='all' />
+<link rel='stylesheet' id='plugins-styles-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/plugins-styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/woocommerce.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mint-main-styles-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/style.css' type='text/css' media='all' />
+<style id='mint-main-styles-inline-css' type='text/css'>
+ 
+ .header-top{ height: 60px; } 
+ .header-logo{ width: 250px!important;} 
+ .header-logo{ height: 60px!important; } 
+ 
+ 
+ 
+ .header-navigation li a, .header-socials li a, .top-cart-wrapper a, .header-menu-panel .menu-tumbl{ color:#111;}
+	body{font-family:'Lato',Arial,serif;font-size:px;color:;}input::-webkit-input-placeholder{font-family: 'Lato', Arial, serif;}input:-moz-placeholder{font-family: 'Lato', Arial, serif;}
+	input::-moz-placeholder{font-family: 'Lato', Arial, serif;}
+	input:-ms-input-placeholder{font-family: 'Lato', Arial, serif;}
+	
+	.slide .category-post-title a, .post-author-name span, span.date, .single-post .post-tags a, .post-related-title h4, .thecomment .comment-text span.date, #respond h3, #cancel-comment-reply-link, .widget-title, .widget-slide-info .date a, .woocommerce .woocommerce-message,.woocommerce .woocommerce-error,.woocommerce .woocommerce-info, .woocommerce span.onsale, span.price, .woocommerce ul.cart_list .amount, .woocommerce ul.product_list_widget .amount, .woocommerce.widget_shopping_cart .total > strong, .woocommerce div.product div.summary p.price,.woocommerce div.product div.summary span.price,.woocommerce #content div.product div.summary p.price, .woocommerce #content div.product div.summary span.price,.woocommerce .related.products > h2, .quantity.mkd-quantity-buttons .mkd-quantity-input{font-family: 'Lato'!important;}
+	h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.navigation li{ font-family: 'Lora', Arial, serif!important; font-weight:;letter-spacing:em;color:; }
+	blockquote, .author-post-name a, .page .page-title-wrapper h3, .instagram-footer #sbi_load a, .woocommerce-page .page-title-wrapper h3, .woocommerce-page .woocommerce-result-count, .woocommerce ul.cart_list li a,
+.woocommerce ul.product_list_widget li a, .woocommerce div.product .woocommerce-review-link,
+.woocommerce #content div.product .woocommerce-review-link, .woocommerce-cart table.cart .product-name > a  {font-family: 'Lora'!important;}
+ 	.post-entry a {
+  font-weight: 400;
+  text-decoration: underline;
+} 
+</style>
+<link rel='stylesheet' id='resposive-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/media.css' type='text/css' media='all' />
+<link rel='stylesheet' id='enlighterjs-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=BaUKYlr1JydyEx/' type='text/css' media='all' />
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/enable-jquery-migrate-helper/js/jquery/jquery-1.12.4-wp.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/enable-jquery-migrate-helper/js/jquery-migrate/jquery-migrate-1.4.1-wp.js?ver=1.4.1-wp' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='email-subscribers-js-extra'>
+/* <![CDATA[ */
+var es_data = {"messages":{"es_empty_email_notice":"Please enter email address","es_rate_limit_notice":"You need to wait for sometime before subscribing again","es_single_optin_success_message":"Successfully Subscribed.","es_email_exists_notice":"Email Address already exists!","es_unexpected_error_notice":"Oops.. Unexpected error occurred.","es_invalid_email_notice":"Invalid email address","es_try_later_notice":"Please try after some time"},"es_ajax_url":"https:\/\/blog.ml.cmu.edu\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/email-subscribers/lite/public/js/email-subscribers-public.js?ver=4.7.0' id='email-subscribers-js'></script>
+<script type='text/javascript' id='simple-likes-public-js-js-extra'>
+/* <![CDATA[ */
+var simpleLikes = {"ajaxurl":"https:\/\/blog.ml.cmu.edu\/wp-admin\/admin-ajax.php","like":"Like","unlike":"Unlike"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/simple-likes-public.js?ver=0.5' id='simple-likes-public-js-js'></script>
+<link rel="https://api.w.org/" href="https://blog.ml.cmu.edu/wp-json/" /><link rel="alternate" type="application/json" href="https://blog.ml.cmu.edu/wp-json/wp/v2/posts/11535" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.ml.cmu.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.ml.cmu.edu/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6.16" />
+<link rel="canonical" href="https://blog.ml.cmu.edu/2021/10/01/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators/" />
+<link rel='shortlink' href='https://blog.ml.cmu.edu/?p=11535' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.ml.cmu.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.ml.cmu.edu%2F2021%2F10%2F01%2Fwhen-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.ml.cmu.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.ml.cmu.edu%2F2021%2F10%2F01%2Fwhen-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators%2F&#038;format=xml" />
+
+
+<!-- This site is optimized with the Schema plugin v1.7.9.0 - https://schema.press -->
+<script type="application/ld+json">[{"@context":"http:\/\/schema.org\/","@type":"WPHeader","url":"https:\/\/blog.ml.cmu.edu\/2021\/10\/01\/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators\/","headline":"When Curation Becomes Creation: Algorithms, microcontent, and the vanishing distinction between platforms and creators","description":"To appear in Communications of the ACM (CACM) and available on acm.org. Ever since social activity on the..."},{"@context":"http:\/\/schema.org\/","@type":"WPFooter","url":"https:\/\/blog.ml.cmu.edu\/2021\/10\/01\/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators\/","headline":"When Curation Becomes Creation: Algorithms, microcontent, and the vanishing distinction between platforms and creators","description":"To appear in Communications of the ACM (CACM) and available on acm.org. Ever since social activity on the...","copyrightYear":"2021"}]</script>
+
+
+
+<!-- This site is optimized with the Schema plugin v1.7.9.0 - https://schema.press -->
+<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"ScholarlyArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/blog.ml.cmu.edu\/2021\/10\/01\/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators\/"},"url":"https:\/\/blog.ml.cmu.edu\/2021\/10\/01\/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators\/","headline":" When Curation Becomes Creation: Algorithms, microcontent, and the vanishing distinction between platforms and...","datePublished":"2021-10-01T16:01:17-04:00","dateModified":"2021-10-01T16:01:19-04:00","publisher":{"@type":"Organization","@id":"https:\/\/blog.ml.cmu.edu\/#organization","name":"ML@CMU | Machine Learning | Carnegie Mellon University","logo":{"@type":"ImageObject","url":"https:\/\/blog.ml.cmu.edu\/wp-content\/uploads\/2018\/11\/mlcmu-logo.png","width":600,"height":60}},"image":{"@type":"ImageObject","url":"https:\/\/blog.ml.cmu.edu\/wp-content\/uploads\/2021\/10\/Image-from-iOS-2-2-1024x512-1.jpeg","width":1024,"height":512},"articleSection":"machine learning","description":"To appear in Communications of the ACM (CACM) and available on acm.org. Ever since social activity on the Internet began migrating from the wilds of the open web to the walled gardens erected by so-called&nbsp;platforms (think Myspace, Facebook, Twitter, YouTube, or TikTok), debates have raged about the responsibilities that","author":{"@type":"Person","name":"Leqi Liu","url":"https:\/\/blog.ml.cmu.edu\/author\/leqil\/","image":{"@type":"ImageObject","url":"https:\/\/secure.gravatar.com\/avatar\/a6e2615776d6d20d29fb7c24aee5467a?s=96&d=identicon&r=g","height":96,"width":96}}}</script>
+
+
+<style></style>
+    
+    <link rel="icon" href="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon-80x80.png" sizes="32x32" />
+<link rel="icon" href="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon.png" />
+<meta name="msapplication-TileImage" content="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon.png" />
+
+<!-- START - Open Graph and Twitter Card Tags 3.1.1 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/>
+  <meta property="og:title" content="When Curation Becomes Creation: Algorithms, microcontent, and the vanishing distinction between platforms and creators"/>
+  <meta property="og:url" content="https://blog.ml.cmu.edu/2021/10/01/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="[This blog post was cross-posted in the Approximately Correct Blog on 7/2/2021.]
+
+
+
+To appear in Communications of the ACM (CACM) and available on acm.org.
+
+
+
+Ever since social activity on the Internet began migrating from the wilds of the open web to the walled gardens erected by so-called platform"/>
+  <meta property="og:image" content="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/Image-from-iOS-2-2-1024x512-1.jpeg"/>
+  <meta property="og:image:url" content="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/Image-from-iOS-2-2-1024x512-1.jpeg"/>
+  <meta property="og:image:secure_url" content="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/Image-from-iOS-2-2-1024x512-1.jpeg"/>
+  <meta property="article:published_time" content="2021-10-01T16:01:17-04:00"/>
+  <meta property="article:modified_time" content="2021-10-01T16:01:19-04:00" />
+  <meta property="og:updated_time" content="2021-10-01T16:01:19-04:00" />
+  <meta property="article:section" content="machine learning"/>
+  <meta property="article:section" content="Research"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="When Curation Becomes Creation: Algorithms, microcontent, and the vanishing distinction between platforms and creators"/>
+  <meta itemprop="headline" content="When Curation Becomes Creation: Algorithms, microcontent, and the vanishing distinction between platforms and creators"/>
+  <meta itemprop="description" content="[This blog post was cross-posted in the Approximately Correct Blog on 7/2/2021.]
+
+
+
+To appear in Communications of the ACM (CACM) and available on acm.org.
+
+
+
+Ever since social activity on the Internet began migrating from the wilds of the open web to the walled gardens erected by so-called platform"/>
+  <meta itemprop="image" content="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/Image-from-iOS-2-2-1024x512-1.jpeg"/>
+  <meta itemprop="datePublished" content="2021-10-01"/>
+  <meta itemprop="dateModified" content="2021-10-01T16:01:19-04:00" />
+  <meta itemprop="author" content="Leqi Liu"/>
+  <!--<meta itemprop="publisher" content="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/>--> <!-- To solve: The attribute publisher.itemtype has an invalid value -->
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="When Curation Becomes Creation: Algorithms, microcontent, and the vanishing distinction between platforms and creators"/>
+  <meta name="twitter:url" content="https://blog.ml.cmu.edu/2021/10/01/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators/"/>
+  <meta name="twitter:description" content="[This blog post was cross-posted in the Approximately Correct Blog on 7/2/2021.]
+
+
+
+To appear in Communications of the ACM (CACM) and available on acm.org.
+
+
+
+Ever since social activity on the Internet began migrating from the wilds of the open web to the walled gardens erected by so-called platform"/>
+  <meta name="twitter:image" content="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/Image-from-iOS-2-2-1024x512-1.jpeg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+ <!-- is_singular -->
+<!-- END - Open Graph and Twitter Card Tags 3.1.1 -->
+	
+    <!-- Meta -->
+    <meta content="Machine learning, artificial intelligence, deep learning, natural language processing, automated machine learning, big data, data science, neural networks, ethics and ai, computer science, ml, ai, research" name="Keywords"/>
+    <meta content="The latest news and publications regarding machine learning, artificial intelligence or related, brought to you by the Machine Learning Blog, a spinoff of the Machine Learning Department at Carnegie Mellon University." name="Description"/>
+    <meta content="Machine Learning Department, Carnegie Mellon University" name="author"/>
+    <!-- OG:Graph  
+    <meta name="title" property="og:title" content="Blog | Machine Learning | Carnegie Mellon University"/>
+    <meta property="og:site_name" content="Blog | Machine Learning | Carnegie Mellon University"/>
+    <meta property="og:description" content="The latest news and publications regarding machine learning, artificial intelligence or related, brought to you by the Machine Learning Blog, a spinoff of the Machine Learning Department at Carnegie Mellon University."/> 
+    <meta property="og:image:alt" content="Blog | Machine Learning | Carnegie Mellon University - Cover Picture"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:url" content="https://blog.ml.cmu.edu"/>
+    <meta property="og:type" content="article"/>
+    <meta property="fb:app_id" content=""/>
+    <meta property="fb:pages" content=""/>
+    <meta property="fb:admins" content="654417927"/>
+    <meta property="fb:profile_id" content="654417927"/>
+    <meta name="twitter:site" content="@mldcmu"/>
+    <meta name="twitter:creator" concent="@mldcmu"/>
+    <meta name="twitter:title" content="Blog | Machine Learning | Carnegie Mellon University"/>
+    <meta name="twitter:description" content="The latest news and publications regarding machine learning, artificial intelligence or related, brought to you by the Machine Learning Blog, a spinoff of the Machine Learning Department at Carnegie Mellon University."/>
+    <meta name="twitter:image" content="http://blog.ml.cmu.edu/wp-content/themes/mint/mint/img/cover-introduction-mlblog-2.jpg"/>
+    <meta name="twitter:image:alt" content="Blog | Machine Learning | Carnegie Mellon University - Cover Picture"/>
+    <meta name="twitter:card" content="summary"/>
+    <!-- /OG:Graph -->
+    <!-- Robots -->
+    <meta name="robots" content="noarchive"/>
+    <meta name="googlebot" content="noarchive"/>
+    <!-- /Robots -->
+    <!-- /Meta -->
+</head>
+
+<body class="post-template-default single single-post postid-11535 single-format-standard">
+
+<!-- Preloader // Preloader affects how pages are read if javascript is removed.
+<div id="preloader"></div>
+<!-- /Preloader -->
+
+<!-- Uncomment /** inside <php if you'd like to restore glide-navigation to original version -->
+<!--  -->
+
+<header>
+    <div class="header-top">
+        <div class="top-header-content">
+            <div class="container">
+                <h1 class="hidden">Machine Learning Blog | ML@CMU | Carnegie Mellon University</h1>
+                <div class="col-lg-10 col-lg-offset-1">
+                                            <div class="menu-tumbl"><i class="fa fa-navicon"></i></div>
+                        <div class="header-soc-icon"><i class="fa fa-search"></i></div>
+                                        <div class="header-logo">
+                                                    <a href="https://blog.ml.cmu.edu/" class="logo-img"><img
+                                    src="https://blog.ml.cmu.edu/wp-content/uploads/2018/11/mlcmu-logo.png"
+                                    alt="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/></a>
+                        
+                                                    <a href="https://blog.ml.cmu.edu/" class="retina-logo-img"><img
+                                    src=""
+                                    alt="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/></a>
+                                            </div>
+                    <!-- Statistics -->
+                    <div id="blog-stats">
+                        <h4 class="widget-title">Statistics:</h4>
+                        <span class="sbs-count-posts"><span class="sbs-count-posts">123</span> publications.</span>
+                        <span class="sbs-count-cats"><span class="sbs-count-cats">14</span> categories.</span>
+                        <span class="sbs-count-tags"><span class="sbs-count-tags">72</span> tags.</span>
+                    </div>
+                    <!-- /Statistics -->
+                    <!-- Desktop Navigation -->
+                    <div id="desktop-nav">
+                      <ul class="desktop-nav-ul">
+                        <li id="menu-item-19"><a title="Homepage" href="https://blog.ml.cmu.edu/#">[ Home ]</a></li>
+                        <li id="menu-item-121"><a title="Submissions" href="https://blog.ml.cmu.edu/submissions/">[ Submissions ]</a></li>
+                        <li id="menu-item-88"><a title="About us" href="https://blog.ml.cmu.edu/about/">[ About ]</a></li>
+                      </ul>
+                    </div
+                    <!-- /Desktop Navigation -->
+                    <!-- Moved Glide Navigation here // If needs restored you can restore it at wp-content/header.php-->
+                    <div class="glide-navigation">
+    <div class="sidebar-scroll scrollbar-macosx">
+
+        <!-- close-glide-button -->
+        <div class="close-glide-button">
+            <a href="#" class="close-btn"></a>
+        </div>
+
+        <!-- navbar -->
+        <ul id="menu-top-menu" class="navbar"><li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-19"><a title="Homepage" href="https://blog.ml.cmu.edu/#">Home</a></li>
+<li id="menu-item-121" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121"><a title="Our Team" href="https://blog.ml.cmu.edu/submissions/">Submissions</a></li>
+<li id="menu-item-88" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a title="Contact us" href="https://blog.ml.cmu.edu/about/">About</a></li>
+</ul>    </div>
+</div>                    <!-- /Glide Navigation -->
+                </div>
+            </div>
+        </div>
+        <div class="background-block"></div>
+        <div class="background-opacity"></div>
+    </div>
+    <div class="header-menu-panel">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="menu-tumbl"><i class="fa fa-navicon"></i></div>
+                <ul id="menu-top-menu-1" class="header-navigation"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-19"><a title="Homepage" href="https://blog.ml.cmu.edu/#">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121"><a title="Our Team" href="https://blog.ml.cmu.edu/submissions/">Submissions</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a title="Contact us" href="https://blog.ml.cmu.edu/about/">About</a></li>
+</ul>
+                <div class="header-menu-buttons">
+                                    </div>
+                <ul class="header-socials socials"><li><a href="https://blog.ml.cmu.edu/feed/" target="_blank"><i class="fa fa-rss"></i></a></li></ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="search-wrapper">
+    <form role="search" method="get" class="search-form" action="https://blog.ml.cmu.edu/">
+        <input type="search" placeholder="Search Keyword" name="s" id="s"
+               class="searchbox-input" autocomplete="off" required />
+        <span>Input your search keywords and press Enter.</span>
+    </form>
+    <div class="search-wrapper-close"></div>
+</div>
+<!-- Categories Picker 
+<div class="categories-picker">
+  <ul>
+      <li><h2>Categories:</h2></li> 
+      <li class="category-research"><a href="https://blog.ml.cmu.edu/category/research">Research</a></li>
+      <li class="category-educational"><a href="https://blog.ml.cmu.edu/category/educational/">Educational</a></li> 
+  </ul>
+</div>
+<!-- /Categories Picker-->
+
+<!-- Sidebar -->
+<div class="toggle-sidebar">
+  <a class="display-sidebar">
+    <i class="fa fa-angle-left"></i>
+  </a>
+</div>
+<div class="blog-sidebar categories-picker">
+      <h2>Categories:</h2> 
+  <ul>
+      <li class="category-research"><a href="https://blog.ml.cmu.edu/category/research">Research</a></li>
+      <li class="category-educational"><a href="https://blog.ml.cmu.edu/category/educational/">Educational</a></li> 
+  </ul>
+</div>
+<!-- /Sidebar -->
+
+<div class="main-panel">    <!-- mfunc setPostViews(get_the_ID()); --><!-- /mfunc -->
+
+    <div class="main">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div id="main-column"
+                                            class="full-page-post"
+                                    >
+
+                    <div class="fl-grid">
+                        
+                                                                                        
+                            
+<aside data="primary-post" id="post-11535" >
+
+    
+        <div class="post-header">
+                            <span class="category-post"><a href="https://blog.ml.cmu.edu/category/machine-learning/" title="View all posts in machine learning" >machine learning</a> <a href="https://blog.ml.cmu.edu/category/research/" title="View all posts in Research" >Research</a></span>
+
+                <h1><a>When Curation Becomes Creation: Algorithms, microcontent, and the vanishing distinction between platforms and creators</a></h1>
+
+                <div class="post-info">
+                    <div class="post-authors">
+                    <h4>Authors</h4>
+                    <a href="https://blog.ml.cmu.edu/author/leqil/" title="Posts by Leqi Liu" class="author url fn" rel="author">Leqi Liu</a>                    </div>
+            <!--    <span class="post-author-name">by                        <a href="">Leqi Liu</a>
+                    </span> -->
+                    <div class="affiliations">
+                    <h4>Affiliations</h4>                        
+                                            
+                    </div>
+                    <div class="date">
+                    <h4>Published</h4>
+                        October 1, 2021                    </div>                    
+                    <div class="doi">
+                    <h4>DOI</h4>
+                    </div>
+                </div>
+                    </div>
+            <div class="post-img">
+                                <img class="lazy" src="https://blog.ml.cmu.edu/wp-content/themes/mint/mint/img/layzyload.jpg"
+                 data-original="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/Image-from-iOS-2-2-1024x512-1-970x485.jpeg"
+                 data-lazy="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/Image-from-iOS-2-2-1024x512-1-970x485.jpeg"
+                 alt=""/>
+                    </div>
+
+        <div class="post-entry">
+            
+<script>
+jQuery('.post-authors').width(0.33 * jQuery('.post-authors').parent().width());
+jQuery('.post-authors').empty();
+jQuery('.post-authors').append('<h4>Authors</h4>');
+jQuery('.post-authors').append('<a href="https://www.cs.cmu.edu/~leqil/" target="_blank" rel="noopener noreferrer">Liu Leqi</a><br>');
+jQuery('.affiliations').width(0.42 * jQuery('.affiliations').parent().width());
+jQuery('.affiliations').append('<a href="https://www.ml.cmu.edu/" target="_blank" rel="noopener noreferrer">MLD, CMU</a><br>');
+jQuery('.post-authors').append('Dylan Hadfield-Menell<br>');
+jQuery('.affiliations').width(0.42 * jQuery('.affiliations').parent().width());
+jQuery('.affiliations').append('<a href="https://engineering.mit.edu/" rel="noopener noreferrer">EECS, MIT</a><br>');
+jQuery('.post-authors').append('Zachary C. Lipton<br>');
+jQuery('.affiliations').width(0.42 * jQuery('.affiliations').parent().width());
+jQuery('.affiliations').append('<a href="https://www.ml.cmu.edu/" target="_blank" rel="noopener noreferrer">MLD, CMU</a><br>');
+jQuery('.affiliations');
+jQuery('.date').width(0.25 * jQuery('.date').parent().width());
+jQuery('.doi').remove();
+</script>
+
+
+
+<p>[This blog post was cross-posted in the <a href="https://www.approximatelycorrect.com/2021/07/02/when-curation-becomes-creation/">Approximately Correct Blog</a> on 7/2/2021.]</p>
+
+
+
+<p><em>To appear in Communications of the ACM (CACM)</em> and available on <a href="https://dl.acm.org/doi/abs/10.1145/3475965.3477229" data-type="URL" data-id="https://dl.acm.org/doi/abs/10.1145/3475965.3477229"><em>acm</em>.org</a>.</p>
+
+
+
+<p>Ever since social activity on the Internet began migrating from the wilds of the open web to the walled gardens erected by so-called&nbsp;<em>platforms</em> (think Myspace, Facebook, Twitter, YouTube, or TikTok), debates have raged about the responsibilities that these platforms ought to bear. And yet, despite intense scrutiny from the news media and grassroots movements of outraged users, platforms continue to operate, from a legal standpoint, on the friendliest terms.&nbsp;</p>
+
+
+
+<p>You might say that today’s platforms enjoy a “have your cake, eat it too, and here’s a side of ice cream” deal. They simultaneously benefit from: (1) broad discretion to organize (and censor) content however they choose; (2) powerful algorithms for curating a practically limitless supply of user-posted microcontent according to whatever ends they wish; and (3) absolution from almost any liability associated with that content.</p>
+
+
+
+<p>This favorable regulatory environment results from the current legal framework, which distinguishes between&nbsp;<em>intermediaries</em> (e.g., platforms) and&nbsp;<em>content providers</em>. This distinction is ill-adapted to the modern social media landscape, where platforms deploy powerful data-driven algorithms (so-called AI) to play an increasingly active role in shaping what people see and where users supply disconnected bits of raw content (tweets, photos, etc.) as fodder.&nbsp;</p>
+
+
+
+<p>Specifically, under Section 230 of the Telecommunications Act of 1996, “interactive computer services” are shielded from liability for information produced by “information content providers.” <a href="https://www.eff.org/issues/cda230/legislative-history">While this provision was originally intended to protect telecommunications companies and Internet service providers from liability for content that merely passed through their plumbing</a>, the designation now shelters services such as Facebook, Twitter, and YouTube, which actively shape user experiences.</p>
+
+
+
+<p>Excepting obligations to take down specific categories of content (e.g., child pornography and copyright violations), today’s platforms have license to monetize whatever content they like, moderate if and when it aligns with their corporate objectives, and curate their content however they wish.</p>
+
+
+
+<h3>ANTECEDENTS IN MODERATION</h3>
+
+
+
+<p>In his 2018 book,&nbsp;<em><a href="https://yalebooks.yale.edu/book/9780300173130/custodians-internet">Custodians of the Internet</a></em>, Tarleton Gillespie examines platforms through the lens of content moderation, calling into focus an apparent contradiction: Platforms constantly do (and arguably, must) wade into the normative, making political decisions about what content to allow; and yet they operate absent responsibility on account of their purported&nbsp;<em>neutrality</em>.&nbsp;</p>
+
+
+
+<p>Throughout, Gillespie is even-handed, expressing sympathy for platforms’ predicament. They must moderate, and all mainstream platforms do. Without moderation, platforms are readily taken over by harassers and robots; and yet no moderation policy is value neutral.</p>
+
+
+
+<p>Flash points in the moderation debates include years-long protests over Facebook’s policy of classifying (and later declassifying) breastfeeding photographs as “obscene” content; Facebook’s controversial policy of taking down obscene but historically significant images, such as the Pulitzer Prize-winning “Napalm Girl” photograph notable for its role in bending public opinion on the Vietnam War; and, following the January 6 Capitol Hill riots, the wave of account suspensions that swept across Twitter, Facebook, Amazon, and even Pinterest.&nbsp;</p>
+
+
+
+<p>In all of these cases, platforms faced consequences in the marketplace, as well as brand-management challenges. From a legal standpoint, however, their autonomy has seldom been challenged.</p>
+
+
+
+<p>In the end, Gillespie provokes his readers to reconsider whether platforms should be entrusted with decisions that are inevitably political and affect all of us. Analyzing platforms through the lens of moderation raises fundamental questions about the sufficiency of current regulations. The moderation lens, however, seldom forces us to question the very validity of the intermediary-creator distinction.&nbsp;</p>
+
+
+
+<h3>WHAT IS CONTENT CREATION, ANYWAY?</h3>
+
+
+
+<p>This article argues that major changes in both the technology used to curate content and the nature of user content itself are rapidly eroding the boundary between intermediaries and creators.&nbsp;</p>
+
+
+
+<p>First, breakthroughs in machine-learning algorithms and systems for intelligently assembling the underlying content into curated experiences have given companies the power to determine with unprecedented control not only what&nbsp;<em>can be seen,&nbsp;</em>but also what&nbsp;<em>will actually be seen&nbsp;</em>by users in service of whatever metric a company believes serves its business objectives.</p>
+
+
+
+<p>Second, unlike traditional bulletin board sites for sharing links to entire articles, or blogging platforms for sharing article-length musings, modern social media giants such as Facebook and Twitter traffic primarily (and increasingly) in microcontent—isolated snippets of text and photographs floating&nbsp;<em>a la carte&nbsp;</em>through their ecosystems.&nbsp;</p>
+
+
+
+<p>Third, the largest platforms operate on such an enormous scale that their content contains nearly any assertion of fact (true or false), nearly any normative assertion (however extreme), and nearly any photograph (real or fake) floating through the zeitgeist.</p>
+
+
+
+<p>Platforms now enjoy vast expressive power to create media products for their users, limited only by the available atomic content and by the power of their algorithms, both of which are advancing rapidly because of economies of scale and advances in technology, respectively.</p>
+
+
+
+<p>We are not the first to suggest that curation fundamentally alters the distinction between platforms and creators. In a recently proposed amendment to Section 230, <a href="https://eshoo.house.gov/media/press-releases/reps-eshoo-and-malinowski-introduce-bill-hold-tech-platforms-liable-algorithmic">motivated by more pragmatic regulatory concerns</a>, U.S. Representatives Anna G. Eshoo (D-Cal.) and Tom Malinowski (D-N.J.) recently <a href="https://malinowski.house.gov/sites/malinowski.house.gov/files/MALINJ_103_xml%5B2%5D%5B2%5D%5B2%5D.pdf">proposed</a> to reclassify those “interactive computer service[s]” (platforms) that “used an algorithm, model, other computational process to rank, order, promote, recommend, amplify, or similarly alter the delivery or display of information” as an &#8220;information content provider” (creator).</p>
+
+
+
+<p>To be clear that the interpretation of these legal terms is faithful to the original meaning in Section 230, here is the official definition:&nbsp;</p>
+
+
+
+<blockquote class="wp-block-quote"><p><em>The term&nbsp;information content provider means any person or entity that is responsible, in whole or in part, for the creation or development of information provided through the Internet or any other interactive computer service.&nbsp;</em></p><cite>Section 230</cite></blockquote>
+
+
+
+<p>Immediate legal goals aside, why target (algorithmic) content curation? At first glance, it might seem absurd that by virtue of curating content, an Internet service should assume not only some measure of responsibility, but also the very same status, vis-a-vis liability, as the creators of the underlying content. This distinction, however, may not actually be so far-fetched.</p>
+
+
+
+<p>Similar debates have arisen in the arts. Who can claim responsibility for a pop song that heavily samples preexisting audio? Are the Beastie Boys the creators of&nbsp;<em>Paul’s Boutique,&nbsp;</em>or do the creators of the original snippets have a sole right to that distinction? Can Jasper Johns be considered the creator for his prints and collages that repackage and juxtapose previous works of art (by himself and others)?&nbsp;</p>
+
+
+
+<p>With such derived works, claims to creatorship, rights to the spoils, and liability need not be mutually exclusive. This precedent suggests at least one sphere of life where people appear to be comfortable with the idea that those who produce microcontent and those who assemble it into larger-scale works can share the designation of&nbsp;<em>creator</em>.&nbsp;</p>
+
+
+
+<p>Of course, the line must be drawn somewhere. The DJ does not create the music in the same way that the Beastie Boys do. Art galleries do not create art in the same way that Jasper Johns does. Beneath the neat system of legal categories lies a messy spectrum of creative activities.</p>
+
+
+
+<h3>WHEN DOES CURATION BECOME CREATION?</h3>
+
+
+
+<p>Returning to the activities of web platforms, let’s consider two extremes on the curation-creation spectrum. First, let’s consider the activities of a typical aggregator website such as the Drudge Report, whose content consists entirely of outbound links to full articles that exist elsewhere on the Internet. Arguably, Drudge plays the role of the DJ, creating something more like a playlist than a song.&nbsp;</p>
+
+
+
+<p>Now consider the typical online blogger or the typical overworked journalist of the online era offering commentary or synthesis but not original reporting. They scour the Internet for content, assembling words, phrases, whole quotes, and photographs, all of which could be found elsewhere, to produce an article or post. Most readers undoubtedly concur that this qualifies as creation. Indeed, it is creation in the same sense that Twitter and Facebook users are creators of the content they post.&nbsp;</p>
+
+
+
+<p>Now consider the middle ground, where someone fashions content by assembling neither whole articles&nbsp;nor individual words but instead individual sentences, drawn from the entirety of the Internet, stripped of their original context, and assembled to present any desired picture of the discourse surrounding any topic.&nbsp;</p>
+
+
+
+<p>Legal scholars and politicians can debate whether this middle ground warrants official categorization as creation versus curation. It’s hard to deny, however, that these acts indeed constitute a spectrum and that the curator of sentences bears greater resemblance to the curator of&nbsp;words than does the curator of articles.&nbsp;</p>
+
+
+
+<p>Today’s platforms have been creeping steadily along this spectrum. From the earliest days, when a comparatively puny reservoir of content was presented in reverse chronological order, to the modern era’s black-box systems that power Twitter’s and Facebook’s news feeds, there is a shifting landscape of actors that look less and less like disinterested utilities happy to transport any content that shows up in its plumbing and more and more like active creators of a media product.&nbsp;</p>
+
+
+
+<p>To be sure, activity along this spectrum is not uniform, even within a single platform. Take Twitter, for example: While the default news feed is indeed customized according to an opaque process, the content consists mostly of recent posts by (or retweeted by) individuals whom you follow. On the other hand, Twitter’s Explore screen bears a striking resemblance to the middle-ground curator of sentences. They both present a set of hot topics, each titled according to some unknown process, and they curate, from the (often) millions of tweets on a topic, a chosen set to represent the story.</p>
+
+
+
+<p>In an era where many journalistic articles appearing in traditional venues consist of curated sets of tweets loosely connected by narrative and interpretation, the line separating intermediary from creator has grown so thin as to suggest the possibility that a double standard is already at play.&nbsp;</p>
+
+
+
+<h3>WHERE DO WE GO NEXT?&nbsp;</h3>
+
+
+
+<p>While the focus here is on actions that platforms take to&nbsp;present content, this is not the only way they influence the information a user consumes. Platforms like Twitter and Facebook regularly translate messages across languages. Image-sharing platforms, such as Instagram and Snapchat, apply algorithmic transformations to photographs. As technology advances, the murky line between curation and creation is likely to become less, not more, distinct.&nbsp;</p>
+
+
+
+<p>In the future, platforms might not only translate across languages, but also <a href="https://arxiv.org/pdf/2006.15020.pdf">paraphrase across dialects</a> or <a href="https://research.google/pubs/pub48295/">provide content summaries</a>. They may move past applying cute filters and <a href="https://arxiv.org/pdf/2011.03775.pdf">render whole synthetic images to specification</a>. Perhaps to mollify users aghast at the toxicity of the web, Twitter and Facebook might offer features to <a href="https://arxiv.org/pdf/2004.14257.pdf">render messages more polite</a>.</p>
+
+
+
+<p>Coming up with policies that balance the competing desiderata of corporate accountability, economic vibrancy, and individual rights to free speech is difficult. This article does not presume to champion a single point on the curation-creation spectrum as the one true cutoff. Nor does it purport to offer definitive guidance on the viability of a system predicated on such a distinction in the first place.&nbsp;</p>
+
+
+
+<p>Instead, the goal here is to elucidate that there is indeed a spectrum between curation and creation. Furthermore, technological advances provide platforms with a powerful, diverse, and growing set of tools with which to build products that exist in the gray area between “interactive computer services” and “information content providers.”&nbsp;</p>
+
+
+
+<p>Regulating this influential and growing sector of the Internet requires recognition of the essential gray-scale nature of the problem and that we eschew reductive regulatory frameworks that shoehorn all online actors into simplistic systems of categorization.&nbsp;</p>
+
+
+
+<p>At some point, the increasing influence that modern platforms wield over user experiences must be accompanied by greater responsibilities. It is hard to decide the precise point along the intermediary-creator spectrum at which platforms should assume liability. The bill proposed by Representatives Eshoo and Malinowski suggests that such a&nbsp;&nbsp;point has already been reached. Surely, Facebook’s legal team would disagree. What is clear, however, is that today’s platforms play a growing role in creating media products and that any coherent regulatory framework must adapt to this reality.</p>
+
+
+
+<p><em>If you would like to reference this article in an academic publication, please use this BibTeX</em>:</p>
+
+
+
+<pre class="wp-block-preformatted">@article{leqi2021curation,   
+ title={When Curation Becomes Creation: Algorithms, microcontent, and the vanishing distinction between platforms and creators},   
+ author={Leqi, Liu and Hadfield-Menell, Dylan and Lipton, Zachary C},   
+ journal={Queue},   
+ volume={19},   
+ number={3},   
+ pages={11--15},   
+ year={2021},   
+ publisher={ACM New York, NY, USA} 
+}</pre>
+
+
+
+<p></p>
+
+                    </div>
+
+                            
+        
+<!-- //Default, restore if needed -->
+
+
+<ul class="post-meta">
+    <li>
+<div class="list-meta">
+    <span class="likes-counter"><span class="sl-wrapper"><a href="https://blog.ml.cmu.edu/wp-admin/admin-ajax.php?action=process_simple_like&post_id=11535&nonce=fc8e41b9c0&is_comment=0&disabled=true" class="sl-button sl-button-11535" data-nonce="fc8e41b9c0" data-post-id="11535" data-iscomment="0" title="Like"><span class="sl-icon"><svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve"><path class="heart" d="M64 127.5C17.1 79.9 3.9 62.3 1 44.4c-3.5-22 12.2-43.9 36.7-43.9 10.5 0 20 4.2 26.4 11.2 6.3-7 15.9-11.2 26.4-11.2 24.3 0 40.2 21.8 36.7 43.9C124.2 62 111.9 78.9 64 127.5zM37.6 13.4c-9.9 0-18.2 5.2-22.3 13.8C5 49.5 28.4 72 64 109.2c35.7-37.3 59-59.8 48.6-82 -4.1-8.7-12.4-13.8-22.3-13.8 -15.9 0-22.7 13-26.4 19.2C60.6 26.8 54.4 13.4 37.6 13.4z"/>&#9829;</svg></span><span class="sl-count">446</span></a><span class="sl-loader"></span></span></span>
+
+            <span class="views-counter"><i class="fa fa-eye"></i> <a>7676</a></span>
+    
+    </div>
+</li>
+    <li><a href="https://blog.ml.cmu.edu/2021/10/01/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators/"
+           class="post-meta-permalink">Read More</a></li>
+    <li><ul class="socials">
+    <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.ml.cmu.edu/2021/10/01/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators/" target="_blank">
+            <i class="fa fa-facebook"></i></a>
+    </li>
+    <li><a href="https://twitter.com/home?status=Check%20out%20this%20article:%20When%20Curation%20Becomes%20Creation:%20Algorithms,%20microcontent,%20and%20the%20vanishing%20distinction%20between%20platforms%20and%20creators%20-%20https://blog.ml.cmu.edu/2021/10/01/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators/" target="_blank">
+            <i class="fa fa-twitter"></i></a>
+    </li>
+        <!-- <li><a data-pin-do="skipLink" target="_blank"
+           href="https://pinterest.com/pin/create/button/?url=https://blog.ml.cmu.edu/2021/10/01/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators/&media=https://blog.ml.cmu.edu/wp-content/uploads/2021/10/Image-from-iOS-2-2-1024x512-1.jpeg&description=When%20Curation%20Becomes%20Creation:%20Algorithms,%20microcontent,%20and%20the%20vanishing%20distinction%20between%20platforms%20and%20creators">
+        <i class="fa fa-pinterest"></i></a>
+    </li> -->
+    <li><a target="_blank" href="https://plus.google.com/share?url=https://blog.ml.cmu.edu/2021/10/01/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators/">
+        <i class="fa fa-google-plus"></i></a>
+    </li>
+    <li><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.ml.cmu.edu/2021/10/01/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators/">
+        <i class="fa fa-linkedin"></i></a>
+    </li>
+    <li><a href="mailto:?subject=I'd like to share a link with you&body=https://blog.ml.cmu.edu/2021/10/01/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators/">
+            <i class="fa fa-envelope"></i></a>
+    </li>     
+</ul></li>
+</ul> 
+ 
+                            
+        <ul class="post-switch">
+
+                <li class="prev-post-link">
+                <img width="320" height="150" src="https://blog.ml.cmu.edu/wp-content/uploads/2021/07/counterexample_motivation_annotated-320x150.png" class="attachment-mint-grid-post size-mint-grid-post wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2021/07/counterexample_motivation_annotated-320x150.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2021/07/counterexample_motivation_annotated-300x141.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2021/07/counterexample_motivation_annotated-1024x481.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2021/07/counterexample_motivation_annotated-1536x721.png 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2021/07/counterexample_motivation_annotated-2048x961.png 2048w, https://blog.ml.cmu.edu/wp-content/uploads/2021/07/counterexample_motivation_annotated-970x455.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2021/07/counterexample_motivation_annotated-80x38.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2021/07/counterexample_motivation_annotated-300x141@2x.png 600w" sizes="(max-width: 320px) 100vw, 320px" />                <a href="https://blog.ml.cmu.edu/2021/09/17/the-limitations-of-limited-context-for-constituency-parsing/">The Limitations of Limited Context for Constituency Parsing</a></li>
+                        <li class="next-post-link">
+                <img width="320" height="151" src="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-320x151.png" class="attachment-mint-grid-post size-mint-grid-post wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-320x151.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-300x142.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-1024x484.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-1536x726.png 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-970x459.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-80x38.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005.png 1942w, https://blog.ml.cmu.edu/wp-content/uploads/2021/10/unified_illustration_blog_final_2.005-300x142@2x.png 600w" sizes="(max-width: 320px) 100vw, 320px" />                <a href="https://blog.ml.cmu.edu/2021/10/29/compression-transduction-and-creation-a-unified-framework-for-evaluating-natural-language-generation/">Compression, Transduction, and Creation: A Unified Framework for Evaluating Natural Language Generation</a></li>
+            
+</ul>
+                    		<div class="post-related-title"><h4>You Might Also Like</h4></div>
+		<div class="post-related">
+							
+					
+				<div class="item-related">
+					
+										<a href="https://blog.ml.cmu.edu/2022/05/27/deep-attentive-variational-inference/"><img src="https://blog.ml.cmu.edu/wp-content/uploads/2022/05/drawing-1-1.svg" class="attachment-mint-post-grid size-mint-post-grid wp-post-image" alt="" loading="lazy" height="535.39081" width="856.44696" /></a>
+										
+					<h6><a href="https://blog.ml.cmu.edu/2022/05/27/deep-attentive-variational-inference/">Deep Attentive Variational Inference</a></h6>
+					<span class="date">May 27, 2022</span>
+					
+				</div>
+							
+					
+				<div class="item-related">
+					
+										<a href="https://blog.ml.cmu.edu/2019/11/12/federated-learning-challenges-methods-and-future-directions/"><img width="1272" height="494" src="https://blog.ml.cmu.edu/wp-content/uploads/2019/11/Screen-Shot-2019-11-12-at-10.41.38-AM.png" class="attachment-mint-post-grid size-mint-post-grid wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2019/11/Screen-Shot-2019-11-12-at-10.41.38-AM.png 1272w, https://blog.ml.cmu.edu/wp-content/uploads/2019/11/Screen-Shot-2019-11-12-at-10.41.38-AM-300x117.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2019/11/Screen-Shot-2019-11-12-at-10.41.38-AM-768x298.png 768w, https://blog.ml.cmu.edu/wp-content/uploads/2019/11/Screen-Shot-2019-11-12-at-10.41.38-AM-1024x398.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2019/11/Screen-Shot-2019-11-12-at-10.41.38-AM-970x377.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2019/11/Screen-Shot-2019-11-12-at-10.41.38-AM-320x124.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2019/11/Screen-Shot-2019-11-12-at-10.41.38-AM-80x31.png 80w" sizes="(max-width: 1272px) 100vw, 1272px" /></a>
+										
+					<h6><a href="https://blog.ml.cmu.edu/2019/11/12/federated-learning-challenges-methods-and-future-directions/">Federated Learning: Challenges, Methods, and Future Directions</a></h6>
+					<span class="date">November 12, 2019</span>
+					
+				</div>
+							
+					
+				<div class="item-related">
+					
+										<a href="https://blog.ml.cmu.edu/2024/12/02/carnegie-mellon-university-at-neurips-2024/"><img width="3556" height="1422" src="https://blog.ml.cmu.edu/wp-content/uploads/2024/11/vancouver_convention_center-copy-pdf.jpg" class="attachment-mint-post-grid size-mint-post-grid wp-post-image" alt="" loading="lazy" /></a>
+										
+					<h6><a href="https://blog.ml.cmu.edu/2024/12/02/carnegie-mellon-university-at-neurips-2024/">Carnegie Mellon University at NeurIPS 2024</a></h6>
+					<span class="date">December 2, 2024</span>
+					
+				</div>
+		</div>        
+                    
+<div class="post-comments" id="comments">
+
+    <div class="post-box"><div class="post-related-title comment-block-title"><h4>No Comments</h4></div><div class='comments'></div><div id='comments_pagination'></div>	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2021/10/01/when-curation-becomes-creation-algorithms-microcontent-and-the-vanishing-distinction-between-platforms-and-creators/#respond" style="display:none;">Cancel Reply</a></small></h3><form action="https://blog.ml.cmu.edu/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='11535' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d6e0e12bb3" /></p><input type="hidden" id="ak_js" name="ak_js" value="34"/><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea></form>	</div><!-- #respond -->
+	</div>
+        
+        <hr class="post-separator">
+</aside>                                                                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+<div class="instagram-footer">
+    <div class="instagram-widget">
+        <div id="text-7" class="widget footer-insta widget_text">			<div class="textwidget"><p>[instagram-feed num=6 cols=6 imagepadding=0 disablemobile=true showbutton=false showheader=false followtext=&#8221;Follow @Mint_Theme&#8221;]</p>
+</div>
+		</div>    </div>
+</div>
+</div>
+<footer>
+    <!-- <div class="container footers">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="footer-parts footer-part-1"></div>
+            <div class="footer-parts footer-part-2"></div>
+            <div class="footer-parts footer-part-3"></div>
+        </div>
+    </div> -->
+
+    <div class="copy-wrapper">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+                                    <ul class="socials pt-10"><li><a href="https://blog.ml.cmu.edu/feed/" target="_blank"><i class="fa fa-rss"></i></a></li></ul>
+                                <p class="copyright">
+                    <!-- 2018 &copy; Carnegie Mellon University -->
+                    <!-- Legal Info -->
+                    <a href="//www.cmu.edu/legal/" target="_blank" rel="noopener">Legal Info</a> | <a href="//www.cmu.edu/" target="_blank" rel="noopener">www.cmu.edu</a><br>
+                    <!-- /Legal Info -->
+                    <span id="js-current-year">2018</span> &copy; <a title="Machine Learning | Carnegie Mellon University" href="https://www.ml.cmu.edu" target="_blank" rel="noopener">Machine Learning</a> | <a title="Carnegie Mellon University" href="https://www.cmu.edu" target="_blank" rel="noopener">Carnegie Mellon University</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="back-to-top">
+    <a title="Back to top button" aria-label="Back to top button" role="button" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/i18n.min.js?ver=9e36b5da09c96c657b0297fd6f7cb1fd' id='wp-i18n-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.21' id='lodash-js'></script>
+<script type='text/javascript' id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/url.min.js?ver=1b4bb2b3f526a1db366ca3147ac39562' id='wp-url-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/hooks.min.js?ver=d0d9f43e03080e6ace9a3dabbd5f9eee' id='wp-hooks-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/api-fetch.min.js?ver=c207d2d188ba8bf763f7acd50b7fd5a9' id='wp-api-fetch-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-after'>
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://blog.ml.cmu.edu/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "37cdd657bc" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "https://blog.ml.cmu.edu/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/modern-footnotes/modern-footnotes.min.js?ver=1.4.4' id='modern_footnotes-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/owl.carousel.min.js?ver=5.6.16' id='owl-carousel-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/plugins.js?ver=5.6.16' id='plugins-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/main.js?ver=5.6.16' id='mint-main-scripts-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/comment-reply.min.js?ver=5.6.16' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/enlighter/cache/enlighterjs.min.js?ver=BaUKYlr1JydyEx/' id='enlighterjs-js'></script>
+<script type='text/javascript' id='enlighterjs-js-after'>
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"enlighter","language":"enlighter","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/wp-embed.min.js?ver=5.6.16' id='wp-embed-js'></script>
+<script async="async" type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9' id='akismet-form-js'></script>
+<!-- Scripts -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<script id="custom-javascript">
+    var $ = jQuery;
+    $('.author').prop('target','_blank');
+    document.getElementById("js-current-year").textContent=(new Date().getFullYear());
+    /* Sidebar */
+    var $ = jQuery;
+    $(document).ready(function() {
+      $('.display-sidebar').toggle(
+        function() {
+            $('.blog-sidebar').css('right', '0');
+            $('.toggle-sidebar').css('right', '280px');
+            $('.display-sidebar i').addClass('fa-angle-right').removeClass('fa-angle-left');
+        }, function() {
+            $('.blog-sidebar').css('right', '-300px');
+            $('.toggle-sidebar').css('right', '10px');
+            $('.display-sidebar i').addClass('fa-angle-left').removeClass('fa-angle-right');
+      });
+    });
+    /* /Sidebar */
+</script>
+<!-- /Scripts -->
+</body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+
+Served from: blog.ml.cmu.edu @ 2025-11-28 21:57:45 by W3 Total Cache
+-->

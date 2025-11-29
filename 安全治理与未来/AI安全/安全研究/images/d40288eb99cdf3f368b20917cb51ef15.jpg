@@ -1,0 +1,1431 @@
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <title>Charles (Chuck) Eesley's Profile | Stanford Profiles</title>
+    <meta name="description" content="Charles (Chuck) Eesley is part of Stanford Profiles, official site for faculty, postdocs, students and staff information (Expertise, Bio, Research, Publications, and more). The site facilitates research and collaboration in academic endeavors.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      
+        <link rel="canonical" href='https://profiles.stanford.edu/charles-eesley' />
+      
+    
+    <link rel="stylesheet" href="/styles/main.css?r=11.5.1">
+    <link rel="icon" href="/images/favicon.ico?r=11.5.1">
+    <!--[if IE 7]><link rel="stylesheet" href="/styles/vendor/font-awesome/css/font-awesome-ie7.min.css?r=11.5.1"><![endif]-->
+    <!-- Google Analytics 4  (GA4) -->
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6DK9R58FD"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-X6DK9R58FD');
+      </script>
+    
+    <!-- End Google Analytics 4  (GA4) -->
+  </head>
+  <body class="profile">
+    <div class="wrapper  ">
+      <header id="header">
+        <div class="container navbar">
+
+  <div class="column-logo brand ">
+    <div class="logo">
+      <div class="stanford-logo">
+        <a href="http://www.stanford.edu/">
+          <span>Stanford</span>
+        </a>
+      </div>
+    </div>
+    <div class="signature">
+      <div class="site-name">
+        <a href="/">
+          <span class="site-name-1">Profiles</span>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+
+  <div id="sidebarTrigger" class="pull-right">
+    <a href="#" class="icon-background">
+      <i class="icon-reorder"></i>
+      <span class="sr-only">Menu</span>
+    </a>
+  </div>
+
+  <nav class="navbar navbar-dropdown">
+    <div class="search-header-region" id="searchHeaderContent"></div>
+
+    <ul class="nav navbar-nav" aria-label="Primary Navigation">
+      <li class="nav-item browse-menu has-submenu">
+        <button class="nav-sub-menu-open">
+          <i class="icon-list-ul"></i>
+          <span>Browse</span>
+          <i class="icon-caret-down"></i>
+        </button>
+        <div class="navbar navbar-accordion">
+          <div class="browser" role="navigation">
+  <ul class="nav navbar-nav unstyled">
+    <li class="nav-item has-submenu dropdown">
+      <button id="Schools" class="dropdown-toggle" data-toggle="dropdown">Schools</button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="Schools">
+          <li role="presentation"><a href="/browse/graduate-school-of-business" role="menuitem">Graduate School of Business</a></li>
+          <li role="presentation"><a href="/browse/graduate-school-of-education" role="menuitem">Graduate School of Education</a></li>
+          <li role="presentation"><a href="/browse/school-of-engineering" role="menuitem">School of Engineering</a></li>
+          <li role="presentation"><a href="/browse/school-of-humanities-and-sciences" role="menuitem">School of Humanities and Sciences</a></li>
+          <li role="presentation"><a href="/browse/school-of-medicine" role="menuitem">School of Medicine</a></li>
+          <li role="presentation"><a href="/browse/stanford-doerr-school-of-sustainability" role="menuitem">Stanford Doerr School of Sustainability</a></li>
+      </ul>
+    </li>
+    <li class="nav-item has-submenu dropdown">
+      <button id="Institutes &amp; Research Centers" class="dropdown-toggle" data-toggle="dropdown">Institutes &amp; Research Centers</button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="Institutes &amp; Research Centers">
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/bio-x" role="menuitem">Bio-X</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/freeman-spogli-institute-for-international-studies" role="menuitem">Freeman Spogli Institute for International Studies</a></li>
+          <li role="presentation"><a href="/browse/school-of-engineering/programs-centers-and-institutes/institute-for-computational-and-mathematical-engineering-icme" role="menuitem">Institute for Computational and Mathematical Engineering (ICME)</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/institute-for-human-centered-artificial-intelligence-hai" role="menuitem">Institute for Human-Centered Artificial Intelligence (HAI)</a></li>
+          <li role="presentation"><a href="/browse/school-of-medicine/institute-for-stem-cell-biology-and-regenerative-medicine" role="menuitem">Institute for Stem Cell Biology and Regenerative Medicine</a></li>
+          <li role="presentation"><a href="/browse/stanford-doerr-school-of-sustainability/precourt-institute-for-energy" role="menuitem">Precourt Institute for Energy</a></li>
+          <li role="presentation"><a href="/browse/slac-national-accelerator-laboratory" role="menuitem">SLAC National Accelerator Laboratory</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/sarafan-chem-h" role="menuitem">Sarafan ChEM-H</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/stanford-data-science" role="menuitem">Stanford Data Science</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/stanford-institute-for-economic-policy-research-siepr" role="menuitem">Stanford Institute for Economic Policy Research (SIEPR)</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/stanford-pulse-institute" role="menuitem">Stanford PULSE Institute</a></li>
+          <li role="presentation"><a href="/browse/stanford-doerr-school-of-sustainability/stanford-woods-institute-for-the-environment" role="menuitem">Stanford Woods Institute for the Environment</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/life-science-institutes-independent-labs-institutes-centers-dor/wu-tsai-human-performance-alliance" role="menuitem">Wu Tsai Human Performance Alliance</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/wu-tsai-neurosciences-institute" role="menuitem">Wu Tsai Neurosciences Institute</a></li>
+      </ul>
+    </li>
+    <li class="nav-item has-submenu dropdown">
+      <button id="Administration" class="dropdown-toggle" data-toggle="dropdown">Administration</button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="Administration">
+          <li role="presentation"><a href="/browse/office-of-external-relations" role="menuitem">Office of External Relations</a></li>
+          <li role="presentation"><a href="/browse/office-of-vp-for-university-human-resources" role="menuitem">Office of VP for University Human Resources</a></li>
+          <li role="presentation"><a href="/browse/office-of-vice-president-for-business-affairs-and-chief-financial-officer" role="menuitem">Office of Vice President for Business Affairs and Chief Financial Officer</a></li>
+          <li role="presentation"><a href="/browse/office-of-the-vice-president-for-the-arts" role="menuitem">Office of the Vice President for the Arts</a></li>
+          <li role="presentation"><a href="/browse/stanford-university-libraries" role="menuitem">Stanford University Libraries</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research" role="menuitem">Vice Provost and Dean of Research</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-for-student-affairs" role="menuitem">Vice Provost for Student Affairs</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-for-undergraduate-education" role="menuitem">Vice Provost for Undergraduate Education</a></li>
+      </ul>
+    </li>
+
+
+  </ul>
+</div>
+
+        </div>
+      </li>
+
+      
+        <li class="nav-item signin-link">
+          <a data-toggle="tooltip" href="/intranet/charles-eesley" class="sign-in-link" data-bypass>
+            <i class="icon-signin visible-phone"></i>
+            <span>Sign In</span>
+          </a>
+        </li>
+        <li class="nav-item edit-profile-link">
+          <a id="editProfile" href="https://cap.stanford.edu/profiles/auth/edit">
+            <i class="icon-pencil visible-phone"></i>
+            <span>Edit My Profile</span>
+          </a>
+        </li>
+
+      
+
+    </ul>
+  </nav>
+
+</div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+      </header>
+      <main id="bodyContent">
+        <div id="mainContent">
+          <section id="mastheadContainer" class="banner profile">
+  <div class="container">
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="image-holder">
+        <img src="https://profiles.stanford.edu/proxy/api/cap/profiles/43212/resources/profilephoto/350x350.1713539610437.jpg" alt="Charles (Chuck) Eesley"
+            data-empty-src="/images/placeholder-350x350.png" />
+      </div>
+      <div class="nameAndTitle">
+        <h1>Charles (Chuck) Eesley</h1>
+        <h2>Professor of Management Science and Engineering<br/></h2>
+        <div class="leave">
+          <span class="leave-info">  </span>
+          <span class="leave-note">  </span>
+        </div>
+          <h3> Web page:&nbsp;<a href="https://msande.stanford.edu/people/charles-eesley">https://msande.stanford.edu/people/charles-eesley</a></h3>
+
+      </div>
+      <ul class="unstyled">
+          <li>
+            <a href="https://cap.stanford.edu/profiles/frdActionServlet?choiceId=printerprofile&amp;profileversion=full&amp;profileId=43212" target="_blank">
+              <div class="icon-background"><i class="icon-print"></i></div>
+              Print Profile
+            </a>
+          </li>
+        <li>
+          <a href="mailto:?subject=Charles (Chuck) Eesley&#39;s Profile&amp;body=I would like to share the profile of Charles (Chuck) Eesley with you. https://profiles.stanford.edu/charles-eesley" data-bypass>
+            <div class="icon-background"><i class="icon-envelope-alt"></i></div>
+            Email Profile
+          </a>
+        </li>
+          <li>
+            <a data-toggle="tooltip" href="/intranet/charles-eesley" data-bypass>
+                <div class="icon-background"><i class="icon icon-lock"></i></div>
+                View Stanford-only Profile
+            </a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</section>
+<section id="tabbedLayoutContainer">
+  <div class="container breakout-phone">
+  <div class="tab-dropdown">
+    <a class="collapsed" data-toggle="collapse" data-target=".nav-collapse">Tab Menu <span class="selected-tab"></span><i class="icon-caret-down"></i></a>
+  </div>
+  <div class="nav-collapse collapse">
+    <ul class="nav nav-tabs tabs4">
+        <li class="active">
+          <a id="bioTabLink" href="/charles-eesley?tab=bio" class="tab-link no-trigger">Bio</a>
+        </li>
+        <li class="">
+          <a id="researchAndScholarshipTabLink" href="/charles-eesley?tab=research-and-scholarship" class="tab-link no-trigger">Research &amp; Scholarship</a>
+        </li>
+        <li class="">
+          <a id="teachingTabLink" href="/charles-eesley?tab=teaching" class="tab-link no-trigger">Teaching</a>
+        </li>
+        <li class="">
+          <a id="publicationsTabLink" href="/charles-eesley?tab=publications" class="tab-link no-trigger">Publications</a>
+        </li>
+    </ul>
+  </div>
+</div>
+<div class="container breakout-phone">
+  <div class="tab-content">
+      <div id="bio" class="card tab-pane active">
+        <div class="row-fluid">
+  <div class="span8">
+      <div id="bioContent" class="content-section">
+        <h3>Bio</h3>
+<hr/>
+<p>Chuck Eesley is a Professor and W. M. Keck Foundation Faculty Scholar in the Department of Management Science and Engineering at Stanford University. He is Faculty Director of the Stanford Technology Ventures Program and a faculty affiliate at the Stanford Center for AI Safety (SAFE). His research explores the intersection of artificial intelligence, entrepreneurship, and platform governance, with recent work examining how AI/ML algorithms influence opportunity access and entrepreneurial performance on digital platforms, as well as how these platforms finance and spread misinformation.<br/><br/>Prof. Eesley’s broader research examines how institutional and university environments influence high-growth, engineering-driven entrepreneurship. He studies how education and policy can better support the economic and entrepreneurial outcomes of engineering students and alumni. His recent projects often apply text analysis/NLP, machine learning, randomized field experiments, or software platform development—as in the case of NovoEd.com, which spun out of his and Prof. Amin Saberi's Venture Lab at Stanford.<br/><br/>His field research spans China, Japan, South Korea, Chile, Bangladesh, Uganda, Ethiopia, Thailand, and Silicon Valley, and has received awards from the Schulze Foundation, the Technical University of Munich, and the Kauffman Foundation. He was recently awarded a Stanford Social Impact Labs Design Fellowship for his work training refugee entrepreneurs in Sub-Saharan Africa.<br/><br/>He serves on the Steering Committee for the Stanford King Center on Global Development and the Advisory Committee for the Stanford Center at Peking University. He is also a faculty affiliate at the Stanford Center on China’s Economy and Institutions and the Woods Institute for the Environment, and he serves on the Editorial Board of the Strategic Management Journal. His work has been published in Nature, Organization Science, Strategic Management Journal, and Biological Psychiatry, among others.<br/><br/>A former entrepreneur and investor, Prof. Eesley has been a mentor and advocate for immigrants and rural communities as well as first-generation, low-income students in STEM and entrepreneurship. He earned his Ph.D. at the M.I.T. Sloan School of Management and a B.S. in neuroscience from Duke University.</p>
+      </div>
+
+
+
+
+      <div id="academicAppointmentsContent" class="content-section">
+        <h3>Academic Appointments</h3>
+<hr/>
+<ul class="section-listing">
+    <li class="section-list-item">
+  <div class="description bulleted">Professor, <a href='https://msande.stanford.edu'> Management Science and Engineering</a></div>
+</li>
+</ul>
+      </div>
+
+      <div id="administrativeAppointmentsContent" class="content-section">
+        <h3>Administrative Appointments</h3>
+<hr/>
+<ul class="section-listing">
+    <li class="section-list-item">
+  <div class="description bulleted">Steering Committee, King Center for Global Development (2024 - Present)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Director (International), Stanford Technology Ventures Program (STVP) (2024 - Present)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Research Committee, STR Division. Academy of Management (2022 - 2024)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Chair, Equity and Inclusion Committee, Department of Management Science & Engineering, Stanford. (2020 - 2023)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Organizer, Social Science & Technology Seminar (SIEPR) (2009 - 2018)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Research Committee, TIM Division Academy of Management (2015 - Present)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Lead Steering Committee, West Coast Research Symposium Doctoral Consortium (2011 - 2016)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Advisory Board, United States Department of State - Global Innovation through Science and Technology (GIST Network) (2014 - Present)</div>
+</li>
+</ul>
+      </div>
+
+
+      <div id="honorsAndAwardsContent" class="content-section">
+        <h3>Honors &amp; Awards</h3>
+<hr/>
+<ul class="section-listing">
+    <li class="section-list-item">
+  <div class="description bulleted">Social Impact Labs Design Fellowship, Stanford Social Impact Labs (2024)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Stanford Teagle Fellow in Liberal Education, Stanford University (2022)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Third Annual IACMR-RRBM Responsible Research in Management Award, IACMR-RRBM (2020)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Institute for Advanced Studies Visiting Fellowship, Technical University of Munich (2019)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Finalist, Best OMT Published Paper, Academy of Management (2018)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">TUM Research Excellence Award, Technical University of Munich (2018)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Faculty Affiliate, Stanford Woods Institute for the Environment (2017-2019)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Undergraduate Teaching Award, MS&amp;E (2017)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Richard Schulze Inaugural Distinguished Professorship Award, Richard Schulze Foundation (2015)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Faculty Affiliate, Stanford Center for International Development (SCID) (2014-present)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Kauffman-Nesta Research Grant winner - Randomized Controlled Trials in Entrepreneurship, Kauffman-NESTA (2014)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Batten Institute Fellow, University of Virginia (UVA) Darden School of Business (2012)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Research Fund for International Young Scientists, National Natural Science Foundation of China (NSFC) (2012)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Lillie Award, Stanford University (2011, 2012)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Technology and Innovation Management, IEEE International (2011)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Best Dissertation Award Winner (Business Policy and Strategy Division), Academy of Management (2010)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Dissertation Fellowship Award, Kauffman Foundation (2007)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Best Paper Proceedings, Academy of Management (2005, 2006, 2010, 2012)</div>
+</li>
+</ul>
+      </div>
+
+      <div id="professionalOrganizationsContent" class="content-section">
+        <h3>Boards, Advisory Committees, Professional Organizations</h3>
+<hr/>
+<ul class="section-listing">
+    <li class="section-list-item">
+  <div class="description bulleted">Advisory Board, Stanford Center at Peking University (SCPKU) (2024 - Present)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Steering Committee Member, King Center for Global Development (2024 - Present)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Faculty Affiliate, Stanford Center for AI Safety (2024 - Present)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Advisor, Stanford's Master's of Science in Clinical Informatics and Management Program (2021 - Present)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Academic Director, ITRI-Stanford Platform. Industrial Technology Research Institute in collaboration with the Department of Industrial Technology (DOIT) and the Ministry of Economic Affairs (MOEA) of Taiwan (2013 - Present)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Review Board Member, National Science Foundation. Future of Work at the Human-Technology Frontier. Grant Review Panel. Office of Emerging Frontiers and Multidisciplinary Activities. (2020 - 2020)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Member, Strategic Management Society (2010 - Present)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Advisory Committee, Chile’s Ministry of the Economy (Production Development Corporation - CORFO). Startup Chile global accelerator program (2012 - 2017)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Editorial Review Board, Strategic Entrepreneurship Journal (2021 - Present)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Editorial Board, Strategic Management Journal (2015 - Present)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Member, Academy of Management (2005 - Present)</div>
+</li>
+</ul>
+      </div>
+
+
+
+      <div id="professionalEducationContent" class="content-section">
+        <h3>Professional Education</h3>
+<hr/>
+<ul class="section-listing">
+    <li class="section-list-item">
+  <div class="description bulleted">PhD, MIT, Sloan School of Management  (2009)</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">BS, Duke University, Biological Basis of Behavior  (2002)</div>
+</li>
+</ul>
+      </div>
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="span4 side-bar">
+      <div id="contactInfoContent" class="content-section contact-info">
+        <h3>Contact</h3>
+<hr/>
+<span style="display:none;" data-id="view__tabs__bio__concact_info_section"></span>
+    <ul class="unstyled section-listing use-link-icons">
+      <li class="primary">
+            <div class="contact-info ">
+                  <span><strong>Academic</strong></span>
+                  <div class="extra-bottom-padding">
+                      <span class="affiliation">University - Faculty</span>
+                      <span class="department"> Department:&nbspManagement Science and Engineering</span>
+                      <span class="position extra-bottom-padding"> Position:&nbsp;Professor</span>
+                  </div>
+            </div>
+        </li>
+    </ul>
+
+<ul class="unstyled section-listing use-link-icons">
+      <li class="alternate">
+          <div class="contact-info ">
+              <span><strong>Administrator</strong></span>
+              <span class="name">Sarina Gaeta</span>
+              <span class="title">Administrative Associate</span>
+              <a href="mailto:sarinag@stanford.edu" class="email" data-bypass>sarinag@stanford.edu</a>
+              <ul class="unstyled">
+                    <li class="no-margin"><div class="phone">  <a data-bypass href="tel:(650)725-1624">(650)725-1624</a><span class="inline"> (office)</span></div></li>
+              </ul>
+          </div>
+      </li>
+
+</ul>
+
+
+
+      </div>
+
+
+        <div id="additionalInfoContent" class="content-section additional-info">
+              <h3>Additional Info</h3>
+    <hr/>
+    <span style="display:none;" data-id="view__tabs__bio__additional_info_section"></span>
+    <ul class="unstyled section-listing use-link-icons contact-info">
+        <li>
+            <div class="row no-margin">
+                <span class="section23" > Mail Code:</span>
+                <span class="section75 " > 4026</span>
+            </div>
+        </li>
+        <li class="no-margin">
+            <div class="row no-margin">
+                <span class="section23"> Profile: </span>
+                <span class="section75"> <div class="wrap-words no-margin"> Chuck Eesley is a Professor in the Department of Management Science and Engineering at Stanford University. </div></span>
+            </div>
+        </li>
+        <li>
+            <div class="row no-margin">
+                <span class="section23" > Other Names: </span>
+                <span class="section75" >
+                    <div>Chuck Eesley</div>
+                </span>
+            </div>
+        </li>
+        <li>
+            <span class="section23">ORCID:</span>
+            <span class="section75">
+                <div class="orcid bio-orcid">
+                  
+<span style="display:none;" data-id="shared__orchid_section"></span>
+<a data-toggle="tooltip" target="orcid.widget" href="https://orcid.org/0000-0003-2348-1583"><img src="/images/orcid_32x32.png"/> https://orcid.org/0000-0003-2348-1583</a>
+
+                </div>
+            </span>
+        </li>
+    </ul>
+
+        </div>
+
+      <div id="linksContent" class="content-section links">
+        <h3>Links</h3>
+<hr/>
+<ul class="unstyled section-listing use-link-icons">
+      <li class="external-link"><a href="https://cap.stanford.edu/profiles/viewCV?facultyId=43212&amp;name=Charles_Eesley" class="cv" target="_blank" data-bypass>Curriculum Vitae PDF</a></li>
+    <li class="external-link"><a href="https://drive.google.com/open?id=16lu0duJchn2lSqE6qjEG3l8ceiZlb4_9" class="Personal Site " target="_blank" data-bypass>TUM Research Excellence Award</a></li>
+    <li class="external-link"><a href="https://scholar.google.com/citations?user=ENeJ_gkAAAAJ&amp;hl=en&amp;oi=sra" class="Personal Site " target="_blank" data-bypass>Google Scholar</a></li>
+    <li class="external-link"><a href="https://docs.google.com/document/d/1ae-LNy3yjfmue5n8OFRaOKyPjknzBAWiOqjiYgXGKtk/edit?usp=sharing" class="Personal Site " target="_blank" data-bypass>research statement</a></li>
+</ul>
+
+      </div>
+  </div>
+
+</div>
+
+      </div>
+      <div id="research-and-scholarship" class="card tab-pane ">
+        <div class="row-fluid">
+  <div class="span8">
+      <div id="researchInterestTopicsContent" class="content-section">
+        <h3>Research Interests</h3>
+<hr/>
+<ul class="unstyled section-listing">
+
+    <li class="section-list-item">
+  <div class="description bulleted">Economics and Education</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Higher Education</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Leadership and Organization</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Poverty and Inequality</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Research Methods</div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted">Technology and Education</div>
+</li>
+</ul>
+      </div>
+
+      <div id="currentResearchAndScholarlyInterestsContent" class="content-section">
+        <h3>Current Research and Scholarly Interests</h3>
+<hr/>
+<p>My research examines how institutional environments shape entrepreneurial outcomes, establishing me as a leader in this domain. My work introduces foundational concepts such as institutional barriers to entry and growth, institutional inconsistency, and the role of platforms as private regulators of ventures. I have also pioneered studies on how digital platforms influence entrepreneurship, and revisited corporate social responsibility (CSR) in the digital age. The central theme of my research is the role of institutions in shaping entrepreneurship. Key highlights include: (A) an in-depth examination of how institutional changes influence not only the quantity but also the quality of entrepreneurship, (B) an investigation of platforms as institutions, examining their role as private regulators for entrepreneurs, (C) an exploration of algorithms and misinformation on platforms, with implications for institutional trust and policy, and (D) a strong commitment to methodological rigor, employing advanced causal identification techniques and randomized controlled trials (RCTs) to enhance the robustness of findings.<br/><br/>My research continues to focus on how institutional environments shape entrepreneurial outcomes. I explore how institutional reforms impact not only the number of entrepreneurs but also the quality and resilience of their ventures. By studying a variety of countries, including China, Japan, South Korea, and Chile, I analyze how changes in formal and informal institutions influence who becomes an entrepreneur, who succeeds, and the types of firms that thrive. I have two additional supporting streams, one on the role of platforms as institutions and another on the role of platforms in corporate social responsibility. My research contributes to institutional and entrepreneurship theories by examining institutions and the ways digital platforms shape entrepreneurship, while employing rigorous methods to push the state of the art in the field on causal identification via techniques like diff-in-diffs, regression discontinuity designs and RCTs.<br/><br/>My research also contributes methodologically by being among the pioneers using randomized controlled trials (RCTs) in entrepreneurship. For example, my study “Social Influence in Entrepreneurial Career Choice” (Research Policy, 2017) was among the initial works using an RCT to analyze how mentorship affects entrepreneurial career decisions. In another example, my current RCT in Uganda explores how entrepreneurship training and microloans influence refugee entrepreneurs’ success. This work was recently recognized with a Stanford Social Impact Labs Fellowship Award. My contributions to methodological rigor in entrepreneurship research, particularly through causal identification techniques such as DiD, RCTs, and RDD, offer tools for addressing complex questions about the impacts of educational interventions on entrepreneurship.<br/><br/>In summary, my research advances understanding of how institutions, policies, and digital platforms shape entrepreneurship, contributing both to academic knowledge and actionable insights for policymakers and industry leaders. My work has introduced significant concepts in institutional theory and entrepreneurship and has reshaped discussions in these fields. My publications, with over 5,775 citations, reflect the widespread influence of my work across disciplines and geographies. I am committed to expanding this research agenda to address emerging challenges in entrepreneurship and institutional design, particularly as global challenges like migration, algorithmic governance, and misinformation reshape the landscape of entrepreneurship.</p>
+      </div>
+
+
+
+
+
+
+      <div id="projectsContentOnResearchAndScholarship" class="content-section">
+        <h3>Projects</h3>
+<hr/>
+<ul class="unstyled section-listing">
+    <li class="section-list-item">
+  <div class="description bulleted"><span>Startup Chile</span>, <span>Stanford University</span> (<span>2/1/2015</span> - <span>Present</span>)</div>
+    <div class="detail"><h4>Location</h4>
+  <p>Santiago, Chile</p>
+  <h4>Collaborators</h4>
+  <ul class="collaborators">
+      <li><span>Michael Leatherbee</span>, <span>Assistant Professor</span>, <span>Universidad Catolica</span></li>
+  </ul>
+  <h4>For More Information:</h4>
+  <ul class="links">
+      <li><a href='http://startupchile.org/start-up-chile-celebrates-5-years-with-a-growing-entrepreneurial-ecosystem-and-over-a-thousand-startups-supported/'>http://startupchile.org/start-up-chile-celebrates-5-years-with-a-growing-entrepreneurial-ecosystem-and-over-a-thousand-startups-supported/</a></li>
+  </ul>
+    </div>
+</li>
+    <li class="section-list-item">
+  <div class="description bulleted"><span>ITRI - Stanford platform</span>, <span>ITRI</span> (<span>2/1/2015</span>)</div>
+    <div class="detail"><p class="description">On-going collaboration platform with ITRI in Taiwan.</p>
+  <h4>Location</h4>
+  <p>Hsinchu, Taiwan</p>
+  <h4>Collaborators</h4>
+  <ul class="collaborators">
+      <li><span>Steven Su</span>, <span>Executive Director</span>, <span>ITRI</span></li>
+  </ul>
+    </div>
+</li>
+</ul>
+      </div>
+
+  </div>
+</div>
+      </div>
+      <div id="teaching" class="card tab-pane ">
+        <div class="row-fluid">
+  <div class="span8">
+      <div id="coursesContent" class="content-section">
+        <h3>2025-26 Courses</h3>
+<hr/>
+<ul class="section-listing courses">
+    <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=MS%26E 272: Entrepreneurship without Borders&academicYear=20252026'>Entrepreneurship without Borders</a><br/><span>MS&E 272 (Spr)</span></li>
+    <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=OSPGEN 18: Shenzhen: From Fishing Village to Tech Powerhouse&academicYear=20252026'>Shenzhen: From Fishing Village to Tech Powerhouse</a><br/><span>OSPGEN 18 (Sum)</span></li>
+    <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=MS%26E 379: Social Data Analysis&academicYear=20252026'>Social Data Analysis</a><br/><span>MS&E 379 (Aut)</span></li>
+    <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=ENGR 145: Technology Entrepreneurship&academicYear=20252026'>Technology Entrepreneurship</a><br/><span>ENGR 145, ENGR 145S (Aut)</span></li>
+    <li class="unstyled">
+      <a class="independent-studies-label">Independent Studies (3)</a>
+      <ul class="section-listing independent-studies">
+          <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=MS%26E 408: Directed Reading and Research&academicYear=20252026'>Directed Reading and Research</a><br/><span>MS&E 408 (Aut, Win, Spr)</span></li>
+          <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=ENGR 199: Special Studies in Engineering&academicYear=20252026'>Special Studies in Engineering</a><br/><span>ENGR 199 (Aut, Win, Spr)</span></li>
+          <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=ENGR 199W: Writing of Original Research for Engineers&academicYear=20252026'>Writing of Original Research for Engineers</a><br/><span>ENGR 199W (Aut, Win, Spr)</span></li>
+      </ul>
+    </li>
+    <li class="unstyled">
+      <a class="prior-year-courses-label">Prior Year Courses</a>
+      <div class="prior-year-courses">
+          <h4>2024-25 Courses</h4>
+          <ul class="section-listing courses">
+              <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=MS%26E 372: Entrepreneurship Doctoral Research Seminar&academicYear=20242025'>Entrepreneurship Doctoral Research Seminar</a><br/><span>MS&E 372 (Aut)</span></li>
+              <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=MS%26E 272: Entrepreneurship without Borders&academicYear=20242025'>Entrepreneurship without Borders</a><br/><span>MS&E 272 (Spr)</span></li>
+              <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=ENGR 145: Technology Entrepreneurship&academicYear=20242025'>Technology Entrepreneurship</a><br/><span>ENGR 145, ENGR 145S (Aut)</span></li>
+          </ul>
+          <h4>2023-24 Courses</h4>
+          <ul class="section-listing courses">
+              <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=MS%26E 272: Entrepreneurship without Borders&academicYear=20232024'>Entrepreneurship without Borders</a><br/><span>MS&E 272 (Spr)</span></li>
+              <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=OSPHONGK 32: Fintech and Entrepreneurship in China&academicYear=20232024'>Fintech and Entrepreneurship in China</a><br/><span>OSPHONGK 32 (Aut)</span></li>
+              <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=MS%26E 108: Senior Project&academicYear=20232024'>Senior Project</a><br/><span>MS&E 108 (Win)</span></li>
+          </ul>
+          <h4>2022-23 Courses</h4>
+          <ul class="section-listing courses">
+              <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=MS%26E 372: Entrepreneurship Doctoral Research Seminar&academicYear=20222023'>Entrepreneurship Doctoral Research Seminar</a><br/><span>MS&E 372 (Spr)</span></li>
+              <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=MS%26E 272: Entrepreneurship without Borders&academicYear=20222023'>Entrepreneurship without Borders</a><br/><span>MS&E 272 (Spr)</span></li>
+              <li class="course"><a href='http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=ENGR 145: Technology Entrepreneurship&academicYear=20222023'>Technology Entrepreneurship</a><br/><span>ENGR 145, ENGR 145S (Aut)</span></li>
+          </ul>
+      </div>
+    </li>
+  </ul>
+      </div>
+    
+      <div id="stanfordAdviseesContent" class="content-section">
+        <h3>Stanford Advisees</h3>
+<hr/>
+<ul class="section-listing">
+    <li class="advisees-list-item">
+	  <span class="advisees-sub-heading">Doctoral Dissertation Reader (AC)</span>
+		<br />
+		<span style="display:block" data-toggle="collapsePartial"><a href="https://profiles.stanford.edu/noah-benjamin-pollak">Noah Benjamin-Pollak</a></span>
+</li>
+
+    <li class="advisees-list-item">
+	  <span class="advisees-sub-heading">Doctoral Dissertation Advisor (AC)</span>
+		<br />
+		<span style="display:block" data-toggle="collapsePartial"><a href="https://profiles.stanford.edu/wajeeha-ahmad">Wajeeha Ahmad</a></span>
+</li>
+
+    <li class="advisees-list-item">
+	  <span class="advisees-sub-heading">Master&#39;s Program Advisor</span>
+		<br />
+		<span style="display:block" data-toggle="collapsePartial"><a href="https://profiles.stanford.edu/nuri-capanoglu">Nuri Capanoglu</a>, <a href="https://profiles.stanford.edu/jesse-derose">Jesse DeRose</a>, Ray Du, <a href="https://profiles.stanford.edu/naomi-girma">Naomi Girma</a>, <a href="https://profiles.stanford.edu/jared-morrison">Jared Morrison</a>, <a href="https://profiles.stanford.edu/seth-rhodes">Seth Rhodes</a>, Sam Wang</span>
+</li>
+
+    <li class="advisees-list-item">
+	  <span class="advisees-sub-heading">Doctoral (Program)</span>
+		<br />
+		<span style="display:block" data-toggle="collapsePartial"><a href="https://profiles.stanford.edu/yikai-cao">Yikai Cao</a>, <a href="https://profiles.stanford.edu/345966">Joshua Lyman</a>, Guankai Zhai, <a href="https://profiles.stanford.edu/xilan-zhang">Xilan Zhang</a></span>
+</li>
+
+</ul>
+      </div>
+    
+    
+  </div>
+</div>
+      </div>
+      <div id="publications" class="card tab-pane ">
+        
+<div class="row-fluid">
+  <div class="span8">
+    <div id="featuredPublicationsContent"></div>
+    <div id="allPublicationsContent">
+        <h3>All Publications</h3>
+<hr/>
+<ul class="section-listing articles" data-count="42">
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Take Me Home, Country Roads: Return Migration and Platform-Enabled Entrepreneurship</span>
+  <i>Organization Science</i>
+</span>
+<span class="authors">Koo, W., Eesley, C.</span>
+
+<span class="details">
+   <span class="year">2025</span>; <span class="volume">36 (3)</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="http://dx.doi.org/10.1287/orsc.2021.16002">DOI 10.1287/orsc.2021.16002</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Designing Institutions for Applied Impact: Lessons from Engineering for Organizational Research</span>
+  <i>Organization Science</i>
+</span>
+<span class="authors">Eesley, C., Gerber, E.</span>
+
+<span class="details">
+   <span class="year">2025</span>
+</span></cite>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>UNIVERSITY EDUCATION REFORM AND ENTREPRENEURSHIP</span>
+  <i>Management and Organization Review</i>
+</span>
+<span class="authors">Eesley, C., Tian, X., Yang, D., Lee, Y. S.</span>
+
+<span class="details">
+   <span class="year">2025</span><span class="pages">: 1-31</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="http://dx.doi.org/10.1017/mor.2025.14">DOI 10.1017/mor.2025.14</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Companies inadvertently fund online misinformation despite consumer backlash.</span>
+  <i>Nature</i>
+</span>
+<span class="authors">Ahmad, W., Sen, A., Eesley, C., Brynjolfsson, E.</span>
+
+<span class="details">
+   <span class="year">2024</span>; <span class="volume">630 (8015)</span><span class="pages">: 123-131</span>
+</span></cite>
+    <div class="detail">
+      <h4>Abstract</h4>
+  <p class="abstract">The financial motivation to earn advertising revenue has been widely conjectured to be pivotal for the production of online misinformation1-4. Research aimed at mitigating misinformation has so far focused on interventions at the user level5-8, with little emphasis on how the supply of misinformation can itself be countered. Here we show how online misinformation is largely financed by advertising, examine how financing misinformation affects the companies involved, and outline interventions for reducing the financing of misinformation. First, we find that advertising on websites that publish misinformation is pervasive for companies across several industries and is amplified by digital advertising platforms that algorithmically distribute advertising across the web. Using an information-provision experiment9, we find that companies that advertise on websites that publish misinformation can face substantial backlash from their consumers. To examine why misinformation continues to be monetized despite the potential backlash for the advertisers involved, we survey decision-makers at companies. We find that most decision-makers are unaware that their companies' advertising appears on misinformation websites but have a strong preference to avoid doing so. Moreover, those who are unaware and uncertain about their company's role in financing misinformation increase their demand for a platform-based solution to reduce monetizing misinformation when informed about how platforms amplify advertising placement on misinformation websites. We identify low-cost, scalable information-based interventions to reduce the financial incentive to misinform and counter the supply of misinformation online.</p>
+  <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1038/s41586-024-07404-1">DOI 10.1038/s41586-024-07404-1</a></span>
+  </p>
+  <p class="pub-med">
+    <span>View details for <a href="https://www.ncbi.nlm.nih.gov/pubmed/38840014">PubMedID 38840014</a></span>
+  </p>
+  <p class="pub-med-central">
+    <span>View details for <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/6377495">PubMedCentralID 6377495</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Born into chaos: How founding conditions shape whether ventures survive or thrive when experiencing environmental change</span>
+  <i>STRATEGIC ENTREPRENEURSHIP JOURNAL</i>
+</span>
+<span class="authors">Motley, D., Eesley, C. E., Koo, W.</span>
+
+<span class="details">
+   <span class="year">2023</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1002/sej.1461">DOI 10.1002/sej.1461</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000959465000001">Web of Science ID 000959465000001</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>In Institutions We Trust? Trust in Government and the Allocation of Entrepreneurial Intentions</span>
+  <i>ORGANIZATION SCIENCE</i>
+</span>
+<span class="authors">Eesley, C., Lee, Y.</span>
+
+<span class="details">
+   <span class="year">2022</span><span class="pages">: 1-25</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1287/orsc.2022.1583">DOI 10.1287/orsc.2022.1583</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000804382700001">Web of Science ID 000804382700001</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Entrepreneurial strategies during institutional changes: Evidence from China&#39;s economic transition</span>
+  <i>STRATEGIC ENTREPRENEURSHIP JOURNAL</i>
+</span>
+<span class="authors">Wu, Y., Eesley, C. E., Yang, D.</span>
+
+<span class="details">
+   <span class="year">2021</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1002/sej.1399">DOI 10.1002/sej.1399</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000679932000001">Web of Science ID 000679932000001</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>How Do Institutional Carriers Alleviate Normative and Cognitive Barriers to Regulatory Change?</span>
+  <i>ORGANIZATION SCIENCE</i>
+</span>
+<span class="authors">Armanios, D., Eesley, E.</span>
+
+<span class="details">
+   <span class="year">2021</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1287/orsc.2021.1434">DOI 10.1287/orsc.2021.1434</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000709015500001">Web of Science ID 000709015500001</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Regional Migration, Entrepreneurship and University Alumni</span>
+  <i>Regional Studies</i>
+</span>
+<span class="authors">Wu, Y., Eesley, C.</span>
+
+<span class="details">
+   <span class="year">2021</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="http://dx.doi.org/10.1080/00343404.2021.1934432">DOI 10.1080/00343404.2021.1934432</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Understanding the motivations for open-source hardware entrepreneurship</span>
+  <i>Design Science</i>
+</span>
+<span class="authors">Li, Z., Seering, W., Yang, M., Eesley, C.</span>
+
+<span class="details">
+   <span class="year">2021</span>; <span class="volume">7 (e19)</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="http://dx.doi.org/10.1017/dsj.2021.15">DOI 10.1017/dsj.2021.15</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Do university entrepreneurship programs promote entrepreneurship?</span>
+  <i>STRATEGIC MANAGEMENT JOURNAL</i>
+</span>
+<span class="authors">Eesley, C. E., Lee, Y.</span>
+
+<span class="details">
+   <span class="year">2020</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1002/smj.3246">DOI 10.1002/smj.3246</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000583243800001">Web of Science ID 000583243800001</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>FOR STARTUPS, ADAPTABILITY AND MENTOR NETWORK DIVERSITY CAN BE PIVOTAL: EVIDENCE FROM A RANDOMIZED EXPERIMENT ON A MOOC PLATFORM</span>
+  <i>MIS QUARTERLY</i>
+</span>
+<span class="authors">Eesley, C., Wu, L.</span>
+
+<span class="details">
+   <span class="year">2020</span>; <span class="volume">44 (2)</span><span class="pages">: 661–97</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.25300/MISQ/2020/15138">DOI 10.25300/MISQ/2020/15138</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000537784700006">Web of Science ID 000537784700006</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Entrepreneurship in dynamic environments: A comparison between the U.S. and China.</span>
+  <i>Quarterly Journal of Management (管理学季刊）</i>
+</span>
+<span class="authors">Wu, Y., Eesley, C. E., Eisenhardt, K. E.</span>
+
+<span class="details">
+   <span class="year">2020</span>; <span class="volume">5 (2)</span><span class="pages">: 1-17</span>
+</span></cite>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Connected, But Still Lagging: Rural Sellers During Platform Change. </span>
+  <i>Strategic Management Journal.</i>
+</span>
+<span class="authors">Koo, W., Eesley, C.</span>
+
+<span class="details">
+   <span class="year">2020</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="http://dx.doi.org/10.1002/smj.3259">DOI 10.1002/smj.3259</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>The dark side of institutional intermediaries: Junior stock exchanges and entrepreneurship</span>
+  <i>STRATEGIC MANAGEMENT JOURNAL</i>
+</span>
+<span class="authors">Eberhart, R. N., Eesley, C. E.</span>
+
+<span class="details">
+   <span class="year">2018</span>; <span class="volume">39 (10)</span><span class="pages">: 2643–65</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://dx.doi.org/10.1002/smj.2934">DOI 10.1002/smj.2934</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000444803800003">Web of Science ID 000444803800003</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>The persistence of entrepreneurship and innovative immigrants</span>
+  <i>RESEARCH POLICY</i>
+</span>
+<span class="authors">Lee, Y., Eesley, C.</span>
+
+<span class="details">
+   <span class="year">2018</span>; <span class="volume">47 (6)</span><span class="pages">: 1032–44</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://dx.doi.org/10.1016/j.respol.2018.03.007">DOI 10.1016/j.respol.2018.03.007</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000434001600003">Web of Science ID 000434001600003</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Institutions and Entrenreneurial Activity: The Interactive Influence of Misaligned Formal and Informal Institutions</span>
+  <i>STRATEGY SCIENCE</i>
+</span>
+<span class="authors">Eesley, C. E., Eberhart, R. N., Skousen, B. R., Cheng, J. L. C.</span>
+
+<span class="details">
+   <span class="year">2018</span>; <span class="volume">3 (2)</span><span class="pages">: 393–407</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://dx.doi.org/10.1287/stsc.2018.0060">DOI 10.1287/stsc.2018.0060</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000445070600003">Web of Science ID 000445070600003</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Impact: Stanford University&#39;s Economic Impact via Innovation and Entrepreneurship</span>
+  <i>FOUNDATIONS AND TRENDS IN ENTREPRENEURSHIP</i>
+</span>
+<span class="authors">Eesley, C. E., Miller, W. F.</span>
+
+<span class="details">
+   <span class="year">2018</span>; <span class="volume">14 (2)</span><span class="pages">: 130–278</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://dx.doi.org/10.1561/0300000074">DOI 10.1561/0300000074</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000431012600001">Web of Science ID 000431012600001</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured inbook">
+  <cite><span class="title">
+  <span>A comparative analysis of Asian versus Asian American entrepreneurship: Evidence from Stanford University alumni</span>
+  <i>Strategic, Policy and Social Innovation for a Post-Industrial Korea</i>
+</span>
+<span class="authors">Lee, Y., Eesley, C.</span>
+
+<span class="details">
+  <span class="publisher">Routledge.</span> <span class="year">2018</span><span class="pages">: 132–146</span>
+</span></cite>
+</li>
+    <li class="publication featured inbook">
+  <cite><span class="title">
+  <span>Brain drain, circulation, and linkage: Sequence analysis of Korean nationals graduating from Stanford University.</span>
+  <i>Strategic, Policy and Social Innovation for a Post-Industrial Korea</i>
+</span>
+<span class="authors">Choi, J., Eesley, C.</span>
+
+<span class="details">
+  <span class="publisher">Routledge.</span> <span class="year">2018</span><span class="pages">: 115–131</span>
+</span></cite>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Social influence in career choice: Evidence from a randomized field experiment on entrepreneurial mentorship</span>
+  <i>RESEARCH POLICY</i>
+</span>
+<span class="authors">Eesley, C., Wang, Y.</span>
+
+<span class="details">
+   <span class="year">2017</span>; <span class="volume">46 (3)</span><span class="pages">: 636-650</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://dx.doi.org/10.1016/j.respol.2017.01.010">DOI 10.1016/j.respol.2017.01.010</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000395613400010">Web of Science ID 000395613400010</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Failure Is an Option: Institutional Change, Entrepreneurial Risk, and New Firm Growth</span>
+  <i>ORGANIZATION SCIENCE</i>
+</span>
+<span class="authors">Eberhart, R. N., Eesley, C. E., Eisenhardt, K. M.</span>
+
+<span class="details">
+   <span class="year">2017</span>; <span class="volume">28 (1)</span><span class="pages">: 93-112</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://dx.doi.org/10.1287/orsc.2017.1110">DOI 10.1287/orsc.2017.1110</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000395830000006">Web of Science ID 000395830000006</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>THROUGH THE MUD OR IN THE BOARDROOM: EXAMINING ACTIVIST TYPES AND THEIR STRATEGIES IN TARGETING FIRMS FOR SOCIAL CHANGE</span>
+  <i>STRATEGIC MANAGEMENT JOURNAL</i>
+</span>
+<span class="authors">Eesley, C., DeCelles, K. A., Lenox, M.</span>
+
+<span class="details">
+   <span class="year">2016</span>; <span class="volume">37 (12)</span><span class="pages">: 2425-2440</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://dx.doi.org/10.1002/smj.2458">DOI 10.1002/smj.2458</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000388290800003">Web of Science ID 000388290800003</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Institutional Barriers to Growth: Entrepreneurship, Human Capital and Institutional Change</span>
+  <i>ORGANIZATION SCIENCE</i>
+</span>
+<span class="authors">Eesley, C.</span>
+
+<span class="details">
+   <span class="year">2016</span>; <span class="volume">27 (5)</span><span class="pages">: 1290-1306</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://dx.doi.org/10.1287/orsc.2016.1077">DOI 10.1287/orsc.2016.1077</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000391220200013">Web of Science ID 000391220200013</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Does Institutional Change in Universities Influence High-Tech Entrepreneurship? Evidence from China&#39;s Project 985</span>
+  <i>ORGANIZATION SCIENCE</i>
+</span>
+<span class="authors">Eesley, C., Li, J. B., Yang, D.</span>
+
+<span class="details">
+   <span class="year">2016</span>; <span class="volume">27 (2)</span><span class="pages">: 446-461</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://dx.doi.org/10.1287/orsc.2015.1038">DOI 10.1287/orsc.2015.1038</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000375654300013">Web of Science ID 000375654300013</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>How entrepreneurs leverage institutional intermediaries in emerging economies to acquire public resources</span>
+  <i>Strategic Management Journal</i>
+</span>
+<span class="authors">Armanios, D., Eesley, C., Li, J., Eisenhardt, K.</span>
+
+<span class="details">
+   <span class="year">2016</span>
+</span></cite>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Understanding Entrepreneurial Process and Performance: A Cross-National Comparison of Alumni Entrepreneurship Between MIT and Tsinghua University</span>
+  <i>Asian Journal for Innovation and Policy</i>
+</span>
+<span class="authors">Eesley, C., Yang, D., Roberts, E., Li, T.</span>
+
+<span class="details">
+   <span class="year">2016</span>; <span class="volume">5 (2)</span><span class="pages">: 146-184</span>
+</span></cite>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>THE CONTINGENT EFFECTS OF TOP MANAGEMENT TEAMS ON VENTURE PERFORMANCE: ALIGNING FOUNDING TEAM COMPOSITION WITH INNOVATION STRATEGY AND COMMERCIALIZATION ENVIRONMENT</span>
+  <i>STRATEGIC MANAGEMENT JOURNAL</i>
+</span>
+<span class="authors">Eesley, C. E., Hsu, D. H., Roberts, E. B.</span>
+
+<span class="details">
+   <span class="year">2014</span>; <span class="volume">35 (12)</span><span class="pages">: 1798-1817</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://dx.doi.org/10.1002/smj.2183">DOI 10.1002/smj.2183</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000344327400005">Web of Science ID 000344327400005</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication  article">
+  <cite><span class="title">
+  <span>Entrepreneurship Education Comes of Age on Campus: The Challenges and Rewards of Bringing Entrepreneurship to Higher Education</span>
+  
+</span>
+<span class="authors">Torrance, W. E., Rauch, J., Aulet, W., Blum, L., Burke, B., D&#39;Ambrosio, T., Eesley, C. E.</span>
+
+<span class="details">
+   <span class="year">2013</span>
+</span></cite>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Are You Experienced or Are You Talented?: When Does Innate Talent versus Experience Explain Entrepreneurial Performance?</span>
+  <i>STRATEGIC ENTREPRENEURSHIP JOURNAL</i>
+</span>
+<span class="authors">Eesley, C. E., Roberts, E. B.</span>
+
+<span class="details">
+   <span class="year">2012</span>; <span class="volume">6 (3)</span><span class="pages">: 207-219</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://dx.doi.org/10.1002/sej.1141">DOI 10.1002/sej.1141</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000308646300002">Web of Science ID 000308646300002</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication  article">
+  <cite><span class="title">
+  <span>Review of: Winds of Change: The Environmental Movement and the Global Development of the Wind Energy Industry</span>
+  <i>Administrative Science Quarterly</i>
+</span>
+<span class="authors">Eesley, C., E., Hannah, D., P.</span>
+
+<span class="details">
+   <span class="year">2012</span>; <span class="volume">57</span><span class="pages">: 359-362</span>
+</span></cite>
+</li>
+    <li class="publication featured inbook">
+  <cite><span class="title">
+  <span>Neurocognitive Impairments</span>
+  <i>Essentials of Schizophrenia</i>
+</span>
+<span class="authors">Keefe, R., Eesley, C. E.</span>
+
+<span class="details">
+  <span class="publisher">American Psychiatric Publishing. Washington, DC, 2012..</span> <span class="year">2012</span>
+</span></cite>
+</li>
+    <li class="publication featured inbook">
+  <cite><span class="title">
+  <span>Bringing Ideas to Life</span>
+  <i>IEEE International Recent Advances in Technology and Innovation Management</i>
+</span>
+<span class="authors">Eesley, C. E., Hsu, D., Roberts, E. B.</span>
+
+<span class="details">
+  <span class="publisher">Wily Publications.</span> <span class="year">2012</span><span class="pages">: 40–60</span>
+</span></cite>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Entrepreneurial Impact: The Role of MIT - An Updated Report</span>
+  <i>Foundations and Trends in Entrepreneurship</i>
+</span>
+<span class="authors">Roberts, E., B., Eesley, C., E.</span>
+
+<span class="details">
+   <span class="year">2011</span>; <span class="volume">7 (1-2)</span><span class="pages">: 1-149</span>
+</span></cite>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Private Environmental Activism and the Selection and Response of Firm Targets.</span>
+  <i>Journal of Economics Management and Strategy</i>
+</span>
+<span class="authors">Lenox, M., Eesley, C., E.</span>
+
+<span class="details">
+   <span class="year">2009</span>; <span class="volume">18 (1)</span><span class="pages">: 45-73</span>
+</span></cite>
+</li>
+    <li class="publication featured inbook">
+  <cite><span class="title">
+  <span>Neurocognition in Schizophrenia</span>
+  <i>Kaplan and Sadock&#39;s Comprehensive Textbook of Psychiatry</i>
+</span>
+<span class="authors">Keefe, R., Eesley, C. E.</span>
+<span class="editors">edited by Sadock, B., Sadock, V. A., Ruiz, P.</span>
+<span class="details">
+  <span class="publisher">Baltimore, MD: Lippincott, Williams, &amp; Wilkins.</span> <span class="year">2009</span>
+</span></cite>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Entrepreneurs from technology-based universities: Evidence from MIT</span>
+  <i>Research Policy</i>
+</span>
+<span class="authors">Hsu, D. H., Roberts, E. B., Eesley, C. E.</span>
+
+<span class="details">
+   <span class="year">2007</span>; <span class="volume">5 (36)</span><span class="pages">: 768-788</span>
+</span></cite>
+</li>
+    <li class="publication featured inbook">
+  <cite><span class="title">
+  <span>Implementing a Public Subsidy for Vaccines</span>
+  <i>Pharmaceutical Innovation: Incentives, Competition, and Cost-Benefit Analysis in International Perspective</i>
+</span>
+<span class="authors">Sloan, F. A., Eesley, C. E.</span>
+<span class="editors">edited by Sloan, F. A.</span>
+<span class="details">
+  <span class="publisher">New York: Cambridge University Press.</span> <span class="year">2007</span><span class="pages">: 107–126</span>
+</span></cite>
+</li>
+    <li class="publication featured inbook">
+  <cite><span class="title">
+  <span>Governments as Insurers in Professional and Hospital Liability Insurance Markets</span>
+  <i>Medical Malpractice and the U.S. Health Care System--New Century, Different Issues</i>
+</span>
+<span class="authors">Sloan, F. A., Eesley, C. E.</span>
+<span class="editors">edited by Sage, W. M.</span>
+<span class="details">
+  <span class="publisher">New York: Cambridge University Press.</span> <span class="year">2006</span><span class="pages">: 291–317</span>
+</span></cite>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Firm Responses to Secondary Stakeholder Action</span>
+  <i>Strategic Management Journal</i>
+</span>
+<span class="authors">Eesley, C. E.</span>
+
+<span class="details">
+   <span class="year">2006</span>; <span class="volume">27 (8)</span><span class="pages">: 765-782</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="http://dx.doi.org/10.1002/smj.536">DOI 10.1002/smj.536</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Defining a cognitive function decrement in schizophrenia</span>
+  <i>Biological psychiatry</i>
+</span>
+<span class="authors">Keefe, R. S., Eesley, C. E., Poe, M. P.</span>
+
+<span class="details">
+   <span class="year">2005</span>; <span class="volume">6 (57)</span><span class="pages">: 688-691</span>
+</span></cite>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>Entrepreneurial Impact: The Role of MIT</span>
+  
+</span>
+<span class="authors">Roberts, Edward, B., Eesley, Charles, E.</span>
+
+<span class="details">
+   <span class="year"></span>
+</span></cite>
+</li>
+</ul>
+    </div>
+    <div id="journalArticlesContent"></div>
+    <div id="booksContent"></div>
+    <div id="proceedingsContent"></div>
+    <div id="presentationsContent"></div>
+    <div id="papersContent"></div>
+    <div id="paginationContent"></div>
+  </div>
+  <div class="span4 side-bar">
+        <div class="orcid publications-orcid content-section">
+          
+<span style="display:none;" data-id="shared__orchid_section"></span>
+<a data-toggle="tooltip" target="orcid.widget" href="https://orcid.org/0000-0003-2348-1583"><img src="/images/orcid_32x32.png"/> https://orcid.org/0000-0003-2348-1583</a>
+
+        </div>
+    <div id="navigatorContent" class="content-section navigator"></div>
+    <div id="similarProfilesContent" class="content-section similar-profiles"></div>
+    <div id="tagCloudContent" class="content-section tag-cloud"></div>
+  </div>
+</div>
+
+      </div>
+  </div>
+</div>
+</section>
+        </div>
+      </main>
+      <footer id="footerContent">
+        <div class="container">
+          <div class="accessibility">
+            <a href="http://www.stanford.edu/site/accessibility">Report Accessibility Issues <i class="icon-caret-right"></i></a>
+
+          </div>
+        </div>
+        <div class="footer-wrapper">
+          <div class="container">
+            <div class="row-fluid">
+              <div class="span12">
+                <div class="logo span2">
+                  <a href="http://www.stanford.edu/">Stanford University</a>
+                </div>
+                <ul class="unstyled span10">
+                  <li>
+                    <a href="http://www.stanford.edu/">SU Home</a>
+                  </li>
+                  <li>
+                    <a href="https://visit.stanford.edu/plan">Maps &amp; Directions</a>
+                  </li>
+                  <li>
+                    <a href="http://www.stanford.edu/search/">Search Stanford</a>
+                  </li>
+                  <li>
+                    <a href="http://www.stanford.edu/site/terms.html">Terms of Use</a>
+                  </li>
+                  <li>
+                    <a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a>
+                  </li>
+                </ul>
+                <small class="copyright span10">&copy; Stanford University, Stanford, California 94305</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var require = {
+        baseUrl: '/scripts',
+        urlArgs: 'r=11.5.1'
+      };
+
+      (function() {
+        if (navigator && navigator.platform === 'Win32') {
+          var d = document.getElementsByTagName('html')[0];
+          d.className = d.className + ' win';
+        }
+      }());
+    </script>
+    <script src="/scripts/vendor/requirejs/require.js?r=11.5.1"></script>
+    <script>
+      
+      
+      /*<!--*/
+      
+      define('app-config', {"c":{"accessToken":"","baseUrl":"","capApiUrl":"https://profiles.stanford.edu/proxy/api/cap","googleAnalytics4Id":"G-X6DK9R58FD","capIntranetPath":"/intranet","capClassicSignInUrl":"https://cap.stanford.edu/profiles/auth/","browseOrgs":{"administrations":[{"name":"Office of External Relations","url":"/browse/office-of-external-relations"},{"name":"Office of VP for University Human Resources","url":"/browse/office-of-vp-for-university-human-resources"},{"name":"Office of Vice President for Business Affairs and Chief Financial Officer","url":"/browse/office-of-vice-president-for-business-affairs-and-chief-financial-officer"},{"name":"Office of the Vice President for the Arts","url":"/browse/office-of-the-vice-president-for-the-arts"},{"name":"Stanford University Libraries","url":"/browse/stanford-university-libraries"},{"name":"Vice Provost and Dean of Research","url":"/browse/vice-provost-and-dean-of-research"},{"name":"Vice Provost for Student Affairs","url":"/browse/vice-provost-for-student-affairs"},{"name":"Vice Provost for Undergraduate Education","url":"/browse/vice-provost-for-undergraduate-education"}],"institutes":[{"name":"Bio-X","url":"/browse/vice-provost-and-dean-of-research/bio-x"},{"name":"Freeman Spogli Institute for International Studies","url":"/browse/vice-provost-and-dean-of-research/freeman-spogli-institute-for-international-studies"},{"name":"Institute for Computational and Mathematical Engineering (ICME)","url":"/browse/school-of-engineering/programs-centers-and-institutes/institute-for-computational-and-mathematical-engineering-icme"},{"name":"Institute for Human-Centered Artificial Intelligence (HAI)","url":"/browse/vice-provost-and-dean-of-research/institute-for-human-centered-artificial-intelligence-hai"},{"name":"Institute for Stem Cell Biology and Regenerative Medicine","url":"/browse/school-of-medicine/institute-for-stem-cell-biology-and-regenerative-medicine"},{"name":"Precourt Institute for Energy","url":"/browse/stanford-doerr-school-of-sustainability/precourt-institute-for-energy"},{"name":"SLAC National Accelerator Laboratory","url":"/browse/slac-national-accelerator-laboratory"},{"name":"Sarafan ChEM-H","url":"/browse/vice-provost-and-dean-of-research/sarafan-chem-h"},{"name":"Stanford Data Science","url":"/browse/vice-provost-and-dean-of-research/stanford-data-science"},{"name":"Stanford Institute for Economic Policy Research (SIEPR)","url":"/browse/vice-provost-and-dean-of-research/stanford-institute-for-economic-policy-research-siepr"},{"name":"Stanford PULSE Institute","url":"/browse/vice-provost-and-dean-of-research/stanford-pulse-institute"},{"name":"Stanford Woods Institute for the Environment","url":"/browse/stanford-doerr-school-of-sustainability/stanford-woods-institute-for-the-environment"},{"name":"Wu Tsai Human Performance Alliance","url":"/browse/vice-provost-and-dean-of-research/life-science-institutes-independent-labs-institutes-centers-dor/wu-tsai-human-performance-alliance"},{"name":"Wu Tsai Neurosciences Institute","url":"/browse/vice-provost-and-dean-of-research/wu-tsai-neurosciences-institute"}],"schools":[{"name":"Graduate School of Business","url":"/browse/graduate-school-of-business"},{"name":"Graduate School of Education","url":"/browse/graduate-school-of-education"},{"name":"School of Engineering","url":"/browse/school-of-engineering"},{"name":"School of Humanities and Sciences","url":"/browse/school-of-humanities-and-sciences"},{"name":"School of Medicine","url":"/browse/school-of-medicine"},{"name":"Stanford Doerr School of Sustainability","url":"/browse/stanford-doerr-school-of-sustainability"}]},"federatedLoginEnabled":true},"u":{"feedbackMenuItem":{"name":"Feedback","url":"https://stanford.service-now.com/services?id=get_help"},"intranetPathInUrl":"","switchViewPath":"/intranet/charles-eesley","uCtxET":0}});
+      
+      
+      // Retrieval of appConfig took 0[ms]
+      require(['main']);
+      
+      /*-->*/
+    </script>
+  </body>
+</html>

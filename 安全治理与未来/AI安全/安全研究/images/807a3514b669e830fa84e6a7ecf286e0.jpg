@@ -1,0 +1,722 @@
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <title>Min Wu's Profile | Stanford Profiles</title>
+    <meta name="description" content="Min Wu is part of Stanford Profiles, official site for faculty, postdocs, students and staff information (Expertise, Bio, Research, Publications, and more). The site facilitates research and collaboration in academic endeavors.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      
+        <link rel="canonical" href='https://profiles.stanford.edu/276567' />
+      
+    
+    <link rel="stylesheet" href="/styles/main.css?r=11.5.1">
+    <link rel="icon" href="/images/favicon.ico?r=11.5.1">
+    <!--[if IE 7]><link rel="stylesheet" href="/styles/vendor/font-awesome/css/font-awesome-ie7.min.css?r=11.5.1"><![endif]-->
+    <!-- Google Analytics 4  (GA4) -->
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6DK9R58FD"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-X6DK9R58FD');
+      </script>
+    
+    <!-- End Google Analytics 4  (GA4) -->
+  </head>
+  <body class="profile">
+    <div class="wrapper  ">
+      <header id="header">
+        <div class="container navbar">
+
+  <div class="column-logo brand ">
+    <div class="logo">
+      <div class="stanford-logo">
+        <a href="http://www.stanford.edu/">
+          <span>Stanford</span>
+        </a>
+      </div>
+    </div>
+    <div class="signature">
+      <div class="site-name">
+        <a href="/">
+          <span class="site-name-1">Profiles</span>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+
+  <div id="sidebarTrigger" class="pull-right">
+    <a href="#" class="icon-background">
+      <i class="icon-reorder"></i>
+      <span class="sr-only">Menu</span>
+    </a>
+  </div>
+
+  <nav class="navbar navbar-dropdown">
+    <div class="search-header-region" id="searchHeaderContent"></div>
+
+    <ul class="nav navbar-nav" aria-label="Primary Navigation">
+      <li class="nav-item browse-menu has-submenu">
+        <button class="nav-sub-menu-open">
+          <i class="icon-list-ul"></i>
+          <span>Browse</span>
+          <i class="icon-caret-down"></i>
+        </button>
+        <div class="navbar navbar-accordion">
+          <div class="browser" role="navigation">
+  <ul class="nav navbar-nav unstyled">
+    <li class="nav-item has-submenu dropdown">
+      <button id="Schools" class="dropdown-toggle" data-toggle="dropdown">Schools</button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="Schools">
+          <li role="presentation"><a href="/browse/graduate-school-of-business" role="menuitem">Graduate School of Business</a></li>
+          <li role="presentation"><a href="/browse/graduate-school-of-education" role="menuitem">Graduate School of Education</a></li>
+          <li role="presentation"><a href="/browse/school-of-engineering" role="menuitem">School of Engineering</a></li>
+          <li role="presentation"><a href="/browse/school-of-humanities-and-sciences" role="menuitem">School of Humanities and Sciences</a></li>
+          <li role="presentation"><a href="/browse/school-of-medicine" role="menuitem">School of Medicine</a></li>
+          <li role="presentation"><a href="/browse/stanford-doerr-school-of-sustainability" role="menuitem">Stanford Doerr School of Sustainability</a></li>
+      </ul>
+    </li>
+    <li class="nav-item has-submenu dropdown">
+      <button id="Institutes &amp; Research Centers" class="dropdown-toggle" data-toggle="dropdown">Institutes &amp; Research Centers</button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="Institutes &amp; Research Centers">
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/bio-x" role="menuitem">Bio-X</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/freeman-spogli-institute-for-international-studies" role="menuitem">Freeman Spogli Institute for International Studies</a></li>
+          <li role="presentation"><a href="/browse/school-of-engineering/programs-centers-and-institutes/institute-for-computational-and-mathematical-engineering-icme" role="menuitem">Institute for Computational and Mathematical Engineering (ICME)</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/institute-for-human-centered-artificial-intelligence-hai" role="menuitem">Institute for Human-Centered Artificial Intelligence (HAI)</a></li>
+          <li role="presentation"><a href="/browse/school-of-medicine/institute-for-stem-cell-biology-and-regenerative-medicine" role="menuitem">Institute for Stem Cell Biology and Regenerative Medicine</a></li>
+          <li role="presentation"><a href="/browse/stanford-doerr-school-of-sustainability/precourt-institute-for-energy" role="menuitem">Precourt Institute for Energy</a></li>
+          <li role="presentation"><a href="/browse/slac-national-accelerator-laboratory" role="menuitem">SLAC National Accelerator Laboratory</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/sarafan-chem-h" role="menuitem">Sarafan ChEM-H</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/stanford-data-science" role="menuitem">Stanford Data Science</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/stanford-institute-for-economic-policy-research-siepr" role="menuitem">Stanford Institute for Economic Policy Research (SIEPR)</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/stanford-pulse-institute" role="menuitem">Stanford PULSE Institute</a></li>
+          <li role="presentation"><a href="/browse/stanford-doerr-school-of-sustainability/stanford-woods-institute-for-the-environment" role="menuitem">Stanford Woods Institute for the Environment</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/life-science-institutes-independent-labs-institutes-centers-dor/wu-tsai-human-performance-alliance" role="menuitem">Wu Tsai Human Performance Alliance</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research/wu-tsai-neurosciences-institute" role="menuitem">Wu Tsai Neurosciences Institute</a></li>
+      </ul>
+    </li>
+    <li class="nav-item has-submenu dropdown">
+      <button id="Administration" class="dropdown-toggle" data-toggle="dropdown">Administration</button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="Administration">
+          <li role="presentation"><a href="/browse/office-of-external-relations" role="menuitem">Office of External Relations</a></li>
+          <li role="presentation"><a href="/browse/office-of-vp-for-university-human-resources" role="menuitem">Office of VP for University Human Resources</a></li>
+          <li role="presentation"><a href="/browse/office-of-vice-president-for-business-affairs-and-chief-financial-officer" role="menuitem">Office of Vice President for Business Affairs and Chief Financial Officer</a></li>
+          <li role="presentation"><a href="/browse/office-of-the-vice-president-for-the-arts" role="menuitem">Office of the Vice President for the Arts</a></li>
+          <li role="presentation"><a href="/browse/stanford-university-libraries" role="menuitem">Stanford University Libraries</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research" role="menuitem">Vice Provost and Dean of Research</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-for-student-affairs" role="menuitem">Vice Provost for Student Affairs</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-for-undergraduate-education" role="menuitem">Vice Provost for Undergraduate Education</a></li>
+      </ul>
+    </li>
+
+
+  </ul>
+</div>
+
+        </div>
+      </li>
+
+      
+        <li class="nav-item signin-link">
+          <a data-toggle="tooltip" href="/intranet/276567" class="sign-in-link" data-bypass>
+            <i class="icon-signin visible-phone"></i>
+            <span>Sign In</span>
+          </a>
+        </li>
+        <li class="nav-item edit-profile-link">
+          <a id="editProfile" href="https://cap.stanford.edu/profiles/auth/edit">
+            <i class="icon-pencil visible-phone"></i>
+            <span>Edit My Profile</span>
+          </a>
+        </li>
+
+      
+
+    </ul>
+  </nav>
+
+</div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+      </header>
+      <main id="bodyContent">
+        <div id="mainContent">
+          <section id="mastheadContainer" class="banner profile">
+  <div class="container">
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="image-holder">
+        <img src="https://profiles.stanford.edu/proxy/api/cap/profiles/276567/resources/profilephoto/350x350.1735001687047.jpg" alt="Min Wu"
+            data-empty-src="/images/placeholder-350x350.png" />
+      </div>
+      <div class="nameAndTitle">
+        <h1>Min Wu</h1>
+        <h2>Postdoctoral Scholar, Computer Science<br/></h2>
+        <div class="leave">
+          <span class="leave-info">  </span>
+          <span class="leave-note">  </span>
+        </div>
+
+      </div>
+      <ul class="unstyled">
+          <li>
+            <a href="https://cap.stanford.edu/profiles/frdActionServlet?choiceId=printerprofile&amp;profileversion=full&amp;profileId=276567" target="_blank">
+              <div class="icon-background"><i class="icon-print"></i></div>
+              Print Profile
+            </a>
+          </li>
+        <li>
+          <a href="mailto:?subject=Min Wu&#39;s Profile&amp;body=I would like to share the profile of Min Wu with you. https://profiles.stanford.edu/276567" data-bypass>
+            <div class="icon-background"><i class="icon-envelope-alt"></i></div>
+            Email Profile
+          </a>
+        </li>
+          <li>
+            <a data-toggle="tooltip" href="/intranet/276567" data-bypass>
+                <div class="icon-background"><i class="icon icon-lock"></i></div>
+                View Stanford-only Profile
+            </a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</section>
+<section id="tabbedLayoutContainer">
+  <div class="container breakout-phone">
+  <div class="tab-dropdown">
+    <a class="collapsed" data-toggle="collapse" data-target=".nav-collapse">Tab Menu <span class="selected-tab"></span><i class="icon-caret-down"></i></a>
+  </div>
+  <div class="nav-collapse collapse">
+    <ul class="nav nav-tabs tabs3">
+        <li class="active">
+          <a id="bioTabLink" href="/276567?tab=bio" class="tab-link no-trigger">Bio</a>
+        </li>
+        <li class="">
+          <a id="researchAndScholarshipTabLink" href="/276567?tab=research-and-scholarship" class="tab-link no-trigger">Research &amp; Scholarship</a>
+        </li>
+        <li class="">
+          <a id="publicationsTabLink" href="/276567?tab=publications" class="tab-link no-trigger">Publications</a>
+        </li>
+    </ul>
+  </div>
+</div>
+<div class="container breakout-phone">
+  <div class="tab-content">
+      <div id="bio" class="card tab-pane active">
+        <div class="row-fluid">
+  <div class="span8">
+
+
+
+
+
+
+
+
+
+
+
+      <div id="professionalEducationContent" class="content-section">
+        <h3>Professional Education</h3>
+<hr/>
+<ul class="section-listing">
+    <li class="section-list-item">
+  <div class="description bulleted">Doctor of Philosophy, University of Oxford, Computer Science  (2022)</div>
+</li>
+</ul>
+      </div>
+
+
+      <div id="stanfordAdvisorsContent" class="content-section">
+        <h3>Stanford Advisors</h3>
+<hr/>
+<ul class="section-listing">
+    <li class="section-list-item">
+  <div class="description bulleted"><a href="https://profiles.stanford.edu/clark-barrett">Clark Barrett</a>, <span>Postdoctoral Faculty Sponsor</span></div>
+</li>
+</ul>
+      </div>
+
+
+
+
+
+
+  </div>
+
+  <div class="span4 side-bar">
+      <div id="contactInfoContent" class="content-section contact-info">
+        <h3>Contact</h3>
+<hr/>
+<span style="display:none;" data-id="view__tabs__bio__concact_info_section"></span>
+    <ul class="unstyled section-listing use-link-icons">
+      <li class="primary">
+            <div class="contact-info ">
+                  <span><strong>Academic</strong></span>
+                      <div class="extra-bottom-padding"><a data-bypass href="mailto:minwu@stanford.edu" target="_top">minwu@stanford.edu</a></div>
+                  <div class="extra-bottom-padding">
+                      <span class="affiliation">University - Scholar</span>
+                      <span class="department"> Department:&nbspComputer Science</span>
+                      <span class="position extra-bottom-padding"> Position:&nbsp;Postdoctoral Scholar</span>
+                  </div>
+            </div>
+        </li>
+    </ul>
+
+<ul class="unstyled section-listing use-link-icons">
+
+</ul>
+
+
+
+      </div>
+
+
+        <div id="additionalInfoContent" class="content-section additional-info">
+              <h3>Additional Info</h3>
+    <hr/>
+    <span style="display:none;" data-id="view__tabs__bio__additional_info_section"></span>
+    <ul class="unstyled section-listing use-link-icons contact-info">
+        <li>
+            <div class="row no-margin">
+                <span class="section23" > Mail Code:</span>
+                <span class="section75 " > 9025</span>
+            </div>
+        </li>
+    </ul>
+
+        </div>
+
+      <div id="linksContent" class="content-section links">
+        <h3>Links</h3>
+<hr/>
+<ul class="unstyled section-listing use-link-icons">
+    <li class="external-link"><a href="https://cs.stanford.edu/~minwu/" class="Personal Site " target="_blank" data-bypass>Personal Website</a></li>
+    <li class="external-link"><a href="https://scholar.google.com/citations?user=KIvRCsoAAAAJ" class="Other" target="_blank" data-bypass>Google Scholar</a></li>
+</ul>
+
+      </div>
+  </div>
+
+</div>
+
+      </div>
+      <div id="research-and-scholarship" class="card tab-pane ">
+        <div class="row-fluid">
+  <div class="span8">
+
+      <div id="currentResearchAndScholarlyInterestsContent" class="content-section">
+        <h3>Current Research and Scholarly Interests</h3>
+<hr/>
+<p>Responsible AI, AI safety, trustworthy AI, robustness, explainability and interpretability. <br/>Formal methods, automated verification, verification of deep neural networks, formal explainable AI.</p>
+      </div>
+
+
+
+
+
+
+
+  </div>
+</div>
+      </div>
+      <div id="publications" class="card tab-pane ">
+        
+<div class="row-fluid">
+  <div class="span8">
+    <div id="featuredPublicationsContent"></div>
+    <div id="allPublicationsContent">
+        <h3>All Publications</h3>
+<hr/>
+<ul class="section-listing articles" data-count="15">
+    <li class="publication  inproceedings">
+  <cite><span class="title">
+  <span>Parallel Verification for δ-Equivalence of Neural Network Quantization</span>
+  
+</span>
+<span class="authors">Huang, P., Yang, Y., Wu, H., Daukantas, I., Wu, M., Jia, F., Barrett, C.</span>
+<span class="editors">edited by Avni, G., Giacobbe, M., Johnson, T. T., Katz, G., Lukina, A., Narodytska, N., Schilling, C.</span>
+<span class="details">
+  <span class="publisher">SPRINGER INTERNATIONAL PUBLISHING AG.</span> <span class="year">2024</span><span class="pages">: 78-99</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1007/978-3-031-65112-0_4">DOI 10.1007/978-3-031-65112-0_4</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/001312952000004">Web of Science ID 001312952000004</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication  inproceedings">
+  <cite><span class="title">
+  <span>Marabou 2.0: A Versatile Formal Analyzer of Neural Networks</span>
+  
+</span>
+<span class="authors">Wu, H., Isac, O., Zeljic, A., Tagomori, T., Daggitt, M., Kokke, W., Refaeli, I., Amir, G., Julian, K., Bassan, S., Huang, P., Lahav, O., Wu, M., Zhang, M., Komendantskaya, E., Katz, G., Barrett, C.</span>
+<span class="editors">edited by Ganesh, Gurfinkel, A.</span>
+<span class="details">
+  <span class="publisher">SPRINGER INTERNATIONAL PUBLISHING AG.</span> <span class="year">2024</span><span class="pages">: 249-264</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1007/978-3-031-65630-9_13">DOI 10.1007/978-3-031-65630-9_13</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/001307890400013">Web of Science ID 001307890400013</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication  inproceedings">
+  <cite><span class="title">
+  <span>Towards Efficient Verification of Quantized Neural Networks</span>
+  
+</span>
+<span class="authors">Huang, P., Wu, H., Yang, Y., Daukantas, I., Wu, M., Zhang, Y., Barrett, C.</span>
+<span class="editors">edited by Wooldridge, M., Dy, J., Natarajan, S.</span>
+<span class="details">
+  <span class="publisher">ASSOC ADVANCEMENT ARTIFICIAL INTELLIGENCE.</span> <span class="year">2024</span><span class="pages">: 21152-21160</span>
+</span></cite>
+    <div class="detail">
+      <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/001239984900029">Web of Science ID 001239984900029</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication  inproceedings">
+  <cite><span class="title">
+  <span>Convex Bounds on the Softmax Function with Applications to Robustness Verification</span>
+  <i>Proceedings of The 26th International Conference on Artificial Intelligence and Statistics</i>
+</span>
+<span class="authors">Wei, D., Wu, H., Wu, M., Chen, P., Barrett, C., Farchi, E.</span>
+
+<span class="details">
+   <span class="year">2023</span><span class="pages">: 6853-6878</span>
+</span></cite>
+</li>
+    <li class="publication  inproceedings">
+  <cite><span class="title">
+  <span>&lt;i&gt;Soy&lt;/i&gt;: An Efficient MILP Solver for Piecewise-Affine Systems</span>
+  
+</span>
+<span class="authors">Wu, H., Wu, M., Sadigh, D., Barrett, C., IEEE</span>
+
+<span class="details">
+  <span class="publisher">IEEE.</span> <span class="year">2023</span><span class="pages">: 6281-6288</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1109/IROS55552.2023.10342011">DOI 10.1109/IROS55552.2023.10342011</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/001136907800122">Web of Science ID 001136907800122</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured inproceedings">
+  <cite><span class="title">
+  <span>VERIX: Towards Verified Explainability of Deep Neural Networks</span>
+  
+</span>
+<span class="authors">Wu, M., Wu, H., Barrett, C.</span>
+<span class="editors">edited by Oh, A., Neumann, T., Globerson, A., Saenko, K., Hardt, M., Levine, S.</span>
+<span class="details">
+  <span class="publisher">NEURAL INFORMATION PROCESSING SYSTEMS (NIPS).</span> <span class="year">2023</span>
+</span></cite>
+    <div class="detail">
+      <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/001230083404006">Web of Science ID 001230083404006</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication  article">
+  <cite><span class="title">
+  <span>Full Poincare polarimetry enabled through physical inference</span>
+  <i>OPTICA</i>
+</span>
+<span class="authors">He, C., Lin, J., Chang, J., Antonello, J., Dai, B., Wang, J., Cui, J., Qi, J., Wu, M., Elson, D. S., Xi, P., Forbes, A., Booth, M. J.</span>
+
+<span class="details">
+   <span class="year">2022</span>; <span class="volume">9 (10)</span><span class="pages">: 1109-1114</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1364/OPTICA.452646">DOI 10.1364/OPTICA.452646</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000880667200002">Web of Science ID 000880667200002</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication  article">
+  <cite><span class="title">
+  <span>A survey of safety and trustworthiness of deep neural networks: Verification, testing, adversarial attack and defence, and interpretability?</span>
+  <i>COMPUTER SCIENCE REVIEW</i>
+</span>
+<span class="authors">Huang, X., Kroening, D., Ruan, W., Sharp, J., Sun, Y., Thamo, E., Wu, M., Yi, X.</span>
+
+<span class="details">
+   <span class="year">2020</span>; <span class="volume">37</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1016/j.cosrev.2020.100270">DOI 10.1016/j.cosrev.2020.100270</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000559782300009">Web of Science ID 000559782300009</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured article">
+  <cite><span class="title">
+  <span>A game-based approximate verification of deep neural networks with provable guarantees</span>
+  <i>THEORETICAL COMPUTER SCIENCE</i>
+</span>
+<span class="authors">Wu, M., Wicker, M., Ruan, W., Huang, X., Kwiatkowska, M.</span>
+
+<span class="details">
+   <span class="year">2020</span>; <span class="volume">807</span><span class="pages">: 298-329</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1016/j.tcs.2019.05.046">DOI 10.1016/j.tcs.2019.05.046</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000512219400020">Web of Science ID 000512219400020</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured inproceedings">
+  <cite><span class="title">
+  <span>Robustness Guarantees for Deep Neural Networks on Videos</span>
+  
+</span>
+<span class="authors">Wu, M., Kwiatkowska, M., IEEE</span>
+
+<span class="details">
+  <span class="publisher">IEEE.</span> <span class="year">2020</span><span class="pages">: 308-317</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1109/CVPR42600.2020.00039">DOI 10.1109/CVPR42600.2020.00039</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000620679500032">Web of Science ID 000620679500032</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication  inproceedings">
+  <cite><span class="title">
+  <span>Assessing Robustness of Text Classification through Maximal Safe Radius Computation</span>
+  <i>Findings of the Association for Computational Linguistics: EMNLP 2020</i>
+</span>
+<span class="authors">La Malfa, E., Wu, M., Laurenti, L., Wang, B., Hartshorn, A., Kwiatkowska, M.</span>
+
+<span class="details">
+   <span class="year">2020</span><span class="pages">: 2949-2968</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="http://dx.doi.org/10.18653/v1/2020.findings-emnlp.266">DOI 10.18653/v1/2020.findings-emnlp.266</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured inproceedings">
+  <cite><span class="title">
+  <span>Gaze-based Intention Anticipation over Driving Manoeuvres in Semi-Autonomous Vehicles</span>
+  
+</span>
+<span class="authors">Wu, M., Louw, T., Lahijanian, M., Ruan, W., Huang, X., Merat, N., Kwiatkowska, M., IEEE</span>
+
+<span class="details">
+  <span class="publisher">IEEE.</span> <span class="year">2019</span><span class="pages">: 6210-6216</span>
+</span></cite>
+    <div class="detail">
+      <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000544658404127">Web of Science ID 000544658404127</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication  inproceedings">
+  <cite><span class="title">
+  <span>Global Robustness Evaluation of Deep Neural Networks with Provable Guarantees for the Hamming Distance</span>
+  <i>Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence</i>
+</span>
+<span class="authors">Ruan, W., Wu, M., Sun, Y., Huang, X., Kroening, D., Kwiatkowska, M.</span>
+
+<span class="details">
+   <span class="year">2019</span><span class="pages">: 5944-5952</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="http://dx.doi.org/10.24963/ijcai.2019/824">DOI 10.24963/ijcai.2019/824</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication  inproceedings">
+  <cite><span class="title">
+  <span>Concolic Testing for Deep Neural Networks</span>
+  
+</span>
+<span class="authors">Sun, Y., Wu, M., Ruan, W., Huang, X., Kwiatkowska, M., Kroening, D.</span>
+<span class="editors">edited by Huchard, M., Kastner, C., Fraser, G.</span>
+<span class="details">
+  <span class="publisher">IEEE.</span> <span class="year">2018</span><span class="pages">: 109-119</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1145/3238147.3238172">DOI 10.1145/3238147.3238172</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000553784500014">Web of Science ID 000553784500014</a></span>
+  </p>
+      
+    </div>
+</li>
+    <li class="publication featured inproceedings">
+  <cite><span class="title">
+  <span>Safety Verification of Deep Neural Networks</span>
+  
+</span>
+<span class="authors">Huang, X., Kwiatkowska, M., Wang, S., Wu, M.</span>
+<span class="editors">edited by Majumdar, R., Kuncak</span>
+<span class="details">
+  <span class="publisher">SPRINGER INTERNATIONAL PUBLISHING AG.</span> <span class="year">2017</span><span class="pages">: 3-29</span>
+</span></cite>
+    <div class="detail">
+      <p class="doi">
+    <span>View details for <a href="https://doi.org/10.1007/978-3-319-63387-9_1">DOI 10.1007/978-3-319-63387-9_1</a></span>
+  </p>
+  <p class="wos">
+    <span>View details for <a href="https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000432196400001">Web of Science ID 000432196400001</a></span>
+  </p>
+      
+    </div>
+</li>
+</ul>
+    </div>
+    <div id="journalArticlesContent"></div>
+    <div id="booksContent"></div>
+    <div id="proceedingsContent"></div>
+    <div id="presentationsContent"></div>
+    <div id="papersContent"></div>
+    <div id="paginationContent"></div>
+  </div>
+  <div class="span4 side-bar">
+    <div id="navigatorContent" class="content-section navigator"></div>
+    <div id="similarProfilesContent" class="content-section similar-profiles"></div>
+    <div id="tagCloudContent" class="content-section tag-cloud"></div>
+  </div>
+</div>
+
+      </div>
+  </div>
+</div>
+</section>
+        </div>
+      </main>
+      <footer id="footerContent">
+        <div class="container">
+          <div class="accessibility">
+            <a href="http://www.stanford.edu/site/accessibility">Report Accessibility Issues <i class="icon-caret-right"></i></a>
+
+          </div>
+        </div>
+        <div class="footer-wrapper">
+          <div class="container">
+            <div class="row-fluid">
+              <div class="span12">
+                <div class="logo span2">
+                  <a href="http://www.stanford.edu/">Stanford University</a>
+                </div>
+                <ul class="unstyled span10">
+                  <li>
+                    <a href="http://www.stanford.edu/">SU Home</a>
+                  </li>
+                  <li>
+                    <a href="https://visit.stanford.edu/plan">Maps &amp; Directions</a>
+                  </li>
+                  <li>
+                    <a href="http://www.stanford.edu/search/">Search Stanford</a>
+                  </li>
+                  <li>
+                    <a href="http://www.stanford.edu/site/terms.html">Terms of Use</a>
+                  </li>
+                  <li>
+                    <a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a>
+                  </li>
+                </ul>
+                <small class="copyright span10">&copy; Stanford University, Stanford, California 94305</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var require = {
+        baseUrl: '/scripts',
+        urlArgs: 'r=11.5.1'
+      };
+
+      (function() {
+        if (navigator && navigator.platform === 'Win32') {
+          var d = document.getElementsByTagName('html')[0];
+          d.className = d.className + ' win';
+        }
+      }());
+    </script>
+    <script src="/scripts/vendor/requirejs/require.js?r=11.5.1"></script>
+    <script>
+      
+      
+      /*<!--*/
+      
+      define('app-config', {"c":{"accessToken":"","baseUrl":"","capApiUrl":"https://profiles.stanford.edu/proxy/api/cap","googleAnalytics4Id":"G-X6DK9R58FD","capIntranetPath":"/intranet","capClassicSignInUrl":"https://cap.stanford.edu/profiles/auth/","browseOrgs":{"administrations":[{"name":"Office of External Relations","url":"/browse/office-of-external-relations"},{"name":"Office of VP for University Human Resources","url":"/browse/office-of-vp-for-university-human-resources"},{"name":"Office of Vice President for Business Affairs and Chief Financial Officer","url":"/browse/office-of-vice-president-for-business-affairs-and-chief-financial-officer"},{"name":"Office of the Vice President for the Arts","url":"/browse/office-of-the-vice-president-for-the-arts"},{"name":"Stanford University Libraries","url":"/browse/stanford-university-libraries"},{"name":"Vice Provost and Dean of Research","url":"/browse/vice-provost-and-dean-of-research"},{"name":"Vice Provost for Student Affairs","url":"/browse/vice-provost-for-student-affairs"},{"name":"Vice Provost for Undergraduate Education","url":"/browse/vice-provost-for-undergraduate-education"}],"institutes":[{"name":"Bio-X","url":"/browse/vice-provost-and-dean-of-research/bio-x"},{"name":"Freeman Spogli Institute for International Studies","url":"/browse/vice-provost-and-dean-of-research/freeman-spogli-institute-for-international-studies"},{"name":"Institute for Computational and Mathematical Engineering (ICME)","url":"/browse/school-of-engineering/programs-centers-and-institutes/institute-for-computational-and-mathematical-engineering-icme"},{"name":"Institute for Human-Centered Artificial Intelligence (HAI)","url":"/browse/vice-provost-and-dean-of-research/institute-for-human-centered-artificial-intelligence-hai"},{"name":"Institute for Stem Cell Biology and Regenerative Medicine","url":"/browse/school-of-medicine/institute-for-stem-cell-biology-and-regenerative-medicine"},{"name":"Precourt Institute for Energy","url":"/browse/stanford-doerr-school-of-sustainability/precourt-institute-for-energy"},{"name":"SLAC National Accelerator Laboratory","url":"/browse/slac-national-accelerator-laboratory"},{"name":"Sarafan ChEM-H","url":"/browse/vice-provost-and-dean-of-research/sarafan-chem-h"},{"name":"Stanford Data Science","url":"/browse/vice-provost-and-dean-of-research/stanford-data-science"},{"name":"Stanford Institute for Economic Policy Research (SIEPR)","url":"/browse/vice-provost-and-dean-of-research/stanford-institute-for-economic-policy-research-siepr"},{"name":"Stanford PULSE Institute","url":"/browse/vice-provost-and-dean-of-research/stanford-pulse-institute"},{"name":"Stanford Woods Institute for the Environment","url":"/browse/stanford-doerr-school-of-sustainability/stanford-woods-institute-for-the-environment"},{"name":"Wu Tsai Human Performance Alliance","url":"/browse/vice-provost-and-dean-of-research/life-science-institutes-independent-labs-institutes-centers-dor/wu-tsai-human-performance-alliance"},{"name":"Wu Tsai Neurosciences Institute","url":"/browse/vice-provost-and-dean-of-research/wu-tsai-neurosciences-institute"}],"schools":[{"name":"Graduate School of Business","url":"/browse/graduate-school-of-business"},{"name":"Graduate School of Education","url":"/browse/graduate-school-of-education"},{"name":"School of Engineering","url":"/browse/school-of-engineering"},{"name":"School of Humanities and Sciences","url":"/browse/school-of-humanities-and-sciences"},{"name":"School of Medicine","url":"/browse/school-of-medicine"},{"name":"Stanford Doerr School of Sustainability","url":"/browse/stanford-doerr-school-of-sustainability"}]},"federatedLoginEnabled":true},"u":{"feedbackMenuItem":{"name":"Feedback","url":"https://stanford.service-now.com/services?id=get_help"},"intranetPathInUrl":"","switchViewPath":"/intranet/276567","uCtxET":0}});
+      
+      
+      // Retrieval of appConfig took 0[ms]
+      require(['main']);
+      
+      /*-->*/
+    </script>
+  </body>
+</html>

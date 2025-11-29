@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Sanmi Koyejo</title>
+<!-- MathJax -->
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Sanmi Koyejo</div>
+<div class="menu-item"><a href="index.html" class="current">Home</a></div>
+<div class="menu-item"><a href="bio.html">Bio</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="research.html">Topics</a></div>
+<div class="menu-item"><a href="publications.html">Papers</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-item"><a href="new_students.html">Prospective<br />Students</a></div>
+<div class="menu-category">Teaching</div>
+<div class="menu-item"><a href="https://web.stanford.edu/class/cs329h/">MLHP&nbsp;(Fa25)</a></div>
+<div class="menu-item"><a href="https://explorecourses.stanford.edu/search?q=LAW4052">GAI&nbsp;(Fa25)</a></div>
+<div class="menu-item"><a href="https://web.stanford.edu/class/sts14/index.html" class="current">AIG&nbsp;(Wi25)</a></div>
+<div class="menu-item"><a href="https://stanford-cs221.github.io/spring2024/">AI&nbsp;(Sp24)</a></div>
+<div class="menu-item"><a href="https://cs229.stanford.edu/">ML&nbsp;(Wi24)</a></div>
+<div class="menu-item"><a href="https://web.stanford.edu/class/cs329h/">MLHP&nbsp;(Fa23)</a></div>
+<div class="menu-item"><a href="https://stanford-cs221.github.io/spring2023/">AI&nbsp;(Sp23)</a></div>
+<div class="menu-item"><a href="https://relate.cs.illinois.edu/course/cs598ook-sp21/">PGM&nbsp;(Sp21)</a></div>
+<div class="menu-item"><a href="https://relate.cs.illinois.edu/course/CS446-fa20/">ML&nbsp;(Fa20)</a></div>
+<div class="menu-item"><a href="https://relate.cs.illinois.edu/course/cs598ook-sp20/">PGM&nbsp;(Sp20)</a></div>
+<div class="menu-item"><a href="https://relate.cs.illinois.edu/course/cs446-fa19/">ML&nbsp;(Fa19)</a></div>
+<div class="menu-item"><a href="https://relate.cs.illinois.edu/course/cs446-fa18/">ML&nbsp;(Fa18)</a></div>
+<div class="menu-item"><a href="https://relate.cs.illinois.edu/course/cs446-fa17/">ML&nbsp;(Fa17)</a></div>
+<div class="menu-item"><a href="http://sanmi.cs.illinois.edu/courses/CS598/">PGM&nbsp;(Fa16)</a></div>
+<div class="menu-category">Service</div>
+<div class="menu-item"><a href="service.html">Recent</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Sanmi Koyejo</h1>
+</div>
+<div class="infoblock">
+<div class="blockcontent">
+<p><a href="https://stairlab.stanford.edu">New lab webpage!</a></p>
+</div></div>
+<table class="imgtable"><tr><td>
+<a href="images/Koyejo-Profile.jpg"><img src="images/Koyejo-Profile-scaled.jpg" alt="Koyejo-Image" /></a>&nbsp;</td>
+<td align="left"><p>Assistant Professor<br />
+<a href="http://cs.stanford.edu/">Computer Science</a>, <a href="http://stanford.edu/">Stanford University</a><br /></p>
+<p>Stanford Affiliations<br />
+<a href="https://ai.stanford.edu/">SAIL</a>, <a href="https://hai.stanford.edu/">HAI</a>, <a href="https://crfm.stanford.edu/">CRFM</a>, <a href="https://aimi.stanford.edu/">AIMI</a>, <a href="https://aisafety.stanford.edu/">AI Safety</a>, <a href="http://statsml.stanford.edu/">Machine Learning Group</a>, <a href="https://biox.stanford.edu/">Bio-X</a><br /></p>
+<p>Adjunct Associate Professor<br />
+<a href="http://cs.illinois.edu/">Computer Science</a>, <a href="http://illinois.edu/">University of Illinois at Urbana-Champaign</a><br /></p>
+<h2>Research</h2>
+<p>I lead Stanford Trustworthy AI Research (<a href="https://stairlab.stanford.edu">STAIR</a>). STAIR develops measurement-theoretic foundations for trustworthy AI systems, spanning AI evaluation science, algorithmic accountability, and privacy-preserving machine learning. Our applied research includes applications to healthcare, neuroimaging, and scientific discovery. For more details, see <a href="https://scholar.google.com/citations?hl=en&amp;user=EaaOeJwAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">publications</a>.<br /></p>
+</td></tr></table>
+<h2>Contact</h2>
+<p>Assistant Professor<br />
+342 Gates,<br />
+353 Jane Stanford Way,<br />
+Stanford, CA, 94305.<br />
+sanmi[at]cs.stanford.edu<br />
+<a href="http://cs.stanford.edu/~sanmi">http://cs.stanford.edu/~sanmi</a></p>
+<h2></h2>
+<p><a href="https://scholar.google.com/citations?user=EaaOeJwAAAAJ">Google Scholar</a>,
+<a href="https://dblp.uni-trier.de/pers/hd/k/Koyejo:Oluwasanmi">DPLB</a>,
+<a href="https://arxiv.org/search/advanced?advanced=&amp;terms-0-operator=AND&amp;terms-0-term=Koyejo%2C+O&amp;terms-0-field=author&amp;terms-1-operator=OR&amp;terms-1-term=Koyejo%2C+S&amp;terms-1-field=author&amp;classification-physics_archives=all&amp;classification-include_cross_list=include&amp;date-filter_by=all_dates&amp;date-year=&amp;date-from_date=&amp;date-to_date=&amp;date-date_type=submitted_date&amp;abstracts=show&amp;size=50&amp;order=-announced_date_first">arXiv</a></p>
+<h2>Selected Recent News</h2>
+<ul>
+<li><p>With <a href="https://ai.stanford.edu/~sttruong/">Sang Truong</a> and <a href="https://www.andyhaupt.com/">Andy Haupt</a>, I am writing a textbook on <a href="https://mlhp.stanford.edu/">Machine Learning from Human Preferences</a>. Submit a PR to <a href="https://github.com/stair-lab/mlhp">contribute</a>!</p>
+</li>
+<li><p>Sanmi receives the Presidential Early Career Award for Scientists and Engineers (PECASE) (2025).</p>
+</li>
+<li><p>Excited to give a keynote at the <a href="https://eccv.ecva.net/">European Conference on Computer Vision</a> (ECCV 2024).</p>
+</li>
+<li><p>Excited to give a keynote at the <a href="https://facctconference.org/">ACM Conference on Fairness, Accountability, and Transparency</a> (ACM FAccT 2024).</p>
+</li>
+<li><p>Excited to give a keynote at the <a href="https://chilconference.org/speakers.html">Conference on Health, Inference, and Learning</a> (CHIL 2024).</p>
+</li>
+<li><p>Our work on AI capabilities evaluation was cited in the 2024 Economic Report of the President.</p>
+</li>
+<li><p>Co-founded <a href="https://www.virtueai.com/">Virtue AI</a>, developing enterprise solutions for AI safety and security measurement and mitigation.</p>
+</li>
+<li><p>Some <a href="https://www.vice.com/en/article/wxjdg5/scary-emergent-ai-abilities-are-just-a-mirage-produced-by-researchers-stanford-study-says">press</a> on our <a href="https://arxiv.org/abs/2304.15004">preprint</a> critiquing emergent abilities (May 2023).</p>
+</li>
+<li><p>Our work &ldquo;Toward fairness in artificial intelligence for medical image analysis: identification and mitigation of potential biases in the roadmap from data collection to model deployment&rdquo; was <a href="https://spie.org/news/roadmap-to-fair-ai-revealing-biases-in-ai-models-for-medical-imaging?SSO=1">highlighted</a> by SPIE (April 2023).</p>
+</li>
+<li><p>Excited to give a keynote at the <a href="https://2023.biomedicalimaging.org/en/KEYNOTE-SPEAKERS.html">International Symposium of Biomedical Imaging</a> (2023)</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2025-09-08 09:44:34 PDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

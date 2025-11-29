@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Somil Bansal</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-78683315-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Somil Bansal</strong></a>
+									<ul class="icons">
+										<li><a href="https://github.com/smlbansal" class="icon brands fa-github"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+									<!-- <header>-->
+										<p align="justify">	
+											<strong>I am an assistant professor in the Department of Aeronautics and Astronautics at Stanford, where I lead the <a href="https://smlbansal.github.io/sia-lab/index.html">Safe and Intelligent Autonomy Lab</a>. Before that, I was an assistant professor in the ECE department at the University of Southern California. Before joining USC, I spent a year as a Research Scientist at <a href="https://waymo.com/">Waymo</a> (formerly known as Google’s Self-Driving Car project).</strong>
+										</p>
+
+										<!-- 
+											<p align="justify">	
+											<em><strong> We are looking for undergraduate and graduate students to join our research group. If you are interested in robotics, control, and/or machine learning, consider <a href="https://smlbansal.github.io/sia-lab/joinus.html">joining us</a>!</strong></em>
+											</p>
+
+											
+											<p>	I am a final year Ph.D. student at UC Berkeley, advised by Prof. Claire Tomlin. I am broadly interested in the intersection of control and dynamical system theory, machine learning, and computer vision for robotic applications.
+											</p>
+											-->
+
+										<!-- </header> -->
+										<p align="justify"> 
+											I am broadly interested in robotics and autonomous systems. Specifically, my research focuses on understanding how machine learning methods can be combined with classical, model-based planning and control methods with the goal of enabling intelligent and safe decision making in complex and uncertain environments, especially when the robot relies on high-dimensional sensory inputs and data for decision making and control. For more information about our ongoing research, please check out our <a href="https://smlbansal.github.io/sia-lab/index.html">lab website</a>.
+											<!--
+											<br />
+
+											(a) enabling robots to make intelligent decisions in a <em>data-efficient</em> manner, especially when they rely on perception and vision sensors;<br />
+											(b) assuring <em>robot safety</em> while it relies on learning for decision-making.
+											
+											I am broadly interested in robotics and autonomous systems. My research focuses on understanding how machine learning can be used to enable robots to make intelligent decisions in new and hard-to-characterize environments. Particularly, I focus on two aspects of robot learning: (a) how can these decisions be made in a <em>scalable and data-efficient</em> manner by combining learning with the prior knowledge of the robot and its environment? (b) how can robots maintain <em>safety</em> while using learning for decision-making?
+											-->
+										</p>
+										<ul class="actions">
+											<li><a href="Papers/Somil_Bansal_CV.pdf" class="button big">C.V.</a></li>
+											<li><a href="https://scholar.google.com/citations?user=3mOq4dcAAAAJ&hl=en" class="button big">Google Scholar</a></li>
+											<li><a href="https://smlbansal.github.io/sia-lab/index.html" class="button big">Lab Website</a></li>
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="images/somil3.jpg" alt="" />
+									</span>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contact</h2>
+									</header>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><p>somil AT stanford DOT edu</p></li>
+										<!-- <li class="icon solid fa-phone">+1 (510) 423-1651</li> -->
+										<li class="icon solid fa-home">Durand 256 <br />
+											Stanford CA 94305 </li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+<!-- 								<section>
+									<header class="major">
+										<h2>News</h2>
+									</header>
+										<article>
+											<h3>September 2022</h3>
+											<p> New <a href="https://arxiv.org/pdf/2209.12336.pdf">paper</a> on providing safety guarantees for DeepReach. The scalability of DeepReach along with the proposed verification algorithm allows us to compute high-confidence safe sets for high-dimensional systems.<p>
+
+											<p> New <a href="https://arxiv.org/pdf/2209.14976.pdf">paper</a> on quickly updating safety assurances for an autonomous system online as the system or the environment factors change.<p>
+
+											<br>
+											<h3>April 2021</h3>
+											<p> We have released the code for DeepReach. You can check it out <a href="https://github.com/smlbansal/deepreach.git"> here</a>.<p>
+
+
+											<br>
+											<h3>February 2021</h3>
+											<p> <a href="https://arxiv.org/pdf/2011.02082.pdf"> DeepReach</a> has been accepted for publication at ICRA 2021.<p>
+
+											<br>
+											<h3>January 2021</h3>
+											<p> New paper on <a href="https://arxiv.org/pdf/2003.09354.pdf"> visual Navigation Among Humans</a> has been accepted to RA-L 2021.
+											<p> New paper on <a href="Papers/Sequential_Trajectory_Planning.pdf"> safe multi-UAV trajectory planning</a> has been accepted to TAC 2021.<p>
+
+											<br>
+											<h3>October 2020</h3>
+											<p> New paper on <a href="https://arxiv.org/pdf/2011.02082.pdf"> solving high-dimensional reachability problems using deep learning</a>. So far we have tested the method on computing up to 10D backward reachable sets/tubes and reach-avoid sets/tubes and have seen very promising results.
+											<p> New paper on <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9210199&casa_token=7FXauSHLlN0AAAAA:6eM2Whnb8PYD_9sk91jshVTvjaRKdsl_o6ZzXcB2ZPtLvfumB1LI0JPVdpsAdzghIdoB5gT5EV0H&tag=1"> designing a robust control framework for human motion prediction</a> (accepted to RA-L 2020).<p>
+
+											<br>
+											<h3>May 2020</h3>
+											<p> I am honored to receive the Eli Jury Award from UC Berkeley, EECS for "outstanding achievement in the area of systems, communications, control, or signal processing."
+											<p> Successfully defended my thesis at UC Berkeley! Thank you, Claire. Check out what I have been upto for the past 5 years <a href="https://youtu.be/TaZea0tqtMU"> [dissertation talk]</a>. <p>
+
+											<br>
+											<h3>April 2020</h3>
+											<p> Check out my talk on <a href="https://fast.wistia.net/embed/iframe/vx0jkmvo68"> scaling Hamilton-Jacobi reachability analysis for robotics at IPAM.</a> </p>
+
+											<br>
+											<h3>March 2020</h3>
+											<p> Excited to share our work on <a href="https://smlbansal.github.io/LB-WayPtNav-DH/"> viusal navigation among humans.</a> The work was done in collaboration with Google Brain research.
+											<p>We are organizing the 2nd workshop on <a href="https://sites.google.com/view/rss2020robustautonomy/home"> safe and robust autonomy</a> at RSS 2020. Check out our call for papers (due on 5 June, 2020).</p>
+
+											<br>
+											<h3>February 2020</h3>
+											<p> Check out our work on <a href="https://arxiv.org/abs/1910.13369"> safe navigation among humans.</a> We will present this work at ICRA 2020.
+											<p> New paper on <a href="https://arxiv.org/abs/1912.10120"> generating robust supervision for learning-based visual navigation</a> using Hamilton-Jacobi reachability. We will present this work at L4DC 2020.</p>
+
+											<br>
+											<h3>I am applying for faculty positions this Fall (<a href="Papers/Research_Statement - Somil Bansal.pdf"><u>research statement</u></a>).</h3>
+
+											<br>
+											<h3>December 2019</h3>
+											<p> I will be at CDC 2019! Check out our work on:<br />
+												- <a href="https://arxiv.org/abs/1909.05699"> A task-specific model learning framework using Bayesian Optimization</a>, Wednesday (Dec 11), 11:20-11:40am, Risso 8 (WeA23.5).<br />
+												- <a href="https://smlbansal.github.io/website-safe-navigation/"> A provably safe framework for perception-based navigation in unknown environments</a>, Wednesday (Dec 11), 2-2:20pm, Risso 8 (WeB23.1).<br />
+												- <a href="https://arxiv.org/abs/1903.07715"> A warm-starting method for efficiently updating reachability-based safety guarantees</a>, Thursday (Dec 12), 6:10-6:30pm, Méditerranée 5 (ThC03.6).<br />
+												- Meet the Faculty Candidate poster session, Wednesday (Dec 11), 6:30-8:30pm, Rhodes Exhibition area.
+											</p>
+ 
+											<br>
+											<h3>November 2019</h3>
+											<p> I will be at the 2019 NSF Cyber-Physical Systems Principal Investigators' Meeting presenting our work on <a href="https://smlbansal.github.io/website-safe-navigation/"> safe navigation in unknown environments.</a>
+											<p>We have released the code for our CoRL paper on combining optimal control and deep learning for visual navigation. <a href="https://github.com/smlbansal/Visual-Navigation-Release">Check it out!</a></p>
+
+											<br>
+											<h3>October 2019</h3>
+											<p>I will be at CoRL 2019 presenting our work on <a href="https://smlbansal.github.io/LB-WayPtNav/">Combining optimal control and deep learning for visual navigation.</a></p>
+											
+											<br>
+											<h3>September 2019</h3>
+											<p>New paper on <a href="https://arxiv.org/abs/1910.13369">Predicting and Analyzing Human Motion for Safe Motion Planning</a> posted on arXiv.</a></p>
+
+											<br>
+											<h3>August 2019</h3>
+											<p>Three papers accepted to CDC 2019.</p>
+
+
+										</article>
+								</section> -->
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Somil Bansal</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="about.html">Bio</a></li>
+										<li><a href="https://smlbansal.github.io/sia-lab/research.html">Research</a></li>
+										<li><a href="https://smlbansal.github.io/sia-lab/teaching.html">Teaching</a></li>
+										<li><a href="https://smlbansal.github.io/sia-lab/tutorial.html">Outreach</a></li>
+										<li><a href="https://smlbansal.github.io/sia-lab/publications.html">Publications</a></li>
+										<li><a href="https://smlbansal.github.io/sia-lab/talks.html">Talks</a></li>
+										<li><a href="https://smlbansal.github.io/sia-lab/joinus.html">Join Us!</a></li>
+									</ul>
+								</nav>
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+

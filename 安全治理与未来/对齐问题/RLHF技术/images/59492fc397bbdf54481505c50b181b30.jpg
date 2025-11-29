@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<!-- [if startif]
+/*! 
+* @author: Machine Learning Department, Carnegie Mellon University
+* @feedback: mariya@cmu.edu, mldweb@cs.cmu.edu
+* @copyright: Carnegie Mellon University | All Rights Reserved
+* @description: Blog capable website for Research Scientists with the Machine Learning Department at Carnegie Mellon University.
+*/
+[endif] -->
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="referrer" content="origin">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114918459-2"></script>
+    <script>'use strict';window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-114918459-2');</script>     
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://blog.ml.cmu.edu/xmlrpc.php">
+    <meta property="og:image" content="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium-887x625.jpg" />
+    <title>Carnegie Mellon University at ICML 2025 &#8211; Machine Learning Blog | ML@CMU | Carnegie Mellon University</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Machine Learning Blog | ML@CMU | Carnegie Mellon University &raquo; Feed" href="https://blog.ml.cmu.edu/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Machine Learning Blog | ML@CMU | Carnegie Mellon University &raquo; Comments Feed" href="https://blog.ml.cmu.edu/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Machine Learning Blog | ML@CMU | Carnegie Mellon University &raquo; Carnegie Mellon University at ICML 2025 Comments Feed" href="https://blog.ml.cmu.edu/2025/07/08/carnegie-mellon-university-at-icml-2025/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blog.ml.cmu.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.16"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://blog.ml.cmu.edu/wp-includes/css/dist/block-library/style.min.css?ver=5.6.16' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='email-subscribers-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/email-subscribers/lite/public/css/email-subscribers-public.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='modern_footnotes-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/modern-footnotes/styles.min.css?ver=1.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wpt-twitter-feed-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/wp-to-twitter/css/twitter-feed.css?ver=5.6.16' type='text/css' media='all' />
+<link rel='stylesheet' id='mc4wp-form-themes-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/mailchimp-for-wp/assets/css/form-themes.min.css?ver=4.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mint-fonts-css'  href='https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic%7CLora:400,400italic,700,700italic&#038;subset=latin' type='text/css' media='all' />
+<link rel='stylesheet' id='plugins-styles-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/plugins-styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/woocommerce.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mint-main-styles-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/style.css' type='text/css' media='all' />
+<style id='mint-main-styles-inline-css' type='text/css'>
+ 
+ .header-top{ height: 60px; } 
+ .header-logo{ width: 250px!important;} 
+ .header-logo{ height: 60px!important; } 
+ 
+ 
+ 
+ .header-navigation li a, .header-socials li a, .top-cart-wrapper a, .header-menu-panel .menu-tumbl{ color:#111;}
+	body{font-family:'Lato',Arial,serif;font-size:px;color:;}input::-webkit-input-placeholder{font-family: 'Lato', Arial, serif;}input:-moz-placeholder{font-family: 'Lato', Arial, serif;}
+	input::-moz-placeholder{font-family: 'Lato', Arial, serif;}
+	input:-ms-input-placeholder{font-family: 'Lato', Arial, serif;}
+	
+	.slide .category-post-title a, .post-author-name span, span.date, .single-post .post-tags a, .post-related-title h4, .thecomment .comment-text span.date, #respond h3, #cancel-comment-reply-link, .widget-title, .widget-slide-info .date a, .woocommerce .woocommerce-message,.woocommerce .woocommerce-error,.woocommerce .woocommerce-info, .woocommerce span.onsale, span.price, .woocommerce ul.cart_list .amount, .woocommerce ul.product_list_widget .amount, .woocommerce.widget_shopping_cart .total > strong, .woocommerce div.product div.summary p.price,.woocommerce div.product div.summary span.price,.woocommerce #content div.product div.summary p.price, .woocommerce #content div.product div.summary span.price,.woocommerce .related.products > h2, .quantity.mkd-quantity-buttons .mkd-quantity-input{font-family: 'Lato'!important;}
+	h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.navigation li{ font-family: 'Lora', Arial, serif!important; font-weight:;letter-spacing:em;color:; }
+	blockquote, .author-post-name a, .page .page-title-wrapper h3, .instagram-footer #sbi_load a, .woocommerce-page .page-title-wrapper h3, .woocommerce-page .woocommerce-result-count, .woocommerce ul.cart_list li a,
+.woocommerce ul.product_list_widget li a, .woocommerce div.product .woocommerce-review-link,
+.woocommerce #content div.product .woocommerce-review-link, .woocommerce-cart table.cart .product-name > a  {font-family: 'Lora'!important;}
+ 	.post-entry a {
+  font-weight: 400;
+  text-decoration: underline;
+} 
+</style>
+<link rel='stylesheet' id='resposive-css'  href='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/css/media.css' type='text/css' media='all' />
+<link rel='stylesheet' id='enlighterjs-css'  href='https://blog.ml.cmu.edu/wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=BaUKYlr1JydyEx/' type='text/css' media='all' />
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/enable-jquery-migrate-helper/js/jquery/jquery-1.12.4-wp.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/enable-jquery-migrate-helper/js/jquery-migrate/jquery-migrate-1.4.1-wp.js?ver=1.4.1-wp' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='email-subscribers-js-extra'>
+/* <![CDATA[ */
+var es_data = {"messages":{"es_empty_email_notice":"Please enter email address","es_rate_limit_notice":"You need to wait for sometime before subscribing again","es_single_optin_success_message":"Successfully Subscribed.","es_email_exists_notice":"Email Address already exists!","es_unexpected_error_notice":"Oops.. Unexpected error occurred.","es_invalid_email_notice":"Invalid email address","es_try_later_notice":"Please try after some time"},"es_ajax_url":"https:\/\/blog.ml.cmu.edu\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/email-subscribers/lite/public/js/email-subscribers-public.js?ver=4.7.0' id='email-subscribers-js'></script>
+<script type='text/javascript' id='simple-likes-public-js-js-extra'>
+/* <![CDATA[ */
+var simpleLikes = {"ajaxurl":"https:\/\/blog.ml.cmu.edu\/wp-admin\/admin-ajax.php","like":"Like","unlike":"Unlike"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/simple-likes-public.js?ver=0.5' id='simple-likes-public-js-js'></script>
+<link rel="https://api.w.org/" href="https://blog.ml.cmu.edu/wp-json/" /><link rel="alternate" type="application/json" href="https://blog.ml.cmu.edu/wp-json/wp/v2/posts/21192" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.ml.cmu.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.ml.cmu.edu/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6.16" />
+<link rel="canonical" href="https://blog.ml.cmu.edu/2025/07/08/carnegie-mellon-university-at-icml-2025/" />
+<link rel='shortlink' href='https://blog.ml.cmu.edu/?p=21192' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.ml.cmu.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.ml.cmu.edu%2F2025%2F07%2F08%2Fcarnegie-mellon-university-at-icml-2025%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.ml.cmu.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.ml.cmu.edu%2F2025%2F07%2F08%2Fcarnegie-mellon-university-at-icml-2025%2F&#038;format=xml" />
+
+
+<!-- This site is optimized with the Schema plugin v1.7.9.0 - https://schema.press -->
+<script type="application/ld+json">[{"@context":"http:\/\/schema.org\/","@type":"WPHeader","url":"https:\/\/blog.ml.cmu.edu\/2025\/07\/08\/carnegie-mellon-university-at-icml-2025\/","headline":"Carnegie Mellon University at ICML 2025","description":"CMU researchers are presenting 127 papers at the Forty-Second International Conference on Machine Learning (ICML 2025), held from..."},{"@context":"http:\/\/schema.org\/","@type":"WPFooter","url":"https:\/\/blog.ml.cmu.edu\/2025\/07\/08\/carnegie-mellon-university-at-icml-2025\/","headline":"Carnegie Mellon University at ICML 2025","description":"CMU researchers are presenting 127 papers at the Forty-Second International Conference on Machine Learning (ICML 2025), held from...","copyrightYear":"2025"}]</script>
+
+
+
+<!-- This site is optimized with the Schema plugin v1.7.9.0 - https://schema.press -->
+<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"ScholarlyArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/blog.ml.cmu.edu\/2025\/07\/08\/carnegie-mellon-university-at-icml-2025\/"},"url":"https:\/\/blog.ml.cmu.edu\/2025\/07\/08\/carnegie-mellon-university-at-icml-2025\/","headline":"Carnegie Mellon University at ICML 2025","datePublished":"2025-07-08T14:57:50-04:00","dateModified":"2025-07-08T14:57:53-04:00","publisher":{"@type":"Organization","@id":"https:\/\/blog.ml.cmu.edu\/#organization","name":"ML@CMU | Machine Learning | Carnegie Mellon University","logo":{"@type":"ImageObject","url":"https:\/\/blog.ml.cmu.edu\/wp-content\/uploads\/2018\/11\/mlcmu-logo.png","width":600,"height":60}},"image":{"@type":"ImageObject","url":"https:\/\/blog.ml.cmu.edu\/wp-content\/uploads\/2025\/06\/1651519868_04015_00_medium.jpg","width":1500,"height":1057},"articleSection":"Educational","description":"CMU researchers are presenting 127 papers at the Forty-Second International Conference on Machine Learning (ICML 2025), held from July 13th-19th at the Vancouver Convention Center. Here is a quick overview of the areas our researchers are working on: Here are our most frequent collaborator institutions: Table of Contents Oral","author":{"@type":"Person","name":"Keegan Harris","url":"https:\/\/blog.ml.cmu.edu\/author\/keeganh\/","image":{"@type":"ImageObject","url":"https:\/\/secure.gravatar.com\/avatar\/21e106c247bf6f027c0384dec8910426?s=96&d=identicon&r=g","height":96,"width":96},"sameAs":["https:\/\/keeganharris.github.io\/","https:\/\/twitter.com\/keegan_w_harris"]}}</script>
+
+
+<style></style>
+    
+    <link rel="icon" href="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon-80x80.png" sizes="32x32" />
+<link rel="icon" href="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon.png" />
+<meta name="msapplication-TileImage" content="https://blog.ml.cmu.edu/wp-content/uploads/2018/06/favicon.png" />
+
+<!-- START - Open Graph and Twitter Card Tags 3.1.1 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/>
+  <meta property="og:title" content="Carnegie Mellon University at ICML 2025"/>
+  <meta property="og:url" content="https://blog.ml.cmu.edu/2025/07/08/carnegie-mellon-university-at-icml-2025/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="CMU researchers are presenting 127 papers at the Forty-Second International Conference on Machine Learning (ICML 2025), held from July 13th-19th at the Vancouver Convention Center. Here is a quick overview of the areas our researchers are working on:
+
+
+
+
+
+
+
+Here are our most frequent collaborator in"/>
+  <meta property="og:image" content="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium.jpg"/>
+  <meta property="og:image:url" content="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium.jpg"/>
+  <meta property="og:image:secure_url" content="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium.jpg"/>
+  <meta property="article:published_time" content="2025-07-08T14:57:50-04:00"/>
+  <meta property="article:modified_time" content="2025-07-08T14:57:53-04:00" />
+  <meta property="og:updated_time" content="2025-07-08T14:57:53-04:00" />
+  <meta property="article:section" content="Educational"/>
+  <meta property="article:section" content="machine learning"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Carnegie Mellon University at ICML 2025"/>
+  <meta itemprop="headline" content="Carnegie Mellon University at ICML 2025"/>
+  <meta itemprop="description" content="CMU researchers are presenting 127 papers at the Forty-Second International Conference on Machine Learning (ICML 2025), held from July 13th-19th at the Vancouver Convention Center. Here is a quick overview of the areas our researchers are working on:
+
+
+
+
+
+
+
+Here are our most frequent collaborator in"/>
+  <meta itemprop="image" content="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium.jpg"/>
+  <meta itemprop="datePublished" content="2025-07-08"/>
+  <meta itemprop="dateModified" content="2025-07-08T14:57:53-04:00" />
+  <meta itemprop="author" content="Keegan Harris"/>
+  <!--<meta itemprop="publisher" content="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/>--> <!-- To solve: The attribute publisher.itemtype has an invalid value -->
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="Carnegie Mellon University at ICML 2025"/>
+  <meta name="twitter:url" content="https://blog.ml.cmu.edu/2025/07/08/carnegie-mellon-university-at-icml-2025/"/>
+  <meta name="twitter:description" content="CMU researchers are presenting 127 papers at the Forty-Second International Conference on Machine Learning (ICML 2025), held from July 13th-19th at the Vancouver Convention Center. Here is a quick overview of the areas our researchers are working on:
+
+
+
+
+
+
+
+Here are our most frequent collaborator in"/>
+  <meta name="twitter:image" content="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:creator" content="@keegan_w_harris"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+ <!-- is_singular -->
+<!-- END - Open Graph and Twitter Card Tags 3.1.1 -->
+	
+    <!-- Meta -->
+    <meta content="Machine learning, artificial intelligence, deep learning, natural language processing, automated machine learning, big data, data science, neural networks, ethics and ai, computer science, ml, ai, research" name="Keywords"/>
+    <meta content="The latest news and publications regarding machine learning, artificial intelligence or related, brought to you by the Machine Learning Blog, a spinoff of the Machine Learning Department at Carnegie Mellon University." name="Description"/>
+    <meta content="Machine Learning Department, Carnegie Mellon University" name="author"/>
+    <!-- OG:Graph  
+    <meta name="title" property="og:title" content="Blog | Machine Learning | Carnegie Mellon University"/>
+    <meta property="og:site_name" content="Blog | Machine Learning | Carnegie Mellon University"/>
+    <meta property="og:description" content="The latest news and publications regarding machine learning, artificial intelligence or related, brought to you by the Machine Learning Blog, a spinoff of the Machine Learning Department at Carnegie Mellon University."/> 
+    <meta property="og:image:alt" content="Blog | Machine Learning | Carnegie Mellon University - Cover Picture"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:url" content="https://blog.ml.cmu.edu"/>
+    <meta property="og:type" content="article"/>
+    <meta property="fb:app_id" content=""/>
+    <meta property="fb:pages" content=""/>
+    <meta property="fb:admins" content="654417927"/>
+    <meta property="fb:profile_id" content="654417927"/>
+    <meta name="twitter:site" content="@mldcmu"/>
+    <meta name="twitter:creator" concent="@mldcmu"/>
+    <meta name="twitter:title" content="Blog | Machine Learning | Carnegie Mellon University"/>
+    <meta name="twitter:description" content="The latest news and publications regarding machine learning, artificial intelligence or related, brought to you by the Machine Learning Blog, a spinoff of the Machine Learning Department at Carnegie Mellon University."/>
+    <meta name="twitter:image" content="http://blog.ml.cmu.edu/wp-content/themes/mint/mint/img/cover-introduction-mlblog-2.jpg"/>
+    <meta name="twitter:image:alt" content="Blog | Machine Learning | Carnegie Mellon University - Cover Picture"/>
+    <meta name="twitter:card" content="summary"/>
+    <!-- /OG:Graph -->
+    <!-- Robots -->
+    <meta name="robots" content="noarchive"/>
+    <meta name="googlebot" content="noarchive"/>
+    <!-- /Robots -->
+    <!-- /Meta -->
+</head>
+
+<body class="post-template-default single single-post postid-21192 single-format-standard">
+
+<!-- Preloader // Preloader affects how pages are read if javascript is removed.
+<div id="preloader"></div>
+<!-- /Preloader -->
+
+<!-- Uncomment /** inside <php if you'd like to restore glide-navigation to original version -->
+<!--  -->
+
+<header>
+    <div class="header-top">
+        <div class="top-header-content">
+            <div class="container">
+                <h1 class="hidden">Machine Learning Blog | ML@CMU | Carnegie Mellon University</h1>
+                <div class="col-lg-10 col-lg-offset-1">
+                                            <div class="menu-tumbl"><i class="fa fa-navicon"></i></div>
+                        <div class="header-soc-icon"><i class="fa fa-search"></i></div>
+                                        <div class="header-logo">
+                                                    <a href="https://blog.ml.cmu.edu/" class="logo-img"><img
+                                    src="https://blog.ml.cmu.edu/wp-content/uploads/2018/11/mlcmu-logo.png"
+                                    alt="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/></a>
+                        
+                                                    <a href="https://blog.ml.cmu.edu/" class="retina-logo-img"><img
+                                    src=""
+                                    alt="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/></a>
+                                            </div>
+                    <!-- Statistics -->
+                    <div id="blog-stats">
+                        <h4 class="widget-title">Statistics:</h4>
+                        <span class="sbs-count-posts"><span class="sbs-count-posts">123</span> publications.</span>
+                        <span class="sbs-count-cats"><span class="sbs-count-cats">14</span> categories.</span>
+                        <span class="sbs-count-tags"><span class="sbs-count-tags">72</span> tags.</span>
+                    </div>
+                    <!-- /Statistics -->
+                    <!-- Desktop Navigation -->
+                    <div id="desktop-nav">
+                      <ul class="desktop-nav-ul">
+                        <li id="menu-item-19"><a title="Homepage" href="https://blog.ml.cmu.edu/#">[ Home ]</a></li>
+                        <li id="menu-item-121"><a title="Submissions" href="https://blog.ml.cmu.edu/submissions/">[ Submissions ]</a></li>
+                        <li id="menu-item-88"><a title="About us" href="https://blog.ml.cmu.edu/about/">[ About ]</a></li>
+                      </ul>
+                    </div
+                    <!-- /Desktop Navigation -->
+                    <!-- Moved Glide Navigation here // If needs restored you can restore it at wp-content/header.php-->
+                    <div class="glide-navigation">
+    <div class="sidebar-scroll scrollbar-macosx">
+
+        <!-- close-glide-button -->
+        <div class="close-glide-button">
+            <a href="#" class="close-btn"></a>
+        </div>
+
+        <!-- navbar -->
+        <ul id="menu-top-menu" class="navbar"><li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-19"><a title="Homepage" href="https://blog.ml.cmu.edu/#">Home</a></li>
+<li id="menu-item-121" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121"><a title="Our Team" href="https://blog.ml.cmu.edu/submissions/">Submissions</a></li>
+<li id="menu-item-88" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a title="Contact us" href="https://blog.ml.cmu.edu/about/">About</a></li>
+</ul>    </div>
+</div>                    <!-- /Glide Navigation -->
+                </div>
+            </div>
+        </div>
+        <div class="background-block"></div>
+        <div class="background-opacity"></div>
+    </div>
+    <div class="header-menu-panel">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="menu-tumbl"><i class="fa fa-navicon"></i></div>
+                <ul id="menu-top-menu-1" class="header-navigation"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-19"><a title="Homepage" href="https://blog.ml.cmu.edu/#">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121"><a title="Our Team" href="https://blog.ml.cmu.edu/submissions/">Submissions</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a title="Contact us" href="https://blog.ml.cmu.edu/about/">About</a></li>
+</ul>
+                <div class="header-menu-buttons">
+                                    </div>
+                <ul class="header-socials socials"><li><a href="https://blog.ml.cmu.edu/feed/" target="_blank"><i class="fa fa-rss"></i></a></li></ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="search-wrapper">
+    <form role="search" method="get" class="search-form" action="https://blog.ml.cmu.edu/">
+        <input type="search" placeholder="Search Keyword" name="s" id="s"
+               class="searchbox-input" autocomplete="off" required />
+        <span>Input your search keywords and press Enter.</span>
+    </form>
+    <div class="search-wrapper-close"></div>
+</div>
+<!-- Categories Picker 
+<div class="categories-picker">
+  <ul>
+      <li><h2>Categories:</h2></li> 
+      <li class="category-research"><a href="https://blog.ml.cmu.edu/category/research">Research</a></li>
+      <li class="category-educational"><a href="https://blog.ml.cmu.edu/category/educational/">Educational</a></li> 
+  </ul>
+</div>
+<!-- /Categories Picker-->
+
+<!-- Sidebar -->
+<div class="toggle-sidebar">
+  <a class="display-sidebar">
+    <i class="fa fa-angle-left"></i>
+  </a>
+</div>
+<div class="blog-sidebar categories-picker">
+      <h2>Categories:</h2> 
+  <ul>
+      <li class="category-research"><a href="https://blog.ml.cmu.edu/category/research">Research</a></li>
+      <li class="category-educational"><a href="https://blog.ml.cmu.edu/category/educational/">Educational</a></li> 
+  </ul>
+</div>
+<!-- /Sidebar -->
+
+<div class="main-panel">    <!-- mfunc setPostViews(get_the_ID()); --><!-- /mfunc -->
+
+    <div class="main">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div id="main-column"
+                                            class="full-page-post"
+                                    >
+
+                    <div class="fl-grid">
+                        
+                                                                                        
+                            
+<aside data="primary-post" id="post-21192" >
+
+    
+        <div class="post-header">
+                            <span class="category-post"><a href="https://blog.ml.cmu.edu/category/educational/" title="View all posts in Educational" >Educational</a> <a href="https://blog.ml.cmu.edu/category/machine-learning/" title="View all posts in machine learning" >machine learning</a></span>
+
+                <h1><a>Carnegie Mellon University at ICML 2025</a></h1>
+
+                <div class="post-info">
+                    <div class="post-authors">
+                    <h4>Authors</h4>
+                    <a href="https://blog.ml.cmu.edu/author/keeganh/" title="Posts by Keegan Harris" class="author url fn" rel="author">Keegan Harris</a>                    </div>
+            <!--    <span class="post-author-name">by                        <a href="https://keeganharris.github.io/">Keegan Harris</a>
+                    </span> -->
+                    <div class="affiliations">
+                    <h4>Affiliations</h4>                        
+                                            
+                    </div>
+                    <div class="date">
+                    <h4>Published</h4>
+                        July 8, 2025                    </div>                    
+                    <div class="doi">
+                    <h4>DOI</h4>
+                    </div>
+                </div>
+                    </div>
+            <div class="post-img">
+                                <img class="lazy" src="https://blog.ml.cmu.edu/wp-content/themes/mint/mint/img/layzyload.jpg"
+                 data-original="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium-887x625.jpg"
+                 data-lazy="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium-887x625.jpg"
+                 alt=""/>
+                    </div>
+
+        <div class="post-entry">
+            
+<script>
+jQuery('.post-authors').width(0.33 * jQuery('.post-authors').parent().width());
+jQuery('.affiliations').width(0.33 * jQuery('.affiliations').parent().width());
+jQuery('.date').width(0.33 * jQuery('.date').parent().width());
+jQuery('.post-authors').empty();
+jQuery('.post-authors').append('<h4>Authors</h4>');
+jQuery('.post-authors').append('Keegan Harris, Naveen Raman');
+jQuery('.affiliations').append('<a href="https://www.ml.cmu.edu/" target="_blank" rel="noopener">MLD, CMU</a><br/>');
+jQuery('.doi').remove();
+ </script>
+
+
+
+<p>CMU researchers are presenting 127 papers at the Forty-Second International Conference on Machine Learning (ICML 2025), held from July 13th-19th at the Vancouver Convention Center. Here is a quick overview of the areas our researchers are working on:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="623" src="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-1024x623.png" alt="" class="wp-image-21219" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-1024x623.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-300x183.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-1536x935.png 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-970x590.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-320x195.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-80x49.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image.png 1962w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-300x183@2x.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>Here are our most frequent collaborator institutions:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="602" src="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-1-1024x602.png" alt="" class="wp-image-21220" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-1-1024x602.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-1-300x176.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-1-1536x902.png 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-1-970x570.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-1-320x188.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-1-80x47.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-1.png 1954w, https://blog.ml.cmu.edu/wp-content/uploads/2025/06/image-1-300x176@2x.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        h1 { text-align: center; }
+        h2 { color: #333; }
+        h3 { color: #555; margin-top: 20px; }
+        .paper { margin-bottom: 20px; }
+        .paper-title { font-weight: bold; }
+        .paper-authors { font-style: italic; margin-bottom: 10px; }
+        .oral-spotlight-space { margin-top: 10px; font-style: normal; }
+        .table-of-contents { margin-bottom: 30px; }
+        .table-of-contents ul { list-style-type: none; padding-left: 0; }
+        .table-of-contents ul ul { padding-left: 20px; }
+    </style>
+
+
+    <div class="table-of-contents">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#oral-papers">Oral Papers</a></li>
+            <li><a href="#spotlight-papers">Spotlight Papers</a></li>
+            <li><a href="#poster-papers">Poster Papers</a>
+                <ul>
+<li><a href="#accountability,-transparency,-and-interpretability">Accountability, Transparency, And Interpretability</a></li>
+<li><a href="#active-learning-and-interactive-learning">Active Learning And Interactive Learning</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#causality">Causality</a></li>
+<li><a href="#chemistry,-physics,-and-earth-sciences">Chemistry, Physics, And Earth Sciences</a></li>
+<li><a href="#computer-vision">Computer Vision</a></li>
+<li><a href="#deep-learning">Deep Learning</a></li>
+<li><a href="#discrete-and-combinatorial-optimization">Discrete And Combinatorial Optimization</a></li>
+<li><a href="#domain-adaptation-and-transfer-learning">Domain Adaptation And Transfer Learning</a></li>
+<li><a href="#evaluation">Evaluation</a></li>
+<li><a href="#everything-else">Everything Else</a></li>
+<li><a href="#fairness">Fairness</a></li>
+<li><a href="#foundation-models">Foundation Models</a></li>
+<li><a href="#game-theory">Game Theory</a></li>
+<li><a href="#general-machine-learning">General Machine Learning</a></li>
+<li><a href="#graph-neural-networks">Graph Neural Networks</a></li>
+<li><a href="#graphical-models">Graphical Models</a></li>
+<li><a href="#health-/-medicine">Health / Medicine</a></li>
+<li><a href="#language,-speech-and-dialog">Language, Speech And Dialog</a></li>
+<li><a href="#large-language-models">Large Language Models</a></li>
+<li><a href="#learning-theory">Learning Theory</a></li>
+<li><a href="#multi-agent">Multi-agent</a></li>
+<li><a href="#online-learning-and-bandits">Online Learning And Bandits</a></li>
+<li><a href="#online-learning,-active-learning-and-bandits">Online Learning, Active Learning And Bandits</a></li>
+<li><a href="#optimization">Optimization</a></li>
+<li><a href="#privacy">Privacy</a></li>
+<li><a href="#probabilistic-methods">Probabilistic Methods</a></li>
+<li><a href="#reinforcement-learning-and-planning">Reinforcement Learning And Planning</a></li>
+<li><a href="#representation-learning">Representation Learning</a></li>
+<li><a href="#research-priorities,-methodology,-and-evaluation">Research Priorities, Methodology, And Evaluation</a></li>
+<li><a href="#robotics">Robotics</a></li>
+<li><a href="#safety">Safety</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#sequential-models,-time-series">Sequential Models, Time Series</a></li>
+<li><a href="#social-aspects">Social Aspects</a></li>
+<li><a href="#structure-learning">Structure Learning</a></li>
+<li><a href="#supervised-learning">Supervised Learning</a></li>
+<li><a href="#theory">Theory</a></li>
+<li><a href="#time-series">Time Series</a></li>
+</ul>
+            </li>
+        </ul>
+    </div>
+<h2 id="oral-papers">Oral Papers</h2>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=LCbHsdtvOR" target="_blank" rel="noopener">Expected Variational Inequalities</a></p>
+        <p class="paper-authors"><b>Authors:</b> Brian Zhang, Ioannis Anagnostides, Emanuel Tewolde, Ratip Emin Berker, Gabriele Farina, Vincent Conitzer, Tuomas Sandholm</p>
+        <p class="oral-spotlight-space">This paper introduces expected variational inequalities (EVIs), a relaxed version of variational inequalities (VIs) where the goal is to find a distribution that satisfies the VI condition in expectation. While VIs are generally hard to solve, the authors show that EVIs can be solved efficiently, even under challenging, non-monotone conditions, by leveraging ideas from game theory. EVIs generalize the concept of correlated equilibria and unify various results across smooth games, constrained games, and settings with non-concave utilities, making them broadly applicable beyond traditional game-theoretic contexts.
+</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=zf9zwCRKyP" target="_blank" rel="noopener">Exploring and Mitigating Adversarial Manipulation of Voting-Based Leaderboards</a></p>
+        <p class="paper-authors"><b>Authors:</b> Yangsibo Huang, Milad Nasr, Anastasios Angelopoulos, Nicholas Carlini, Wei-Lin Chiang, Christopher A. Choquette Choo, Daphne Ippolito, Matthew Jagielski, Katherine Lee, Ken Ziyu Liu, Ion Stoica, Florian Tramer, Chiyuan Zhang</p>
+        <p class="oral-spotlight-space">This paper shows that voting-based benchmarks for evaluating LLMs (such as Chatbot Arena) can be vulnerable to adversarial manipulation if proper defenses aren’t in place. The authors show that an attacker can identify which model generated a response and then strategically vote to boost or demote specific models, altering the leaderboard with only around a thousand votes in a simulated environment. They collaborate with Chatbot Arena’s developers to propose and implement security measures such as reCAPTCHA and login requirements that significantly raise the cost of such attacks and enhance the platform&#8217;s robustness.</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=uRAgIVnAO6" target="_blank" rel="noopener">High-Dimensional Prediction for Sequential Decision Making</a></p>
+        <p class="paper-authors"><b>Authors:</b> Georgy Noarov, Ramya Ramalingam, Aaron Roth, Stephan Xie</p>
+        <p class="oral-spotlight-space">This paper presents a new algorithmic framework for making reliable, multi-dimensional forecasts in adversarial, nonstationary environments. Unlike existing online learning methods, this approach offers simultaneous performance guarantees for many agents, even when they face different objectives, act over large action spaces, or care about specific conditions (e.g. weather or route choice). The algorithm ensures low bias across many conditional events and enables each agent to achieve strong guarantees like diminishing regret. Applications include efficient solutions for online combinatorial optimization and multicalibration.</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=SyQPiZJVWY" target="_blank" rel="noopener">LLM-SRBench: A New Benchmark for Scientific Equation Discovery with Large Language Models</a></p>
+        <p class="paper-authors"><b>Authors:</b> Parshin Shojaee, Ngoc Hieu Nguyen, Kazem Meidani, Amir Barati Farimani, Khoa Doan, Chandan Reddy</p>
+        <p class="oral-spotlight-space">This paper introduces LLM-SRBench, a new benchmark designed to rigorously evaluate the ability of LLMs to discover scientific equations (rather than merely recall them from training data). Existing tests often rely on well-known equations, making it hard to tell whether models are truly reasoning or just memorizing. LLM-SRBench addresses this by including 239 challenging problems across four scientific domains, split into two categories: one that disguises familiar physics equations (LSR-Transform) and another that features fully synthetic, reasoning-driven tasks (LSR-Synth). Evaluations show that even the best current models only achieve 31.5% accuracy, highlighting the difficulty of the task and establishing LLM-SRBench as a valuable tool for driving progress in LLM-based scientific discovery.</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=kEn7Wt6Yj2" target="_blank" rel="noopener">On Differential Privacy for Adaptively Solving Search Problems via Sketching</a></p>
+        <p class="paper-authors"><b>Authors:</b> Shiyuan Feng, Ying Feng, George Li, Zhao Song, David Woodruff, Lichen Zhang</p>
+        <p class="oral-spotlight-space">This paper explores how to use differential privacy to protect against information leakage in adaptive search queries, a harder problem than traditional private estimation tasks. Unlike prior work that only returns numerical summaries (e.g., cost), the authors design algorithms that return actual solutions, like nearest neighbors or regression vectors, even when the inputs or queries change over time. They show how key problem parameters (like the number of approximate near neighbors or condition number of the data matrix) affect the performance of these private algorithms. This work has practical implications for AI systems that rely on private database searches or real-time regression, enabling them to provide useful results while safeguarding sensitive information from attackers.</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=Hi0SyHMmkd" target="_blank" rel="noopener">Roll the dice &amp; look before you leap: Going beyond the creative limits of next-token prediction</a></p>
+        <p class="paper-authors"><b>Authors:</b> Vaishnavh Nagarajan, Chen Wu, Charles Ding, Aditi Raghunathan</p>
+        <p class="oral-spotlight-space">This paper proposes a set of simple, abstract tasks designed to probe the creative limits of today’s language models in a controlled and measurable way. These tasks mimic real-world open-ended challenges like generating analogies or designing puzzles, where success requires discovering new connections or constructing novel patterns. The authors show that standard next-token prediction tends to be short-sighted and overly reliant on memorization, while alternative approaches like teacherless training and diffusion models produce more diverse, original outputs. They also introduce a technique called seed-conditioning, which adds randomness at the input rather than the output and can improve coherence without sacrificing creativity.</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=UeB3Hdrhda" target="_blank" rel="noopener">Training a Generally Curious Agent</a></p>
+        <p class="paper-authors"><b>Authors:</b> Fahim Tajwar, Yiding Jiang, Abitha Thankaraj, Sumaita Rahman, Zico Kolter, Jeff Schneider, Russ Salakhutdinov</p>
+        <p class="oral-spotlight-space">This paper introduces Paprika, a fine-tuning method that equips language models with general decision-making and exploration strategies, enabling them to adapt to new tasks through interaction alone (i.e. without further training). Paprika trains models on synthetic environments requiring different exploration behaviors, encouraging them to learn flexible strategies rather than memorizing solutions. To improve efficiency, it uses a curriculum learning-based approach that prioritizes tasks with high learning value, making the most of limited interaction data. Models trained with Paprika show strong transfer to completely new tasks, suggesting a promising direction for building AI agents that can learn to solve unfamiliar, sequential problems with minimal supervision.</p>
+    </div>
+<h2 id="spotlight-papers">Spotlight Papers</h2>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=u6xeKVHS6K" target="_blank" rel="noopener">GMAIL: Generative Modality Alignment for generated Image Learning</a></p>
+        <p class="paper-authors"><b>Authors:</b> Shentong Mo, Sukmin Yun</p>
+        <p class="oral-spotlight-space">Generative models can create realistic images that could help train machine learning models, but using them as if they were real images can lead to problems because of differences between the two. This paper introduces a method called GMAIL that treats real and generated images as separate types (or modalities) and aligns them in a shared latent space during training, rather than just mixing them at the pixel level. The approach fine-tunes models on generated data using a special loss to bridge the gap, then uses these aligned models to improve training on tasks like image captioning and retrieval. The results show that GMAIL improves performance on several vision-language tasks and scales well as more generated data is added.</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=FKi6yjXwCN" target="_blank" rel="noopener">LOCATE 3D: Real-World Object Localization via Self-Supervised Learning in 3D</a></p>
+        <p class="paper-authors"><b>Authors:</b> Paul McVay, Sergio Arnaud, Ada Martin, Arjun Majumdar, Krishna Murthy Jatavallabhula, Phillip Thomas, Ruslan Partsey, Daniel Dugas, Abha Gejji, Alexander Sax, Vincent-Pierre Berges, Mikael Henaff, Ayush Jain, Ang Cao, Ishita Prasad, Mrinal Kalakrishnan, Michael Rabbat, Nicolas Ballas, Mahmoud Assran, Oleksandr Maksymets, Aravind Rajeswaran, Franziska Meier</p>
+        <p class="oral-spotlight-space">LOCATE 3D is a model that can find specific objects in 3D scenes based on natural language descriptions (like “the small coffee table between the sofa and the lamp”). It achieves state-of-the-art performance on standard benchmarks and works well in real-world settings, like on robots or AR devices, by using RGB-D sensor data. A key component is 3D-JEPA, a new self-supervised learning method that uses features from 2D vision models (like CLIP or DINO) to understand 3D point clouds through masked prediction tasks. The model is trained on a newly introduced large dataset (130K+ examples), helping it generalize better across different environments. </p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=dzwUOiBlQW" target="_blank" rel="noopener">Masked Autoencoders Are Effective Tokenizers for Diffusion Models</a></p>
+        <p class="paper-authors"><b>Authors:</b> Hao Chen, Yujin Han, Fangyi Chen, Xiang Li, Yidong Wang, Jindong Wang, Ze Wang, Zicheng Liu, Difan Zou, Bhiksha Raj</p>
+        <p class="oral-spotlight-space">This paper introduces MAETok, a masked autoencoder designed to create a high-quality, semantically meaningful latent space for diffusion models. The authors show that having a well-structured latent space, meaning fewer Gaussian modes and more discriminative features, leads to better image generation without needing complex variational autoencoders. MAETok outperforms existing methods on ImageNet using just 128 tokens, and it&#8217;s also much faster: 76× quicker to train and 31× faster during inference. The key takeaway is that the structure of the latent space, not variational constraints, is what truly matters for high-quality diffusion-based generation.</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=ACzL62Jp4E" target="_blank" rel="noopener">Position: In-House Evaluation Is Not Enough. Towards Robust Third-Party Evaluation and Flaw Disclosure for General-Purpose AI</a></p>
+        <p class="paper-authors"><b>Authors:</b> Shayne Longpre, Kevin Klyman, Ruth Elisabeth Appel, Sayash Kapoor, Rishi Bommasani, Michelle Sahar, Sean McGregor, Avijit Ghosh, Borhane Blili-Hamelin, Nathan Butters, Alondra Nelson, Amit Elazari, Andrew Sellars, Casey Ellis, Dane Sherrets, Dawn Song, Harley Geiger, Ilona Cohen, Lauren McIlvenny, Madhulika Srikumar, Mark Jaycox, Markus Anderljung, Nadine Johnson, Nicholas Carlini, Nicolas Miailhe, Nik Marda, Peter Henderson, Rebecca Portnoff, Rebecca Weiss, Victoria Westerhoff, Yacine Jernite, Rumman Chowdhury, Percy Liang, Arvind Narayanan</p>
+        <p class="oral-spotlight-space">This paper highlights the lack of robust systems for identifying and reporting flaws in general-purpose AI (GPAI), especially compared to mature fields like software security. The authors propose three key solutions: (1) standardized reporting formats and engagement rules to streamline flaw reporting and triaging, (2) formal disclosure programs with legal protections for researchers (similar to bug bounties), and (3) better infrastructure for distributing flaw reports to relevant stakeholders. These steps aim to address growing risks like jailbreaks and cross-system vulnerabilities, ultimately improving the safety and accountability of GPAI systems.</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=beeNgQEfe2" target="_blank" rel="noopener">Scaling Test-Time Compute Without Verification or RL is Suboptimal</a></p>
+        <p class="paper-authors"><b>Authors:</b> Amrith Setlur, Nived Rajaraman, Sergey Levine, Aviral Kumar</p>
+        <p class="oral-spotlight-space">This paper explores how to best scale test-time compute for large language models (LLMs), comparing two strategies: (1) distilling search traces (verifier-free, or VF) and (2) using verifiers or rewards to guide learning (verifier-based, or VB). The authors show—both theoretically and through experiments—that VB methods significantly outperform VF ones when working with limited compute or data. They explain that this performance gap grows as models and tasks get more complex, especially when solution paths vary in style or quality. Ultimately, the paper argues that verification is essential for effectively scaling LLM performance, especially for reasoning tasks.</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=oa7MYAO6h6" target="_blank" rel="noopener">ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference</a></p>
+        <p class="paper-authors"><b>Authors:</b> Hanshi Sun, Li-Wen Chang, Wenlei Bao, Size Zheng, Ningxin Zheng, Xin Liu, Harry Dong, Yuejie Chi, Beidi Chen</p>
+        <p class="oral-spotlight-space">As long-context LLMs become more common, their growing memory demands during inference slow down performance, especially due to the expanding key-value (KV) cache. This paper introduces ShadowKV, a system that significantly improves throughput by compressing the key cache using low-rank representations and offloading the value cache without major latency costs. It reconstructs only the necessary KV pairs during decoding to maintain speed and accuracy. Experiments show ShadowKV supports much larger batch sizes (up to 6×) and improves throughput by over 3× on standard hardware, all while preserving model quality across several LLMs and benchmarks.</p>
+    </div>
+<h2 id="poster-papers">Poster Papers</h2>
+<h3 id="accountability,-transparency,-and-interpretability">Accountability, Transparency, And Interpretability</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=OI3mAAY8eB" target="_blank" rel="noopener">A Versatile Influence Function for Data Attribution with Non-Decomposable Loss</a></p>
+        <p class="paper-authors"><b>Authors:</b> Junwei Deng, Weijing Tang, Jiaqi Ma</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=1SMcxxQiSL" target="_blank" rel="noopener">Massive Values in Self-Attention Modules are the Key to Contextual Knowledge Understanding</a></p>
+        <p class="paper-authors"><b>Authors:</b> Mingyu Jin, Kai Mei, Wujiang Xu, Mingjie Sun, Ruixiang Tang, Mengnan Du, Zirui Liu, Yongfeng Zhang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=qBtomgvLwn" target="_blank" rel="noopener">Validating Mechanistic Interpretations: An Axiomatic Approach</a></p>
+        <p class="paper-authors"><b>Authors:</b> Nils Palumbo, Ravi Mangal, Zifan Wang, Saranya Vijayakumar, Corina Pasareanu, Somesh Jha</p>
+    </div>
+<h3 id="active-learning-and-interactive-learning">Active Learning And Interactive Learning</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=1RS4cPFNZ6" target="_blank" rel="noopener">Optimistic Algorithms for Adaptive Estimation of the Average Treatment Effect</a></p>
+        <p class="paper-authors"><b>Authors:</b> Ojash Neopane, Aaditya Ramdas, Aarti Singh</p>
+    </div>
+<h3 id="applications">Applications</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=NTAhi2JEEE" target="_blank" rel="noopener">Agent Workflow Memory</a></p>
+        <p class="paper-authors"><b>Authors:</b> Zhiruo Wang, Jiayuan Mao, Daniel Fried, Graham Neubig</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=W9s817KqYf" target="_blank" rel="noopener">Windows Agent Arena: Evaluating Multi-Modal OS Agents at Scale</a></p>
+        <p class="paper-authors"><b>Authors:</b> Rogerio Bonatti, Dan Zhao, Francesco Bonacci, Dillon Dupont, Sara Abdali, Yinheng Li, Yadong Lu, Justin Wagle, Kazuhito Koishida, Arthur Bucker, Lawrence Jang, Zheng Hui</p>
+    </div>
+<h3 id="causality">Causality</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=rQK6IWHdzA" target="_blank" rel="noopener">A Sample Efficient Conditional Independence Test in the Presence of Discretization</a></p>
+        <p class="paper-authors"><b>Authors:</b> Boyang Sun, Yu Yao, Xinshuai Dong, Zongfang Liu, Tongliang Liu, Yumou Qiu, Kun Zhang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=iIPAdNq9cq" target="_blank" rel="noopener">Extracting Rare Dependence Patterns via Adaptive Sample Reweighting</a></p>
+        <p class="paper-authors"><b>Authors:</b> YIQING LI, Yewei Xia, Xiaofei Wang, Zhengming Chen, Liuhua Peng, Mingming Gong, Kun Zhang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=Z0jnz149L1" target="_blank" rel="noopener">Isolated Causal Effects of Natural Language</a></p>
+        <p class="paper-authors"><b>Authors:</b> Victoria Lin, Louis-Philippe Morency, Eli Ben-Michael</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=W9YdVrSJIh" target="_blank" rel="noopener">Latent Variable Causal Discovery under Selection Bias</a></p>
+        <p class="paper-authors"><b>Authors:</b> Haoyue Dai, Yiwen Qiu, Ignavier Ng, Xinshuai Dong, Peter Spirtes, Kun Zhang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=VBTHduhm4K" target="_blank" rel="noopener">Permutation-based Rank Test in the Presence of Discretization and Application in Causal Discovery with Mixed Data</a></p>
+        <p class="paper-authors"><b>Authors:</b> Xinshuai Dong, Ignavier Ng, Boyang Sun, Haoyue Dai, Guangyuan Hao, Shunxing Fan, Peter Spirtes, Yumou Qiu, Kun Zhang</p>
+    </div>
+<h3 id="chemistry,-physics,-and-earth-sciences">Chemistry, Physics, And Earth Sciences</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=fHt4Nau7FW" target="_blank" rel="noopener">Maximum Update Parametrization and Zero-Shot Hyperparameter Transfer for Fourier Neural Operators</a></p>
+        <p class="paper-authors"><b>Authors:</b> Shanda Li, Shinjae Yoo, Yiming Yang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=d7v7RVXbNH" target="_blank" rel="noopener">Multi-Timescale Dynamics Model Bayesian Optimization for Plasma Stabilization in Tokamaks</a></p>
+        <p class="paper-authors"><b>Authors:</b> Rohit Sonker, Alexandre Capone, Andrew Rothstein, Hiro Kaga, Egemen Kolemen, Jeff Schneider</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=UlprLwWYKP" target="_blank" rel="noopener">OmniArch: Building Foundation Model for Scientific Computing</a></p>
+        <p class="paper-authors"><b>Authors:</b> Tianyu Chen, Haoyi Zhou, Ying Li, Hao Wang, Chonghan Gao, Rongye Shi, Shanghang Zhang, Jianxin Li</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=gTYzm0Qchr" target="_blank" rel="noopener">PPDiff: Diffusing in Hybrid Sequence-Structure Space for Protein-Protein Complex Design</a></p>
+        <p class="paper-authors"><b>Authors:</b> Zhenqiao Song, Tianxiao Li, Lei Li, Martin Min</p>
+    </div>
+<h3 id="computer-vision">Computer Vision</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=AjpoFnPzLd" target="_blank" rel="noopener">David and Goliath: Small One-step Model Beats Large Diffusion with Score Post-training</a></p>
+        <p class="paper-authors"><b>Authors:</b> Weijian Luo, colin zhang, Debing Zhang, Zhengyang Geng</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=w8MCYYAvQD" target="_blank" rel="noopener">From Thousands to Billions: 3D Visual Language Grounding via Render-Supervised Distillation from 2D VLMs</a></p>
+        <p class="paper-authors"><b>Authors:</b> Ang Cao, Sergio Arnaud, Oleksandr Maksymets, Jianing Yang, Ayush Jain, Ada Martin, Vincent-Pierre Berges, Paul McVay, Ruslan Partsey, Aravind Rajeswaran, Franziska Meier, Justin Johnson, Jeong Joon Park, Alexander Sax</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=AYxiZfJN9V" target="_blank" rel="noopener">GenZSL: Generative Zero-Shot Learning Via Inductive Variational Autoencoder</a></p>
+        <p class="paper-authors"><b>Authors:</b> Shiming Chen, Dingjie Fu, Salman Khan, Fahad Khan</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=6GFPnVHEKB" target="_blank" rel="noopener">Understanding Complexity in VideoQA via Visual Program Generation</a></p>
+        <p class="paper-authors"><b>Authors:</b> Cristobal Eyzaguirre, Igor Vasiljevic, Achal Dave, Jiajun Wu, Rareș Ambruș, Thomas Kollar, Juan Carlos Niebles, Pavel Tokmakov</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=FcTeo26AfZ" target="_blank" rel="noopener">Unifying 2D and 3D Vision-Language Understanding</a></p>
+        <p class="paper-authors"><b>Authors:</b> Ayush Jain, Alexander Swerdlow, Yuzhou Wang, Sergio Arnaud, Ada Martin, Alexander Sax, Franziska Meier, Katerina Fragkiadaki</p>
+    </div>
+<h3 id="deep-learning">Deep Learning</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=wQvR1LHboD" target="_blank" rel="noopener">A Theoretical Study of (Hyper) Self-Attention through the Lens of Interactions: Representation, Training, Generalization</a></p>
+        <p class="paper-authors"><b>Authors:</b> Muhammed Ustaomeroglu, Guannan Qu</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=AEHtq4xHSU" target="_blank" rel="noopener">Towards characterizing the value of edge embeddings in Graph Neural Networks</a></p>
+        <p class="paper-authors"><b>Authors:</b> Dhruv Rohatgi, Tanya Marwah, Zachary Lipton, Jianfeng Lu, Ankur Moitra, Andrej Risteski</p>
+    </div>
+<h3 id="discrete-and-combinatorial-optimization">Discrete And Combinatorial Optimization</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=jaCD2nEpyr" target="_blank" rel="noopener">EquivaMap: Leveraging LLMs for Automatic Equivalence Checking of Optimization Formulations</a></p>
+        <p class="paper-authors"><b>Authors:</b> Haotian Zhai, Connor Lawless, Ellen Vitercik, Liu Leqi</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=FeZoO7mfG7" target="_blank" rel="noopener">Faster Global Minimum Cut with Predictions</a></p>
+        <p class="paper-authors"><b>Authors:</b> Helia Niaparast, Benjamin Moseley, Karan Singh</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=bbJ0QCujU4" target="_blank" rel="noopener">Regularized Langevin Dynamics for Combinatorial Optimization</a></p>
+        <p class="paper-authors"><b>Authors:</b> Shengyu Feng, Yiming Yang</p>
+    </div>
+<h3 id="domain-adaptation-and-transfer-learning">Domain Adaptation And Transfer Learning</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=BuN4FX0iBr" target="_blank" rel="noopener">A General Representation-Based Approach to Multi-Source Domain Adaptation</a></p>
+        <p class="paper-authors"><b>Authors:</b> Ignavier Ng, Yan Li, Zijian Li, Yujia Zheng, Guangyi Chen, Kun Zhang</p>
+    </div>
+<h3 id="evaluation">Evaluation</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=9bYOqwtAud" target="_blank" rel="noopener">Copilot Arena: A Platform for Code LLM Evaluation in the Wild</a></p>
+        <p class="paper-authors"><b>Authors:</b> Wayne Chi, Valerie Chen, Anastasios Angelopoulos, Wei-Lin Chiang, Aditya Mittal, Naman Jain, Tianjun Zhang, Ion Stoica, Chris Donahue, Ameet Talwalkar</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=4ufjBV6S4I" target="_blank" rel="noopener">RAGGED: Towards Informed Design of Scalable and Stable RAG Systems</a></p>
+        <p class="paper-authors"><b>Authors:</b> Jennifer Hsia, Afreen Shaikh, Zhiruo Wang, Graham Neubig</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=BeoXADC9PW" target="_blank" rel="noopener">RBench: Graduate-level Multi-disciplinary Benchmarks for LLM &amp; MLLM Complex Reasoning Evaluation</a></p>
+        <p class="paper-authors"><b>Authors:</b> Meng-Hao Guo, Jiajun Xu, Yi Zhang, Jiaxi Song, Haoyang Peng, Yi-Xuan Deng, Xinzhi Dong, Kiyohiro Nakayama, Zhengyang Geng, Chen Wang, Bolin Ni, Guo-Wei Yang, Yongming Rao, Houwen Peng, Han Hu, Gordon Wetzstein, Shi-min Hu</p>
+    </div>
+<h3 id="everything-else">Everything Else</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=J1xVXyWv2T" target="_blank" rel="noopener">On Fine-Grained Distinct Element Estimation</a></p>
+        <p class="paper-authors"><b>Authors:</b> Ilias Diakonikolas, Daniel Kane, Jasper Lee, Thanasis Pittas, David Woodruff, Samson Zhou</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=AMB11zS6kg" target="_blank" rel="noopener">Safety Certificate against Latent Variables with Partially Unidentifiable Dynamics</a></p>
+        <p class="paper-authors"><b>Authors:</b> Haoming Jing, Yorie Nakahira</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=2qTwKMDAsD" target="_blank" rel="noopener">Understanding the Kronecker Matrix-Vector Complexity of Linear Algebra</a></p>
+        <p class="paper-authors"><b>Authors:</b> Raphael Meyer, William Swartworth, David Woodruff</p>
+    </div>
+<h3 id="fairness">Fairness</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=6YUdCt7rUR" target="_blank" rel="noopener">FDGen: A Fairness-Aware Graph Generation Model</a></p>
+        <p class="paper-authors"><b>Authors:</b> Zichong Wang, Wenbin Zhang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=7jxa1o8rDW" target="_blank" rel="noopener">Fairness on Principal Stratum: A New Perspective on Counterfactual Fairness</a></p>
+        <p class="paper-authors"><b>Authors:</b> Haoxuan Li, Zeyu Tang, Zhichao Jiang, Zhuangyan Fang, Yue Liu, zhi geng, Kun Zhang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=bcheYCitFy" target="_blank" rel="noopener">Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs</a></p>
+        <p class="paper-authors"><b>Authors:</b> Yinong O Wang, Nivedha Sivakumar, Falaah Arif Khan, Katherine Metcalf, Adam Golinski, Natalie Mackraz, Barry-John Theobald, Luca Zappella, Nicholas Apostoloff</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=IHAnkPkoiX" target="_blank" rel="noopener">Kandinsky Conformal Prediction: Beyond Class- and Covariate-Conditional Coverage</a></p>
+        <p class="paper-authors"><b>Authors:</b> Konstantina Bairaktari, Jiayun Wu, Steven Wu</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=70YgwpIxbc" target="_blank" rel="noopener">Relative Error Fair Clustering in the Weak-Strong Oracle Model</a></p>
+        <p class="paper-authors"><b>Authors:</b> Vladimir Braverman, Prathamesh Dharangutte, Shaofeng Jiang, Hoai-An Nguyen, Chen Wang, Yubo Zhang, Samson Zhou</p>
+    </div>
+<h3 id="foundation-models">Foundation Models</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=jSoNlHD9qA" target="_blank" rel="noopener">Rethinking the Bias of Foundation Model under Long-tailed Distribution</a></p>
+        <p class="paper-authors"><b>Authors:</b> Jiahao Chen, Bin Qin, Jiangmeng Li, Hao Chen, Bing Su</p>
+    </div>
+<h3 id="game-theory">Game Theory</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=rjZ2SWjwwB" target="_blank" rel="noopener">Observation Interference in Partially Observable Assistance Games</a></p>
+        <p class="paper-authors"><b>Authors:</b> Scott Emmons, Caspar Oesterheld, Vincent Conitzer, Stuart Russell</p>
+    </div>
+<h3 id="general-machine-learning">General Machine Learning</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=svFtPVdD9t" target="_blank" rel="noopener">On the Power of Learning-Augmented Search Trees</a></p>
+        <p class="paper-authors"><b>Authors:</b> Jingbang Chen, Xinyuan Cao, Alicia Stepin, Li Chen</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=ZtX0MBT6mf" target="_blank" rel="noopener">Self-Improving Transformers Overcome Easy-to-Hard and Length Generalization Challenges</a></p>
+        <p class="paper-authors"><b>Authors:</b> Nayoung Lee, Jack Cai, Avi Schwarzschild, Kangwook Lee, Dimitris Papailiopoulos</p>
+    </div>
+<h3 id="graph-neural-networks">Graph Neural Networks</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=O3dsbpAcqJ" target="_blank" rel="noopener">CurvGAD: Leveraging Curvature for Enhanced Graph Anomaly Detection</a></p>
+        <p class="paper-authors"><b>Authors:</b> Karish Grover, Geoff Gordon, Christos Faloutsos</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=xjTrTlBbrc" target="_blank" rel="noopener">Graph World Model</a></p>
+        <p class="paper-authors"><b>Authors:</b> Tao Feng, Yexin Wu, Guanyu Lin, Jiaxuan You</p>
+    </div>
+<h3 id="graphical-models">Graphical Models</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=kyUoOI0KNJ" target="_blank" rel="noopener">A Generic Family of Graphical Models: Diversity, Efficiency, and Heterogeneity</a></p>
+        <p class="paper-authors"><b>Authors:</b> Yufei Huang, Changhu Wang, Junjie Tang, Weichi Wu, Ruibin Xi</p>
+    </div>
+<h3 id="health-/-medicine">Health / Medicine</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=ss5JNmJDkW" target="_blank" rel="noopener">Distributed Parallel Gradient Stacking(DPGS): Solving Whole Slide Image Stacking Challenge in Multi-Instance Learning</a></p>
+        <p class="paper-authors"><b>Authors:</b> Boyuan Wu, wang, Xianwei Lin, Jiachun Xu, Jikai Yu, Zhou Shicheng, Hongda Chen, Lianxin Hu</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=XWC7JXHXvo" target="_blank" rel="noopener">SUICA: Learning Super-high Dimensional Sparse Implicit Neural Representations for Spatial Transcriptomics</a></p>
+        <p class="paper-authors"><b>Authors:</b> Qingtian Zhu, Yumin Zheng, Yuling Sang, Yifan Zhan, Ziyan Zhu, Jun Ding, Yinqiang Zheng</p>
+    </div>
+<h3 id="language,-speech-and-dialog">Language, Speech And Dialog</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=HLC9eJ8RMg" target="_blank" rel="noopener">A Variational Framework for Improving Naturalness in Generative Spoken Language Models</a></p>
+        <p class="paper-authors"><b>Authors:</b> Li-Wei Chen, Takuya Higuchi, Zakaria Aldeneh, Ahmed Hussen Abdelaziz, Alexander Rudnicky</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=xnPW7yYomF" target="_blank" rel="noopener">OWLS: Scaling Laws for Multilingual Speech Recognition and Translation Models</a></p>
+        <p class="paper-authors"><b>Authors:</b> William Chen, Jinchuan Tian, Yifan Peng, Brian Yan, Chao-Han Yang, Shinji Watanabe</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=FCm4laCLiH" target="_blank" rel="noopener">Synthesizing Privacy-Preserving Text Data via Finetuning *without* Finetuning Billion-Scale LLMs</a></p>
+        <p class="paper-authors"><b>Authors:</b> Bowen Tan, Zheng Xu, Eric Xing, Zhiting Hu, Shanshan Wu</p>
+    </div>
+<h3 id="large-language-models">Large Language Models</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=9ppSGIfpzq" target="_blank" rel="noopener">Accelerating Unbiased LLM Evaluation via Synthetic Feedback</a></p>
+        <p class="paper-authors"><b>Authors:</b> Zhaoyi Zhou, Yuda Song, Andrea Zanette</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=tU8QKX4dMI" target="_blank" rel="noopener">AlphaVerus: Bootstrapping Formally Verified Code Generation through Self-Improving Translation and Treefinement</a></p>
+        <p class="paper-authors"><b>Authors:</b> Pranjal Aggarwal, Bryan Parno, Sean Welleck</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=EGrSMMj37o" target="_blank" rel="noopener">An Architecture Search Framework for Inference-Time Techniques</a></p>
+        <p class="paper-authors"><b>Authors:</b> Jon Saad-Falcon, Adrian Lafuente, Shlok Natarajan, Nahum Maru, Hristo Todorov, Etash Guha, Estefany Kelly Buchanan, Mayee Chen, Neel Guha, Christopher Re, Azalia Mirhoseini</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=19kqoNoc2N" target="_blank" rel="noopener">Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models</a></p>
+        <p class="paper-authors"><b>Authors:</b> Yuan Li, Zhengzhong Liu, Eric Xing</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=OLodUbcWjB" target="_blank" rel="noopener">Demystifying Long Chain-of-Thought Reasoning</a></p>
+        <p class="paper-authors"><b>Authors:</b> Edward Yeo, Yuxuan Tong, Xinyao Niu, Graham Neubig, Xiang Yue</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=n52yyvEwPa" target="_blank" rel="noopener">GSM-$\infty$: How Do your LLMs Behave over Infinitely Increasing Reasoning Complexity and Context Length?</a></p>
+        <p class="paper-authors"><b>Authors:</b> Yang Zhou, Hongyi Liu, Zhuoming Chen, Yuandong Tian, Beidi Chen</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=FCZ3jVzmTZ" target="_blank" rel="noopener">Idiosyncrasies in Large Language Models</a></p>
+        <p class="paper-authors"><b>Authors:</b> Mingjie Sun, Yida Yin, Zhiqiu (Oscar) Xu, Zico Kolter, Zhuang Liu</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=YgfpMhNYnW" target="_blank" rel="noopener">Large Language Models are Demonstration Pre-Selectors for Themselves</a></p>
+        <p class="paper-authors"><b>Authors:</b> Jiarui Jin, Yuwei Wu, Haoxuan Li, Xiaoting He, Weinan Zhang, Yiming Yang, Yong Yu, Jun Wang, Mengyue Yang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=zFR5aWGaUs" target="_blank" rel="noopener">Let LLM Tell What to Prune and How Much to Prune</a></p>
+        <p class="paper-authors"><b>Authors:</b> Mingzhe Yang, Sihao Lin, Changlin Li, Xiaojun Chang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=sRJrMPu5Uu" target="_blank" rel="noopener">Memorization Sinks: Isolating Memorization during LLM Training</a></p>
+        <p class="paper-authors"><b>Authors:</b> Gaurav Ghosal, Pratyush Maini, Aditi Raghunathan</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=rmWpE3FrHW" target="_blank" rel="noopener">Optimizing Temperature for Language Models with Multi-Sample Inference</a></p>
+        <p class="paper-authors"><b>Authors:</b> Weihua Du, Yiming Yang, Sean Welleck</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=TqODUDsU4u" target="_blank" rel="noopener">Optimizing Test-Time Compute via Meta Reinforcement Finetuning</a></p>
+        <p class="paper-authors"><b>Authors:</b> Yuxiao Qu, Matthew Yang, Amrith Setlur, Lewis Tunstall, Edward Beeching, Russ Salakhutdinov, Aviral Kumar</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=YW6edSufht" target="_blank" rel="noopener">Overtrained Language Models Are Harder to Fine-Tune</a></p>
+        <p class="paper-authors"><b>Authors:</b> Jacob Mitchell Springer, Sachin Goyal, Kaiyue Wen, Tanishq Kumar, Xiang Yue, Sadhika Malladi, Graham Neubig, Aditi Raghunathan</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=p71VhJHAtq" target="_blank" rel="noopener">Reflection-Window Decoding: Text Generation with Selective Refinement</a></p>
+        <p class="paper-authors"><b>Authors:</b> Zeyu Tang, Zhenhao Chen, Xiangchen Song, Loka Li, Yunlong Deng, Yifan Shen, Guangyi Chen, Peter Spirtes, Kun Zhang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=bzbuZ0ItBq" target="_blank" rel="noopener">Speculative Prefill: Turbocharging TTFT with Lightweight and Training-Free Token Importance Estimation</a></p>
+        <p class="paper-authors"><b>Authors:</b> Jingyu Liu, Beidi Chen, Ce Zhang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=0ERw2196o1" target="_blank" rel="noopener">Think Smarter not Harder: Adaptive Reasoning with Inference Aware Optimization</a></p>
+        <p class="paper-authors"><b>Authors:</b> Zishun Yu, Tengyu Xu, Di Jin, Karthik Abinav Sankararaman, Yun He, Wenxuan Zhou, Zhouhao Zeng, Eryk Helenowski, Chen Zhu, Sinong Wang, Hao Ma, Han Fang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=fUCPq5RvmH" target="_blank" rel="noopener">To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models</a></p>
+        <p class="paper-authors"><b>Authors:</b> Anna Hedström, Salim I. Amoukou, Tom Bewley, Saumitra Mishra, Manuela Veloso</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=Cq1BNvHx74" target="_blank" rel="noopener">Training Software Engineering Agents and Verifiers with SWE-Gym</a></p>
+        <p class="paper-authors"><b>Authors:</b> Jiayi Pan, Xingyao Wang, Graham Neubig, Navdeep Jaitly, Heng Ji, Alane Suhr, Yizhe Zhang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=hWYisuBbp7" target="_blank" rel="noopener">Understanding the Skill Gap in Recurrent Models: The Role of the Gather-and-Aggregate Mechanism</a></p>
+        <p class="paper-authors"><b>Authors:</b> Aviv Bick, Eric Xing, Albert Gu</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=a5Kgv47d2e" target="_blank" rel="noopener">Unlocking Post-hoc Dataset Inference with Synthetic Data</a></p>
+        <p class="paper-authors"><b>Authors:</b> Bihe Zhao, Pratyush Maini, Franziska Boenisch, Adam Dziedzic</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=jv7bF50spq" target="_blank" rel="noopener">Unnatural Languages Are Not Bugs but Features for LLMs</a></p>
+        <p class="paper-authors"><b>Authors:</b> Keyu Duan, Yiran Zhao, Zhili Feng, Jinjie Ni, Tianyu Pang, Qian Liu, Tianle Cai, Longxu Dou, Kenji Kawaguchi, Anirudh Goyal, Zico Kolter, Michael Shieh</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=bivU8fTTDo" target="_blank" rel="noopener">What Do Learning Dynamics Reveal About Generalization in LLM Mathematical Reasoning?</a></p>
+        <p class="paper-authors"><b>Authors:</b> Katie Kang, Amrith Setlur, Dibya Ghosh, Jacob Steinhardt, Claire Tomlin, Sergey Levine, Aviral Kumar</p>
+    </div>
+<h3 id="learning-theory">Learning Theory</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=xHhURhYmgK" target="_blank" rel="noopener">Projection Optimization: A General Framework for Multi-Objective and Multi-Group RLHF</a></p>
+        <p class="paper-authors"><b>Authors:</b> Nuoya Xiong, Aarti Singh</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=hcLeFe7idT" target="_blank" rel="noopener">Sample-Optimal Agnostic Boosting with Unlabeled Data</a></p>
+        <p class="paper-authors"><b>Authors:</b> Udaya Ghai, Karan Singh</p>
+    </div>
+<h3 id="multi-agent">Multi-agent</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=2Sl6Ex7Vmo" target="_blank" rel="noopener">M³HF: Multi-agent Reinforcement Learning from Multi-phase Human Feedback of Mixed Quality</a></p>
+        <p class="paper-authors"><b>Authors:</b> Ziyan Wang, Zhicheng Zhang, Fei Fang, Yali Du</p>
+    </div>
+<h3 id="online-learning-and-bandits">Online Learning And Bandits</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=7cNLsEAcmL" target="_blank" rel="noopener">Offline Learning for Combinatorial Multi-armed Bandits</a></p>
+        <p class="paper-authors"><b>Authors:</b> Xutong Liu, Xiangxiang Dai, Jinhang Zuo, Siwei Wang, Carlee Joe-Wong, John C. S. Lui, Wei Chen</p>
+    </div>
+<h3 id="online-learning,-active-learning-and-bandits">Online Learning, Active Learning And Bandits</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=TkUxFAbpfQ" target="_blank" rel="noopener">AutoAL: Automated Active Learning with Differentiable Query Strategy Search</a></p>
+        <p class="paper-authors"><b>Authors:</b> Yifeng Wang, Xueying Zhan, Siyu Huang</p>
+    </div>
+<h3 id="optimization">Optimization</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=gujuGnbhZr" target="_blank" rel="noopener">FedECADO: A Dynamical System Model of Federated Learning</a></p>
+        <p class="paper-authors"><b>Authors:</b> Aayushya Agarwal, Gauri Joshi, Lawrence Pileggi</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=dmN2fQ3woH" target="_blank" rel="noopener">Graph-Based Algorithms for Diverse Similarity Search</a></p>
+        <p class="paper-authors"><b>Authors:</b> Piyush Anand, Piotr Indyk, Ravishankar Krishnaswamy, Sepideh Mahabadi, Vikas Raykar, Kirankumar Shiragur, Haike Xu</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=nDHEkgVs8V" target="_blank" rel="noopener">Maximum Coverage in Turnstile Streams with Applications to Fingerprinting Measures</a></p>
+        <p class="paper-authors"><b>Authors:</b> Alina Ene, Alessandro Epasto, Vahab Mirrokni, Hoai-An Nguyen, Huy Nguyen, David Woodruff, Peilin Zhong</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=qKHLzCELGP" target="_blank" rel="noopener">Robust Sparsification via Sensitivity</a></p>
+        <p class="paper-authors"><b>Authors:</b> Chansophea Wathanak In, Yi Li, David Woodruff, Xuan Wu</p>
+    </div>
+<h3 id="privacy">Privacy</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=PGNff6H1TV" target="_blank" rel="noopener">EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption</a></p>
+        <p class="paper-authors"><b>Authors:</b> Leo de Castro, Daniel Escudero, Adya Agrawal, Antigoni Polychroniadou, Manuela Veloso</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=HGnMNUTdUz" target="_blank" rel="noopener">Leveraging Model Guidance to Extract Training Data from Personalized Diffusion Models</a></p>
+        <p class="paper-authors"><b>Authors:</b> Xiaoyu Wu, Jiaru Zhang, Steven Wu</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=ZuaU2bYzlc" target="_blank" rel="noopener">Private Federated Learning using Preference-Optimized Synthetic Data</a></p>
+        <p class="paper-authors"><b>Authors:</b> Charlie Hou, Mei-Yu Wang, Yige Zhu, Daniel Lazar, Giulia Fanti</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=NsU6MKwbis" target="_blank" rel="noopener">Underestimated Privacy Risks for Minority Populations in Large Language Model Unlearning</a></p>
+        <p class="paper-authors"><b>Authors:</b> Rongzhe Wei, Mufei Li, Mohsen Ghassemi, Eleonora Kreacic, Yifan Li, Xiang Yue, Bo Li, Vamsi Potluru, Pan Li, Eli Chien</p>
+    </div>
+<h3 id="probabilistic-methods">Probabilistic Methods</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=Gn2izAiYzZ" target="_blank" rel="noopener">Density Ratio Estimation with Conditional Probability Paths</a></p>
+        <p class="paper-authors"><b>Authors:</b> Hanlin Yu, Arto Klami, Aapo Hyvarinen, Anna Korba, Lemir Omar Chehab</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=mxNEWzqXFH" target="_blank" rel="noopener">Improving the Statistical Efficiency of Cross-Conformal Prediction</a></p>
+        <p class="paper-authors"><b>Authors:</b> Matteo Gasparin, Aaditya Ramdas</p>
+    </div>
+<h3 id="reinforcement-learning-and-planning">Reinforcement Learning And Planning</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=ciUHD7jcT9" target="_blank" rel="noopener">Incentivize without Bonus: Provably Efficient Model-based Online Multi-agent RL for Markov Games</a></p>
+        <p class="paper-authors"><b>Authors:</b> Tong Yang, Bo Dai, Lin Xiao, Yuejie Chi</p>
+    </div>
+<h3 id="representation-learning">Representation Learning</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=4GZwFPzLgW" target="_blank" rel="noopener">Contextures: Representations from Contexts</a></p>
+        <p class="paper-authors"><b>Authors:</b> Runtian Zhai, Kai Yang, Burak VARICI, Che-Ping Tsai, Zico Kolter, Pradeep Ravikumar</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=hUHRTaTfvZ" target="_blank" rel="noopener">Learning Vision and Language Concepts for Controllable Image Generation</a></p>
+        <p class="paper-authors"><b>Authors:</b> Shaoan Xie, Lingjing Kong, Yujia Zheng, Zeyu Tang, Eric Xing, Guangyi Chen, Kun Zhang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=cW9Ttnm1aC" target="_blank" rel="noopener">Nonparametric Identification of Latent Concepts</a></p>
+        <p class="paper-authors"><b>Authors:</b> Yujia Zheng, Shaoan Xie, Kun Zhang</p>
+    </div>
+<h3 id="research-priorities,-methodology,-and-evaluation">Research Priorities, Methodology, And Evaluation</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=kJzB6lQmcb" target="_blank" rel="noopener">Position: You Can&#8217;t Manufacture a NeRF</a></p>
+        <p class="paper-authors"><b>Authors:</b> Marta An Kimmel, Mueed Rehman, Yonatan Bisk, Gary Fedder</p>
+    </div>
+<h3 id="robotics">Robotics</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=D5RNACOZEI" target="_blank" rel="noopener">DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning</a></p>
+        <p class="paper-authors"><b>Authors:</b> Gaoyue Zhou, Hengkai Pan, Yann LeCun, Lerrel Pinto</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=X6nIBckemw" target="_blank" rel="noopener">Learning Safe Control via On-the-Fly Bandit Exploration</a></p>
+        <p class="paper-authors"><b>Authors:</b> Alexandre Capone, Ryan Cosner, Aaron Ames, Sandra Hirche</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=vWPzKn6usZ" target="_blank" rel="noopener">Towards Learning to Complete Anything in Lidar</a></p>
+        <p class="paper-authors"><b>Authors:</b> Ayça Takmaz, Cristiano Saltori, Neehar Peri, Tim Meinhardt, Riccardo de Lutio, Laura Leal-Taixé, Aljosa Osep</p>
+    </div>
+<h3 id="safety">Safety</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=q0P4rrDImq" target="_blank" rel="noopener">DIS-CO: Discovering Copyrighted Content in VLMs Training Data</a></p>
+        <p class="paper-authors"><b>Authors:</b> André Duarte, Xuandong Zhao, Arlindo Oliveira, Lei Li</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=1EgFJDjodU" target="_blank" rel="noopener">Do Not Mimic My Voice : Speaker Identity Unlearning for Zero-Shot Text-to-Speech</a></p>
+        <p class="paper-authors"><b>Authors:</b> Taesoo Kim, Jinju Kim, Dongchan Kim, Jong Hwan Ko, Gyeong-Moon Park</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=WUGrleBcYP" target="_blank" rel="noopener">SafetyAnalyst: Interpretable, Transparent, and Steerable Safety Moderation for AI Behavior</a></p>
+        <p class="paper-authors"><b>Authors:</b> Jing-Jing Li, Valentina Pyatkin, Max Kleiman-Weiner, Liwei Jiang, Nouha Dziri, Anne Collins, Jana Schaich Borg, Maarten Sap, Yejin Choi, Sydney Levine</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=HjVhSL76GM" target="_blank" rel="noopener">WMarkGPT: Watermarked Image Understanding via Multimodal Large Language Models</a></p>
+        <p class="paper-authors"><b>Authors:</b> Tan Songbai, Xuerui Qiu, Yao Shu, Gang Xu, Linrui Xu, Xiangyu Xu, HUIPING ZHUANG, Ming Li, Fei Yu</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=7DXaCYUvDN" target="_blank" rel="noopener">Weak-to-Strong Jailbreaking on Large Language Models</a></p>
+        <p class="paper-authors"><b>Authors:</b> Xuandong Zhao, Xianjun Yang, Tianyu Pang, Chao Du, Lei Li, Yu-Xiang Wang, William Wang</p>
+    </div>
+<h3 id="security">Security</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=eFjv7NPOn1" target="_blank" rel="noopener">ExpProof : Operationalizing Explanations for Confidential Models with ZKPs</a></p>
+        <p class="paper-authors"><b>Authors:</b> Chhavi Yadav, Evan Laufer, Dan Boneh, Kamalika Chaudhuri</p>
+    </div>
+<h3 id="sequential-models,-time-series">Sequential Models, Time Series</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=9NrUIaH1sx" target="_blank" rel="noopener">A Generalizable Physics-Enhanced State Space Model for Long-Term Dynamics Forecasting in Complex Environments</a></p>
+        <p class="paper-authors"><b>Authors:</b> Yuchen Wang, Hongjue Zhao, Haohong Lin, Enze Xu, Lifang He, Huajie Shao</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=B6WalMoQJW" target="_blank" rel="noopener">Enhancing Foundation Models for Time Series Forecasting via Wavelet-based Tokenization</a></p>
+        <p class="paper-authors"><b>Authors:</b> Luca Masserano, Abdul Fatir Ansari, Boran Han, Xiyuan Zhang, Christos Faloutsos, Michael Mahoney, Andrew Wilson, Youngsuk Park, Syama Sundar Yadav Rangapuram, Danielle Maddix, Yuyang Wang</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=GdYg0Ohx0k" target="_blank" rel="noopener">LSCD: Lomb&#8211;Scargle Conditioned Diffusion for Time series Imputation</a></p>
+        <p class="paper-authors"><b>Authors:</b> Elizabeth M Fons Etcheverry, Alejandro Sztrajman, Yousef El-Laham, Luciana Ferrer, Svitlana Vyetrenko, Manuela Veloso</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=2OEb20dy7B" target="_blank" rel="noopener">Understanding and Improving Length Generalization in Recurrent Models</a></p>
+        <p class="paper-authors"><b>Authors:</b> Ricardo Buitrago Ruiz, Albert Gu</p>
+    </div>
+<h3 id="social-aspects">Social Aspects</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=oRT6H6We48" target="_blank" rel="noopener">Data-driven Design of Randomized Control Trials with Guaranteed Treatment Effects</a></p>
+        <p class="paper-authors"><b>Authors:</b> Santiago Cortes-Gomez, Naveen Raman, Aarti Singh, Bryan Wilder</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=bkiM54QftZ" target="_blank" rel="noopener">On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents</a></p>
+        <p class="paper-authors"><b>Authors:</b> Jen-Tse Huang, Jiaxu Zhou, Tailin Jin, Xuhui Zhou, Zixi Chen, Wenxuan Wang, Youliang Yuan, Michael Lyu, Maarten Sap</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=qF6mxani2X" target="_blank" rel="noopener">STAMP Your Content: Proving Dataset Membership via Watermarked Rephrasings</a></p>
+        <p class="paper-authors"><b>Authors:</b> Saksham Rastogi, Pratyush Maini, Danish Pruthi</p>
+    </div>
+<h3 id="structure-learning">Structure Learning</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=WH3ZRH2jno" target="_blank" rel="noopener">Identification of Latent Confounders via Investigating the  Tensor Ranks of the Nonlinear Observations</a></p>
+        <p class="paper-authors"><b>Authors:</b> Zhengming Chen, Yewei Xia, Feng Xie, Jie Qiao, Zhifeng Hao, Ruichu Cai, Kun Zhang</p>
+    </div>
+<h3 id="supervised-learning">Supervised Learning</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=drP7QMlkHh" target="_blank" rel="noopener">Preserving AUC Fairness in Learning with Noisy Protected Groups</a></p>
+        <p class="paper-authors"><b>Authors:</b> Mingyang Wu, Li Lin, Wenbin Zhang, Xin Wang, Zhenhuan Yang, Shu Hu</p>
+    </div>
+<h3 id="theory">Theory</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=FU527ycGgW" target="_blank" rel="noopener">Learning-Augmented Hierarchical Clustering</a></p>
+        <p class="paper-authors"><b>Authors:</b> Vladimir Braverman, Jon C. Ergun, Chen Wang, Samson Zhou</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=lvR39kEqpZ" target="_blank" rel="noopener">On the Clean Generalization and Robust Overfitting in Adversarial Training from Two Theoretical Views: Representation Complexity and Training Dynamics</a></p>
+        <p class="paper-authors"><b>Authors:</b> Binghui Li, Yuanzhi Li</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=9oIjvaDhoN" target="_blank" rel="noopener">On the Query Complexity of Verifier-Assisted Language Generation</a></p>
+        <p class="paper-authors"><b>Authors:</b> Edoardo Botta, Yuchen Li, Aashay Mehta, Jordan Ash, Cyril Zhang, Andrej Risteski</p>
+    </div>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=JnXbUKtLzz" target="_blank" rel="noopener">Sort Before You Prune: Improved Worst-Case Guarantees of the DiskANN Family of Graphs</a></p>
+        <p class="paper-authors"><b>Authors:</b> Siddharth Gollapudi, Ravishankar Krishnaswamy, Kirankumar Shiragur, Harsh Wardhan</p>
+    </div>
+<h3 id="time-series">Time Series</h3>
+
+    <div class="paper">
+        <p class="paper-title"><a href="https://openreview.net/forum?id=goVzfYtj58" target="_blank" rel="noopener">Exploring Representations and Interventions in Time Series Foundation Models</a></p>
+        <p class="paper-authors"><b>Authors:</b> Michal Wilinski, Mononito Goswami, Willa Potosnak, Nina Żukowska, Artur Dubrawski</p>
+    </div>
+
+                    </div>
+
+                            
+        
+<!-- //Default, restore if needed -->
+
+
+<ul class="post-meta">
+    <li>
+<div class="list-meta">
+    <span class="likes-counter"><span class="sl-wrapper"><a href="https://blog.ml.cmu.edu/wp-admin/admin-ajax.php?action=process_simple_like&post_id=21192&nonce=fc8e41b9c0&is_comment=0&disabled=true" class="sl-button sl-button-21192" data-nonce="fc8e41b9c0" data-post-id="21192" data-iscomment="0" title="Like"><span class="sl-icon"><svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve"><path class="heart" d="M64 127.5C17.1 79.9 3.9 62.3 1 44.4c-3.5-22 12.2-43.9 36.7-43.9 10.5 0 20 4.2 26.4 11.2 6.3-7 15.9-11.2 26.4-11.2 24.3 0 40.2 21.8 36.7 43.9C124.2 62 111.9 78.9 64 127.5zM37.6 13.4c-9.9 0-18.2 5.2-22.3 13.8C5 49.5 28.4 72 64 109.2c35.7-37.3 59-59.8 48.6-82 -4.1-8.7-12.4-13.8-22.3-13.8 -15.9 0-22.7 13-26.4 19.2C60.6 26.8 54.4 13.4 37.6 13.4z"/>&#9829;</svg></span><span class="sl-count">627</span></a><span class="sl-loader"></span></span></span>
+
+            <span class="views-counter"><i class="fa fa-eye"></i> <a>10685</a></span>
+    
+    </div>
+</li>
+    <li><a href="https://blog.ml.cmu.edu/2025/07/08/carnegie-mellon-university-at-icml-2025/"
+           class="post-meta-permalink">Read More</a></li>
+    <li><ul class="socials">
+    <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.ml.cmu.edu/2025/07/08/carnegie-mellon-university-at-icml-2025/" target="_blank">
+            <i class="fa fa-facebook"></i></a>
+    </li>
+    <li><a href="https://twitter.com/home?status=Check%20out%20this%20article:%20Carnegie%20Mellon%20University%20at%20ICML%202025%20-%20https://blog.ml.cmu.edu/2025/07/08/carnegie-mellon-university-at-icml-2025/" target="_blank">
+            <i class="fa fa-twitter"></i></a>
+    </li>
+        <!-- <li><a data-pin-do="skipLink" target="_blank"
+           href="https://pinterest.com/pin/create/button/?url=https://blog.ml.cmu.edu/2025/07/08/carnegie-mellon-university-at-icml-2025/&media=https://blog.ml.cmu.edu/wp-content/uploads/2025/06/1651519868_04015_00_medium.jpg&description=Carnegie%20Mellon%20University%20at%20ICML%202025">
+        <i class="fa fa-pinterest"></i></a>
+    </li> -->
+    <li><a target="_blank" href="https://plus.google.com/share?url=https://blog.ml.cmu.edu/2025/07/08/carnegie-mellon-university-at-icml-2025/">
+        <i class="fa fa-google-plus"></i></a>
+    </li>
+    <li><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.ml.cmu.edu/2025/07/08/carnegie-mellon-university-at-icml-2025/">
+        <i class="fa fa-linkedin"></i></a>
+    </li>
+    <li><a href="mailto:?subject=I'd like to share a link with you&body=https://blog.ml.cmu.edu/2025/07/08/carnegie-mellon-university-at-icml-2025/">
+            <i class="fa fa-envelope"></i></a>
+    </li>     
+</ul></li>
+</ul> 
+ 
+                            
+        <ul class="post-switch">
+
+                <li class="prev-post-link">
+                <img width="320" height="220" src="https://blog.ml.cmu.edu/wp-content/uploads/2025/05/ChatGPT-Image-May-29-2025-09_56_16-AM-320x220.png" class="attachment-mint-grid-post size-mint-grid-post wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2025/05/ChatGPT-Image-May-29-2025-09_56_16-AM-320x220.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2025/05/ChatGPT-Image-May-29-2025-09_56_16-AM-300x206.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2025/05/ChatGPT-Image-May-29-2025-09_56_16-AM-909x625.png 909w, https://blog.ml.cmu.edu/wp-content/uploads/2025/05/ChatGPT-Image-May-29-2025-09_56_16-AM-80x55.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2025/05/ChatGPT-Image-May-29-2025-09_56_16-AM.png 1020w, https://blog.ml.cmu.edu/wp-content/uploads/2025/05/ChatGPT-Image-May-29-2025-09_56_16-AM-300x206@2x.png 600w" sizes="(max-width: 320px) 100vw, 320px" />                <a href="https://blog.ml.cmu.edu/2025/06/01/rlhf-101-a-technical-tutorial-on-reinforcement-learning-from-human-feedback/">RLHF 101: A Technical Tutorial on Reinforcement Learning from Human Feedback</a></li>
+                        <li class="next-post-link">
+                <img width="320" height="111" src="https://blog.ml.cmu.edu/wp-content/uploads/2025/09/fig1_50_100-320x111.png" class="attachment-mint-grid-post size-mint-grid-post wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2025/09/fig1_50_100-320x111.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2025/09/fig1_50_100-300x104.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2025/09/fig1_50_100-1024x356.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2025/09/fig1_50_100-1536x534.png 1536w, https://blog.ml.cmu.edu/wp-content/uploads/2025/09/fig1_50_100-2048x712.png 2048w, https://blog.ml.cmu.edu/wp-content/uploads/2025/09/fig1_50_100-970x337.png 970w, https://blog.ml.cmu.edu/wp-content/uploads/2025/09/fig1_50_100-80x28.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2025/09/fig1_50_100-300x104@2x.png 600w" sizes="(max-width: 320px) 100vw, 320px" />                <a href="https://blog.ml.cmu.edu/2025/09/22/diffusion-beats-autoregressive-in-data-constrained-settings/">Diffusion Beats Autoregressive in Data-Constrained Settings</a></li>
+            
+</ul>
+                    		<div class="post-related-title"><h4>You Might Also Like</h4></div>
+		<div class="post-related">
+							
+					
+				<div class="item-related">
+					
+										<a href="https://blog.ml.cmu.edu/2025/10/27/learning-from-failure-to-tackle-extremely-hard-problems/"><img width="716" height="404" src="https://blog.ml.cmu.edu/wp-content/uploads/2025/10/image-13.png" class="attachment-mint-post-grid size-mint-post-grid wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2025/10/image-13.png 716w, https://blog.ml.cmu.edu/wp-content/uploads/2025/10/image-13-300x169.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2025/10/image-13-320x181.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2025/10/image-13-80x45.png 80w, https://blog.ml.cmu.edu/wp-content/uploads/2025/10/image-13-300x169@2x.png 600w" sizes="(max-width: 716px) 100vw, 716px" /></a>
+										
+					<h6><a href="https://blog.ml.cmu.edu/2025/10/27/learning-from-failure-to-tackle-extremely-hard-problems/">Learning from Failure to Tackle Extremely Hard Problems</a></h6>
+					<span class="date">October 27, 2025</span>
+					
+				</div>
+							
+					
+				<div class="item-related">
+					
+										<a href="https://blog.ml.cmu.edu/2019/07/13/towards-interpretable-tree-ensembles/"><img width="2500" height="942" src="https://blog.ml.cmu.edu/wp-content/uploads/2019/07/maple-2.jpg" class="attachment-mint-post-grid size-mint-post-grid wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2019/07/maple-2.jpg 2500w, https://blog.ml.cmu.edu/wp-content/uploads/2019/07/maple-2-300x113.jpg 300w, https://blog.ml.cmu.edu/wp-content/uploads/2019/07/maple-2-768x289.jpg 768w, https://blog.ml.cmu.edu/wp-content/uploads/2019/07/maple-2-1024x386.jpg 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2019/07/maple-2-970x365.jpg 970w, https://blog.ml.cmu.edu/wp-content/uploads/2019/07/maple-2-320x121.jpg 320w, https://blog.ml.cmu.edu/wp-content/uploads/2019/07/maple-2-80x30.jpg 80w" sizes="(max-width: 2500px) 100vw, 2500px" /></a>
+										
+					<h6><a href="https://blog.ml.cmu.edu/2019/07/13/towards-interpretable-tree-ensembles/">MAPLE: Towards Interpretable Tree Ensembles</a></h6>
+					<span class="date">July 13, 2019</span>
+					
+				</div>
+							
+					
+				<div class="item-related">
+					
+										<a href="https://blog.ml.cmu.edu/2019/04/19/representer-point-selection-explain-dnn/"><img width="1944" height="1350" src="https://blog.ml.cmu.edu/wp-content/uploads/2019/04/decomp-e1555705135748.png" class="attachment-mint-post-grid size-mint-post-grid wp-post-image" alt="" loading="lazy" srcset="https://blog.ml.cmu.edu/wp-content/uploads/2019/04/decomp-e1555705135748.png 1944w, https://blog.ml.cmu.edu/wp-content/uploads/2019/04/decomp-e1555705135748-300x208.png 300w, https://blog.ml.cmu.edu/wp-content/uploads/2019/04/decomp-e1555705135748-768x533.png 768w, https://blog.ml.cmu.edu/wp-content/uploads/2019/04/decomp-e1555705135748-1024x711.png 1024w, https://blog.ml.cmu.edu/wp-content/uploads/2019/04/decomp-e1555705135748-900x625.png 900w, https://blog.ml.cmu.edu/wp-content/uploads/2019/04/decomp-e1555705135748-320x222.png 320w, https://blog.ml.cmu.edu/wp-content/uploads/2019/04/decomp-e1555705135748-80x56.png 80w" sizes="(max-width: 1944px) 100vw, 1944px" /></a>
+										
+					<h6><a href="https://blog.ml.cmu.edu/2019/04/19/representer-point-selection-explain-dnn/">Representer Point Selection for Explaining Deep Neural Networks</a></h6>
+					<span class="date">April 19, 2019</span>
+					
+				</div>
+		</div>        
+                    
+<div class="post-comments" id="comments">
+
+    <div class="post-box"><div class="post-related-title comment-block-title"><h4>No Comments</h4></div><div class='comments'></div><div id='comments_pagination'></div>	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2025/07/08/carnegie-mellon-university-at-icml-2025/#respond" style="display:none;">Cancel Reply</a></small></h3><form action="https://blog.ml.cmu.edu/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='21192' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d6764949fc" /></p><input type="hidden" id="ak_js" name="ak_js" value="101"/><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea></form>	</div><!-- #respond -->
+	</div>
+        
+        <hr class="post-separator">
+</aside>                                                                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+<div class="instagram-footer">
+    <div class="instagram-widget">
+        <div id="text-7" class="widget footer-insta widget_text">			<div class="textwidget"><p>[instagram-feed num=6 cols=6 imagepadding=0 disablemobile=true showbutton=false showheader=false followtext=&#8221;Follow @Mint_Theme&#8221;]</p>
+</div>
+		</div>    </div>
+</div>
+</div>
+<footer>
+    <!-- <div class="container footers">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="footer-parts footer-part-1"></div>
+            <div class="footer-parts footer-part-2"></div>
+            <div class="footer-parts footer-part-3"></div>
+        </div>
+    </div> -->
+
+    <div class="copy-wrapper">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+                                    <ul class="socials pt-10"><li><a href="https://blog.ml.cmu.edu/feed/" target="_blank"><i class="fa fa-rss"></i></a></li></ul>
+                                <p class="copyright">
+                    <!-- 2018 &copy; Carnegie Mellon University -->
+                    <!-- Legal Info -->
+                    <a href="//www.cmu.edu/legal/" target="_blank" rel="noopener">Legal Info</a> | <a href="//www.cmu.edu/" target="_blank" rel="noopener">www.cmu.edu</a><br>
+                    <!-- /Legal Info -->
+                    <span id="js-current-year">2018</span> &copy; <a title="Machine Learning | Carnegie Mellon University" href="https://www.ml.cmu.edu" target="_blank" rel="noopener">Machine Learning</a> | <a title="Carnegie Mellon University" href="https://www.cmu.edu" target="_blank" rel="noopener">Carnegie Mellon University</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="back-to-top">
+    <a title="Back to top button" aria-label="Back to top button" role="button" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/i18n.min.js?ver=9e36b5da09c96c657b0297fd6f7cb1fd' id='wp-i18n-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.21' id='lodash-js'></script>
+<script type='text/javascript' id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/url.min.js?ver=1b4bb2b3f526a1db366ca3147ac39562' id='wp-url-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/hooks.min.js?ver=d0d9f43e03080e6ace9a3dabbd5f9eee' id='wp-hooks-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/dist/api-fetch.min.js?ver=c207d2d188ba8bf763f7acd50b7fd5a9' id='wp-api-fetch-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-after'>
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://blog.ml.cmu.edu/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "37cdd657bc" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "https://blog.ml.cmu.edu/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/modern-footnotes/modern-footnotes.min.js?ver=1.4.4' id='modern_footnotes-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/owl.carousel.min.js?ver=5.6.16' id='owl-carousel-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/plugins.js?ver=5.6.16' id='plugins-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/themes/mint/mint/js/main.js?ver=5.6.16' id='mint-main-scripts-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/comment-reply.min.js?ver=5.6.16' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/enlighter/cache/enlighterjs.min.js?ver=BaUKYlr1JydyEx/' id='enlighterjs-js'></script>
+<script type='text/javascript' id='enlighterjs-js-after'>
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"enlighter","language":"enlighter","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+</script>
+<script type='text/javascript' src='https://blog.ml.cmu.edu/wp-includes/js/wp-embed.min.js?ver=5.6.16' id='wp-embed-js'></script>
+<script async="async" type='text/javascript' src='https://blog.ml.cmu.edu/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9' id='akismet-form-js'></script>
+<!-- Scripts -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<script id="custom-javascript">
+    var $ = jQuery;
+    $('.author').prop('target','_blank');
+    document.getElementById("js-current-year").textContent=(new Date().getFullYear());
+    /* Sidebar */
+    var $ = jQuery;
+    $(document).ready(function() {
+      $('.display-sidebar').toggle(
+        function() {
+            $('.blog-sidebar').css('right', '0');
+            $('.toggle-sidebar').css('right', '280px');
+            $('.display-sidebar i').addClass('fa-angle-right').removeClass('fa-angle-left');
+        }, function() {
+            $('.blog-sidebar').css('right', '-300px');
+            $('.toggle-sidebar').css('right', '10px');
+            $('.display-sidebar i').addClass('fa-angle-left').removeClass('fa-angle-right');
+      });
+    });
+    /* /Sidebar */
+</script>
+<!-- /Scripts -->
+</body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+
+Served from: blog.ml.cmu.edu @ 2025-11-28 21:57:45 by W3 Total Cache
+-->
