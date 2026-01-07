@@ -45,6 +45,53 @@ Rubin平台由六大核心组件构成，其性能相较于上一代Blackwell平
 
 ---
 
+## 性能、价格与购买渠道
+
+### 四代旗舰GPU性能对比
+
+下表详细对比了NVIDIA最近四代数据中心GPU的关键性能指标，展示了其惊人的迭代速度。
+
+| 指标 | Rubin (R100) | Blackwell (B200) | Hopper (H100) | Ampere (A100) |
+| :--- | :--- | :--- | :--- | :--- |
+| **发布年份** | 2026 | 2024 | 2022 | 2020 |
+| **推理性能 (FP4)** | **50 PFLOPS** | 10 PFLOPS | ~5 PFLOPS | ~2.5 PFLOPS |
+| **训练性能 (FP8)** | **35 PFLOPS** | 10 PFLOPS | ~5 PFLOPS | - |
+| **晶体管数量** | **3360亿** | 2100亿 | 800亿 | 540亿 |
+| **内存类型** | HBM4 | HBM3e | HBM3 | HBM2e |
+| **内存带宽** | **22 TB/s** | 8 TB/s | 3.35 TB/s | 2 TB/s |
+| **NVLink 带宽** | **3.6 TB/s** | 1.8 TB/s | 900 GB/s | 600 GB/s |
+
+*表 2: NVIDIA 四代旗舰数据中心 GPU 性能对比 [4][6]*
+
+### 价格对比与预测
+
+| 型号/平台 | 价格 (估算) | 备注 |
+| :--- | :--- | :--- |
+| **Vera Rubin NVL72** | **$8.4M - $16.8M** | 预测价格，取决于市场策略 [7] |
+| **Blackwell GB200 NVL72** | **~$3.35M** | 估算价格 |
+| **H200 单卡** | **$27,000** | 中国市场报价 (2026年1月) [8] |
+| **H100 单卡** | **$25,000 - $40,000** | 市场浮动价格 |
+| **A100 单卡** | **$10,000 - $15,000** | 二手市场价格 |
+
+*表 3: NVIDIA GPU 价格对比与预测 [7][8]*
+
+### 购买渠道
+
+1.  **企业级采购 (推荐)**:
+    *   **NVIDIA 官方**: 直接联系NVIDIA企业销售部门。
+    *   **授权经销商**: Dell, HPE, Supermicro, Lenovo, 浪潮等。
+
+2.  **云服务商租赁 (灵活)**:
+    *   **国际**: AWS, Azure, Google Cloud, Oracle Cloud。
+    *   **专业**: Lambda Labs, Paperspace, CoreWeave。
+    *   **中国**: 阿里云, 腾讯云, 华为云等。
+
+3.  **二手市场 (预算有限)**:
+    *   **平台**: eBay, Reddit (r/hardwareswap), 淘宝/闲鱼。
+    *   **风险**: 无质保，可能存在矿卡风险，不适合生产环境。
+
+---
+
 ## 模型与生态：从开源到物理世界
 
 黄仁勋宣布英伟达将转型为“前沿AI模型构建者”，并将其在超级计算机上训练的六大领域基础模型完全开源，旨在赋能全球各行各业。
@@ -63,12 +110,12 @@ Rubin平台由六大核心组件构成，其性能相较于上一代Blackwell平
 演讲中最激动人心的部分莫过于物理AI的商业化落地。英伟达通过两大合作，正式宣告AI走出屏幕，进入实体经济。
 
 1.  **自动驾驶：Alpamayo模型上车**
-    - **Alpamayo R1**是业界首个开源的推理视觉-语言-动作（VLA）模型，它不仅能“看”和“开”，更能“思考”和“推理”其驾驶行为。
-    - 首款搭载该模型的**梅赛德斯-奔驰CLA**将于2026年在美国上路，标志着Level 4级自动驾驶能力进入消费级市场 [5]。
+    *   **Alpamayo R1**是业界首个开源的推理视觉-语言-动作（VLA）模型，它不仅能“看”和“开”，更能“思考”和“推理”其驾驶行为。
+    *   首款搭载该模型的**梅赛德斯-奔驰CLA**将于2026年在美国上路，标志着Level 4级自动驾驶能力进入消费级市场 [5]。
 
 2.  **工业制造：与西门子共创工业元宇宙**
-    - 通过将英伟达的 **Omniverse** 仿真平台、合成数据生成能力与西门子的工业软件（如Teamcenter X）深度集成，两家公司正在构建工厂的“数字孪生”。
-    - 这使得企业可以在虚拟世界中完成机器人的训练、产线的调试和优化，然后再部署到物理世界，极大地缩短了开发周期并降低了成本。黄仁勋预言：“这些制造工厂将本质上成为巨型机器人。” [1]
+    *   通过将英伟达的 **Omniverse** 仿真平台、合成数据生成能力与西门子的工业软件（如Teamcenter X）深度集成，两家公司正在构建工厂的“数字孪生”。
+    *   这使得企业可以在虚拟世界中完成机器人的训练、产线的调试和优化，然后再部署到物理世界，极大地缩短了开发周期并降低了成本。黄仁勋预言：“这些制造工厂将本质上成为巨型机器人。” [1]
 
 ---
 
@@ -97,3 +144,9 @@ Rubin平台由六大核心组件构成，其性能相较于上一代Blackwell平
 [4] 新浪财经. (2026, January 6). *比Blackwell算力提升5倍！黄仁勋展示Vera Rubin计算平台*. [https://finance.sina.com.cn/tech/shenji/2026-01-06/doc-inhfiqwt1450987.shtml](https://finance.sina.com.cn/tech/shenji/2026-01-06/doc-inhfiqwt1450987.shtml)
 
 [5] Engadget. (2026, January 6). *Everything NVIDIA announced at CES 2026*. [https://www.engadget.com/ai/everything-nvidia-announced-at-ces-2026-225653684.html](https://www.engadget.com/ai/everything-nvidia-announced-at-ces-2026-225653684.html)
+
+[6] NVIDIA Developer. (2026, January 5). *Inside the NVIDIA Rubin Platform: Six New Chips, One AI Supercomputer*. NVIDIA Technical Blog. [https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/](https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/)
+
+[7] The Next Platform. (2026, January 5). *Nvidia’s Vera-Rubin Platform Obsoletes Current AI Iron Six Months Ahead Of Launch*. [https://www.nextplatform.com/2026/01/05/nvidias-vera-rubin-platform-obsoletes-current-ai-iron-six-months-ahead-of-launch/](https://www.nextplatform.com/2026/01/05/nvidias-vera-rubin-platform-obsoletes-current-ai-iron-six-months-ahead-of-launch/)
+
+[8] PC Online. (2026, January 4). *H200显卡只要19万元NVIDIA对国区定价良心了：6倍H20性能*. [https://news.pconline.com.cn/2057/20571212.html](https://news.pconline.com.cn/2057/20571212.html)
