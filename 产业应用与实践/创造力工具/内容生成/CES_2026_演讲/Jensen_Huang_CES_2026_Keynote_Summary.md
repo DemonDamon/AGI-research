@@ -9,6 +9,9 @@
 
 在2026年国际消费电子展（CES）上，英伟达（NVIDIA）创始人兼首席执行官黄仁勋（Jensen Huang）发表了一场具有里程碑意义的主题演讲，系统性地阐述了公司从芯片到物理世界的全栈AI战略。本次演讲的核心并非发布单一的消费级产品，而是宣告了一个新时代的到来：**物理AI（Physical AI）**。黄仁勋明确指出，AI正从云端的虚拟世界大规模迁移至汽车、机器人、工业制造等物理实体中，而英伟达正通过“极端协同设计”的算力革命、从“生成式”到“推理式”的模型范式转移，以及全面的开源生态，为这场变革提供核心动力 [1][2]。
 
+![黄仁勋在CES 2026发表演讲](images/jensen_huang_ces_2026_keynote.webp)
+*图 1: 黄仁勋在CES 2026主题演讲中，背景为Rubin平台 [1]*
+
 > “计算已经因加速计算、因人工智能而被根本性地重塑。这意味着过去十年约10万亿美元的计算基础设施，现在正在被现代化为这种新的计算方式。”
 > — 黄仁勋，CES 2026
 
@@ -23,6 +26,9 @@
 ## 核心发布：Vera Rubin 平台——新一代AI引擎
 
 本次演讲最重磅的发布是新一代AI计算平台——**Vera Rubin**，该平台已全面投产，并计划于2026年下半年交付首批客户。黄仁勋强调，面对AI推理成本每年需下降10倍、而AI“思考”产生的Token数量每年增长5倍的巨大挑战，传统的芯片迭代已无法满足需求。Rubin平台的设计哲学是“**极端协同设计**”（Extreme Codesign），即不再是简单地提升单个组件的性能，而是将GPU、CPU、网络、存储和软件作为一个整体进行系统级优化 [3]。
+
+![Rubin平台组件](images/rubin_platform_components.webp)
+*图 2: Rubin平台六大核心组件协同工作 [1]*
 
 ### Rubin 平台关键组件与性能对比
 
@@ -96,6 +102,9 @@ Rubin平台由六大核心组件构成，其性能相较于上一代Blackwell平
 
 黄仁勋宣布英伟达将转型为“前沿AI模型构建者”，并将其在超级计算机上训练的六大领域基础模型完全开源，旨在赋能全球各行各业。
 
+![NVIDIA开源模型生态系统](images/nvidia_open_models_ecosystem.webp)
+*图 3: NVIDIA六大开源模型家族覆盖从医疗到自动驾驶的广泛领域 [1]*
+
 ### 六大开源模型家族
 
 - **Clara**: 医疗健康
@@ -116,6 +125,18 @@ Rubin平台由六大核心组件构成，其性能相较于上一代Blackwell平
 2.  **工业制造：与西门子共创工业元宇宙**
     *   通过将英伟达的 **Omniverse** 仿真平台、合成数据生成能力与西门子的工业软件（如Teamcenter X）深度集成，两家公司正在构建工厂的“数字孪生”。
     *   这使得企业可以在虚拟世界中完成机器人的训练、产线的调试和优化，然后再部署到物理世界，极大地缩短了开发周期并降低了成本。黄仁勋预言：“这些制造工厂将本质上成为巨型机器人。” [1]
+
+---
+
+## DGX SuperPOD：Rubin时代的数据中心蓝图
+
+为了支撑Rubin平台的规模化部署，英伟达同步更新了其数据中心蓝图——**DGX SuperPOD**。这不仅仅是硬件的堆砌，而是一套包含架构、网络、存储和管理软件的全栈解决方案 [9]。
+
+![DGX SuperPOD for Rubin](images/dgx_superpod_rubin_architecture.webp)
+*图 4: DGX SuperPOD for Rubin 系统架构，可扩展至数万个GPU [9]*
+
+- **DGX Vera Rubin NVL72 SuperPOD**: 统一了8个NVL72系统，共576个Rubin GPU，形成一个拥有28.8 exaflops算力和600TB统一快速内存的单一计算集群。
+- **DGX Rubin NVL8 SuperPOD**: 提供了基于x86 CPU的液冷方案，为企业提供了更灵活的入口。
 
 ---
 
@@ -150,3 +171,5 @@ Rubin平台由六大核心组件构成，其性能相较于上一代Blackwell平
 [7] The Next Platform. (2026, January 5). *Nvidia’s Vera-Rubin Platform Obsoletes Current AI Iron Six Months Ahead Of Launch*. [https://www.nextplatform.com/2026/01/05/nvidias-vera-rubin-platform-obsoletes-current-ai-iron-six-months-ahead-of-launch/](https://www.nextplatform.com/2026/01/05/nvidias-vera-rubin-platform-obsoletes-current-ai-iron-six-months-ahead-of-launch/)
 
 [8] PC Online. (2026, January 4). *H200显卡只要19万元NVIDIA对国区定价良心了：6倍H20性能*. [https://news.pconline.com.cn/2057/20571212.html](https://news.pconline.com.cn/2057/20571212.html)
+
+[9] NVIDIA. (2026, January 5). *NVIDIA DGX SuperPOD Sets the Stage for Rubin-Based Systems*. NVIDIA Blog. [https://blogs.nvidia.com/blog/dgx-superpod-rubin/](https://blogs.nvidia.com/blog/dgx-superpod-rubin/)
