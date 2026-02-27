@@ -33,3 +33,12 @@ Ilya Sutskever 的 Safe Superintelligence、Dario Amodei 的 AI 安全研究。
 ---
 
 [⬆️ 返回上级](../README.md) | [🏠 返回首页](../../../README.md)
+
+## 最新补充资料
+
+### DeepMind 运作模式深度分析
+- **文件**: [DeepMind运作模式深度分析.md](./DeepMind运作模式深度分析.md)
+- **作者**: Manus AI
+- **日期**: 2026年2月27日
+- **简介**: 基于 Lila Ibrahim 和 James Manyika 的最新访谈，深度剖析 Google DeepMind 的"贝尔实验室 + 阿波罗计划"运作模式，涵盖领导层架构、核心项目（AlphaFold、Gemini、Willow 量子芯片、Project Suncatcher）及未来战略。
+
